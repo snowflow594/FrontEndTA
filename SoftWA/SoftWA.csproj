@@ -108,6 +108,7 @@
     <Content Include="Pantallas\Carrito.aspx" />
     <Content Include="Pantallas\DatosDePago.aspx" />
     <Content Include="Pantallas\DireccionEnvio.aspx" />
+    <Content Include="Pantallas\ResumenPedido.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -158,6 +159,13 @@
     </Compile>
     <Compile Include="Pantallas\MasterPages\Cabecera.master.designer.cs">
       <DependentUpon>Cabecera.master</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\ResumenPedido.aspx.cs">
+      <DependentUpon>ResumenPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\ResumenPedido.aspx.designer.cs">
+      <DependentUpon>ResumenPedido.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

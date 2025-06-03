@@ -79,7 +79,7 @@
                     </div>
                     <small class="text-muted d-block mt-2">Llegada estimada: entre 3 y 5 días hábiles</small>
 
-                    <a href="ConfirmacionPago.aspx" class="btn btn-primary w-100 mt-4">Confirmar Pago</a>
+                    <a href="ResumenPedido.aspx" class="btn btn-primary w-100 mt-4">Confirmar Pago</a>
                 </div>
             </div>
         </div>
