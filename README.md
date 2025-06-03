@@ -1,2 +1,3 @@
 # FrontEndTA
-github del front-emd
+github del front-end
+sección de requisitos funcionales: Administración de Ventas
