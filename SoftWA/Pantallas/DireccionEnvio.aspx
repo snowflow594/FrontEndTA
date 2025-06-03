@@ -8,7 +8,7 @@
                 <div class="card p-4">
                     <h4 class="mb-4">Dirección de Envío</h4>
 
-                    <!-- crreo electrónico -->
+                    <!-- correo electrónico -->
                     <div class="mb-3">
                         <label for="correo" class="form-label">Correo electrónico (para el comprobante):</label>
                         <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" />

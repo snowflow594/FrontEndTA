@@ -7,69 +7,56 @@
             <div class="col-lg-8 h-100">
                 <div class="card p-4 mb-4">
                     <h3 class="mb-4">Carrito de Compras</h3>
+                    <!--productos-->
+                    <div class="col-lg-8">
+                        <asp:Repeater ID="rptCarrito" runat="server" OnItemCommand="rptCarrito_ItemCommand">
+                            <ItemTemplate>
+                                <div class="card p-3 mb-3">
+                                    <div class="row g-3 align-items-center">
+                                        <div class="col-3 col-md-2">
+                                            <img src='<%# Eval("imagenUrl") %>' class="product-img img-fluid" alt="Producto" />
+                                        </div>
+                                        <div class="col-9 col-md-4">
+                                            <h5><%# Eval("producto.nombre") %></h5>
+                                            <p class="mb-0 text-muted"><%# Eval("producto.descripcion") %></p>
+                                        </div>
+                                        <div class="col-12 col-md-3 d-flex align-items-center justify-content-start justify-content-md-center">
+                                            <asp:Button ID="btnMenos" runat="server" CssClass="btn btn-outline-secondary me-2" Text="-"
+                                                CommandName="Disminuir" CommandArgument='<%# Eval("idItemCarrito") %>' />
+                                            <span><%# Eval("cantidad") %></span>
+                                            <asp:Button ID="btnMas" runat="server" CssClass="btn btn-outline-secondary ms-2" Text="+"
+                                                CommandName="Aumentar" CommandArgument='<%# Eval("idItemCarrito") %>' />
+                                        </div>
+                                        <div class="col-12 col-md-3 text-md-end mt-2 mt-md-0">
+                                            <strong>S/ <%# (Convert.ToDecimal(Eval("subtotal")) * Convert.ToInt32(Eval("cantidad"))).ToString("F2") %></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </div>
 
-                    <!-- Producto 1 -->
-                    <div class="card p-3 mb-3">
-                        <div class="row g-3 align-items-center">
-                            <div class="col-3 col-md-2">
-                                <img src="https://via.placeholder.com/100" class="product-img" alt="Producto" />
+                    <!-- Resumen del carrito -->
+                    <div class="col-lg-4">
+                        <div class="resumen-carrito shadow-sm p-4 rounded">
+                            <h5 class="fw-bold">Resumen del Pedido</h5>
+                            <div class="d-flex justify-content-between mt-3">
+                                <span>Subtotal</span>
+                                <asp:Label ID="lblSubtotal" runat="server" CssClass="fw-normal" />
                             </div>
-                            <div class="col-9 col-md-4">
-                                <h5>Olla de acero</h5>
-                                <p class="mb-0 text-muted">Capacidad 5L. Antiadherente. Aquí va toda la descripción de los productos que se venderán en lá página web</p>
+                            <div class="d-flex justify-content-between mt-3">
+                                <span>Impuesto </span>
+                                <asp:Label ID="lblImpuestos" runat="server" CssClass="fw-normal" />
                             </div>
-                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-start justify-content-md-center">
-                                <button class="btn btn-outline-secondary me-2"><i class="fas fa-minus"></i></button>
-                                <span>2</span>
-                                <button class="btn btn-outline-secondary ms-2"><i class="fas fa-plus"></i></button>
+                            <hr />
+                            <div class="d-flex justify-content-between total-section fw-bold">
+                                <span>Total</span>
+                                <asp:Label ID="lblTotal" runat="server" CssClass="fw-bold" />
                             </div>
-                            <div class="col-12 col-md-3 text-md-end mt-2 mt-md-0">
-                                <strong>S/ 120.00</strong>
-                            </div>
+                            <asp:Button ID="btnProcederPago" runat="server" Text="Proceder al pago" CssClass="btn btn-success w-100 mt-3"
+                                PostBackUrl="~/DireccionEnvio.aspx" />
                         </div>
                     </div>
-
-                    <!-- Producto 2 -->
-                    <div class="card p-3 mb-3">
-                        <div class="row g-3 align-items-center">
-                            <div class="col-3 col-md-2">
-                                <img src="https://via.placeholder.com/100" class="product-img" alt="Producto" />
-                            </div>
-                            <div class="col-9 col-md-4">
-                                <h5>Cuchillo Profesional</h5>
-                                <p class="mb-0 text-muted">Hoja de acero inoxidable.</p>
-                            </div>
-                            <div class="col-12 col-md-3 d-flex align-items-center justify-content-start justify-content-md-center">
-                                <button class="btn btn-outline-secondary me-2"><i class="fas fa-minus"></i></button>
-                                <span>2</span>
-                                <button class="btn btn-outline-secondary ms-2"><i class="fas fa-plus"></i></button>
-                            </div>
-                            <div class="col-12 col-md-3 text-md-end mt-2 mt-md-0">
-                                <strong>S/ 60.00</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--resumen del arrito-->
-            <div class="col-lg-4">
-                <div class="resumen-carrito shadow-sm p-4 rounded">
-                    <h5 class="fw-bold">Resumen del Pedido</h5>
-                    <div class="d-flex justify-content-between mt-3">
-                        <span>Subtotal</span>
-                        <span>S/ 240.00</span>
-                    </div>
-                    <div class="d-flex justify-content-between mt-3">
-                        <span>Impuesto (productos importados)</span>
-                        <span>S/ 30.00</span>
-                    </div>
-                    <hr />
-                    <div class="d-flex justify-content-between total-section fw-bold">
-                        <span>Total</span>
-                        <span>S/ 270.00</span>
-                    </div>
-                    <a href="DireccionEnvio.aspx" class="btn btn-success w-100 mt-3">Proceder al pago</a>
                 </div>
             </div>
         </div>

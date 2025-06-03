@@ -87,6 +87,10 @@
                         <span>$1.40</span>
                     </div>
                     <div class="d-flex justify-content-between mt-2">
+                        <span>Envío</span>
+                        <span>$5.34</span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-2">
                         <span>Total</span>
                         <span>$23.60</span>
                     </div>
