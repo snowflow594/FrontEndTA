@@ -1,0 +1,30 @@
+﻿.card {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.btn-outline-secondary {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.resumen-carrito {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.product-img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.total-section {
+    font-size: 1.2rem;
+    color: #000000;
+}
