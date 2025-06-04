@@ -43,6 +43,8 @@
                         <asp:Button ID="btnGuardarDireccion" runat="server" CssClass="btn btn-primary" Text="Guardar Dirección" OnClick="btnGuardarDireccion_Click" />
                         <asp:Button ID="btnVerDirecciones" runat="server" CssClass="btn btn-outline-secondary" Text="Direcciones Guardadas" OnClick="btnVerDirecciones_Click" />
                     </div>
+
+                    <asp:Label ID="lblMensaje" runat="server" CssClass="mt-3 d-block"></asp:Label>
                 </div>
             </div>
 

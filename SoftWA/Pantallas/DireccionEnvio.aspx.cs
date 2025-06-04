@@ -1,6 +1,8 @@
-﻿using SoftWA.ItemCarrito;
+﻿using SoftWA.Direccion;
+using SoftWA.ItemCarrito;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -11,6 +13,7 @@ namespace SoftWA.Pantallas
     public partial class DireccionEnvio : System.Web.UI.Page
     {
         private ItemCarritoClient itemCarritoWSClient = new ItemCarritoClient();
+        private DireccionClient direccionWSClient = new DireccionClient();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -50,6 +53,18 @@ namespace SoftWA.Pantallas
             Session["direccion"] = txtDireccion.Text;
             Session["ciudad"] = txtCiudad.Text;
             Session["referencia"] = txtReferencia.Text;
+
+            var nuevaDireccion = new Direccion.direccionDTO
+            {
+                personaId = new SoftWA.Direccion.personaDTO { id = 5},
+                alias = txtAlias.Text,
+                direccion = txtDireccion.Text,
+                ciudad = txtCiudad.Text,
+                referencia = txtReferencia.Text,
+                usuarioCreacion = new SoftWA.Direccion.usuarioDTO { id = 5}
+            };
+
+            int i = direccionWSClient.insertarDireccion(nuevaDireccion);
         }
 
         protected void btnVerDirecciones_Click(object sender, EventArgs e)

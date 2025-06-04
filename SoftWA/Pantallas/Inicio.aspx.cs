@@ -44,16 +44,9 @@ namespace SoftWA.Pantallas
 
         private void CargarProductos()
         {
-            try
-            {
-                List<SoftWA.Producto.productoDTO> productos = productoWSClient.listarTodosProducto().ToList();
-                rptProductos.DataSource = productos;
-                rptProductos.DataBind();
-            }
-            catch (Exception ex)
-            {
-                //errir en la carga de productos
-            }
+            List<SoftWA.Producto.productoDTO> productos = productoWSClient.listarTodosProducto().ToList();
+            rptProductos.DataSource = productos;
+            rptProductos.DataBind();
         }
     }
 }

@@ -4,9 +4,9 @@
     <div class="container py-5">
         <!-- información de la empresa -->
         <div class="card p-4 mb-5 shadow-sm">
-            <h2 class="fw-bold">Bienvenido a PAGINA</h2>
+            <h2 class="fw-bold">Bienvenido a CIAPASA</h2>
             <p class="text-muted mb-0">
-                En --- nos especializamos en ofrecer productos de cocina de alta calidad a nivel nacional. Nuestro objetivo es facilitarte la mejor experiencia en tu cocina con utensilios resistentes, prácticos y con estilo.
+                En CIAPASA nos especializamos en ofrecer productos de cocina de alta calidad a nivel nacional. Nuestro objetivo es facilitarte la mejor experiencia en tu cocina con utensilios resistentes, prácticos y con estilo.
            
             </p>
         </div>

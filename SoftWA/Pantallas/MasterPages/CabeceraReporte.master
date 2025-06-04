@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CabeceraReporte.master.cs" Inherits="SoftWA.Pantallas.MasterPages.CabeceraReporte" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+ 
+
+    <meta charset="utf-8" />
+    <title>
+        <asp:ContentPlaceHolder ID="cphTitulo" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+
+
+    <script src="Scripts/jquery-3.7.1.js"></script>
+    <script src="Scripts/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid flex-column min-vh-100">
+            <header class="bg-primary text-white p-3 d-flex justify-content-between align-items-center w-100">
+                <h1>Nombre del Sistema</h1>
+
+                <div class="d-flex align-items-center gap-3">
+                    <!-- Icono de lupa -->
+                    <i class="fas fa-search fa-lg cursor-pointer"></i>
+
+                    <!-- Icono de campana -->
+                    <i class="fas fa-bell fa-lg cursor-pointer"></i>
+
+                    <!-- Recuadro del usuario -->
+                    <div class="bg-white text-dark rounded px-3 py-2 d-flex flex-column align-items-start" style="min-width: 180px;">
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fas fa-user-circle fa-lg"></i>
+                            <strong>Administrador</strong>
+                        </div>
+                        <small class="text-muted">Perfil de administrador</small>
+                    </div>
+                    <!-- Icono de configuración -->
+                    <i class="fas fa-cog fa-lg cursor-pointer"></i>
+                </div>
+            </header>
+            <div class="d-flex flex-grow-1">
+                <nav class="bg-dark text-white p-3" style="width: 250px;">
+                    <h5 class="text-white">Opciones</h5>
+                    <ul class="nav flex-column">
+                        <!-- Productos -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" data-bs-toggle="collapse" href="#productosSubmenu" role="button">
+                                <i class="fas fa-box"></i>Productos
+                            </a>
+                            <div class="collapse ms-3" id="productosSubmenu">
+                                <a class="nav-link text-white" href="WebForm1.aspx">Lista de productos</a>
+                                <a class="nav-link text-white" href="#">Página de productos</a>
+                            </div>
+                        </li>
+
+                        <!-- Pedidos -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="WebForm5.aspx">
+                                <i class="fas fa-shopping-cart"></i>Pedidos
+                            </a>
+                        </li>
+
+                        <!-- Usuarios -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" data-bs-toggle="collapse" href="#usuariosSubmenu" role="button">
+                                <i class="fas fa-users"></i>Usuarios
+                            </a>
+                            <div class="collapse ms-3" id="usuariosSubmenu">
+                                <a class="nav-link text-white" href="WebForm2.aspx">Clientes</a>
+                                <a class="nav-link text-white" href="WebForm4.aspx">Administradores</a>
+                            </div>
+                        </li>
+
+                        <!-- Reportes -->
+                        <li class="nav-item">
+                            <a class="nav-link text-white" data-bs-toggle="collapse" href="#reportesSubmenu" role="button">
+                                <i class="fa-solid fa-file-excel"></i>Reportes
+                            </a>
+                            <div class="collapse ms-3" id="reportesSubmenu">
+                                <a class="nav-link text-white" href="ReporteProductos.aspx">Productos</a>
+                                <a class="nav-link text-white" href="ReporteClientes.aspx">Clientes</a>
+                                <a class="nav-link text-white" href="ReporteIngresos.aspx">Ingresos</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <main class="flex-fill bg-light">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </main>
+            </div>
+
+            <footer class="bg-secondary text-white text-center p-2">
+                PUCP - Programación 3 - 2025
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
