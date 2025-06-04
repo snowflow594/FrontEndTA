@@ -79,7 +79,7 @@ namespace SoftWA.Pantallas
                 cantidad = 1,
                 subtotal = productoCompleto.precio,
                 activo = 1,
-                fechaCreacion = DateTime.Now.ToLocalTime(),
+                fechaCreacion = new SoftWA.ItemCarrito.localDateTime(),
                 usuarioCreacion = usuario
             };
 

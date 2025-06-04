@@ -235,6 +235,8 @@
     <Content Include="Pantallas\Carrito.aspx" />
     <Content Include="Pantallas\DatosDePago.aspx" />
     <Content Include="Pantallas\DireccionEnvio.aspx" />
+    <Content Include="Pantallas\DireccionesGuardadas.aspx" />
+    <Content Include="Pantallas\EspecificacionesProducto.aspx" />
     <Content Include="Pantallas\Inicio.aspx" />
     <Content Include="Pantallas\ResumenPedido.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -380,6 +382,20 @@
     </Compile>
     <Compile Include="Pantallas\DireccionEnvio.aspx.designer.cs">
       <DependentUpon>DireccionEnvio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\DireccionesGuardadas.aspx.cs">
+      <DependentUpon>DireccionesGuardadas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\DireccionesGuardadas.aspx.designer.cs">
+      <DependentUpon>DireccionesGuardadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\EspecificacionesProducto.aspx.cs">
+      <DependentUpon>EspecificacionesProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\EspecificacionesProducto.aspx.designer.cs">
+      <DependentUpon>EspecificacionesProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Inicio.aspx.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
