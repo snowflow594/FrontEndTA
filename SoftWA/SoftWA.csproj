@@ -163,6 +163,37 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Connected Services\Rol\Rol.wsdl" />
+    <None Include="Connected Services\Rol\Rol.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\Rol\SoftWA.Rol.insertarRolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Rol\SoftWA.Rol.listarTodosRolesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Rol\SoftWA.Rol.modificarRolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Rol\SoftWA.Rol.obtenerPorIdRolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Rol\SoftWA.Rol.rolDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\Usuario\configuration91.svcinfo" />
+    <None Include="Connected Services\Usuario\configuration.svcinfo" />
+    <None Include="Connected Services\Usuario\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\Rol\configuration91.svcinfo" />
+    <None Include="Connected Services\Rol\configuration.svcinfo" />
+    <None Include="Connected Services\Rol\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -204,6 +235,7 @@
     <Content Include="Pantallas\Carrito.aspx" />
     <Content Include="Pantallas\DatosDePago.aspx" />
     <Content Include="Pantallas\DireccionEnvio.aspx" />
+    <Content Include="Pantallas\Inicio.aspx" />
     <Content Include="Pantallas\ResumenPedido.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -264,6 +296,37 @@
     <Content Include="Connected Services\Producto\SoftWA.Producto.productoDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.autenticarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.buscarPorEmailUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.eliminarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.insertarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.listarPorRolUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.listarTodosUsuariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.modificarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.obtenerPorIdUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\Usuario\SoftWA.Usuario.usuarioDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\Usuario\Usuario.wsdl" />
+    <None Include="Connected Services\Usuario\Usuario.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -283,6 +346,16 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\Producto\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\Rol\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\Usuario\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -307,6 +380,13 @@
     </Compile>
     <Compile Include="Pantallas\DireccionEnvio.aspx.designer.cs">
       <DependentUpon>DireccionEnvio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\MasterPages\Cabecera.master.cs">
       <DependentUpon>Cabecera.master</DependentUpon>
@@ -364,6 +444,11 @@
     <WCFMetadataStorage Include="Connected Services\Carrito\" />
     <WCFMetadataStorage Include="Connected Services\ItemCarrito\" />
     <WCFMetadataStorage Include="Connected Services\Producto\" />
+    <WCFMetadataStorage Include="Connected Services\Rol\" />
+    <WCFMetadataStorage Include="Connected Services\Usuario\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pantallas\Pruebas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

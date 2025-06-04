@@ -12,81 +12,64 @@ namespace SoftWA.Pantallas
 {
     public partial class Carrito : System.Web.UI.Page
     {
-        private ItemCarritoClient itemCarritoWSClient;
-        private CarritoClient carritoWSClient;
-        
-        protected void Page_Init(object sender, EventArgs e)
-        {
-            itemCarritoWSClient = new ItemCarritoClient();
-            carritoWSClient = new CarritoClient();
-                    
-        }
+        private ItemCarritoClient itemCarritoWS = new ItemCarritoClient();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 CargarCarrito();
             }
         }
-
-        protected void CargarCarrito()
+        protected void rptCarrito_ItemCommand(object source, System.Web.UI.WebControls.RepeaterCommandEventArgs e)
         {
-            int? idCarrito = Session["idCarrito"] as int?;
-            if(idCarrito == null)
+            int idItemCarrito = Convert.ToInt32(e.CommandArgument);
+            var item = itemCarritoWS.listarTodosItemCarrito().FirstOrDefault(i => i.idItemCarrito == idItemCarrito);
+
+            if (item != null)
             {
-                
-            }
-            List<SoftWA.ItemCarrito.itemCarritoDTO> itemsCarrito = itemCarritoWSClient.listarTodosItemCarrito().ToList();
-
-            Session["ItemsCarrito"] = itemsCarrito;
-            rptCarrito.DataSource = itemsCarrito;
-            rptCarrito.DataBind();
-
-            CalcularTotal(itemsCarrito);
-            
-        }
-
-        private void CalcularTotal(List<SoftWA.ItemCarrito.itemCarritoDTO> itemsCarrito)
-        {
-            double subtotal=0;
-            foreach (var item in itemsCarrito)
-            {
-                subtotal += item.subtotal * item.cantidad;
-            }
-            double impuestos = 15;
-            double total = subtotal + impuestos;
-
-            lblSubtotal.Text = "S/ " + subtotal.ToString("F2");
-            lblImpuestos.Text = "S/ " + impuestos.ToString("F2");
-            lblTotal.Text = "S/ " + total.ToString("F2");
-        }
-
-        protected void rptCarrito_ItemCommand(object source, RepeaterCommandEventArgs e)
-        {
-            int idItemCarrito = int.Parse(e.CommandArgument.ToString());
-            var item = itemCarritoWSClient.listarTodosItemCarrito().FirstOrDefault(i => i.idItemCarrito == idItemCarrito);
-
-            if (item == null) return;
-
-            if (e.CommandName == "Aumentar")
-            {
-                item.cantidad += 1;
-                itemCarritoWSClient.modificarItemCarrito(item);
-            }
-            else if (e.CommandName == "Disminuir")
-            {
-                if (item.cantidad > 1)
+                if (e.CommandName == "Aumentar")
                 {
-                    item.cantidad -= 1;
-                    itemCarritoWSClient.modificarItemCarrito(item);
+                    item.cantidad++;
                 }
-                else //por si llega a 0 se elimina
+                else if (e.CommandName == "Disminuir" && item.cantidad > 1)
                 {
-                    itemCarritoWSClient.eliminarItemCarrito(item);
+                    item.cantidad--;
                 }
+
+                // Recalcular subtotal
+                item.subtotal = item.producto.precio * item.cantidad;
+
+                // Actualizar item en el backend
+                itemCarritoWS.modificarItemCarrito(item);
             }
 
             CargarCarrito();
+        }
+
+        private void CargarCarrito()
+        {
+            int? idCarrito = Session["idCarrito"] as int?;
+            if (idCarrito == null)
+            {
+                Response.Redirect("Inicio.aspx");
+                return;
+            }
+
+            // btener todos los ítems del carrito y filtrarlos por ID del carrito actual
+            var items = itemCarritoWS.listarTodosItemCarrito()?.ToList() ?? new List<SoftWA.ItemCarrito.itemCarritoDTO>();
+
+            rptCarrito.DataSource = items;
+            rptCarrito.DataBind();
+
+            // calcular montos
+            double subtotal = items.Sum(i => i.subtotal);
+            double impuesto = subtotal * 0.12; //eso es sel procentaje de impuetos
+            double total = subtotal + impuesto;
+
+            lblSubtotal.Text = $"S/ {subtotal:N2}";
+            lblImpuesto.Text = $"S/ {impuesto:N2}";
+            lblTotal.Text = $"S/ {total:N2}";
         }
     }
 }
