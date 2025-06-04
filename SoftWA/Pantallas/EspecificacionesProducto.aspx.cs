@@ -39,6 +39,7 @@ namespace SoftWA.Pantallas
                         lblNombre.Text = producto.nombre;
                         lblDescripcion.Text = producto.descripcion;
                         lblStock.Text = producto.stock.ToString();
+                        lblPrecio.Text = producto.precio.ToString();
                     }
                 }
             }
@@ -67,23 +68,16 @@ namespace SoftWA.Pantallas
                 idCarrito = idCarrito.Value
             };
 
-            var usuario = new SoftWA.ItemCarrito.usuarioDTO
-            {
-                id = 1
-            };
-
             var nuevoItem = new ItemCarrito.itemCarritoDTO
             {
                 carrito = carrito,
                 producto = producto,
                 cantidad = 1,
                 subtotal = productoCompleto.precio,
-                activo = 1,
-                fechaCreacion = new SoftWA.ItemCarrito.localDateTime(),
-                usuarioCreacion = usuario
+                usuarioCreacion = new SoftWA.ItemCarrito.usuarioDTO { id = 4 },
             };
 
-            itemCarritoWSClient.insertarItemCarrito(nuevoItem);
+            int i = itemCarritoWSClient.insertarItemCarrito(nuevoItem);
             Response.Redirect("Carrito.aspx");
         }
     }

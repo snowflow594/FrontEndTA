@@ -30,10 +30,10 @@
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" href="#">NombrePagina</a>
                 <div class="d-flex align-items-center ms-auto">
-                    <a class="nav-link me-3" href="Home.aspx">Inicio</a>
+                    <a class="nav-link me-3" href="Inicio.aspx">Inicio</a>
                     <a class="nav-link me-3" href="Productos.aspx">Productos</a>
                     <a class="nav-link me-3" href="#"><i class="fas fa-search"></i></a>
-                    <a class="nav-link me-3" href="../Carrito.aspx">
+                    <a class="nav-link me-3" href="Carrito.aspx">
                         <i class="fas fa-shopping-cart"></i>
                         <span>Carrito</span>
                     </a>

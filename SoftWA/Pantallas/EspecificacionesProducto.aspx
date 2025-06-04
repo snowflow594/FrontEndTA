@@ -10,6 +10,7 @@
                 <p class="text-muted"><asp:Label ID="lblDescripcion" runat="server" Text="Descripción"></asp:Label></p>
                 <p><strong>ID:</strong> <asp:Label ID="lblId" runat="server"></asp:Label></p>
                 <p><strong>Stock:</strong> <asp:Label ID="lblStock" runat="server"></asp:Label></p>
+                <p><strong>Precio:</strong> <asp:Label ID="lblPrecio" runat="server"></asp:Label></p>
                 <asp:Button ID="btnAgregarCarrito" runat="server" Text="Agregar al carrito" CssClass="btn btn-success mt-3" OnClick="btnAgregarCarrito_Click" />
             </div>
         </div>
