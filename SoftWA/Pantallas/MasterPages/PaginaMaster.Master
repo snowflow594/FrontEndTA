@@ -1,0 +1,200 @@
+﻿<%@  Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaster.Master.cs" Inherits="SoftWA.Pantallas.MasterPages.PaginaMaster" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server" />
+    </title>
+
+    <!-- Bootstrap + Font-Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <style>
+        :root {
+            --brand-green: #2EB086;
+            --brand-dark: #2A2A2A;
+            --brand-light: #F5F5F5;
+        }
+
+        body {
+            background: var(--brand-light);
+            color: var(--brand-dark);
+        }
+
+        .topbar {
+            background: var(--brand-dark);
+            color: white;
+            font-size: .875rem;
+        }
+
+            .topbar a {
+                color: #ccc;
+                text-decoration: none;
+                margin-right: 1rem;
+            }
+
+        .navbar {
+            background: white;
+        }
+
+            .navbar .navbar-brand {
+                color: var(--brand-green);
+                font-weight: bold;
+            }
+
+            .navbar .nav-link {
+                color: var(--brand-dark) !important;
+            }
+
+                .navbar .nav-link:hover {
+                    color: var(--brand-green) !important;
+                }
+
+        .promo-bar {
+            background: var(--brand-green);
+            color: white;
+            text-align: center;
+            padding: .5rem 0;
+            font-weight: bold;
+        }
+
+            .promo-bar a {
+                color: white;
+                text-decoration: underline;
+            }
+
+        .btn-cta {
+            background: var(--brand-green);
+            color: #fff;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="HeadExtras" runat="server" />
+</head>
+
+<body>
+    <form runat="server">
+        <!-- Topbar: ubicación, horario, contacto -->
+        <div class="topbar py-1">
+            <div class="container d-flex justify-content-between">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>Entrega a Lima  
+          &nbsp;&nbsp;|&nbsp;&nbsp; 
+          <i class="far fa-clock"></i>L-V 9:00-18:00
+                </div>
+                <div>
+                    <a href="Login.aspx"><i class="fas fa-user"></i>Inicia Sesión</a>
+                    <a href="Registro.aspx"><i class="fas fa-user-plus"></i>Regístrate</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar principal -->
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="Inicio.aspx"> <!--aqúí iría el logo de la empresa-->
+                    <img src="#" alt="Logo CIAPASA" style="height: 30px;" />
+                    <span>CocinaPro</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="Inicio.aspx">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Productos.aspx">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Categorias.aspx">Categorías</a></li>
+                    </ul>
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar productos..." />
+                        <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="Carrito.aspx">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    <asp:Label ID="lblCantidadItemsCarrito" runat="server" Text="0" />
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Perfil.aspx"><i class="fas fa-user-circle fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Promo-bar -->
+        <div class="promo-bar">
+            ¡Envío exprés en 180 min para Lima Metropolitana! &nbsp; 
+      <a href="Productos.aspx">Ver Ofertas</a>
+        </div>
+
+        <!-- Contenido de cada página -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+
+        <!-- ======= Footer ======= -->
+        <footer class="bg-dark text-light pt-5 pb-4">
+            <div class="container text-md-left">
+                <div class="row">
+
+                    <!-- Columna “Sobre Nosotros” -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-3">CocinaPro</h6>
+                        <p>
+                            Somos líderes en utensilios de cocina de alta calidad. 
+               Inspírate y equípate con lo mejor para tu hogar.
+                        </p>
+                    </div>
+
+                    <!-- Columna “Enlaces” -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-3">Enlaces</h6>
+                        <p><a href="Inicio.aspx" class="text-light text-decoration-none">Inicio</a></p>
+                        <p><a href="Productos.aspx" class="text-light text-decoration-none">Productos</a></p>
+                        <p><a href="Categorias.aspx" class="text-light text-decoration-none">Categorías</a></p>
+                        <p><a href="Contacto.aspx" class="text-light text-decoration-none">Contacto</a></p>
+                    </div>
+
+                    <!-- Columna “Soporte” -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-3">Soporte</h6>
+                        <p><a href="PreguntasFrecuentes.aspx" class="text-light text-decoration-none">FAQ</a></p>
+                        <p><a href="Envios.aspx" class="text-light text-decoration-none">Envíos</a></p>
+                        <p><a href="Devoluciones.aspx" class="text-light text-decoration-none">Devoluciones</a></p>
+                        <p><a href="Términos.aspx" class="text-light text-decoration-none">Términos</a></p>
+                    </div>
+
+                    <!-- Columna “Síguenos” -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-3">Síguenos</h6>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm"><i class="fab fa-twitter"></i></a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text-center p-3" style="background: rgba(0, 0, 0, 0.2);">
+                © <%= DateTime.Now.Year %> CocinaPro. Todos los derechos reservados.
+            </div>
+        </footer>
+
+
+        <!-- Scripts al final -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Ejemplo: animación suave al hacer scroll a anclas internas
+            $('a.nav-link[href^="#"]').click(function (e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 600);
+            });
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://pedido.services.softprog.pucp.edu.pe/" targetNamespace="http://pedido.services.softprog.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarItemCarrito" type="tns:eliminarItemCarrito" />
+  <xs:element name="eliminarItemCarritoResponse" type="tns:eliminarItemCarritoResponse" />
+  <xs:element name="insertarItemCarrito" type="tns:insertarItemCarrito" />
+  <xs:element name="insertarItemCarritoResponse" type="tns:insertarItemCarritoResponse" />
+  <xs:element name="listarItemCarritoCantidadMinima" type="tns:listarItemCarritoCantidadMinima" />
+  <xs:element name="listarItemCarritoCantidadMinimaResponse" type="tns:listarItemCarritoCantidadMinimaResponse" />
+  <xs:element name="listarItemCarritoFechaCreacion" type="tns:listarItemCarritoFechaCreacion" />
+  <xs:element name="listarItemCarritoFechaCreacionResponse" type="tns:listarItemCarritoFechaCreacionResponse" />
+  <xs:element name="listarItemCarritoInactivo" type="tns:listarItemCarritoInactivo" />
+  <xs:element name="listarItemCarritoInactivoResponse" type="tns:listarItemCarritoInactivoResponse" />
+  <xs:element name="listarItemCarritoPorCarritoYProducto" type="tns:listarItemCarritoPorCarritoYProducto" />
+  <xs:element name="listarItemCarritoPorCarritoYProductoResponse" type="tns:listarItemCarritoPorCarritoYProductoResponse" />
+  <xs:element name="listarItemCarritoPorProducto" type="tns:listarItemCarritoPorProducto" />
+  <xs:element name="listarItemCarritoPorProductoResponse" type="tns:listarItemCarritoPorProductoResponse" />
+  <xs:element name="listarItemCarritoRangoCantidad" type="tns:listarItemCarritoRangoCantidad" />
+  <xs:element name="listarItemCarritoRangoCantidadResponse" type="tns:listarItemCarritoRangoCantidadResponse" />
+  <xs:element name="listarItemCarritoRangoSubTotal" type="tns:listarItemCarritoRangoSubTotal" />
+  <xs:element name="listarItemCarritoRangoSubTotalResponse" type="tns:listarItemCarritoRangoSubTotalResponse" />
+  <xs:element name="listarTodosItemCarrito" type="tns:listarTodosItemCarrito" />
+  <xs:element name="listarTodosItemCarritoResponse" type="tns:listarTodosItemCarritoResponse" />
+  <xs:element name="modificarItemCarrito" type="tns:modificarItemCarrito" />
+  <xs:element name="modificarItemCarritoResponse" type="tns:modificarItemCarritoResponse" />
+  <xs:element name="obtenerPorIdItemCarrito" type="tns:obtenerPorIdItemCarrito" />
+  <xs:element name="obtenerPorIdItemCarritoResponse" type="tns:obtenerPorIdItemCarritoResponse" />
+  <xs:complexType name="listarItemCarritoPorProducto">
+    <xs:sequence>
+      <xs:element name="productoId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoPorProductoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="itemCarritoDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="carrito" type="tns:carritoDTO" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="idItemCarrito" type="xs:int" />
+      <xs:element minOccurs="0" name="producto" type="tns:productoDTO" />
+      <xs:element name="subtotal" type="xs:double" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="carritoDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="idCarrito" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="items" nillable="true" type="tns:itemCarritoDTO" />
+      <xs:element minOccurs="0" name="persona" type="tns:personaDTO" />
+      <xs:element name="total" type="xs:double" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localDateTime" final="extension restriction">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="personaDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="direcciones" nillable="true" type="tns:direccionDTO" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="direccionDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="alias" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="personaId" type="tns:personaDTO" />
+      <xs:element minOccurs="0" name="referencia" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="contraseña" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="rol" type="tns:rolDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rolDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productoDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="categoria" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="idProducto" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="precio" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="preciosPorPresentaciones" nillable="true" type="tns:precioPresentacionDTO" />
+      <xs:element name="stock" type="xs:int" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="precioPresentacionDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="idPrecioPresentacion" type="xs:int" />
+      <xs:element name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="producto" type="tns:productoDTO" />
+      <xs:element minOccurs="0" name="tipoMedida" type="tns:tipoMedida" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoRangoCantidad">
+    <xs:sequence>
+      <xs:element name="min" type="xs:int" />
+      <xs:element name="max" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoRangoCantidadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoFechaCreacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoFechaCreacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoRangoSubTotal">
+    <xs:sequence>
+      <xs:element name="min" type="xs:double" />
+      <xs:element name="max" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoRangoSubTotalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoInactivo">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoInactivoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosItemCarrito">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosItemCarritoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarItemCarrito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itemCarrito" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarItemCarritoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarItemCarrito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itemCarrito" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarItemCarritoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoPorCarritoYProducto">
+    <xs:sequence>
+      <xs:element name="carritoId" type="xs:int" />
+      <xs:element name="productoId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoPorCarritoYProductoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarItemCarrito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itemCarrito" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarItemCarritoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoCantidadMinima">
+    <xs:sequence>
+      <xs:element name="minimo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarItemCarritoCantidadMinimaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdItemCarrito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idItemCarrito" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdItemCarritoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoMedida">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DECENA" />
+      <xs:enumeration value="DOCENA" />
+      <xs:enumeration value="CENTENA" />
+      <xs:enumeration value="MILLAR" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

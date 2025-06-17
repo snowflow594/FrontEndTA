@@ -123,102 +123,629 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Carrito\Carrito.wsdl" />
-    <None Include="Connected Services\Carrito\Carrito.xsd">
+    <None Include="Connected Services\ServiciosWSClient\Administrador.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Administrador.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Connected Services\Carrito\SoftWA.Carrito.carritoDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Carrito\SoftWA.Carrito.eliminarCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Carrito\SoftWA.Carrito.insertarCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Carrito\SoftWA.Carrito.listarTodosCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Carrito\SoftWA.Carrito.modificarCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Carrito\SoftWA.Carrito.obtenerPorIdCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\Direccion\Direccion.wsdl" />
-    <None Include="Connected Services\Direccion\Direccion.xsd">
+    <None Include="Connected Services\ServiciosWSClient\Carrito.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Carrito.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Connected Services\Direccion\SoftWA.Direccion.direccionDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Direccion\SoftWA.Direccion.eliminarDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Direccion\SoftWA.Direccion.insertarDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Direccion\SoftWA.Direccion.listarTodosDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Direccion\SoftWA.Direccion.modificarDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Direccion\SoftWA.Direccion.obtenerPorIdDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\ItemCarrito\configuration91.svcinfo" />
-    <None Include="Connected Services\ItemCarrito\configuration.svcinfo" />
-    <None Include="Connected Services\ItemCarrito\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\Carrito\configuration91.svcinfo" />
-    <None Include="Connected Services\Carrito\configuration.svcinfo" />
-    <None Include="Connected Services\Carrito\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\Producto\configuration91.svcinfo" />
-    <None Include="Connected Services\Producto\configuration.svcinfo" />
-    <None Include="Connected Services\Producto\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\Rol\Rol.wsdl" />
-    <None Include="Connected Services\Rol\Rol.xsd">
+    <None Include="Connected Services\ServiciosWSClient\Comprobante.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Comprobante.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Direccion\configuration91.svcinfo" />
-    <None Include="Connected Services\Direccion\configuration.svcinfo" />
-    <None Include="Connected Services\Direccion\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
+    <None Include="Connected Services\ServiciosWSClient\Direccion.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Direccion.xsd">
+      <SubType>Designer</SubType>
     </None>
-    <Content Include="Connected Services\Rol\SoftWA.Rol.insertarRolResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Rol\SoftWA.Rol.listarTodosRolesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Rol\SoftWA.Rol.modificarRolResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Rol\SoftWA.Rol.obtenerPorIdRolResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Rol\SoftWA.Rol.rolDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\Usuario\configuration91.svcinfo" />
-    <None Include="Connected Services\Usuario\configuration.svcinfo" />
-    <None Include="Connected Services\Usuario\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
+    <None Include="Connected Services\ServiciosWSClient\Envio.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Envio.xsd">
+      <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\Rol\configuration91.svcinfo" />
-    <None Include="Connected Services\Rol\configuration.svcinfo" />
-    <None Include="Connected Services\Rol\Reference.svcmap">
+    <None Include="Connected Services\ServiciosWSClient\ItemCarrito.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\ItemCarrito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\Juridica.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Juridica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\Natural.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Natural.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\Pago.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Pago.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\Pedido.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Pedido.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\PedidoItem.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\PedidoItem.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\Persona.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Persona.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\PrecioPresentacion.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\PrecioPresentacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\Productos.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Productos.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\Rol.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Rol.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.actualizarStockProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.administradorDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.autenticarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.buscarPorEmailUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.buscarPrecioPresentacionPorTipoYCantidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.carritoDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.comprobanteDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.direccionDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarAdministradorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarComprobanteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarEnvioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarItemCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarJuridicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarNaturalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarPagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarPedidoItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarRolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.eliminarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.envioDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarAdministradorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarComprobanteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarEnvioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarItemCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarJuridicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarNaturalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarPagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarPedidoItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarRolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.insertarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.itemCarritoDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.juridicaDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarCarritoInactivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarCarritoPorPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarCarritoPorRangoTotalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarComprobantePedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarComprobantePorTipoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioEstadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioInactivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioPendientesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarEnvioUsuarioCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarItemCarritoPorProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPagoInactivoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPagoPorEstadoYFechaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPagoPorMontoMinimoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPagoPorRangoMontoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPagoRangoFechaPagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoInactivoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoYProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoItemPorRangoCantidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoItemPorRangoPrecioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoPorEstadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoPorFechaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoPorPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPersonasActivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPersonasInactivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPorFechasPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPorGeneroNaturalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPrecioPresentacionPorRangoCantidadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPrecioPresentacionPorRangoPrecioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPrecioPresentacionPorTipoMedidaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosInactivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPaginadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorCategoriaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorNombreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorRangoPrecioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosPorUsuarioCreacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarProductosSinStockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosAdministradorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosComprobanteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosEnvioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosJuridicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosNaturalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosPagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosPedidoItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosRolesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarTodosUsuariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarAdministradorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarComprobanteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarEnvioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarItemCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarJuridicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarNaturalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarPagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarPedidoItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarRolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.modificarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.naturalDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorDniNaturalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdAdministradorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdComprobanteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdJuridicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdPagoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdPedidoItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdProductoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdRolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorIdUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorRucJuridicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.obtenerPorTelefonoPersonaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.pagoDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.pedidoDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.pedidoItemDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.personaDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.precioPresentacionDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.productoDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.rolDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.usuarioDTO1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiciosWSClient\SoftWA.ServiciosWSClient.vaciarCarritoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Connected Services\ServiciosWSClient\Usuario.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Usuario.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\servicios.disco" />
+    <None Include="Connected Services\ServiciosWSClient\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiciosWSClient\configuration.svcinfo" />
+    <None Include="Connected Services\ServiciosWSClient\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -239,8 +766,6 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Estilos\carritostyle.css" />
-    <Content Include="Content\Estilos\Site.css" />
-    <Content Include="Content\Estilos\SiteReportes.css" />
     <Content Include="Content\fontawesome\all.css" />
     <Content Include="Content\fontawesome\all.min.css" />
     <Content Include="Content\fontawesome\brands.css" />
@@ -268,10 +793,6 @@
     <Content Include="Pantallas\DireccionesGuardadas.aspx" />
     <Content Include="Pantallas\EspecificacionesProducto.aspx" />
     <Content Include="Pantallas\Inicio.aspx" />
-    <Content Include="Pantallas\ReporteClientes.aspx" />
-    <Content Include="Pantallas\ReporteIngresos.aspx" />
-    <Content Include="Pantallas\ReporteProductos.aspx" />
-    <Content Include="Pantallas\ResumenPedido.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -286,83 +807,7 @@
     <Content Include="Content\fontawesome\fa-solid-900.woff2" />
     <Content Include="Content\fontawesome\fa-v4compatibility.ttf" />
     <Content Include="Content\fontawesome\fa-v4compatibility.woff2" />
-    <Content Include="Pantallas\MasterPages\Cabecera.master" />
-    <None Include="Connected Services\ItemCarrito\ItemCarrito.wsdl" />
-    <None Include="Connected Services\ItemCarrito\ItemCarrito.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Connected Services\ItemCarrito\SoftWA.ItemCarrito.eliminarItemCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\ItemCarrito\SoftWA.ItemCarrito.insertarItemCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\ItemCarrito\SoftWA.ItemCarrito.itemCarritoDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\ItemCarrito\SoftWA.ItemCarrito.listarTodosItemCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\ItemCarrito\SoftWA.ItemCarrito.modificarItemCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\ItemCarrito\SoftWA.ItemCarrito.obtenerPorIdItemCarritoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\Producto\Productos.wsdl" />
-    <None Include="Connected Services\Producto\Productos.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Connected Services\Producto\SoftWA.Producto.eliminarProductoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Producto\SoftWA.Producto.insertarProductoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Producto\SoftWA.Producto.listarTodosProductoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Producto\SoftWA.Producto.modificarProductoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Producto\SoftWA.Producto.obtenerPorIdProductoResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Producto\SoftWA.Producto.productoDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.autenticarUsuarioResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.buscarPorEmailUsuarioResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.eliminarUsuarioResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.insertarUsuarioResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.listarPorRolUsuarioResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.listarTodosUsuariosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.modificarUsuarioResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.obtenerPorIdUsuarioResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\Usuario\SoftWA.Usuario.usuarioDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\Usuario\Usuario.wsdl" />
-    <None Include="Connected Services\Usuario\Usuario.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Pantallas\MasterPages\CabeceraReporte.master" />
+    <Content Include="Pantallas\MasterPages\PaginaMaster.Master" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -371,32 +816,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\Carrito\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\Direccion\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\ItemCarrito\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\Producto\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\Rol\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\Usuario\Reference.cs">
+    <Compile Include="Connected Services\ServiciosWSClient\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -443,47 +863,12 @@
     <Compile Include="Pantallas\Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas\MasterPages\Cabecera.master.cs">
-      <DependentUpon>Cabecera.master</DependentUpon>
+    <Compile Include="Pantallas\MasterPages\PaginaMaster.Master.cs">
+      <DependentUpon>PaginaMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pantallas\MasterPages\Cabecera.master.designer.cs">
-      <DependentUpon>Cabecera.master</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\MasterPages\CabeceraReporte.master.cs">
-      <DependentUpon>CabeceraReporte.master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pantallas\MasterPages\CabeceraReporte.master.designer.cs">
-      <DependentUpon>CabeceraReporte.master</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\ReporteClientes.aspx.cs">
-      <DependentUpon>ReporteClientes.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pantallas\ReporteClientes.aspx.designer.cs">
-      <DependentUpon>ReporteClientes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\ReporteIngresos.aspx.cs">
-      <DependentUpon>ReporteIngresos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pantallas\ReporteIngresos.aspx.designer.cs">
-      <DependentUpon>ReporteIngresos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\ReporteProductos.aspx.cs">
-      <DependentUpon>ReporteProductos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pantallas\ReporteProductos.aspx.designer.cs">
-      <DependentUpon>ReporteProductos.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pantallas\ResumenPedido.aspx.cs">
-      <DependentUpon>ResumenPedido.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pantallas\ResumenPedido.aspx.designer.cs">
-      <DependentUpon>ResumenPedido.aspx</DependentUpon>
+    <Compile Include="Pantallas\MasterPages\PaginaMaster.Master.designer.cs">
+      <DependentUpon>PaginaMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -524,16 +909,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\Carrito\" />
-    <WCFMetadataStorage Include="Connected Services\Direccion\" />
-    <WCFMetadataStorage Include="Connected Services\ItemCarrito\" />
-    <WCFMetadataStorage Include="Connected Services\Producto\" />
-    <WCFMetadataStorage Include="Connected Services\Rol\" />
-    <WCFMetadataStorage Include="Connected Services\Usuario\" />
+    <WCFMetadataStorage Include="Connected Services\ServiciosWSClient\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pantallas\Pruebas\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

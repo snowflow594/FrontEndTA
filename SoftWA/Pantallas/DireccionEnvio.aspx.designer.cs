@@ -15,15 +15,6 @@ namespace SoftWA.Pantallas
     {
 
         /// <summary>
-        /// Control txtCorreo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCorreo;
-
-        /// <summary>
         /// Control txtAlias.
         /// </summary>
         /// <remarks>
@@ -69,13 +60,13 @@ namespace SoftWA.Pantallas
         protected global::System.Web.UI.WebControls.Button btnGuardarDireccion;
 
         /// <summary>
-        /// Control btnVerDirecciones.
+        /// Control lnkDireccionesGuardadas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVerDirecciones;
+        protected global::System.Web.UI.WebControls.HyperLink lnkDireccionesGuardadas;
 
         /// <summary>
         /// Control lblMensaje.
@@ -96,22 +87,13 @@ namespace SoftWA.Pantallas
         protected global::System.Web.UI.WebControls.Label lblSubtotal;
 
         /// <summary>
-        /// Control lblImpuesto.
+        /// Control lblIGV.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblImpuesto;
-
-        /// <summary>
-        /// Control lblEnvio.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEnvio;
+        protected global::System.Web.UI.WebControls.Label lblIGV;
 
         /// <summary>
         /// Control lblTotal.

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://usuario.services.softprog.pucp.edu.pe/" targetNamespace="http://usuario.services.softprog.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="listarPersonasActivos" type="tns:listarPersonasActivos" />
+  <xs:element name="listarPersonasActivosResponse" type="tns:listarPersonasActivosResponse" />
+  <xs:element name="listarPersonasInactivos" type="tns:listarPersonasInactivos" />
+  <xs:element name="listarPersonasInactivosResponse" type="tns:listarPersonasInactivosResponse" />
+  <xs:element name="listarPorApellidoPersona" type="tns:listarPorApellidoPersona" />
+  <xs:element name="listarPorApellidoPersonaResponse" type="tns:listarPorApellidoPersonaResponse" />
+  <xs:element name="listarPorFechasPersona" type="tns:listarPorFechasPersona" />
+  <xs:element name="listarPorFechasPersonaResponse" type="tns:listarPorFechasPersonaResponse" />
+  <xs:element name="listarPorNombreApellidoParcialPersona" type="tns:listarPorNombreApellidoParcialPersona" />
+  <xs:element name="listarPorNombreApellidoParcialPersonaResponse" type="tns:listarPorNombreApellidoParcialPersonaResponse" />
+  <xs:element name="listarPorNombreParcialPersona" type="tns:listarPorNombreParcialPersona" />
+  <xs:element name="listarPorNombreParcialPersonaResponse" type="tns:listarPorNombreParcialPersonaResponse" />
+  <xs:element name="listarPorUsuarioCreacionPersona" type="tns:listarPorUsuarioCreacionPersona" />
+  <xs:element name="listarPorUsuarioCreacionPersonaResponse" type="tns:listarPorUsuarioCreacionPersonaResponse" />
+  <xs:element name="listarTodosPersona" type="tns:listarTodosPersona" />
+  <xs:element name="listarTodosPersonaResponse" type="tns:listarTodosPersonaResponse" />
+  <xs:element name="listarUltimosActualizadosPersona" type="tns:listarUltimosActualizadosPersona" />
+  <xs:element name="listarUltimosActualizadosPersonaResponse" type="tns:listarUltimosActualizadosPersonaResponse" />
+  <xs:element name="modificarPersona" type="tns:modificarPersona" />
+  <xs:element name="modificarPersonaResponse" type="tns:modificarPersonaResponse" />
+  <xs:element name="obtenerPorIdPersona" type="tns:obtenerPorIdPersona" />
+  <xs:element name="obtenerPorIdPersonaResponse" type="tns:obtenerPorIdPersonaResponse" />
+  <xs:element name="obtenerPorTelefonoPersona" type="tns:obtenerPorTelefonoPersona" />
+  <xs:element name="obtenerPorTelefonoPersonaResponse" type="tns:obtenerPorTelefonoPersonaResponse" />
+  <xs:complexType name="listarPorNombreParcialPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombreParcial" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreParcialPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personaDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="direcciones" nillable="true" type="tns:direccionDTO" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="direccionDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="alias" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="personaId" type="tns:personaDTO" />
+      <xs:element minOccurs="0" name="referencia" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localDateTime" final="extension restriction">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="contraseña" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="rol" type="tns:rolDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rolDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorUsuarioCreacionPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuarioCreacionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorUsuarioCreacionPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreApellidoParcialPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombreParcial" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidoParcial" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorNombreApellidoParcialPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorTelefonoPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorTelefonoPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarUltimosActualizadosPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dias" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarUltimosActualizadosPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPersonasActivos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPersonasActivosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorApellidoPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellido" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorApellidoPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosPersona">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="persona" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorFechasPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorFechasPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPersonasInactivos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPersonasInactivosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

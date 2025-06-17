@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://usuario.services.softprog.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Juridica" targetNamespace="http://usuario.services.softprog.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Juridica?xsd=1" namespace="http://usuario.services.softprog.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerPorRucJuridica">
+    <part name="parameters" element="tns:obtenerPorRucJuridica" />
+  </message>
+  <message name="obtenerPorRucJuridicaResponse">
+    <part name="parameters" element="tns:obtenerPorRucJuridicaResponse" />
+  </message>
+  <message name="obtenerPorIdJuridica">
+    <part name="parameters" element="tns:obtenerPorIdJuridica" />
+  </message>
+  <message name="obtenerPorIdJuridicaResponse">
+    <part name="parameters" element="tns:obtenerPorIdJuridicaResponse" />
+  </message>
+  <message name="listarTodosJuridica">
+    <part name="parameters" element="tns:listarTodosJuridica" />
+  </message>
+  <message name="listarTodosJuridicaResponse">
+    <part name="parameters" element="tns:listarTodosJuridicaResponse" />
+  </message>
+  <message name="eliminarJuridica">
+    <part name="parameters" element="tns:eliminarJuridica" />
+  </message>
+  <message name="eliminarJuridicaResponse">
+    <part name="parameters" element="tns:eliminarJuridicaResponse" />
+  </message>
+  <message name="insertarJuridica">
+    <part name="parameters" element="tns:insertarJuridica" />
+  </message>
+  <message name="insertarJuridicaResponse">
+    <part name="parameters" element="tns:insertarJuridicaResponse" />
+  </message>
+  <message name="modificarJuridica">
+    <part name="parameters" element="tns:modificarJuridica" />
+  </message>
+  <message name="modificarJuridicaResponse">
+    <part name="parameters" element="tns:modificarJuridicaResponse" />
+  </message>
+  <portType name="Juridica">
+    <operation name="obtenerPorRucJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorRucJuridicaRequest" message="tns:obtenerPorRucJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorRucJuridicaResponse" message="tns:obtenerPorRucJuridicaResponse" />
+    </operation>
+    <operation name="obtenerPorIdJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorIdJuridicaRequest" message="tns:obtenerPorIdJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorIdJuridicaResponse" message="tns:obtenerPorIdJuridicaResponse" />
+    </operation>
+    <operation name="listarTodosJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaRequest" message="tns:listarTodosJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaResponse" message="tns:listarTodosJuridicaResponse" />
+    </operation>
+    <operation name="eliminarJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/eliminarJuridicaRequest" message="tns:eliminarJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/eliminarJuridicaResponse" message="tns:eliminarJuridicaResponse" />
+    </operation>
+    <operation name="insertarJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/insertarJuridicaRequest" message="tns:insertarJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/insertarJuridicaResponse" message="tns:insertarJuridicaResponse" />
+    </operation>
+    <operation name="modificarJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaRequest" message="tns:modificarJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaResponse" message="tns:modificarJuridicaResponse" />
+    </operation>
+  </portType>
+  <binding name="JuridicaPortBinding" type="tns:Juridica">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerPorRucJuridica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdJuridica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosJuridica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarJuridica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarJuridica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarJuridica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Juridica">
+    <port name="JuridicaPort" binding="tns:JuridicaPortBinding">
+      <soap:address location="http://localhost:8080/SoftProgWS/Juridica" />
+    </port>
+  </service>
+</definitions>

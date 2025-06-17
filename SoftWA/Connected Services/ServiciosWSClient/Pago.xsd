@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://pedido.services.softprog.pucp.edu.pe/" targetNamespace="http://pedido.services.softprog.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarPago" type="tns:eliminarPago" />
+  <xs:element name="eliminarPagoResponse" type="tns:eliminarPagoResponse" />
+  <xs:element name="insertarPago" type="tns:insertarPago" />
+  <xs:element name="insertarPagoResponse" type="tns:insertarPagoResponse" />
+  <xs:element name="listarPagoInactivo" type="tns:listarPagoInactivo" />
+  <xs:element name="listarPagoInactivoResponse" type="tns:listarPagoInactivoResponse" />
+  <xs:element name="listarPagoPorEstadoYFecha" type="tns:listarPagoPorEstadoYFecha" />
+  <xs:element name="listarPagoPorEstadoYFechaResponse" type="tns:listarPagoPorEstadoYFechaResponse" />
+  <xs:element name="listarPagoPorMontoMinimo" type="tns:listarPagoPorMontoMinimo" />
+  <xs:element name="listarPagoPorMontoMinimoResponse" type="tns:listarPagoPorMontoMinimoResponse" />
+  <xs:element name="listarPagoPorPedido" type="tns:listarPagoPorPedido" />
+  <xs:element name="listarPagoPorPedidoResponse" type="tns:listarPagoPorPedidoResponse" />
+  <xs:element name="listarPagoPorPedidosTodos" type="tns:listarPagoPorPedidosTodos" />
+  <xs:element name="listarPagoPorPedidosTodosResponse" type="tns:listarPagoPorPedidosTodosResponse" />
+  <xs:element name="listarPagoPorRangoMonto" type="tns:listarPagoPorRangoMonto" />
+  <xs:element name="listarPagoPorRangoMontoResponse" type="tns:listarPagoPorRangoMontoResponse" />
+  <xs:element name="listarPagoPorUsuarioCreacion" type="tns:listarPagoPorUsuarioCreacion" />
+  <xs:element name="listarPagoPorUsuarioCreacionResponse" type="tns:listarPagoPorUsuarioCreacionResponse" />
+  <xs:element name="listarPagoRangoFechaPago" type="tns:listarPagoRangoFechaPago" />
+  <xs:element name="listarPagoRangoFechaPagoResponse" type="tns:listarPagoRangoFechaPagoResponse" />
+  <xs:element name="listarTodosPago" type="tns:listarTodosPago" />
+  <xs:element name="listarTodosPagoResponse" type="tns:listarTodosPagoResponse" />
+  <xs:element name="modificarPago" type="tns:modificarPago" />
+  <xs:element name="modificarPagoResponse" type="tns:modificarPagoResponse" />
+  <xs:element name="obtenerPorIdPago" type="tns:obtenerPorIdPago" />
+  <xs:element name="obtenerPorIdPagoResponse" type="tns:obtenerPorIdPagoResponse" />
+  <xs:complexType name="listarPagoPorPedidosTodos">
+    <xs:sequence>
+      <xs:element name="pedidoId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorPedidosTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pagoDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaPago" type="tns:localDateTime" />
+      <xs:element name="idPago" type="xs:int" />
+      <xs:element minOccurs="0" name="metodo" type="xs:string" />
+      <xs:element name="monto" type="xs:double" />
+      <xs:element minOccurs="0" name="pedido" type="tns:pedidoDTO" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localDateTime" final="extension restriction">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="pedidoDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="envio" type="tns:envioDTO" />
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaPedido" type="tns:localDateTime" />
+      <xs:element name="idPedido" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="items" nillable="true" type="tns:pedidoItemDTO" />
+      <xs:element minOccurs="0" name="pago" type="tns:pagoDTO" />
+      <xs:element minOccurs="0" name="persona" type="tns:personaDTO" />
+      <xs:element name="total" type="xs:double" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="envioDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="direccion" type="tns:direccionDTO" />
+      <xs:element minOccurs="0" name="estadoEnvio" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaEntrega" type="xs:dateTime" />
+      <xs:element name="idEnvio" type="xs:int" />
+      <xs:element minOccurs="0" name="pedido" type="tns:pedidoDTO" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="direccionDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="alias" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="personaId" type="tns:personaDTO" />
+      <xs:element minOccurs="0" name="referencia" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="personaDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="direcciones" nillable="true" type="tns:direccionDTO" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="contraseña" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="rol" type="tns:rolDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rolDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pedidoItemDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="idItemPedido" type="xs:int" />
+      <xs:element minOccurs="0" name="pedido" type="tns:pedidoDTO" />
+      <xs:element name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="producto" type="tns:productoDTO" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="productoDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="categoria" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="idProducto" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="precio" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="preciosPorPresentaciones" nillable="true" type="tns:precioPresentacionDTO" />
+      <xs:element name="stock" type="xs:int" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="precioPresentacionDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="idPrecioPresentacion" type="xs:int" />
+      <xs:element name="precio" type="xs:double" />
+      <xs:element minOccurs="0" name="producto" type="tns:productoDTO" />
+      <xs:element minOccurs="0" name="tipoMedida" type="tns:tipoMedida" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosPago">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoInactivo">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPagoInactivoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoRangoFechaPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoRangoFechaPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pago" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorEstadoYFecha">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="estado" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorEstadoYFechaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pago" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorRangoMonto">
+    <xs:sequence>
+      <xs:element name="min" type="xs:double" />
+      <xs:element name="max" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorRangoMontoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorMontoMinimo">
+    <xs:sequence>
+      <xs:element name="montoMinimo" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorMontoMinimoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorPedido">
+    <xs:sequence>
+      <xs:element name="idPedido" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorPedidoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pago" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorUsuarioCreacion">
+    <xs:sequence>
+      <xs:element name="usuarioId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoPorUsuarioCreacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPago" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="tipoMedida">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DECENA" />
+      <xs:enumeration value="DOCENA" />
+      <xs:enumeration value="CENTENA" />
+      <xs:enumeration value="MILLAR" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

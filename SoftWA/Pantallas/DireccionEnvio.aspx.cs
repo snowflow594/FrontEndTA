@@ -1,5 +1,4 @@
-﻿using SoftWA.Direccion;
-using SoftWA.ItemCarrito;
+﻿using SoftWA.ServiciosWSClient;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -14,6 +13,8 @@ namespace SoftWA.Pantallas
     {
         private ItemCarritoClient itemCarritoWSClient = new ItemCarritoClient();
         private DireccionClient direccionWSClient = new DireccionClient();
+        private CarritoClient carritoWSClient = new CarritoClient();
+        private PersonaClient personaWSClient = new PersonaClient();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,46 +26,49 @@ namespace SoftWA.Pantallas
 
         private void CargarResumenCarrito()
         {
-            int? idCarrito = Session["idCarrito"] as int?;
-            if (idCarrito == null)
+            int idCarrito = Convert.ToInt32(Session["idCarrito"]);
+            var carrito = carritoWSClient.obtenerPorIdCarrito(idCarrito);
+
+            double subtotal = 0;
+
+            foreach(var item in carrito.items)
             {
-                Response.Redirect("Inicio.aspx");
-                return;
+                subtotal += item.subtotal;
             }
 
-            var items = itemCarritoWSClient.listarTodosItemCarrito().ToList();
-            var itemsFiltrados = items.Where(i => i.carrito.idCarrito == idCarrito.Value).ToList();
+            double igv = subtotal * 0.18;
+            double total = subtotal + igv; // sin sumar envío aún
 
-            double subtotal = itemsFiltrados.Sum(i => i.subtotal);
-            double impuesto = subtotal * 0.12;
-            double total = subtotal + impuesto;
-
-            lblSubtotal.Text = $"S/ {subtotal:N2}";
-            lblImpuesto.Text = $"S/ {impuesto:N2}";
-            lblEnvio.Text = "-";
-            lblTotal.Text = $"S/ {total:N2}";
+            lblSubtotal.Text = subtotal.ToString("F2");
+            lblIGV.Text = igv.ToString("F2");
+            lblTotal.Text = total.ToString("F2");
         }
 
         protected void btnGuardarDireccion_Click(object sender, EventArgs e)
         {
-            // Por ahora se puede guardar en Session[]
-            Session["correo"] = txtCorreo.Text;
-            Session["alias"] = txtAlias.Text;
-            Session["direccion"] = txtDireccion.Text;
-            Session["ciudad"] = txtCiudad.Text;
-            Session["referencia"] = txtReferencia.Text;
-
-            var nuevaDireccion = new Direccion.direccionDTO
+            if (Session["idPersona"] != null)
             {
-                personaId = new SoftWA.Direccion.personaDTO { id = 5},
-                alias = txtAlias.Text,
-                direccion = txtDireccion.Text,
-                ciudad = txtCiudad.Text,
-                referencia = txtReferencia.Text,
-                usuarioCreacion = new SoftWA.Direccion.usuarioDTO { id = 5}
-            };
+                int idPersona = Convert.ToInt32(Session["idPersona"]);
+                int idUsuario = Convert.ToInt32(Session["idUsuario"]);
 
-            int i = direccionWSClient.insertarDireccion(nuevaDireccion);
+                var nuevaDireccion = new SoftWA.ServiciosWSClient.direccionDTO1
+                {
+                    personaId = new SoftWA.ServiciosWSClient.personaDTO1 { id = idPersona},
+                    alias = txtAlias.Text,
+                    direccion = txtDireccion.Text,
+                    ciudad = txtCiudad.Text,
+                    referencia = txtReferencia.Text,
+                    usuarioCreacion = new SoftWA.ServiciosWSClient.usuarioDTO1 { id = idUsuario}
+                };
+
+                int i = direccionWSClient.insertarDireccion(nuevaDireccion);
+                lblMensaje.CssClass = "text-success mt-2 d-block";
+                lblMensaje.Text = "¡Dirección guardada con éxito!";
+
+                //aquí falta guardar el id en session
+
+                Response.Redirect("DireccionEnvio.aspx");
+            }
         }
 
         protected void btnVerDirecciones_Click(object sender, EventArgs e)
@@ -74,8 +78,13 @@ namespace SoftWA.Pantallas
 
         protected void btnContinuarPago_Click(object sender, EventArgs e)
         {
-            // Puedes validar aquí que todos los campos estén completos si lo deseas
-            Response.Redirect("DatosDePago.aspx");
+            if (Session["idDireccionSelececionada"] == null)
+            {
+                lblMensaje.Text = "Por favor selecciona o registra una dirección antes de continuar.";
+                return;
+            }
+
+            Response.Redirect("DatosPago.aspx");
         }
     }
 }

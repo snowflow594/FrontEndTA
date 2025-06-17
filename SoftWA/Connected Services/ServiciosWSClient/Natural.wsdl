@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://usuario.services.softprog.pucp.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="Natural" targetNamespace="http://usuario.services.softprog.pucp.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Natural?xsd=1" namespace="http://usuario.services.softprog.pucp.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarPorGeneroNatural">
+    <part name="parameters" element="tns:listarPorGeneroNatural" />
+  </message>
+  <message name="listarPorGeneroNaturalResponse">
+    <part name="parameters" element="tns:listarPorGeneroNaturalResponse" />
+  </message>
+  <message name="obtenerPorDniNatural">
+    <part name="parameters" element="tns:obtenerPorDniNatural" />
+  </message>
+  <message name="obtenerPorDniNaturalResponse">
+    <part name="parameters" element="tns:obtenerPorDniNaturalResponse" />
+  </message>
+  <message name="obtenerPorIdNatural">
+    <part name="parameters" element="tns:obtenerPorIdNatural" />
+  </message>
+  <message name="obtenerPorIdNaturalResponse">
+    <part name="parameters" element="tns:obtenerPorIdNaturalResponse" />
+  </message>
+  <message name="insertarNatural">
+    <part name="parameters" element="tns:insertarNatural" />
+  </message>
+  <message name="insertarNaturalResponse">
+    <part name="parameters" element="tns:insertarNaturalResponse" />
+  </message>
+  <message name="listarTodosNatural">
+    <part name="parameters" element="tns:listarTodosNatural" />
+  </message>
+  <message name="listarTodosNaturalResponse">
+    <part name="parameters" element="tns:listarTodosNaturalResponse" />
+  </message>
+  <message name="modificarNatural">
+    <part name="parameters" element="tns:modificarNatural" />
+  </message>
+  <message name="modificarNaturalResponse">
+    <part name="parameters" element="tns:modificarNaturalResponse" />
+  </message>
+  <message name="eliminarNatural">
+    <part name="parameters" element="tns:eliminarNatural" />
+  </message>
+  <message name="eliminarNaturalResponse">
+    <part name="parameters" element="tns:eliminarNaturalResponse" />
+  </message>
+  <portType name="Natural">
+    <operation name="listarPorGeneroNatural">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/listarPorGeneroNaturalRequest" message="tns:listarPorGeneroNatural" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/listarPorGeneroNaturalResponse" message="tns:listarPorGeneroNaturalResponse" />
+    </operation>
+    <operation name="obtenerPorDniNatural">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorDniNaturalRequest" message="tns:obtenerPorDniNatural" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorDniNaturalResponse" message="tns:obtenerPorDniNaturalResponse" />
+    </operation>
+    <operation name="obtenerPorIdNatural">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalRequest" message="tns:obtenerPorIdNatural" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalResponse" message="tns:obtenerPorIdNaturalResponse" />
+    </operation>
+    <operation name="insertarNatural">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/insertarNaturalRequest" message="tns:insertarNatural" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/insertarNaturalResponse" message="tns:insertarNaturalResponse" />
+    </operation>
+    <operation name="listarTodosNatural">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/listarTodosNaturalRequest" message="tns:listarTodosNatural" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/listarTodosNaturalResponse" message="tns:listarTodosNaturalResponse" />
+    </operation>
+    <operation name="modificarNatural">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/modificarNaturalRequest" message="tns:modificarNatural" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/modificarNaturalResponse" message="tns:modificarNaturalResponse" />
+    </operation>
+    <operation name="eliminarNatural">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalRequest" message="tns:eliminarNatural" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalResponse" message="tns:eliminarNaturalResponse" />
+    </operation>
+  </portType>
+  <binding name="NaturalPortBinding" type="tns:Natural">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarPorGeneroNatural">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorDniNatural">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdNatural">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarNatural">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosNatural">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarNatural">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarNatural">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Natural">
+    <port name="NaturalPort" binding="tns:NaturalPortBinding">
+      <soap:address location="http://localhost:8080/SoftProgWS/Natural" />
+    </port>
+  </service>
+</definitions>

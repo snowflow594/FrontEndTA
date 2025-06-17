@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://usuario.services.softprog.pucp.edu.pe/" targetNamespace="http://usuario.services.softprog.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarNatural" type="tns:eliminarNatural" />
+  <xs:element name="eliminarNaturalResponse" type="tns:eliminarNaturalResponse" />
+  <xs:element name="insertarNatural" type="tns:insertarNatural" />
+  <xs:element name="insertarNaturalResponse" type="tns:insertarNaturalResponse" />
+  <xs:element name="listarPorGeneroNatural" type="tns:listarPorGeneroNatural" />
+  <xs:element name="listarPorGeneroNaturalResponse" type="tns:listarPorGeneroNaturalResponse" />
+  <xs:element name="listarTodosNatural" type="tns:listarTodosNatural" />
+  <xs:element name="listarTodosNaturalResponse" type="tns:listarTodosNaturalResponse" />
+  <xs:element name="modificarNatural" type="tns:modificarNatural" />
+  <xs:element name="modificarNaturalResponse" type="tns:modificarNaturalResponse" />
+  <xs:element name="obtenerPorDniNatural" type="tns:obtenerPorDniNatural" />
+  <xs:element name="obtenerPorDniNaturalResponse" type="tns:obtenerPorDniNaturalResponse" />
+  <xs:element name="obtenerPorIdNatural" type="tns:obtenerPorIdNatural" />
+  <xs:element name="obtenerPorIdNaturalResponse" type="tns:obtenerPorIdNaturalResponse" />
+  <xs:complexType name="obtenerPorDniNatural">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dni" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorDniNaturalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:naturalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="naturalDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:personaDTO">
+        <xs:sequence>
+          <xs:element name="dni" type="xs:int" />
+          <xs:element minOccurs="0" name="fechaNacimiento" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="genero" type="xs:string" />
+          <xs:element name="id_natural" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="personaDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="direcciones" nillable="true" type="tns:direccionDTO" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="direccionDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="alias" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="personaId" type="tns:personaDTO" />
+      <xs:element minOccurs="0" name="referencia" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localDateTime" final="extension restriction">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="contraseña" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="rol" type="tns:rolDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rolDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosNatural">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosNaturalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:naturalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorGeneroNatural">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="genero" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorGeneroNaturalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:naturalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarNatural">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="natural" type="tns:naturalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarNaturalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdNatural">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="naturalId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdNaturalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:naturalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarNatural">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="natural" type="tns:naturalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarNaturalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarNatural">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="natural" type="tns:naturalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarNaturalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

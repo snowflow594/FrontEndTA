@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://usuario.services.softprog.pucp.edu.pe/" targetNamespace="http://usuario.services.softprog.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="eliminarJuridica" type="tns:eliminarJuridica" />
+  <xs:element name="eliminarJuridicaResponse" type="tns:eliminarJuridicaResponse" />
+  <xs:element name="insertarJuridica" type="tns:insertarJuridica" />
+  <xs:element name="insertarJuridicaResponse" type="tns:insertarJuridicaResponse" />
+  <xs:element name="listarTodosJuridica" type="tns:listarTodosJuridica" />
+  <xs:element name="listarTodosJuridicaResponse" type="tns:listarTodosJuridicaResponse" />
+  <xs:element name="modificarJuridica" type="tns:modificarJuridica" />
+  <xs:element name="modificarJuridicaResponse" type="tns:modificarJuridicaResponse" />
+  <xs:element name="obtenerPorIdJuridica" type="tns:obtenerPorIdJuridica" />
+  <xs:element name="obtenerPorIdJuridicaResponse" type="tns:obtenerPorIdJuridicaResponse" />
+  <xs:element name="obtenerPorRucJuridica" type="tns:obtenerPorRucJuridica" />
+  <xs:element name="obtenerPorRucJuridicaResponse" type="tns:obtenerPorRucJuridicaResponse" />
+  <xs:complexType name="listarTodosJuridica">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosJuridicaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:juridicaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="juridicaDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:personaDTO">
+        <xs:sequence>
+          <xs:element name="id_juridica" type="xs:int" />
+          <xs:element minOccurs="0" name="razonSocial" type="xs:string" />
+          <xs:element minOccurs="0" name="representanteLegal" type="xs:string" />
+          <xs:element minOccurs="0" name="ruc" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="personaDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="direcciones" nillable="true" type="tns:direccionDTO" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="direccionDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="alias" type="xs:string" />
+      <xs:element minOccurs="0" name="ciudad" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaActualizacion" type="tns:localDateTime" />
+      <xs:element minOccurs="0" name="fechaCreacion" type="tns:localDateTime" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="personaId" type="tns:personaDTO" />
+      <xs:element minOccurs="0" name="referencia" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioActualizacion" type="tns:usuarioDTO" />
+      <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="localDateTime" final="extension restriction">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="usuarioDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element minOccurs="0" name="contraseña" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="rol" type="tns:rolDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="rolDTO">
+    <xs:sequence>
+      <xs:element name="activo" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorRucJuridica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ruc" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorRucJuridicaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:juridicaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarJuridica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="juridica" type="tns:juridicaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarJuridicaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdJuridica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="juridicaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdJuridicaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:juridicaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarJuridica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="juridica" type="tns:juridicaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarJuridicaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarJuridica">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="juridica" type="tns:juridicaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarJuridicaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
