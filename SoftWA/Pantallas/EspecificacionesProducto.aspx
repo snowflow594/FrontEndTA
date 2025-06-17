@@ -16,7 +16,6 @@
                 <p><strong>Categoría:</strong> <asp:Label ID="lblCategoria" runat="server" /></p>
                 <p><strong>Descripción:</strong></p>
                 <p><asp:Label ID="lblDescripcion" runat="server" /></p>
-
                 <asp:Button ID="btnAgregarCarrito" runat="server" Text="Agregar al Carrito" CssClass="btn btn-cta mt-3" OnClick="btnAgregarCarrito_Click" />
             </div>
         </div>

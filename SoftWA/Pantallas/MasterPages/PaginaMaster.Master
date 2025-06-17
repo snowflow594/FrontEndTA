@@ -76,7 +76,7 @@
 </head>
 
 <body>
-    <form runat="server">
+    <form id="form1" runat="server">
         <!-- Topbar: ubicación, horario, contacto -->
         <div class="topbar py-1">
             <div class="container d-flex justify-content-between">
@@ -97,7 +97,6 @@
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="Inicio.aspx"> <!--aqúí iría el logo de la empresa-->
                     <img src="#" alt="Logo CIAPASA" style="height: 30px;" />
-                    <span>CocinaPro</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
@@ -108,10 +107,10 @@
                         <li class="nav-item"><a class="nav-link" href="Productos.aspx">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="Categorias.aspx">Categorías</a></li>
                     </ul>
-                    <form class="d-flex me-3" role="search">
+                    <div class="d-flex me-3" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar productos..." />
                         <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
-                    </form>
+                    </div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link position-relative" href="Carrito.aspx">

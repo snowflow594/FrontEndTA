@@ -31,17 +31,26 @@ namespace SoftWA.Pantallas
 
             double subtotal = 0;
 
-            foreach(var item in carrito.items)
+            if (carrito != null && carrito.items != null)
             {
-                subtotal += item.subtotal;
+                foreach (var item in carrito.items)
+                {
+                    subtotal += item.subtotal;
+                }
+
+                double igv = subtotal * 0.18;
+                double total = subtotal + igv;
+
+                lblSubtotal.Text = subtotal.ToString("F2");
+                lblIGV.Text = igv.ToString("F2");
+                lblTotal.Text = total.ToString("F2");
             }
-
-            double igv = subtotal * 0.18;
-            double total = subtotal + igv; // sin sumar envío aún
-
-            lblSubtotal.Text = subtotal.ToString("F2");
-            lblIGV.Text = igv.ToString("F2");
-            lblTotal.Text = total.ToString("F2");
+            else
+            {
+                lblSubtotal.Text = "0.00";
+                lblIGV.Text = "0.00";
+                lblTotal.Text = "0.00";
+            }
         }
 
         protected void btnGuardarDireccion_Click(object sender, EventArgs e)

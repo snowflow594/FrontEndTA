@@ -117,16 +117,6 @@
       <xs:element minOccurs="0" name="return" type="tns:precioPresentacionDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="obtenerPorIdPrecioPresentacion">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idPrecioPresentacion" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="obtenerPorIdPrecioPresentacionResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:precioPresentacionDTO" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarPrecioPresentacionPorRangoCantidad">
     <xs:sequence>
       <xs:element name="min" type="xs:int" />
@@ -138,12 +128,14 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:precioPresentacionDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarPrecioPresentacionInactivos">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarPrecioPresentacionInactivosResponse">
+  <xs:complexType name="obtenerPorIdPrecioPresentacion">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:precioPresentacionDTO" />
+      <xs:element minOccurs="0" name="idPrecioPresentacion" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPrecioPresentacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:precioPresentacionDTO" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarPrecioPresentacionPorRangoPrecio">
@@ -153,6 +145,14 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarPrecioPresentacionPorRangoPrecioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:precioPresentacionDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPrecioPresentacionInactivos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPrecioPresentacionInactivosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:precioPresentacionDTO" />
     </xs:sequence>
@@ -177,16 +177,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:precioPresentacionDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="modificarPrecioPresentacion">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="precioPresentacion" type="tns:precioPresentacionDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="modificarPrecioPresentacionResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarPrecioPresentacionPorUsuarioCreacion">
     <xs:sequence>
       <xs:element name="usuarioId" type="xs:int" />
@@ -195,6 +185,16 @@
   <xs:complexType name="listarPrecioPresentacionPorUsuarioCreacionResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:precioPresentacionDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPrecioPresentacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="precioPresentacion" type="tns:precioPresentacionDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPrecioPresentacionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="insertarPrecioPresentacion">

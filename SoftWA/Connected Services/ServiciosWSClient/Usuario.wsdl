@@ -5,6 +5,12 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Usuario?xsd=1" namespace="http://usuario.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
+  <message name="listarPorRolUsuario">
+    <part name="parameters" element="tns:listarPorRolUsuario" />
+  </message>
+  <message name="listarPorRolUsuarioResponse">
+    <part name="parameters" element="tns:listarPorRolUsuarioResponse" />
+  </message>
   <message name="listarTodosUsuarios">
     <part name="parameters" element="tns:listarTodosUsuarios" />
   </message>
@@ -17,23 +23,11 @@
   <message name="buscarPorEmailUsuarioResponse">
     <part name="parameters" element="tns:buscarPorEmailUsuarioResponse" />
   </message>
-  <message name="listarPorRolUsuario">
-    <part name="parameters" element="tns:listarPorRolUsuario" />
-  </message>
-  <message name="listarPorRolUsuarioResponse">
-    <part name="parameters" element="tns:listarPorRolUsuarioResponse" />
-  </message>
   <message name="obtenerPorIdUsuario">
     <part name="parameters" element="tns:obtenerPorIdUsuario" />
   </message>
   <message name="obtenerPorIdUsuarioResponse">
     <part name="parameters" element="tns:obtenerPorIdUsuarioResponse" />
-  </message>
-  <message name="insertarUsuario">
-    <part name="parameters" element="tns:insertarUsuario" />
-  </message>
-  <message name="insertarUsuarioResponse">
-    <part name="parameters" element="tns:insertarUsuarioResponse" />
   </message>
   <message name="autenticarUsuario">
     <part name="parameters" element="tns:autenticarUsuario" />
@@ -41,19 +35,29 @@
   <message name="autenticarUsuarioResponse">
     <part name="parameters" element="tns:autenticarUsuarioResponse" />
   </message>
-  <message name="modificarUsuario">
-    <part name="parameters" element="tns:modificarUsuario" />
-  </message>
-  <message name="modificarUsuarioResponse">
-    <part name="parameters" element="tns:modificarUsuarioResponse" />
-  </message>
   <message name="eliminarUsuario">
     <part name="parameters" element="tns:eliminarUsuario" />
   </message>
   <message name="eliminarUsuarioResponse">
     <part name="parameters" element="tns:eliminarUsuarioResponse" />
   </message>
+  <message name="modificarUsuario">
+    <part name="parameters" element="tns:modificarUsuario" />
+  </message>
+  <message name="modificarUsuarioResponse">
+    <part name="parameters" element="tns:modificarUsuarioResponse" />
+  </message>
+  <message name="insertarUsuario">
+    <part name="parameters" element="tns:insertarUsuario" />
+  </message>
+  <message name="insertarUsuarioResponse">
+    <part name="parameters" element="tns:insertarUsuarioResponse" />
+  </message>
   <portType name="Usuario">
+    <operation name="listarPorRolUsuario">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioRequest" message="tns:listarPorRolUsuario" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioResponse" message="tns:listarPorRolUsuarioResponse" />
+    </operation>
     <operation name="listarTodosUsuarios">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarTodosUsuariosRequest" message="tns:listarTodosUsuarios" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarTodosUsuariosResponse" message="tns:listarTodosUsuariosResponse" />
@@ -62,33 +66,38 @@
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/buscarPorEmailUsuarioRequest" message="tns:buscarPorEmailUsuario" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/buscarPorEmailUsuarioResponse" message="tns:buscarPorEmailUsuarioResponse" />
     </operation>
-    <operation name="listarPorRolUsuario">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioRequest" message="tns:listarPorRolUsuario" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioResponse" message="tns:listarPorRolUsuarioResponse" />
-    </operation>
     <operation name="obtenerPorIdUsuario">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/obtenerPorIdUsuarioRequest" message="tns:obtenerPorIdUsuario" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/obtenerPorIdUsuarioResponse" message="tns:obtenerPorIdUsuarioResponse" />
-    </operation>
-    <operation name="insertarUsuario">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioRequest" message="tns:insertarUsuario" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioResponse" message="tns:insertarUsuarioResponse" />
     </operation>
     <operation name="autenticarUsuario">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/autenticarUsuarioRequest" message="tns:autenticarUsuario" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/autenticarUsuarioResponse" message="tns:autenticarUsuarioResponse" />
     </operation>
-    <operation name="modificarUsuario">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/modificarUsuarioRequest" message="tns:modificarUsuario" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/modificarUsuarioResponse" message="tns:modificarUsuarioResponse" />
-    </operation>
     <operation name="eliminarUsuario">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioRequest" message="tns:eliminarUsuario" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioResponse" message="tns:eliminarUsuarioResponse" />
     </operation>
+    <operation name="modificarUsuario">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/modificarUsuarioRequest" message="tns:modificarUsuario" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/modificarUsuarioResponse" message="tns:modificarUsuarioResponse" />
+    </operation>
+    <operation name="insertarUsuario">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioRequest" message="tns:insertarUsuario" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioResponse" message="tns:insertarUsuarioResponse" />
+    </operation>
   </portType>
   <binding name="UsuarioPortBinding" type="tns:Usuario">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarPorRolUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="listarTodosUsuarios">
       <soap:operation soapAction="" />
       <input>
@@ -107,25 +116,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarPorRolUsuario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="obtenerPorIdUsuario">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertarUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -143,6 +134,15 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="eliminarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="modificarUsuario">
       <soap:operation soapAction="" />
       <input>
@@ -152,7 +152,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarUsuario">
+    <operation name="insertarUsuario">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

@@ -127,19 +127,97 @@
     <None Include="Connected Services\ServiciosWSClient\Administrador.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiciosWSClient\Carrito.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Carrito.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiciosWSClient\Comprobante.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Comprobante.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiciosWSClient\Direccion.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Direccion.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiciosWSClient\Envio.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Juridica.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Pago.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\PedidoItem.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\PedidoItem.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\PrecioPresentacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiciosWSClient\servicios.disco" />
+    <None Include="Connected Services\ServiciosWSClient\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiciosWSClient\configuration.svcinfo" />
+    <None Include="Connected Services\ServiciosWSClient\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\bootstrap-utilities.css" />
+    <Content Include="Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrap.rtl.css" />
+    <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Estilos\carritostyle.css" />
+    <Content Include="Content\fontawesome\all.css" />
+    <Content Include="Content\fontawesome\all.min.css" />
+    <Content Include="Content\fontawesome\brands.css" />
+    <Content Include="Content\fontawesome\brands.min.css" />
+    <Content Include="Content\fontawesome\fontawesome.css" />
+    <Content Include="Content\fontawesome\fontawesome.min.css" />
+    <Content Include="Content\fontawesome\regular.css" />
+    <Content Include="Content\fontawesome\regular.min.css" />
+    <Content Include="Content\fontawesome\solid.css" />
+    <Content Include="Content\fontawesome\solid.min.css" />
+    <Content Include="Content\fontawesome\svg-with-js.css" />
+    <Content Include="Content\fontawesome\svg-with-js.min.css" />
+    <Content Include="Content\fontawesome\v4-font-face.css" />
+    <Content Include="Content\fontawesome\v4-font-face.min.css" />
+    <Content Include="Content\fontawesome\v4-shims.css" />
+    <Content Include="Content\fontawesome\v4-shims.min.css" />
+    <Content Include="Content\fontawesome\v5-font-face.css" />
+    <Content Include="Content\fontawesome\v5-font-face.min.css" />
+    <Content Include="Content\Imagenes\olla.png" />
+    <Content Include="Content\Imagenes\perfil.png" />
+    <Content Include="Content\Imagenes\sarten.png" />
+    <Content Include="Pantallas\Carrito.aspx" />
+    <Content Include="Pantallas\DatosDePago.aspx" />
+    <Content Include="Pantallas\DireccionEnvio.aspx" />
+    <Content Include="Pantallas\DireccionesGuardadas.aspx" />
+    <Content Include="Pantallas\EspecificacionesProducto.aspx" />
+    <Content Include="Pantallas\Inicio.aspx" />
+    <Content Include="Pantallas\ResumenDelPedido.aspx" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.esm.js" />
+    <Content Include="Scripts\bootstrap.esm.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\fontawesome\fa-brands-400.ttf" />
+    <Content Include="Content\fontawesome\fa-brands-400.woff2" />
+    <Content Include="Content\fontawesome\fa-regular-400.ttf" />
+    <Content Include="Content\fontawesome\fa-regular-400.woff2" />
+    <Content Include="Content\fontawesome\fa-solid-900.ttf" />
+    <Content Include="Content\fontawesome\fa-solid-900.woff2" />
+    <Content Include="Content\fontawesome\fa-v4compatibility.ttf" />
+    <Content Include="Content\fontawesome\fa-v4compatibility.woff2" />
+    <Content Include="Pantallas\MasterPages\PaginaMaster.Master" />
+    <None Include="Connected Services\ServiciosWSClient\Carrito.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Comprobante.wsdl" />
+    <None Include="Connected Services\ServiciosWSClient\Direccion.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Envio.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -147,7 +225,6 @@
     <None Include="Connected Services\ServiciosWSClient\ItemCarrito.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiciosWSClient\Juridica.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Juridica.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -156,15 +233,8 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiciosWSClient\Pago.wsdl" />
-    <None Include="Connected Services\ServiciosWSClient\Pago.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\ServiciosWSClient\Pedido.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Pedido.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServiciosWSClient\PedidoItem.wsdl" />
-    <None Include="Connected Services\ServiciosWSClient\PedidoItem.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiciosWSClient\Persona.wsdl" />
@@ -172,9 +242,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Connected Services\ServiciosWSClient\PrecioPresentacion.wsdl" />
-    <None Include="Connected Services\ServiciosWSClient\PrecioPresentacion.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Connected Services\ServiciosWSClient\Productos.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Productos.xsd">
       <SubType>Designer</SubType>
@@ -742,72 +809,6 @@
     <None Include="Connected Services\ServiciosWSClient\Usuario.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiciosWSClient\servicios.disco" />
-    <None Include="Connected Services\ServiciosWSClient\configuration91.svcinfo" />
-    <None Include="Connected Services\ServiciosWSClient\configuration.svcinfo" />
-    <None Include="Connected Services\ServiciosWSClient\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-grid.rtl.css" />
-    <Content Include="Content\bootstrap-grid.rtl.min.css" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.css" />
-    <Content Include="Content\bootstrap-reboot.rtl.min.css" />
-    <Content Include="Content\bootstrap-utilities.css" />
-    <Content Include="Content\bootstrap-utilities.min.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.css" />
-    <Content Include="Content\bootstrap-utilities.rtl.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\bootstrap.rtl.css" />
-    <Content Include="Content\bootstrap.rtl.min.css" />
-    <Content Include="Content\Estilos\carritostyle.css" />
-    <Content Include="Content\fontawesome\all.css" />
-    <Content Include="Content\fontawesome\all.min.css" />
-    <Content Include="Content\fontawesome\brands.css" />
-    <Content Include="Content\fontawesome\brands.min.css" />
-    <Content Include="Content\fontawesome\fontawesome.css" />
-    <Content Include="Content\fontawesome\fontawesome.min.css" />
-    <Content Include="Content\fontawesome\regular.css" />
-    <Content Include="Content\fontawesome\regular.min.css" />
-    <Content Include="Content\fontawesome\solid.css" />
-    <Content Include="Content\fontawesome\solid.min.css" />
-    <Content Include="Content\fontawesome\svg-with-js.css" />
-    <Content Include="Content\fontawesome\svg-with-js.min.css" />
-    <Content Include="Content\fontawesome\v4-font-face.css" />
-    <Content Include="Content\fontawesome\v4-font-face.min.css" />
-    <Content Include="Content\fontawesome\v4-shims.css" />
-    <Content Include="Content\fontawesome\v4-shims.min.css" />
-    <Content Include="Content\fontawesome\v5-font-face.css" />
-    <Content Include="Content\fontawesome\v5-font-face.min.css" />
-    <Content Include="Content\Imagenes\olla.png" />
-    <Content Include="Content\Imagenes\perfil.png" />
-    <Content Include="Content\Imagenes\sarten.png" />
-    <Content Include="Pantallas\Carrito.aspx" />
-    <Content Include="Pantallas\DatosDePago.aspx" />
-    <Content Include="Pantallas\DireccionEnvio.aspx" />
-    <Content Include="Pantallas\DireccionesGuardadas.aspx" />
-    <Content Include="Pantallas\EspecificacionesProducto.aspx" />
-    <Content Include="Pantallas\Inicio.aspx" />
-    <Content Include="Scripts\bootstrap.bundle.js" />
-    <Content Include="Scripts\bootstrap.bundle.min.js" />
-    <Content Include="Scripts\bootstrap.esm.js" />
-    <Content Include="Scripts\bootstrap.esm.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\fontawesome\fa-brands-400.ttf" />
-    <Content Include="Content\fontawesome\fa-brands-400.woff2" />
-    <Content Include="Content\fontawesome\fa-regular-400.ttf" />
-    <Content Include="Content\fontawesome\fa-regular-400.woff2" />
-    <Content Include="Content\fontawesome\fa-solid-900.ttf" />
-    <Content Include="Content\fontawesome\fa-solid-900.woff2" />
-    <Content Include="Content\fontawesome\fa-v4compatibility.ttf" />
-    <Content Include="Content\fontawesome\fa-v4compatibility.woff2" />
-    <Content Include="Pantallas\MasterPages\PaginaMaster.Master" />
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -870,6 +871,13 @@
     <Compile Include="Pantallas\MasterPages\PaginaMaster.Master.designer.cs">
       <DependentUpon>PaginaMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\ResumenDelPedido.aspx.cs">
+      <DependentUpon>ResumenDelPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\ResumenDelPedido.aspx.designer.cs">
+      <DependentUpon>ResumenDelPedido.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -911,7 +919,6 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiciosWSClient\" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

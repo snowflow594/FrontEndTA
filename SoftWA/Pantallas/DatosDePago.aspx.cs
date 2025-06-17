@@ -39,13 +39,37 @@ namespace SoftWA.Pantallas
             {
                 int idCarrito = Convert.ToInt32(Session["idCarrito"]);
                 var carrito = carritoWSClient.obtenerPorIdCarrito(idCarrito);
+                double subtotal = 0;
+                double total = 0;
+                double IGV = 0;
 
-                double subtotal = carrito.items.Sum(i => i.subtotal);
-                double impuesto = subtotal * 0.18;
-                double total = subtotal + impuesto;
+                if (carrito != null && carrito.items != null)
+                {
+                    foreach (var item in carrito.items)
+                    {
+                        subtotal += item.subtotal;
+                    }
+
+                    IGV = subtotal * 0.18;
+                    total = subtotal + IGV;
+
+                    lblSubtotal.Text = subtotal.ToString("F2");
+                    lblIGV.Text = IGV.ToString("F2");
+                    lblTotal.Text = total.ToString("F2");
+                }
+                else
+                {
+                    lblSubtotal.Text = "0.00";
+                    lblIGV.Text = "0.00";
+                    lblTotal.Text = "0.00";
+                }
+
+                subtotal = carrito.items.Sum(i => i.subtotal);
+                IGV = subtotal * 0.18;
+                total = subtotal + IGV;
 
                 lblSubtotal.Text = subtotal.ToString("F2");
-                lblImpuesto.Text = impuesto.ToString("F2");
+                lblIGV.Text = IGV.ToString("F2");
                 lblEnvio.Text = "-"; // Puedes modificar esto si luego calculas envío
                 lblTotal.Text = total.ToString("F2");
             }

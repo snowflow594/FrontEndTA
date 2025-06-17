@@ -29,21 +29,30 @@ namespace SoftWA.Pantallas
                 int idCarrito = Convert.ToInt32(Session["idCarrito"]);
                 var carrito = carritoWS.obtenerPorIdCarrito(idCarrito);
 
-                rptCarrito.DataSource = carrito.items;
-                rptCarrito.DataBind();
-
-                double subtotal = 0;
-                foreach (var item in carrito.items)
+                if (carrito != null && carrito.items != null)
                 {
-                    subtotal += item.subtotal;
+                    rptCarrito.DataSource = carrito.items;
+                    rptCarrito.DataBind();
+
+                    double subtotal = 0;
+                    foreach (var item in carrito.items)
+                    {
+                        subtotal += item.subtotal;
+                    }
+
+                    double igv = subtotal * 0.18;
+                    double total = subtotal + igv;
+
+                    lblSubtotal.Text = subtotal.ToString("F2");
+                    lblIGV.Text = igv.ToString("F2");
+                    lblTotal.Text = total.ToString("F2");
                 }
-
-                double igv = subtotal * 0.18;
-                double total = subtotal + igv;
-
-                lblSubtotal.Text = subtotal.ToString("F2");
-                lblIGV.Text = igv.ToString("F2");
-                lblTotal.Text = total.ToString("F2");
+                else
+                {
+                    lblSubtotal.Text = "0.00";
+                    lblIGV.Text = "0.00";
+                    lblTotal.Text = "0.00";
+                }
             }
         }
 

@@ -5,11 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Direccion?xsd=1" namespace="http://usuario.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="insertarDireccion">
-    <part name="parameters" element="tns:insertarDireccion" />
+  <message name="listarTodosDireccion">
+    <part name="parameters" element="tns:listarTodosDireccion" />
   </message>
-  <message name="insertarDireccionResponse">
-    <part name="parameters" element="tns:insertarDireccionResponse" />
+  <message name="listarTodosDireccionResponse">
+    <part name="parameters" element="tns:listarTodosDireccionResponse" />
   </message>
   <message name="obtenerPorIdDireccion">
     <part name="parameters" element="tns:obtenerPorIdDireccion" />
@@ -17,17 +17,11 @@
   <message name="obtenerPorIdDireccionResponse">
     <part name="parameters" element="tns:obtenerPorIdDireccionResponse" />
   </message>
-  <message name="listarTodosDireccion">
-    <part name="parameters" element="tns:listarTodosDireccion" />
+  <message name="insertarDireccion">
+    <part name="parameters" element="tns:insertarDireccion" />
   </message>
-  <message name="listarTodosDireccionResponse">
-    <part name="parameters" element="tns:listarTodosDireccionResponse" />
-  </message>
-  <message name="eliminarDireccion">
-    <part name="parameters" element="tns:eliminarDireccion" />
-  </message>
-  <message name="eliminarDireccionResponse">
-    <part name="parameters" element="tns:eliminarDireccionResponse" />
+  <message name="insertarDireccionResponse">
+    <part name="parameters" element="tns:insertarDireccionResponse" />
   </message>
   <message name="modificarDireccion">
     <part name="parameters" element="tns:modificarDireccion" />
@@ -35,31 +29,37 @@
   <message name="modificarDireccionResponse">
     <part name="parameters" element="tns:modificarDireccionResponse" />
   </message>
+  <message name="eliminarDireccion">
+    <part name="parameters" element="tns:eliminarDireccion" />
+  </message>
+  <message name="eliminarDireccionResponse">
+    <part name="parameters" element="tns:eliminarDireccionResponse" />
+  </message>
   <portType name="Direccion">
-    <operation name="insertarDireccion">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionRequest" message="tns:insertarDireccion" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionResponse" message="tns:insertarDireccionResponse" />
+    <operation name="listarTodosDireccion">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/listarTodosDireccionRequest" message="tns:listarTodosDireccion" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/listarTodosDireccionResponse" message="tns:listarTodosDireccionResponse" />
     </operation>
     <operation name="obtenerPorIdDireccion">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionRequest" message="tns:obtenerPorIdDireccion" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionResponse" message="tns:obtenerPorIdDireccionResponse" />
     </operation>
-    <operation name="listarTodosDireccion">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/listarTodosDireccionRequest" message="tns:listarTodosDireccion" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/listarTodosDireccionResponse" message="tns:listarTodosDireccionResponse" />
-    </operation>
-    <operation name="eliminarDireccion">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionRequest" message="tns:eliminarDireccion" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionResponse" message="tns:eliminarDireccionResponse" />
+    <operation name="insertarDireccion">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionRequest" message="tns:insertarDireccion" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionResponse" message="tns:insertarDireccionResponse" />
     </operation>
     <operation name="modificarDireccion">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/modificarDireccionRequest" message="tns:modificarDireccion" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/modificarDireccionResponse" message="tns:modificarDireccionResponse" />
     </operation>
+    <operation name="eliminarDireccion">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionRequest" message="tns:eliminarDireccion" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionResponse" message="tns:eliminarDireccionResponse" />
+    </operation>
   </portType>
   <binding name="DireccionPortBinding" type="tns:Direccion">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="insertarDireccion">
+    <operation name="listarTodosDireccion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -77,16 +77,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarTodosDireccion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarDireccion">
+    <operation name="insertarDireccion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -96,6 +87,15 @@
       </output>
     </operation>
     <operation name="modificarDireccion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDireccion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

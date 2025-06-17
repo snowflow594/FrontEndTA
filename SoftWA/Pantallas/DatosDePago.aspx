@@ -54,7 +54,7 @@
                     <p><strong>Subtotal:</strong> S/
                         <asp:Label ID="lblSubtotal" runat="server" Text="0.00" /></p>
                     <p><strong>Impuesto (18%):</strong> S/
-                        <asp:Label ID="lblImpuesto" runat="server" Text="0.00" /></p>
+                        <asp:Label ID="lblIGV" runat="server" Text="0.00" /></p>
                     <p><strong>Envío:</strong> S/
                         <asp:Label ID="lblEnvio" runat="server" Text="-" /></p>
                     <hr />

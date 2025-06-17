@@ -105,13 +105,13 @@ namespace SoftWA.Pantallas
         protected global::System.Web.UI.WebControls.Label lblSubtotal;
 
         /// <summary>
-        /// Control lblImpuesto.
+        /// Control lblIGV.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblImpuesto;
+        protected global::System.Web.UI.WebControls.Label lblIGV;
 
         /// <summary>
         /// Control lblEnvio.

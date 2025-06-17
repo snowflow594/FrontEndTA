@@ -11,17 +11,17 @@
   <message name="insertarAdministradorResponse">
     <part name="parameters" element="tns:insertarAdministradorResponse" />
   </message>
-  <message name="modificarAdministrador">
-    <part name="parameters" element="tns:modificarAdministrador" />
-  </message>
-  <message name="modificarAdministradorResponse">
-    <part name="parameters" element="tns:modificarAdministradorResponse" />
-  </message>
   <message name="eliminarAdministrador">
     <part name="parameters" element="tns:eliminarAdministrador" />
   </message>
   <message name="eliminarAdministradorResponse">
     <part name="parameters" element="tns:eliminarAdministradorResponse" />
+  </message>
+  <message name="modificarAdministrador">
+    <part name="parameters" element="tns:modificarAdministrador" />
+  </message>
+  <message name="modificarAdministradorResponse">
+    <part name="parameters" element="tns:modificarAdministradorResponse" />
   </message>
   <message name="obtenerPorIdAdministrador">
     <part name="parameters" element="tns:obtenerPorIdAdministrador" />
@@ -40,13 +40,13 @@
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/insertarAdministradorRequest" message="tns:insertarAdministrador" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/insertarAdministradorResponse" message="tns:insertarAdministradorResponse" />
     </operation>
-    <operation name="modificarAdministrador">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministradorRequest" message="tns:modificarAdministrador" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministradorResponse" message="tns:modificarAdministradorResponse" />
-    </operation>
     <operation name="eliminarAdministrador">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorRequest" message="tns:eliminarAdministrador" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorResponse" message="tns:eliminarAdministradorResponse" />
+    </operation>
+    <operation name="modificarAdministrador">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministradorRequest" message="tns:modificarAdministrador" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministradorResponse" message="tns:modificarAdministradorResponse" />
     </operation>
     <operation name="obtenerPorIdAdministrador">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/obtenerPorIdAdministradorRequest" message="tns:obtenerPorIdAdministrador" />
@@ -68,7 +68,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="modificarAdministrador">
+    <operation name="eliminarAdministrador">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -77,7 +77,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarAdministrador">
+    <operation name="modificarAdministrador">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

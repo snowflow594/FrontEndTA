@@ -36,7 +36,9 @@ namespace SoftWA.Pantallas
                         lblNombre.Text = producto.nombre;
                         lblDescripcion.Text = producto.descripcion;
                         lblStock.Text = producto.stock.ToString();
+                        lblCategoria.Text = producto.categoria.ToString();
                         lblPrecio.Text = producto.precio.ToString();
+                        imgProducto = new Image();
                     }
                 }
             }
@@ -44,44 +46,35 @@ namespace SoftWA.Pantallas
 
         protected void btnAgregarCarrito_Click(object sender, EventArgs e)
         {
-            int idCarrito = Convert.ToInt32(Session["idCarrito"]);
+            if (Session["idCarrito"] == null)
+            {
+                ScriptManager.RegisterStartupScript(this, GetType(), "alert", "alert('No hay carrito activo.');", true);
+                return;
+            }
+
             try
             {
+                int idCarrito = Convert.ToInt32(Session["idCarrito"]);
                 int idProducto = int.Parse(lblCodigo.Text);
 
-                var productoCompleto = productoWSClient.obtenerPorIdProducto(idProducto);
+                var producto = productoWSClient.obtenerPorIdProducto(idProducto);
 
-                var producto = new SoftWA.ServiciosWSClient.productoDTO
+                var nuevoItem = new itemCarritoDTO
                 {
-                    idProducto = productoCompleto.idProducto
-                };
-
-                var carrito = carritoWSClient.obtenerPorIdCarrito(idCarrito);
-
-                var carritoDeItems = new SoftWA.ServiciosWSClient.carritoDTO
-                {
-                    idCarrito = carrito.idCarrito
-                };
-
-                var nuevoItem = new SoftWA.ServiciosWSClient.itemCarritoDTO
-                {
-                    carrito = carritoDeItems,
-                    producto = producto,
+                    carrito = new carritoDTO { idCarrito = idCarrito },
+                    producto = new productoDTO { idProducto = idProducto },
                     cantidad = 1,
-                    subtotal = productoCompleto.precio,
-                    usuarioCreacion = new SoftWA.ServiciosWSClient.usuarioDTO { id = 4 },
+                    subtotal = producto.precio,
+                    usuarioCreacion = new usuarioDTO { id = 4 } // temporal
                 };
 
-                int i = itemCarritoWSClient.insertarItemCarrito(nuevoItem);
+                itemCarritoWSClient.insertarItemCarrito(nuevoItem);
                 Response.Redirect("Carrito.aspx");
             }
             catch (Exception ex)
             {
-                Response.Write("<script>alert('Error al cargar productos: " + ex.Message + "');</script>");
-                Response.Redirect("Inicio.aspx");
+                ScriptManager.RegisterStartupScript(this, GetType(), "alert", $"alert('Error: {ex.Message}');", true);
             }
-
-            
         }
     }
 }

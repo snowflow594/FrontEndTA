@@ -83,16 +83,6 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarPorUsuarioCreacionPersona">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="usuarioCreacionId" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarPorUsuarioCreacionPersonaResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarPorNombreApellidoParcialPersona">
     <xs:sequence>
       <xs:element minOccurs="0" name="nombreParcial" type="xs:string" />
@@ -100,6 +90,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarPorNombreApellidoParcialPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorUsuarioCreacionPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuarioCreacionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPorUsuarioCreacionPersonaResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
     </xs:sequence>
@@ -160,6 +160,16 @@
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="obtenerPorIdPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarPorFechasPersona">
     <xs:sequence>
       <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
@@ -177,16 +187,6 @@
   <xs:complexType name="listarPersonasInactivosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="obtenerPorIdPersona">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="personaId" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="obtenerPorIdPersonaResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:personaDTO" />
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

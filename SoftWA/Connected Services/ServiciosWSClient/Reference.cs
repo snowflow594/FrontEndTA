@@ -16,43 +16,17 @@ namespace SoftWA.ServiciosWSClient {
     public interface Carrito {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoFechaCre" +
-            "acionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoFechaCre" +
-            "acionResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPersonaTodosRequ" +
+            "est", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPersonaTodosResp" +
+            "onse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse listarCarritoPorRangoFechaCreacion(SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest request);
+        SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse listarCarritoPersonaTodos(SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoFechaCre" +
-            "acionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoFechaCre" +
-            "acionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse> listarCarritoPorRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorUsuarioCreaci" +
-            "onRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorUsuarioCreaci" +
-            "onResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse listarCarritoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorUsuarioCreaci" +
-            "onRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorUsuarioCreaci" +
-            "onResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse> listarCarritoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoInactivosRequest" +
-            "", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoInactivosRespons" +
-            "e")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarCarritoInactivosResponse listarCarritoInactivos(SoftWA.ServiciosWSClient.listarCarritoInactivosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoInactivosRequest" +
-            "", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoInactivosRespons" +
-            "e")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoInactivosResponse> listarCarritoInactivosAsync(SoftWA.ServiciosWSClient.listarCarritoInactivosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPersonaTodosRequ" +
+            "est", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPersonaTodosResp" +
+            "onse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse> listarCarritoPersonaTodosAsync(SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/obtenerPorIdCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/obtenerPorIdCarritoResponse")]
@@ -77,19 +51,6 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorPersonaResponse> listarCarritoPorPersonaAsync(SoftWA.ServiciosWSClient.listarCarritoPorPersonaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPersonaTodosRequ" +
-            "est", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPersonaTodosResp" +
-            "onse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse listarCarritoPersonaTodos(SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPersonaTodosRequ" +
-            "est", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPersonaTodosResp" +
-            "onse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse> listarCarritoPersonaTodosAsync(SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoTotalReq" +
             "uest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoTotalRes" +
             "ponse")]
@@ -101,6 +62,19 @@ namespace SoftWA.ServiciosWSClient {
             "uest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoTotalRes" +
             "ponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorRangoTotalResponse> listarCarritoPorRangoTotalAsync(SoftWA.ServiciosWSClient.listarCarritoPorRangoTotalRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoInactivosRequest" +
+            "", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoInactivosRespons" +
+            "e")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarCarritoInactivosResponse listarCarritoInactivos(SoftWA.ServiciosWSClient.listarCarritoInactivosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoInactivosRequest" +
+            "", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoInactivosRespons" +
+            "e")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoInactivosResponse> listarCarritoInactivosAsync(SoftWA.ServiciosWSClient.listarCarritoInactivosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/modificarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/modificarCarritoResponse")]
@@ -121,13 +95,13 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosCarritoResponse> listarTodosCarritoAsync(SoftWA.ServiciosWSClient.listarTodosCarritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/insertarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/insertarCarritoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/vaciarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/vaciarCarritoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarCarritoResponse insertarCarrito(SoftWA.ServiciosWSClient.insertarCarritoRequest request);
+        SoftWA.ServiciosWSClient.vaciarCarritoResponse vaciarCarrito(SoftWA.ServiciosWSClient.vaciarCarritoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/insertarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/insertarCarritoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarCarritoResponse> insertarCarritoAsync(SoftWA.ServiciosWSClient.insertarCarritoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/vaciarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/vaciarCarritoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.vaciarCarritoResponse> vaciarCarritoAsync(SoftWA.ServiciosWSClient.vaciarCarritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/eliminarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/eliminarCarritoResponse")]
@@ -139,13 +113,39 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarCarritoResponse> eliminarCarritoAsync(SoftWA.ServiciosWSClient.eliminarCarritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/vaciarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/vaciarCarritoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/insertarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/insertarCarritoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.vaciarCarritoResponse vaciarCarrito(SoftWA.ServiciosWSClient.vaciarCarritoRequest request);
+        SoftWA.ServiciosWSClient.insertarCarritoResponse insertarCarrito(SoftWA.ServiciosWSClient.insertarCarritoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/vaciarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/vaciarCarritoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.vaciarCarritoResponse> vaciarCarritoAsync(SoftWA.ServiciosWSClient.vaciarCarritoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/insertarCarritoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/insertarCarritoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarCarritoResponse> insertarCarritoAsync(SoftWA.ServiciosWSClient.insertarCarritoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoFechaCre" +
+            "acionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoFechaCre" +
+            "acionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse listarCarritoPorRangoFechaCreacion(SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoFechaCre" +
+            "acionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorRangoFechaCre" +
+            "acionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse> listarCarritoPorRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorUsuarioCreaci" +
+            "onRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorUsuarioCreaci" +
+            "onResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse listarCarritoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorUsuarioCreaci" +
+            "onRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Carrito/listarCarritoPorUsuarioCreaci" +
+            "onResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse> listarCarritoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest request);
     }
     
     /// <remarks/>
@@ -3571,104 +3571,35 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorRangoFechaCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCarritoPorRangoFechaCreacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPersonaTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCarritoPersonaTodosRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaInicio;
+        public int idPersona;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaFin;
-        
-        public listarCarritoPorRangoFechaCreacionRequest() {
+        public listarCarritoPersonaTodosRequest() {
         }
         
-        public listarCarritoPorRangoFechaCreacionRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            this.fechaInicio = fechaInicio;
-            this.fechaFin = fechaFin;
+        public listarCarritoPersonaTodosRequest(int idPersona) {
+            this.idPersona = idPersona;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorRangoFechaCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCarritoPorRangoFechaCreacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPersonaTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCarritoPersonaTodosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.carritoDTO[] @return;
         
-        public listarCarritoPorRangoFechaCreacionResponse() {
+        public listarCarritoPersonaTodosResponse() {
         }
         
-        public listarCarritoPorRangoFechaCreacionResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCarritoPorUsuarioCreacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuarioCreacion;
-        
-        public listarCarritoPorUsuarioCreacionRequest() {
-        }
-        
-        public listarCarritoPorUsuarioCreacionRequest(int idUsuarioCreacion) {
-            this.idUsuarioCreacion = idUsuarioCreacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCarritoPorUsuarioCreacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.carritoDTO[] @return;
-        
-        public listarCarritoPorUsuarioCreacionResponse() {
-        }
-        
-        public listarCarritoPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoInactivos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCarritoInactivosRequest {
-        
-        public listarCarritoInactivosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoInactivosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCarritoInactivosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.carritoDTO[] @return;
-        
-        public listarCarritoInactivosResponse() {
-        }
-        
-        public listarCarritoInactivosResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
+        public listarCarritoPersonaTodosResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -3748,42 +3679,6 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPersonaTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCarritoPersonaTodosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPersona;
-        
-        public listarCarritoPersonaTodosRequest() {
-        }
-        
-        public listarCarritoPersonaTodosRequest(int idPersona) {
-            this.idPersona = idPersona;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPersonaTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarCarritoPersonaTodosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.carritoDTO[] @return;
-        
-        public listarCarritoPersonaTodosResponse() {
-        }
-        
-        public listarCarritoPersonaTodosResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorRangoTotal", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class listarCarritoPorRangoTotalRequest {
         
@@ -3818,6 +3713,34 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public listarCarritoPorRangoTotalResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoInactivos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCarritoInactivosRequest {
+        
+        public listarCarritoInactivosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoInactivosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCarritoInactivosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.carritoDTO[] @return;
+        
+        public listarCarritoInactivosResponse() {
+        }
+        
+        public listarCarritoInactivosResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -3889,35 +3812,40 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarCarritoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="vaciarCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class vaciarCarritoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.carritoDTO carrito;
+        public int idCarrito;
         
-        public insertarCarritoRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public vaciarCarritoRequest() {
         }
         
-        public insertarCarritoRequest(SoftWA.ServiciosWSClient.carritoDTO carrito) {
-            this.carrito = carrito;
+        public vaciarCarritoRequest(int idCarrito, int idUsuario) {
+            this.idCarrito = idCarrito;
+            this.idUsuario = idUsuario;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarCarritoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="vaciarCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class vaciarCarritoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public insertarCarritoResponse() {
+        public vaciarCarritoResponse() {
         }
         
-        public insertarCarritoResponse(int @return) {
+        public vaciarCarritoResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -3961,40 +3889,112 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="vaciarCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class vaciarCarritoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarCarritoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idCarrito;
+        public SoftWA.ServiciosWSClient.carritoDTO carrito;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
-        
-        public vaciarCarritoRequest() {
+        public insertarCarritoRequest() {
         }
         
-        public vaciarCarritoRequest(int idCarrito, int idUsuario) {
-            this.idCarrito = idCarrito;
-            this.idUsuario = idUsuario;
+        public insertarCarritoRequest(SoftWA.ServiciosWSClient.carritoDTO carrito) {
+            this.carrito = carrito;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="vaciarCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class vaciarCarritoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarCarritoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public vaciarCarritoResponse() {
+        public insertarCarritoResponse() {
         }
         
-        public vaciarCarritoResponse(int @return) {
+        public insertarCarritoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorRangoFechaCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCarritoPorRangoFechaCreacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaInicio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaFin;
+        
+        public listarCarritoPorRangoFechaCreacionRequest() {
+        }
+        
+        public listarCarritoPorRangoFechaCreacionRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorRangoFechaCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCarritoPorRangoFechaCreacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.carritoDTO[] @return;
+        
+        public listarCarritoPorRangoFechaCreacionResponse() {
+        }
+        
+        public listarCarritoPorRangoFechaCreacionResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCarritoPorUsuarioCreacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuarioCreacion;
+        
+        public listarCarritoPorUsuarioCreacionRequest() {
+        }
+        
+        public listarCarritoPorUsuarioCreacionRequest(int idUsuarioCreacion) {
+            this.idUsuarioCreacion = idUsuarioCreacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarCarritoPorUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarCarritoPorUsuarioCreacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.carritoDTO[] @return;
+        
+        public listarCarritoPorUsuarioCreacionResponse() {
+        }
+        
+        public listarCarritoPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.carritoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -4027,72 +4027,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoPorRangoFechaCreacion(SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest request) {
-            return base.Channel.listarCarritoPorRangoFechaCreacion(request);
+        SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoPersonaTodos(SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest request) {
+            return base.Channel.listarCarritoPersonaTodos(request);
         }
         
-        public SoftWA.ServiciosWSClient.carritoDTO[] listarCarritoPorRangoFechaCreacion(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorRangoFechaCreacion(inValue);
+        public SoftWA.ServiciosWSClient.carritoDTO[] listarCarritoPersonaTodos(int idPersona) {
+            SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest();
+            inValue.idPersona = idPersona;
+            SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPersonaTodos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse> SoftWA.ServiciosWSClient.Carrito.listarCarritoPorRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest request) {
-            return base.Channel.listarCarritoPorRangoFechaCreacionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse> SoftWA.ServiciosWSClient.Carrito.listarCarritoPersonaTodosAsync(SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest request) {
+            return base.Channel.listarCarritoPersonaTodosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse> listarCarritoPorRangoFechaCreacionAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorRangoFechaCreacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest request) {
-            return base.Channel.listarCarritoPorUsuarioCreacion(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.carritoDTO[] listarCarritoPorUsuarioCreacion(int idUsuarioCreacion) {
-            SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest();
-            inValue.idUsuarioCreacion = idUsuarioCreacion;
-            SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorUsuarioCreacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.Carrito.listarCarritoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest request) {
-            return base.Channel.listarCarritoPorUsuarioCreacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse> listarCarritoPorUsuarioCreacionAsync(int idUsuarioCreacion) {
-            SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest();
-            inValue.idUsuarioCreacion = idUsuarioCreacion;
-            return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorUsuarioCreacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarCarritoInactivosResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoInactivos(SoftWA.ServiciosWSClient.listarCarritoInactivosRequest request) {
-            return base.Channel.listarCarritoInactivos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.carritoDTO[] listarCarritoInactivos() {
-            SoftWA.ServiciosWSClient.listarCarritoInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoInactivosRequest();
-            SoftWA.ServiciosWSClient.listarCarritoInactivosResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoInactivos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoInactivosResponse> SoftWA.ServiciosWSClient.Carrito.listarCarritoInactivosAsync(SoftWA.ServiciosWSClient.listarCarritoInactivosRequest request) {
-            return base.Channel.listarCarritoInactivosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoInactivosResponse> listarCarritoInactivosAsync() {
-            SoftWA.ServiciosWSClient.listarCarritoInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoInactivosRequest();
-            return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoInactivosAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse> listarCarritoPersonaTodosAsync(int idPersona) {
+            SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest();
+            inValue.idPersona = idPersona;
+            return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPersonaTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4142,29 +4096,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoPersonaTodos(SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest request) {
-            return base.Channel.listarCarritoPersonaTodos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.carritoDTO[] listarCarritoPersonaTodos(int idPersona) {
-            SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest();
-            inValue.idPersona = idPersona;
-            SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPersonaTodos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse> SoftWA.ServiciosWSClient.Carrito.listarCarritoPersonaTodosAsync(SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest request) {
-            return base.Channel.listarCarritoPersonaTodosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPersonaTodosResponse> listarCarritoPersonaTodosAsync(int idPersona) {
-            SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPersonaTodosRequest();
-            inValue.idPersona = idPersona;
-            return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPersonaTodosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.listarCarritoPorRangoTotalResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoPorRangoTotal(SoftWA.ServiciosWSClient.listarCarritoPorRangoTotalRequest request) {
             return base.Channel.listarCarritoPorRangoTotal(request);
         }
@@ -4187,6 +4118,27 @@ namespace SoftWA.ServiciosWSClient {
             inValue.montoMinimo = montoMinimo;
             inValue.montoMaximo = montoMaximo;
             return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorRangoTotalAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarCarritoInactivosResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoInactivos(SoftWA.ServiciosWSClient.listarCarritoInactivosRequest request) {
+            return base.Channel.listarCarritoInactivos(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.carritoDTO[] listarCarritoInactivos() {
+            SoftWA.ServiciosWSClient.listarCarritoInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoInactivosRequest();
+            SoftWA.ServiciosWSClient.listarCarritoInactivosResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoInactivos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoInactivosResponse> SoftWA.ServiciosWSClient.Carrito.listarCarritoInactivosAsync(SoftWA.ServiciosWSClient.listarCarritoInactivosRequest request) {
+            return base.Channel.listarCarritoInactivosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoInactivosResponse> listarCarritoInactivosAsync() {
+            SoftWA.ServiciosWSClient.listarCarritoInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoInactivosRequest();
+            return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoInactivosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4234,26 +4186,28 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarCarritoResponse SoftWA.ServiciosWSClient.Carrito.insertarCarrito(SoftWA.ServiciosWSClient.insertarCarritoRequest request) {
-            return base.Channel.insertarCarrito(request);
+        SoftWA.ServiciosWSClient.vaciarCarritoResponse SoftWA.ServiciosWSClient.Carrito.vaciarCarrito(SoftWA.ServiciosWSClient.vaciarCarritoRequest request) {
+            return base.Channel.vaciarCarrito(request);
         }
         
-        public int insertarCarrito(SoftWA.ServiciosWSClient.carritoDTO carrito) {
-            SoftWA.ServiciosWSClient.insertarCarritoRequest inValue = new SoftWA.ServiciosWSClient.insertarCarritoRequest();
-            inValue.carrito = carrito;
-            SoftWA.ServiciosWSClient.insertarCarritoResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).insertarCarrito(inValue);
+        public int vaciarCarrito(int idCarrito, int idUsuario) {
+            SoftWA.ServiciosWSClient.vaciarCarritoRequest inValue = new SoftWA.ServiciosWSClient.vaciarCarritoRequest();
+            inValue.idCarrito = idCarrito;
+            inValue.idUsuario = idUsuario;
+            SoftWA.ServiciosWSClient.vaciarCarritoResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).vaciarCarrito(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarCarritoResponse> SoftWA.ServiciosWSClient.Carrito.insertarCarritoAsync(SoftWA.ServiciosWSClient.insertarCarritoRequest request) {
-            return base.Channel.insertarCarritoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.vaciarCarritoResponse> SoftWA.ServiciosWSClient.Carrito.vaciarCarritoAsync(SoftWA.ServiciosWSClient.vaciarCarritoRequest request) {
+            return base.Channel.vaciarCarritoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarCarritoResponse> insertarCarritoAsync(SoftWA.ServiciosWSClient.carritoDTO carrito) {
-            SoftWA.ServiciosWSClient.insertarCarritoRequest inValue = new SoftWA.ServiciosWSClient.insertarCarritoRequest();
-            inValue.carrito = carrito;
-            return ((SoftWA.ServiciosWSClient.Carrito)(this)).insertarCarritoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.vaciarCarritoResponse> vaciarCarritoAsync(int idCarrito, int idUsuario) {
+            SoftWA.ServiciosWSClient.vaciarCarritoRequest inValue = new SoftWA.ServiciosWSClient.vaciarCarritoRequest();
+            inValue.idCarrito = idCarrito;
+            inValue.idUsuario = idUsuario;
+            return ((SoftWA.ServiciosWSClient.Carrito)(this)).vaciarCarritoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -4280,28 +4234,74 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.vaciarCarritoResponse SoftWA.ServiciosWSClient.Carrito.vaciarCarrito(SoftWA.ServiciosWSClient.vaciarCarritoRequest request) {
-            return base.Channel.vaciarCarrito(request);
+        SoftWA.ServiciosWSClient.insertarCarritoResponse SoftWA.ServiciosWSClient.Carrito.insertarCarrito(SoftWA.ServiciosWSClient.insertarCarritoRequest request) {
+            return base.Channel.insertarCarrito(request);
         }
         
-        public int vaciarCarrito(int idCarrito, int idUsuario) {
-            SoftWA.ServiciosWSClient.vaciarCarritoRequest inValue = new SoftWA.ServiciosWSClient.vaciarCarritoRequest();
-            inValue.idCarrito = idCarrito;
-            inValue.idUsuario = idUsuario;
-            SoftWA.ServiciosWSClient.vaciarCarritoResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).vaciarCarrito(inValue);
+        public int insertarCarrito(SoftWA.ServiciosWSClient.carritoDTO carrito) {
+            SoftWA.ServiciosWSClient.insertarCarritoRequest inValue = new SoftWA.ServiciosWSClient.insertarCarritoRequest();
+            inValue.carrito = carrito;
+            SoftWA.ServiciosWSClient.insertarCarritoResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).insertarCarrito(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.vaciarCarritoResponse> SoftWA.ServiciosWSClient.Carrito.vaciarCarritoAsync(SoftWA.ServiciosWSClient.vaciarCarritoRequest request) {
-            return base.Channel.vaciarCarritoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarCarritoResponse> SoftWA.ServiciosWSClient.Carrito.insertarCarritoAsync(SoftWA.ServiciosWSClient.insertarCarritoRequest request) {
+            return base.Channel.insertarCarritoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.vaciarCarritoResponse> vaciarCarritoAsync(int idCarrito, int idUsuario) {
-            SoftWA.ServiciosWSClient.vaciarCarritoRequest inValue = new SoftWA.ServiciosWSClient.vaciarCarritoRequest();
-            inValue.idCarrito = idCarrito;
-            inValue.idUsuario = idUsuario;
-            return ((SoftWA.ServiciosWSClient.Carrito)(this)).vaciarCarritoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarCarritoResponse> insertarCarritoAsync(SoftWA.ServiciosWSClient.carritoDTO carrito) {
+            SoftWA.ServiciosWSClient.insertarCarritoRequest inValue = new SoftWA.ServiciosWSClient.insertarCarritoRequest();
+            inValue.carrito = carrito;
+            return ((SoftWA.ServiciosWSClient.Carrito)(this)).insertarCarritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoPorRangoFechaCreacion(SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest request) {
+            return base.Channel.listarCarritoPorRangoFechaCreacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.carritoDTO[] listarCarritoPorRangoFechaCreacion(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorRangoFechaCreacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse> SoftWA.ServiciosWSClient.Carrito.listarCarritoPorRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest request) {
+            return base.Channel.listarCarritoPorRangoFechaCreacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionResponse> listarCarritoPorRangoFechaCreacionAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPorRangoFechaCreacionRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorRangoFechaCreacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.Carrito.listarCarritoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest request) {
+            return base.Channel.listarCarritoPorUsuarioCreacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.carritoDTO[] listarCarritoPorUsuarioCreacion(int idUsuarioCreacion) {
+            SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest();
+            inValue.idUsuarioCreacion = idUsuarioCreacion;
+            SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorUsuarioCreacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.Carrito.listarCarritoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest request) {
+            return base.Channel.listarCarritoPorUsuarioCreacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionResponse> listarCarritoPorUsuarioCreacionAsync(int idUsuarioCreacion) {
+            SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarCarritoPorUsuarioCreacionRequest();
+            inValue.idUsuarioCreacion = idUsuarioCreacion;
+            return ((SoftWA.ServiciosWSClient.Carrito)(this)).listarCarritoPorUsuarioCreacionAsync(inValue);
         }
     }
     
@@ -4310,43 +4310,17 @@ namespace SoftWA.ServiciosWSClient {
     public interface Pedido {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacion" +
-            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacion" +
-            "Response")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalReque" +
+            "st", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalRespo" +
+            "nse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse listarPedidoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest request);
+        SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse listarPedidoPorRangoTotal(SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacion" +
-            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacion" +
-            "Response")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse> listarPedidoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoR" +
-            "equest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoR" +
-            "esponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse listarPedidoPorPersonaYEstado(SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoR" +
-            "equest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoR" +
-            "esponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse> listarPedidoPorPersonaYEstadoAsync(SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaReq" +
-            "uest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaRes" +
-            "ponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse listarPedidoPorEstadoYFecha(SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaReq" +
-            "uest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaRes" +
-            "ponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse> listarPedidoPorEstadoYFechaAsync(SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalReque" +
+            "st", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalRespo" +
+            "nse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse> listarPedidoPorRangoTotalAsync(SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorFechaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorFechaResponse")]
@@ -4356,15 +4330,6 @@ namespace SoftWA.ServiciosWSClient {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorFechaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorFechaResponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorFechaResponse> listarPedidoPorFechaAsync(SoftWA.ServiciosWSClient.listarPedidoPorFechaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoInactivoResponse listarPedidoInactivo(SoftWA.ServiciosWSClient.listarPedidoInactivoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoInactivoResponse> listarPedidoInactivoAsync(SoftWA.ServiciosWSClient.listarPedidoInactivoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaResponse" +
@@ -4387,17 +4352,13 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorEstadoResponse> listarPedidoPorEstadoAsync(SoftWA.ServiciosWSClient.listarPedidoPorEstadoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalReque" +
-            "st", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalRespo" +
-            "nse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse listarPedidoPorRangoTotal(SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest request);
+        SoftWA.ServiciosWSClient.listarPedidoInactivoResponse listarPedidoInactivo(SoftWA.ServiciosWSClient.listarPedidoInactivoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalReque" +
-            "st", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalRespo" +
-            "nse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse> listarPedidoPorRangoTotalAsync(SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoInactivoResponse> listarPedidoInactivoAsync(SoftWA.ServiciosWSClient.listarPedidoInactivoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/modificarPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/modificarPedidoResponse")]
@@ -4409,13 +4370,13 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPedidoResponse> modificarPedidoAsync(SoftWA.ServiciosWSClient.modificarPedidoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarTodosPedidoResponse listarTodosPedido(SoftWA.ServiciosWSClient.listarTodosPedidoRequest request);
+        SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse obtenerPorIdPedido(SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPedidoResponse> listarTodosPedidoAsync(SoftWA.ServiciosWSClient.listarTodosPedidoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse> obtenerPorIdPedidoAsync(SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/eliminarPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/eliminarPedidoResponse")]
@@ -4427,6 +4388,15 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPedidoResponse> eliminarPedidoAsync(SoftWA.ServiciosWSClient.eliminarPedidoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarTodosPedidoResponse listarTodosPedido(SoftWA.ServiciosWSClient.listarTodosPedidoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPedidoResponse> listarTodosPedidoAsync(SoftWA.ServiciosWSClient.listarTodosPedidoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/insertarPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/insertarPedidoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -4436,134 +4406,82 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPedidoResponse> insertarPedidoAsync(SoftWA.ServiciosWSClient.insertarPedidoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacion" +
+            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacion" +
+            "Response")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse obtenerPorIdPedido(SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest request);
+        SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse listarPedidoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse> obtenerPorIdPedidoAsync(SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacion" +
+            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacion" +
+            "Response")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse> listarPedidoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaReq" +
+            "uest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaRes" +
+            "ponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse listarPedidoPorEstadoYFecha(SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaReq" +
+            "uest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaRes" +
+            "ponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse> listarPedidoPorEstadoYFechaAsync(SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoR" +
+            "equest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoR" +
+            "esponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse listarPedidoPorPersonaYEstado(SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoR" +
+            "equest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoR" +
+            "esponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse> listarPedidoPorPersonaYEstadoAsync(SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoPorUsuarioCreacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorRangoTotal", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoPorRangoTotalRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int usuarioId;
-        
-        public listarPedidoPorUsuarioCreacionRequest() {
-        }
-        
-        public listarPedidoPorUsuarioCreacionRequest(int usuarioId) {
-            this.usuarioId = usuarioId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoPorUsuarioCreacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
-        
-        public listarPedidoPorUsuarioCreacionResponse() {
-        }
-        
-        public listarPedidoPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorPersonaYEstado", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoPorPersonaYEstadoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPersona;
+        public double montoMinimo;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string estado;
+        public double montoMaximo;
         
-        public listarPedidoPorPersonaYEstadoRequest() {
+        public listarPedidoPorRangoTotalRequest() {
         }
         
-        public listarPedidoPorPersonaYEstadoRequest(int idPersona, string estado) {
-            this.idPersona = idPersona;
-            this.estado = estado;
+        public listarPedidoPorRangoTotalRequest(double montoMinimo, double montoMaximo) {
+            this.montoMinimo = montoMinimo;
+            this.montoMaximo = montoMaximo;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorPersonaYEstadoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoPorPersonaYEstadoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorRangoTotalResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoPorRangoTotalResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
         
-        public listarPedidoPorPersonaYEstadoResponse() {
+        public listarPedidoPorRangoTotalResponse() {
         }
         
-        public listarPedidoPorPersonaYEstadoResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorEstadoYFecha", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoPorEstadoYFechaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string estado;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaInicio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaFin;
-        
-        public listarPedidoPorEstadoYFechaRequest() {
-        }
-        
-        public listarPedidoPorEstadoYFechaRequest(string estado, System.DateTime fechaInicio, System.DateTime fechaFin) {
-            this.estado = estado;
-            this.fechaInicio = fechaInicio;
-            this.fechaFin = fechaFin;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorEstadoYFechaResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoPorEstadoYFechaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
-        
-        public listarPedidoPorEstadoYFechaResponse() {
-        }
-        
-        public listarPedidoPorEstadoYFechaResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
+        public listarPedidoPorRangoTotalResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -4605,34 +4523,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public listarPedidoPorFechaResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoInactivo", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoInactivoRequest {
-        
-        public listarPedidoInactivoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoInactivoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoInactivoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
-        
-        public listarPedidoInactivoResponse() {
-        }
-        
-        public listarPedidoInactivoResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -4712,40 +4602,27 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorRangoTotal", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoPorRangoTotalRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoInactivo", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoInactivoRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double montoMinimo;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double montoMaximo;
-        
-        public listarPedidoPorRangoTotalRequest() {
-        }
-        
-        public listarPedidoPorRangoTotalRequest(double montoMinimo, double montoMaximo) {
-            this.montoMinimo = montoMinimo;
-            this.montoMaximo = montoMaximo;
+        public listarPedidoInactivoRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorRangoTotalResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoPorRangoTotalResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoInactivoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoInactivoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
         
-        public listarPedidoPorRangoTotalResponse() {
+        public listarPedidoInactivoResponse() {
         }
         
-        public listarPedidoPorRangoTotalResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
+        public listarPedidoInactivoResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -4789,27 +4666,35 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosPedidoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdPedidoRequest {
         
-        public listarTodosPedidoRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPedido;
+        
+        public obtenerPorIdPedidoRequest() {
+        }
+        
+        public obtenerPorIdPedidoRequest(int idPedido) {
+            this.idPedido = idPedido;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosPedidoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdPedidoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pedidoDTO @return;
         
-        public listarTodosPedidoResponse() {
+        public obtenerPorIdPedidoResponse() {
         }
         
-        public listarTodosPedidoResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
+        public obtenerPorIdPedidoResponse(SoftWA.ServiciosWSClient.pedidoDTO @return) {
             this.@return = @return;
         }
     }
@@ -4853,6 +4738,34 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosPedidoRequest {
+        
+        public listarTodosPedidoRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosPedidoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
+        
+        public listarTodosPedidoResponse() {
+        }
+        
+        public listarTodosPedidoResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class insertarPedidoRequest {
         
@@ -4889,35 +4802,122 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdPedidoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoPorUsuarioCreacionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPedido;
+        public int usuarioId;
         
-        public obtenerPorIdPedidoRequest() {
+        public listarPedidoPorUsuarioCreacionRequest() {
         }
         
-        public obtenerPorIdPedidoRequest(int idPedido) {
-            this.idPedido = idPedido;
+        public listarPedidoPorUsuarioCreacionRequest(int usuarioId) {
+            this.usuarioId = usuarioId;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdPedidoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoPorUsuarioCreacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
+        
+        public listarPedidoPorUsuarioCreacionResponse() {
+        }
+        
+        public listarPedidoPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorEstadoYFecha", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoPorEstadoYFechaRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoDTO @return;
+        public string estado;
         
-        public obtenerPorIdPedidoResponse() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaInicio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaFin;
+        
+        public listarPedidoPorEstadoYFechaRequest() {
         }
         
-        public obtenerPorIdPedidoResponse(SoftWA.ServiciosWSClient.pedidoDTO @return) {
+        public listarPedidoPorEstadoYFechaRequest(string estado, System.DateTime fechaInicio, System.DateTime fechaFin) {
+            this.estado = estado;
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorEstadoYFechaResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoPorEstadoYFechaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
+        
+        public listarPedidoPorEstadoYFechaResponse() {
+        }
+        
+        public listarPedidoPorEstadoYFechaResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorPersonaYEstado", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoPorPersonaYEstadoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPersona;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string estado;
+        
+        public listarPedidoPorPersonaYEstadoRequest() {
+        }
+        
+        public listarPedidoPorPersonaYEstadoRequest(int idPersona, string estado) {
+            this.idPersona = idPersona;
+            this.estado = estado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoPorPersonaYEstadoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoPorPersonaYEstadoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pedidoDTO[] @return;
+        
+        public listarPedidoPorPersonaYEstadoResponse() {
+        }
+        
+        public listarPedidoPorPersonaYEstadoResponse(SoftWA.ServiciosWSClient.pedidoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -4950,78 +4950,28 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest request) {
-            return base.Channel.listarPedidoPorUsuarioCreacion(request);
+        SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoPorRangoTotal(SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest request) {
+            return base.Channel.listarPedidoPorRangoTotal(request);
         }
         
-        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoPorUsuarioCreacion(int usuarioId) {
-            SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest();
-            inValue.usuarioId = usuarioId;
-            SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorUsuarioCreacion(inValue);
+        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoPorRangoTotal(double montoMinimo, double montoMaximo) {
+            SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest();
+            inValue.montoMinimo = montoMinimo;
+            inValue.montoMaximo = montoMaximo;
+            SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorRangoTotal(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest request) {
-            return base.Channel.listarPedidoPorUsuarioCreacionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoPorRangoTotalAsync(SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest request) {
+            return base.Channel.listarPedidoPorRangoTotalAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse> listarPedidoPorUsuarioCreacionAsync(int usuarioId) {
-            SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest();
-            inValue.usuarioId = usuarioId;
-            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorUsuarioCreacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoPorPersonaYEstado(SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest request) {
-            return base.Channel.listarPedidoPorPersonaYEstado(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoPorPersonaYEstado(int idPersona, string estado) {
-            SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest();
-            inValue.idPersona = idPersona;
-            inValue.estado = estado;
-            SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorPersonaYEstado(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoPorPersonaYEstadoAsync(SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest request) {
-            return base.Channel.listarPedidoPorPersonaYEstadoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse> listarPedidoPorPersonaYEstadoAsync(int idPersona, string estado) {
-            SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest();
-            inValue.idPersona = idPersona;
-            inValue.estado = estado;
-            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorPersonaYEstadoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoPorEstadoYFecha(SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest request) {
-            return base.Channel.listarPedidoPorEstadoYFecha(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoPorEstadoYFecha(string estado, System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest();
-            inValue.estado = estado;
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorEstadoYFecha(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoPorEstadoYFechaAsync(SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest request) {
-            return base.Channel.listarPedidoPorEstadoYFechaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse> listarPedidoPorEstadoYFechaAsync(string estado, System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest();
-            inValue.estado = estado;
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorEstadoYFechaAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse> listarPedidoPorRangoTotalAsync(double montoMinimo, double montoMaximo) {
+            SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest();
+            inValue.montoMinimo = montoMinimo;
+            inValue.montoMaximo = montoMaximo;
+            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorRangoTotalAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5047,27 +4997,6 @@ namespace SoftWA.ServiciosWSClient {
             inValue.fechaInicio = fechaInicio;
             inValue.fechaFin = fechaFin;
             return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorFechaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoInactivoResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoInactivo(SoftWA.ServiciosWSClient.listarPedidoInactivoRequest request) {
-            return base.Channel.listarPedidoInactivo(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoInactivo() {
-            SoftWA.ServiciosWSClient.listarPedidoInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoInactivoRequest();
-            SoftWA.ServiciosWSClient.listarPedidoInactivoResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoInactivo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoInactivoResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoInactivoAsync(SoftWA.ServiciosWSClient.listarPedidoInactivoRequest request) {
-            return base.Channel.listarPedidoInactivoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoInactivoResponse> listarPedidoInactivoAsync() {
-            SoftWA.ServiciosWSClient.listarPedidoInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoInactivoRequest();
-            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoInactivoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5117,28 +5046,24 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoPorRangoTotal(SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest request) {
-            return base.Channel.listarPedidoPorRangoTotal(request);
+        SoftWA.ServiciosWSClient.listarPedidoInactivoResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoInactivo(SoftWA.ServiciosWSClient.listarPedidoInactivoRequest request) {
+            return base.Channel.listarPedidoInactivo(request);
         }
         
-        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoPorRangoTotal(double montoMinimo, double montoMaximo) {
-            SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest();
-            inValue.montoMinimo = montoMinimo;
-            inValue.montoMaximo = montoMaximo;
-            SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorRangoTotal(inValue);
+        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoInactivo() {
+            SoftWA.ServiciosWSClient.listarPedidoInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoInactivoRequest();
+            SoftWA.ServiciosWSClient.listarPedidoInactivoResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoInactivo(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoPorRangoTotalAsync(SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest request) {
-            return base.Channel.listarPedidoPorRangoTotalAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoInactivoResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoInactivoAsync(SoftWA.ServiciosWSClient.listarPedidoInactivoRequest request) {
+            return base.Channel.listarPedidoInactivoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalResponse> listarPedidoPorRangoTotalAsync(double montoMinimo, double montoMaximo) {
-            SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorRangoTotalRequest();
-            inValue.montoMinimo = montoMinimo;
-            inValue.montoMaximo = montoMaximo;
-            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorRangoTotalAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoInactivoResponse> listarPedidoInactivoAsync() {
+            SoftWA.ServiciosWSClient.listarPedidoInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoInactivoRequest();
+            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoInactivoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5165,24 +5090,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarTodosPedidoResponse SoftWA.ServiciosWSClient.Pedido.listarTodosPedido(SoftWA.ServiciosWSClient.listarTodosPedidoRequest request) {
-            return base.Channel.listarTodosPedido(request);
+        SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse SoftWA.ServiciosWSClient.Pedido.obtenerPorIdPedido(SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest request) {
+            return base.Channel.obtenerPorIdPedido(request);
         }
         
-        public SoftWA.ServiciosWSClient.pedidoDTO[] listarTodosPedido() {
-            SoftWA.ServiciosWSClient.listarTodosPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPedidoRequest();
-            SoftWA.ServiciosWSClient.listarTodosPedidoResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarTodosPedido(inValue);
+        public SoftWA.ServiciosWSClient.pedidoDTO obtenerPorIdPedido(int idPedido) {
+            SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest();
+            inValue.idPedido = idPedido;
+            SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).obtenerPorIdPedido(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPedidoResponse> SoftWA.ServiciosWSClient.Pedido.listarTodosPedidoAsync(SoftWA.ServiciosWSClient.listarTodosPedidoRequest request) {
-            return base.Channel.listarTodosPedidoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse> SoftWA.ServiciosWSClient.Pedido.obtenerPorIdPedidoAsync(SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest request) {
+            return base.Channel.obtenerPorIdPedidoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPedidoResponse> listarTodosPedidoAsync() {
-            SoftWA.ServiciosWSClient.listarTodosPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPedidoRequest();
-            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarTodosPedidoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse> obtenerPorIdPedidoAsync(int idPedido) {
+            SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest();
+            inValue.idPedido = idPedido;
+            return ((SoftWA.ServiciosWSClient.Pedido)(this)).obtenerPorIdPedidoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5209,6 +5136,27 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarTodosPedidoResponse SoftWA.ServiciosWSClient.Pedido.listarTodosPedido(SoftWA.ServiciosWSClient.listarTodosPedidoRequest request) {
+            return base.Channel.listarTodosPedido(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pedidoDTO[] listarTodosPedido() {
+            SoftWA.ServiciosWSClient.listarTodosPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPedidoRequest();
+            SoftWA.ServiciosWSClient.listarTodosPedidoResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarTodosPedido(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPedidoResponse> SoftWA.ServiciosWSClient.Pedido.listarTodosPedidoAsync(SoftWA.ServiciosWSClient.listarTodosPedidoRequest request) {
+            return base.Channel.listarTodosPedidoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPedidoResponse> listarTodosPedidoAsync() {
+            SoftWA.ServiciosWSClient.listarTodosPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPedidoRequest();
+            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarTodosPedidoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.insertarPedidoResponse SoftWA.ServiciosWSClient.Pedido.insertarPedido(SoftWA.ServiciosWSClient.insertarPedidoRequest request) {
             return base.Channel.insertarPedido(request);
         }
@@ -5232,26 +5180,78 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse SoftWA.ServiciosWSClient.Pedido.obtenerPorIdPedido(SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest request) {
-            return base.Channel.obtenerPorIdPedido(request);
+        SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest request) {
+            return base.Channel.listarPedidoPorUsuarioCreacion(request);
         }
         
-        public SoftWA.ServiciosWSClient.pedidoDTO obtenerPorIdPedido(int idPedido) {
-            SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest();
-            inValue.idPedido = idPedido;
-            SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).obtenerPorIdPedido(inValue);
+        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoPorUsuarioCreacion(int usuarioId) {
+            SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest();
+            inValue.usuarioId = usuarioId;
+            SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorUsuarioCreacion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse> SoftWA.ServiciosWSClient.Pedido.obtenerPorIdPedidoAsync(SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest request) {
-            return base.Channel.obtenerPorIdPedidoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest request) {
+            return base.Channel.listarPedidoPorUsuarioCreacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPedidoResponse> obtenerPorIdPedidoAsync(int idPedido) {
-            SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPedidoRequest();
-            inValue.idPedido = idPedido;
-            return ((SoftWA.ServiciosWSClient.Pedido)(this)).obtenerPorIdPedidoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionResponse> listarPedidoPorUsuarioCreacionAsync(int usuarioId) {
+            SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorUsuarioCreacionRequest();
+            inValue.usuarioId = usuarioId;
+            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorUsuarioCreacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoPorEstadoYFecha(SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest request) {
+            return base.Channel.listarPedidoPorEstadoYFecha(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoPorEstadoYFecha(string estado, System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest();
+            inValue.estado = estado;
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorEstadoYFecha(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoPorEstadoYFechaAsync(SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest request) {
+            return base.Channel.listarPedidoPorEstadoYFechaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaResponse> listarPedidoPorEstadoYFechaAsync(string estado, System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorEstadoYFechaRequest();
+            inValue.estado = estado;
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorEstadoYFechaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse SoftWA.ServiciosWSClient.Pedido.listarPedidoPorPersonaYEstado(SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest request) {
+            return base.Channel.listarPedidoPorPersonaYEstado(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pedidoDTO[] listarPedidoPorPersonaYEstado(int idPersona, string estado) {
+            SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest();
+            inValue.idPersona = idPersona;
+            inValue.estado = estado;
+            SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse retVal = ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorPersonaYEstado(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse> SoftWA.ServiciosWSClient.Pedido.listarPedidoPorPersonaYEstadoAsync(SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest request) {
+            return base.Channel.listarPedidoPorPersonaYEstadoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoResponse> listarPedidoPorPersonaYEstadoAsync(int idPersona, string estado) {
+            SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoPorPersonaYEstadoRequest();
+            inValue.idPersona = idPersona;
+            inValue.estado = estado;
+            return ((SoftWA.ServiciosWSClient.Pedido)(this)).listarPedidoPorPersonaYEstadoAsync(inValue);
         }
     }
     
@@ -5260,17 +5260,26 @@ namespace SoftWA.ServiciosWSClient {
     public interface Pago {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionRequ" +
-            "est", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionResp" +
-            "onse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse listarPagoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest request);
+        SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse listarPagoPorPedido(SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionRequ" +
-            "est", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionResp" +
-            "onse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse> listarPagoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse> listarPagoPorPedidoAsync(SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRequest" +
+            "", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRespons" +
+            "e")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse listarPagoPorPedidosTodos(SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRequest" +
+            "", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRespons" +
+            "e")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse> listarPagoPorPedidosTodosAsync(SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoRangoFechaPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoRangoFechaPagoResponse" +
@@ -5295,19 +5304,6 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorMontoMinimoResponse> listarPagoPorMontoMinimoAsync(SoftWA.ServiciosWSClient.listarPagoPorMontoMinimoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRequest" +
-            "", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRespons" +
-            "e")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse listarPagoPorPedidosTodos(SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRequest" +
-            "", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRespons" +
-            "e")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse> listarPagoPorPedidosTodosAsync(SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorRangoMontoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorRangoMontoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -5330,24 +5326,6 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorEstadoYFechaResponse> listarPagoPorEstadoYFechaAsync(SoftWA.ServiciosWSClient.listarPagoPorEstadoYFechaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse listarPagoPorPedido(SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse> listarPagoPorPedidoAsync(SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarTodosPagoResponse listarTodosPago(SoftWA.ServiciosWSClient.listarTodosPagoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPagoResponse> listarTodosPagoAsync(SoftWA.ServiciosWSClient.listarTodosPagoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoInactivoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoInactivoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -5357,13 +5335,13 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoInactivoResponse> listarPagoInactivoAsync(SoftWA.ServiciosWSClient.listarPagoInactivoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.eliminarPagoResponse eliminarPago(SoftWA.ServiciosWSClient.eliminarPagoRequest request);
+        SoftWA.ServiciosWSClient.insertarPagoResponse insertarPago(SoftWA.ServiciosWSClient.insertarPagoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPagoResponse> eliminarPagoAsync(SoftWA.ServiciosWSClient.eliminarPagoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPagoResponse> insertarPagoAsync(SoftWA.ServiciosWSClient.insertarPagoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/obtenerPorIdPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/obtenerPorIdPagoResponse")]
@@ -5375,6 +5353,15 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPagoResponse> obtenerPorIdPagoAsync(SoftWA.ServiciosWSClient.obtenerPorIdPagoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarTodosPagoResponse listarTodosPago(SoftWA.ServiciosWSClient.listarTodosPagoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPagoResponse> listarTodosPagoAsync(SoftWA.ServiciosWSClient.listarTodosPagoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/modificarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/modificarPagoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -5384,47 +5371,96 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPagoResponse> modificarPagoAsync(SoftWA.ServiciosWSClient.modificarPagoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarPagoResponse insertarPago(SoftWA.ServiciosWSClient.insertarPagoRequest request);
+        SoftWA.ServiciosWSClient.eliminarPagoResponse eliminarPago(SoftWA.ServiciosWSClient.eliminarPagoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPagoResponse> insertarPagoAsync(SoftWA.ServiciosWSClient.insertarPagoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPagoResponse> eliminarPagoAsync(SoftWA.ServiciosWSClient.eliminarPagoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionRequ" +
+            "est", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionResp" +
+            "onse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse listarPagoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionRequ" +
+            "est", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionResp" +
+            "onse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse> listarPagoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPagoPorUsuarioCreacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPagoPorPedidoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int usuarioId;
+        public int idPedido;
         
-        public listarPagoPorUsuarioCreacionRequest() {
+        public listarPagoPorPedidoRequest() {
         }
         
-        public listarPagoPorUsuarioCreacionRequest(int usuarioId) {
-            this.usuarioId = usuarioId;
+        public listarPagoPorPedidoRequest(int idPedido) {
+            this.idPedido = idPedido;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPagoPorUsuarioCreacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPagoPorPedidoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.pagoDTO[] @return;
         
-        public listarPagoPorUsuarioCreacionResponse() {
+        public listarPagoPorPedidoResponse() {
         }
         
-        public listarPagoPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
+        public listarPagoPorPedidoResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorPedidosTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPagoPorPedidosTodosRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int pedidoId;
+        
+        public listarPagoPorPedidosTodosRequest() {
+        }
+        
+        public listarPagoPorPedidosTodosRequest(int pedidoId) {
+            this.pedidoId = pedidoId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorPedidosTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPagoPorPedidosTodosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pagoDTO[] @return;
+        
+        public listarPagoPorPedidosTodosResponse() {
+        }
+        
+        public listarPagoPorPedidosTodosResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -5502,42 +5538,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public listarPagoPorMontoMinimoResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorPedidosTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPagoPorPedidosTodosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int pedidoId;
-        
-        public listarPagoPorPedidosTodosRequest() {
-        }
-        
-        public listarPagoPorPedidosTodosRequest(int pedidoId) {
-            this.pedidoId = pedidoId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorPedidosTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPagoPorPedidosTodosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pagoDTO[] @return;
-        
-        public listarPagoPorPedidosTodosResponse() {
-        }
-        
-        public listarPagoPorPedidosTodosResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -5627,70 +5627,6 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPagoPorPedidoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPedido;
-        
-        public listarPagoPorPedidoRequest() {
-        }
-        
-        public listarPagoPorPedidoRequest(int idPedido) {
-            this.idPedido = idPedido;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPagoPorPedidoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pagoDTO[] @return;
-        
-        public listarPagoPorPedidoResponse() {
-        }
-        
-        public listarPagoPorPedidoResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPago", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosPagoRequest {
-        
-        public listarTodosPagoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPagoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosPagoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pagoDTO[] @return;
-        
-        public listarTodosPagoResponse() {
-        }
-        
-        public listarTodosPagoResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoInactivo", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class listarPagoInactivoRequest {
         
@@ -5719,17 +5655,17 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPago", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPagoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPago", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarPagoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.pagoDTO pago;
         
-        public eliminarPagoRequest() {
+        public insertarPagoRequest() {
         }
         
-        public eliminarPagoRequest(SoftWA.ServiciosWSClient.pagoDTO pago) {
+        public insertarPagoRequest(SoftWA.ServiciosWSClient.pagoDTO pago) {
             this.pago = pago;
         }
     }
@@ -5737,17 +5673,17 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPagoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPagoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPagoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarPagoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public eliminarPagoResponse() {
+        public insertarPagoResponse() {
         }
         
-        public eliminarPagoResponse(int @return) {
+        public insertarPagoResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -5791,6 +5727,34 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPago", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosPagoRequest {
+        
+        public listarTodosPagoRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPagoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosPagoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pagoDTO[] @return;
+        
+        public listarTodosPagoResponse() {
+        }
+        
+        public listarTodosPagoResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPago", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class modificarPagoRequest {
         
@@ -5827,17 +5791,17 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPago", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarPagoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPago", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPagoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.pagoDTO pago;
         
-        public insertarPagoRequest() {
+        public eliminarPagoRequest() {
         }
         
-        public insertarPagoRequest(SoftWA.ServiciosWSClient.pagoDTO pago) {
+        public eliminarPagoRequest(SoftWA.ServiciosWSClient.pagoDTO pago) {
             this.pago = pago;
         }
     }
@@ -5845,17 +5809,53 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPagoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarPagoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPagoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPagoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public insertarPagoResponse() {
+        public eliminarPagoResponse() {
         }
         
-        public insertarPagoResponse(int @return) {
+        public eliminarPagoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPagoPorUsuarioCreacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int usuarioId;
+        
+        public listarPagoPorUsuarioCreacionRequest() {
+        }
+        
+        public listarPagoPorUsuarioCreacionRequest(int usuarioId) {
+            this.usuarioId = usuarioId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPagoPorUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPagoPorUsuarioCreacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pagoDTO[] @return;
+        
+        public listarPagoPorUsuarioCreacionResponse() {
+        }
+        
+        public listarPagoPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.pagoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -5888,26 +5888,49 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.Pago.listarPagoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest request) {
-            return base.Channel.listarPagoPorUsuarioCreacion(request);
+        SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse SoftWA.ServiciosWSClient.Pago.listarPagoPorPedido(SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest request) {
+            return base.Channel.listarPagoPorPedido(request);
         }
         
-        public SoftWA.ServiciosWSClient.pagoDTO[] listarPagoPorUsuarioCreacion(int usuarioId) {
-            SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest();
-            inValue.usuarioId = usuarioId;
-            SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorUsuarioCreacion(inValue);
+        public SoftWA.ServiciosWSClient.pagoDTO[] listarPagoPorPedido(int idPedido) {
+            SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest();
+            inValue.idPedido = idPedido;
+            SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorPedido(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.Pago.listarPagoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest request) {
-            return base.Channel.listarPagoPorUsuarioCreacionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse> SoftWA.ServiciosWSClient.Pago.listarPagoPorPedidoAsync(SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest request) {
+            return base.Channel.listarPagoPorPedidoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse> listarPagoPorUsuarioCreacionAsync(int usuarioId) {
-            SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest();
-            inValue.usuarioId = usuarioId;
-            return ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorUsuarioCreacionAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse> listarPagoPorPedidoAsync(int idPedido) {
+            SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest();
+            inValue.idPedido = idPedido;
+            return ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorPedidoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse SoftWA.ServiciosWSClient.Pago.listarPagoPorPedidosTodos(SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest request) {
+            return base.Channel.listarPagoPorPedidosTodos(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pagoDTO[] listarPagoPorPedidosTodos(int pedidoId) {
+            SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest();
+            inValue.pedidoId = pedidoId;
+            SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorPedidosTodos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse> SoftWA.ServiciosWSClient.Pago.listarPagoPorPedidosTodosAsync(SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest request) {
+            return base.Channel.listarPagoPorPedidosTodosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse> listarPagoPorPedidosTodosAsync(int pedidoId) {
+            SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest();
+            inValue.pedidoId = pedidoId;
+            return ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorPedidosTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -5956,29 +5979,6 @@ namespace SoftWA.ServiciosWSClient {
             SoftWA.ServiciosWSClient.listarPagoPorMontoMinimoRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorMontoMinimoRequest();
             inValue.montoMinimo = montoMinimo;
             return ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorMontoMinimoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse SoftWA.ServiciosWSClient.Pago.listarPagoPorPedidosTodos(SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest request) {
-            return base.Channel.listarPagoPorPedidosTodos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.pagoDTO[] listarPagoPorPedidosTodos(int pedidoId) {
-            SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest();
-            inValue.pedidoId = pedidoId;
-            SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorPedidosTodos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse> SoftWA.ServiciosWSClient.Pago.listarPagoPorPedidosTodosAsync(SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest request) {
-            return base.Channel.listarPagoPorPedidosTodosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosResponse> listarPagoPorPedidosTodosAsync(int pedidoId) {
-            SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorPedidosTodosRequest();
-            inValue.pedidoId = pedidoId;
-            return ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorPedidosTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -6032,50 +6032,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse SoftWA.ServiciosWSClient.Pago.listarPagoPorPedido(SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest request) {
-            return base.Channel.listarPagoPorPedido(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.pagoDTO[] listarPagoPorPedido(int idPedido) {
-            SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest();
-            inValue.idPedido = idPedido;
-            SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorPedido(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse> SoftWA.ServiciosWSClient.Pago.listarPagoPorPedidoAsync(SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest request) {
-            return base.Channel.listarPagoPorPedidoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorPedidoResponse> listarPagoPorPedidoAsync(int idPedido) {
-            SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorPedidoRequest();
-            inValue.idPedido = idPedido;
-            return ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorPedidoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarTodosPagoResponse SoftWA.ServiciosWSClient.Pago.listarTodosPago(SoftWA.ServiciosWSClient.listarTodosPagoRequest request) {
-            return base.Channel.listarTodosPago(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.pagoDTO[] listarTodosPago() {
-            SoftWA.ServiciosWSClient.listarTodosPagoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPagoRequest();
-            SoftWA.ServiciosWSClient.listarTodosPagoResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).listarTodosPago(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPagoResponse> SoftWA.ServiciosWSClient.Pago.listarTodosPagoAsync(SoftWA.ServiciosWSClient.listarTodosPagoRequest request) {
-            return base.Channel.listarTodosPagoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPagoResponse> listarTodosPagoAsync() {
-            SoftWA.ServiciosWSClient.listarTodosPagoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPagoRequest();
-            return ((SoftWA.ServiciosWSClient.Pago)(this)).listarTodosPagoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.listarPagoInactivoResponse SoftWA.ServiciosWSClient.Pago.listarPagoInactivo(SoftWA.ServiciosWSClient.listarPagoInactivoRequest request) {
             return base.Channel.listarPagoInactivo(request);
         }
@@ -6097,26 +6053,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarPagoResponse SoftWA.ServiciosWSClient.Pago.eliminarPago(SoftWA.ServiciosWSClient.eliminarPagoRequest request) {
-            return base.Channel.eliminarPago(request);
+        SoftWA.ServiciosWSClient.insertarPagoResponse SoftWA.ServiciosWSClient.Pago.insertarPago(SoftWA.ServiciosWSClient.insertarPagoRequest request) {
+            return base.Channel.insertarPago(request);
         }
         
-        public int eliminarPago(SoftWA.ServiciosWSClient.pagoDTO pago) {
-            SoftWA.ServiciosWSClient.eliminarPagoRequest inValue = new SoftWA.ServiciosWSClient.eliminarPagoRequest();
+        public int insertarPago(SoftWA.ServiciosWSClient.pagoDTO pago) {
+            SoftWA.ServiciosWSClient.insertarPagoRequest inValue = new SoftWA.ServiciosWSClient.insertarPagoRequest();
             inValue.pago = pago;
-            SoftWA.ServiciosWSClient.eliminarPagoResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).eliminarPago(inValue);
+            SoftWA.ServiciosWSClient.insertarPagoResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).insertarPago(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPagoResponse> SoftWA.ServiciosWSClient.Pago.eliminarPagoAsync(SoftWA.ServiciosWSClient.eliminarPagoRequest request) {
-            return base.Channel.eliminarPagoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPagoResponse> SoftWA.ServiciosWSClient.Pago.insertarPagoAsync(SoftWA.ServiciosWSClient.insertarPagoRequest request) {
+            return base.Channel.insertarPagoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPagoResponse> eliminarPagoAsync(SoftWA.ServiciosWSClient.pagoDTO pago) {
-            SoftWA.ServiciosWSClient.eliminarPagoRequest inValue = new SoftWA.ServiciosWSClient.eliminarPagoRequest();
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPagoResponse> insertarPagoAsync(SoftWA.ServiciosWSClient.pagoDTO pago) {
+            SoftWA.ServiciosWSClient.insertarPagoRequest inValue = new SoftWA.ServiciosWSClient.insertarPagoRequest();
             inValue.pago = pago;
-            return ((SoftWA.ServiciosWSClient.Pago)(this)).eliminarPagoAsync(inValue);
+            return ((SoftWA.ServiciosWSClient.Pago)(this)).insertarPagoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -6143,6 +6099,27 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarTodosPagoResponse SoftWA.ServiciosWSClient.Pago.listarTodosPago(SoftWA.ServiciosWSClient.listarTodosPagoRequest request) {
+            return base.Channel.listarTodosPago(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pagoDTO[] listarTodosPago() {
+            SoftWA.ServiciosWSClient.listarTodosPagoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPagoRequest();
+            SoftWA.ServiciosWSClient.listarTodosPagoResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).listarTodosPago(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPagoResponse> SoftWA.ServiciosWSClient.Pago.listarTodosPagoAsync(SoftWA.ServiciosWSClient.listarTodosPagoRequest request) {
+            return base.Channel.listarTodosPagoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPagoResponse> listarTodosPagoAsync() {
+            SoftWA.ServiciosWSClient.listarTodosPagoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPagoRequest();
+            return ((SoftWA.ServiciosWSClient.Pago)(this)).listarTodosPagoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.modificarPagoResponse SoftWA.ServiciosWSClient.Pago.modificarPago(SoftWA.ServiciosWSClient.modificarPagoRequest request) {
             return base.Channel.modificarPago(request);
         }
@@ -6166,50 +6143,55 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarPagoResponse SoftWA.ServiciosWSClient.Pago.insertarPago(SoftWA.ServiciosWSClient.insertarPagoRequest request) {
-            return base.Channel.insertarPago(request);
+        SoftWA.ServiciosWSClient.eliminarPagoResponse SoftWA.ServiciosWSClient.Pago.eliminarPago(SoftWA.ServiciosWSClient.eliminarPagoRequest request) {
+            return base.Channel.eliminarPago(request);
         }
         
-        public int insertarPago(SoftWA.ServiciosWSClient.pagoDTO pago) {
-            SoftWA.ServiciosWSClient.insertarPagoRequest inValue = new SoftWA.ServiciosWSClient.insertarPagoRequest();
+        public int eliminarPago(SoftWA.ServiciosWSClient.pagoDTO pago) {
+            SoftWA.ServiciosWSClient.eliminarPagoRequest inValue = new SoftWA.ServiciosWSClient.eliminarPagoRequest();
             inValue.pago = pago;
-            SoftWA.ServiciosWSClient.insertarPagoResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).insertarPago(inValue);
+            SoftWA.ServiciosWSClient.eliminarPagoResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).eliminarPago(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPagoResponse> SoftWA.ServiciosWSClient.Pago.insertarPagoAsync(SoftWA.ServiciosWSClient.insertarPagoRequest request) {
-            return base.Channel.insertarPagoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPagoResponse> SoftWA.ServiciosWSClient.Pago.eliminarPagoAsync(SoftWA.ServiciosWSClient.eliminarPagoRequest request) {
+            return base.Channel.eliminarPagoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPagoResponse> insertarPagoAsync(SoftWA.ServiciosWSClient.pagoDTO pago) {
-            SoftWA.ServiciosWSClient.insertarPagoRequest inValue = new SoftWA.ServiciosWSClient.insertarPagoRequest();
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPagoResponse> eliminarPagoAsync(SoftWA.ServiciosWSClient.pagoDTO pago) {
+            SoftWA.ServiciosWSClient.eliminarPagoRequest inValue = new SoftWA.ServiciosWSClient.eliminarPagoRequest();
             inValue.pago = pago;
-            return ((SoftWA.ServiciosWSClient.Pago)(this)).insertarPagoAsync(inValue);
+            return ((SoftWA.ServiciosWSClient.Pago)(this)).eliminarPagoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.Pago.listarPagoPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest request) {
+            return base.Channel.listarPagoPorUsuarioCreacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pagoDTO[] listarPagoPorUsuarioCreacion(int usuarioId) {
+            SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest();
+            inValue.usuarioId = usuarioId;
+            SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorUsuarioCreacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.Pago.listarPagoPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest request) {
+            return base.Channel.listarPagoPorUsuarioCreacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionResponse> listarPagoPorUsuarioCreacionAsync(int usuarioId) {
+            SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPagoPorUsuarioCreacionRequest();
+            inValue.usuarioId = usuarioId;
+            return ((SoftWA.ServiciosWSClient.Pago)(this)).listarPagoPorUsuarioCreacionAsync(inValue);
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", ConfigurationName="ServiciosWSClient.Rol")]
     public interface Rol {
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.eliminarRolResponse eliminarRol(SoftWA.ServiciosWSClient.eliminarRolRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarRolResponse> eliminarRolAsync(SoftWA.ServiciosWSClient.eliminarRolRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarRolResponse insertarRol(SoftWA.ServiciosWSClient.insertarRolRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarRolResponse> insertarRolAsync(SoftWA.ServiciosWSClient.insertarRolRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/listarTodosRolesRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/listarTodosRolesResponse")]
@@ -6219,6 +6201,15 @@ namespace SoftWA.ServiciosWSClient {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/listarTodosRolesRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/listarTodosRolesResponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosRolesResponse> listarTodosRolesAsync(SoftWA.ServiciosWSClient.listarTodosRolesRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.insertarRolResponse insertarRol(SoftWA.ServiciosWSClient.insertarRolRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarRolResponse> insertarRolAsync(SoftWA.ServiciosWSClient.insertarRolRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/obtenerPorIdRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/obtenerPorIdRolResponse")]
@@ -6237,40 +6228,41 @@ namespace SoftWA.ServiciosWSClient {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/modificarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/modificarRolResponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarRolResponse> modificarRolAsync(SoftWA.ServiciosWSClient.modificarRolRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.eliminarRolResponse eliminarRol(SoftWA.ServiciosWSClient.eliminarRolRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarRolResponse> eliminarRolAsync(SoftWA.ServiciosWSClient.eliminarRolRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarRol", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarRolRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosRoles", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosRolesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.rolDTO1 rol;
-        
-        public eliminarRolRequest() {
-        }
-        
-        public eliminarRolRequest(SoftWA.ServiciosWSClient.rolDTO1 rol) {
-            this.rol = rol;
+        public listarTodosRolesRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarRolResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarRolResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosRolesResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosRolesResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.rolDTO1[] @return;
         
-        public eliminarRolResponse() {
+        public listarTodosRolesResponse() {
         }
         
-        public eliminarRolResponse(int @return) {
+        public listarTodosRolesResponse(SoftWA.ServiciosWSClient.rolDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -6307,34 +6299,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public insertarRolResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosRoles", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosRolesRequest {
-        
-        public listarTodosRolesRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosRolesResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosRolesResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.rolDTO1[] @return;
-        
-        public listarTodosRolesResponse() {
-        }
-        
-        public listarTodosRolesResponse(SoftWA.ServiciosWSClient.rolDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -6411,6 +6375,42 @@ namespace SoftWA.ServiciosWSClient {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarRol", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarRolRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.rolDTO1 rol;
+        
+        public eliminarRolRequest() {
+        }
+        
+        public eliminarRolRequest(SoftWA.ServiciosWSClient.rolDTO1 rol) {
+            this.rol = rol;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarRolResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarRolResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarRolResponse() {
+        }
+        
+        public eliminarRolResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface RolChannel : SoftWA.ServiciosWSClient.Rol, System.ServiceModel.IClientChannel {
     }
@@ -6439,26 +6439,24 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarRolResponse SoftWA.ServiciosWSClient.Rol.eliminarRol(SoftWA.ServiciosWSClient.eliminarRolRequest request) {
-            return base.Channel.eliminarRol(request);
+        SoftWA.ServiciosWSClient.listarTodosRolesResponse SoftWA.ServiciosWSClient.Rol.listarTodosRoles(SoftWA.ServiciosWSClient.listarTodosRolesRequest request) {
+            return base.Channel.listarTodosRoles(request);
         }
         
-        public int eliminarRol(SoftWA.ServiciosWSClient.rolDTO1 rol) {
-            SoftWA.ServiciosWSClient.eliminarRolRequest inValue = new SoftWA.ServiciosWSClient.eliminarRolRequest();
-            inValue.rol = rol;
-            SoftWA.ServiciosWSClient.eliminarRolResponse retVal = ((SoftWA.ServiciosWSClient.Rol)(this)).eliminarRol(inValue);
+        public SoftWA.ServiciosWSClient.rolDTO1[] listarTodosRoles() {
+            SoftWA.ServiciosWSClient.listarTodosRolesRequest inValue = new SoftWA.ServiciosWSClient.listarTodosRolesRequest();
+            SoftWA.ServiciosWSClient.listarTodosRolesResponse retVal = ((SoftWA.ServiciosWSClient.Rol)(this)).listarTodosRoles(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarRolResponse> SoftWA.ServiciosWSClient.Rol.eliminarRolAsync(SoftWA.ServiciosWSClient.eliminarRolRequest request) {
-            return base.Channel.eliminarRolAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosRolesResponse> SoftWA.ServiciosWSClient.Rol.listarTodosRolesAsync(SoftWA.ServiciosWSClient.listarTodosRolesRequest request) {
+            return base.Channel.listarTodosRolesAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarRolResponse> eliminarRolAsync(SoftWA.ServiciosWSClient.rolDTO1 rol) {
-            SoftWA.ServiciosWSClient.eliminarRolRequest inValue = new SoftWA.ServiciosWSClient.eliminarRolRequest();
-            inValue.rol = rol;
-            return ((SoftWA.ServiciosWSClient.Rol)(this)).eliminarRolAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosRolesResponse> listarTodosRolesAsync() {
+            SoftWA.ServiciosWSClient.listarTodosRolesRequest inValue = new SoftWA.ServiciosWSClient.listarTodosRolesRequest();
+            return ((SoftWA.ServiciosWSClient.Rol)(this)).listarTodosRolesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -6482,27 +6480,6 @@ namespace SoftWA.ServiciosWSClient {
             SoftWA.ServiciosWSClient.insertarRolRequest inValue = new SoftWA.ServiciosWSClient.insertarRolRequest();
             inValue.rol = rol;
             return ((SoftWA.ServiciosWSClient.Rol)(this)).insertarRolAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarTodosRolesResponse SoftWA.ServiciosWSClient.Rol.listarTodosRoles(SoftWA.ServiciosWSClient.listarTodosRolesRequest request) {
-            return base.Channel.listarTodosRoles(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.rolDTO1[] listarTodosRoles() {
-            SoftWA.ServiciosWSClient.listarTodosRolesRequest inValue = new SoftWA.ServiciosWSClient.listarTodosRolesRequest();
-            SoftWA.ServiciosWSClient.listarTodosRolesResponse retVal = ((SoftWA.ServiciosWSClient.Rol)(this)).listarTodosRoles(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosRolesResponse> SoftWA.ServiciosWSClient.Rol.listarTodosRolesAsync(SoftWA.ServiciosWSClient.listarTodosRolesRequest request) {
-            return base.Channel.listarTodosRolesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosRolesResponse> listarTodosRolesAsync() {
-            SoftWA.ServiciosWSClient.listarTodosRolesRequest inValue = new SoftWA.ServiciosWSClient.listarTodosRolesRequest();
-            return ((SoftWA.ServiciosWSClient.Rol)(this)).listarTodosRolesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -6550,6 +6527,29 @@ namespace SoftWA.ServiciosWSClient {
             inValue.rol = rol;
             return ((SoftWA.ServiciosWSClient.Rol)(this)).modificarRolAsync(inValue);
         }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.eliminarRolResponse SoftWA.ServiciosWSClient.Rol.eliminarRol(SoftWA.ServiciosWSClient.eliminarRolRequest request) {
+            return base.Channel.eliminarRol(request);
+        }
+        
+        public int eliminarRol(SoftWA.ServiciosWSClient.rolDTO1 rol) {
+            SoftWA.ServiciosWSClient.eliminarRolRequest inValue = new SoftWA.ServiciosWSClient.eliminarRolRequest();
+            inValue.rol = rol;
+            SoftWA.ServiciosWSClient.eliminarRolResponse retVal = ((SoftWA.ServiciosWSClient.Rol)(this)).eliminarRol(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarRolResponse> SoftWA.ServiciosWSClient.Rol.eliminarRolAsync(SoftWA.ServiciosWSClient.eliminarRolRequest request) {
+            return base.Channel.eliminarRolAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarRolResponse> eliminarRolAsync(SoftWA.ServiciosWSClient.rolDTO1 rol) {
+            SoftWA.ServiciosWSClient.eliminarRolRequest inValue = new SoftWA.ServiciosWSClient.eliminarRolRequest();
+            inValue.rol = rol;
+            return ((SoftWA.ServiciosWSClient.Rol)(this)).eliminarRolAsync(inValue);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -6557,95 +6557,30 @@ namespace SoftWA.ServiciosWSClient {
     public interface ItemCarrito {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSub" +
-            "TotalRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSub" +
-            "TotalResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarri" +
+            "toYProductoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarri" +
+            "toYProductoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse listarItemCarritoRangoSubTotal(SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest request);
+        SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse listarItemCarritoPorCarritoYProducto(SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSub" +
-            "TotalRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSub" +
-            "TotalResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse> listarItemCarritoRangoSubTotalAsync(SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarri" +
+            "toYProductoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarri" +
+            "toYProductoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse> listarItemCarritoPorCarritoYProductoAsync(SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCan" +
-            "tidadRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCan" +
-            "tidadResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRe" +
+            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRe" +
+            "sponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadResponse listarItemCarritoRangoCantidad(SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadRequest request);
+        SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse obtenerPorIdItemCarrito(SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCan" +
-            "tidadRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCan" +
-            "tidadResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadResponse> listarItemCarritoRangoCantidadAsync(SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProdu" +
-            "ctoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProdu" +
-            "ctoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarItemCarritoPorProductoResponse listarItemCarritoPorProducto(SoftWA.ServiciosWSClient.listarItemCarritoPorProductoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProdu" +
-            "ctoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProdu" +
-            "ctoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoPorProductoResponse> listarItemCarritoPorProductoAsync(SoftWA.ServiciosWSClient.listarItemCarritoPorProductoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCre" +
-            "acionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCre" +
-            "acionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse listarItemCarritoFechaCreacion(SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCre" +
-            "acionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCre" +
-            "acionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse> listarItemCarritoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidad" +
-            "MinimaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidad" +
-            "MinimaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaResponse listarItemCarritoCantidadMinima(SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidad" +
-            "MinimaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidad" +
-            "MinimaResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaResponse> listarItemCarritoCantidadMinimaAsync(SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoReques" +
-            "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoRespon" +
-            "se")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarItemCarritoResponse insertarItemCarrito(SoftWA.ServiciosWSClient.insertarItemCarritoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoReques" +
-            "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoRespon" +
-            "se")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarItemCarritoResponse> insertarItemCarritoAsync(SoftWA.ServiciosWSClient.insertarItemCarritoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivo" +
-            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivo" +
-            "Response")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse listarItemCarritoInactivo(SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivo" +
-            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivo" +
-            "Response")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse> listarItemCarritoInactivoAsync(SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRe" +
+            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse> obtenerPorIdItemCarritoAsync(SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarTodosItemCarritoReq" +
@@ -6674,6 +6609,32 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarItemCarritoResponse> modificarItemCarritoAsync(SoftWA.ServiciosWSClient.modificarItemCarritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivo" +
+            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivo" +
+            "Response")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse listarItemCarritoInactivo(SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivo" +
+            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivo" +
+            "Response")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse> listarItemCarritoInactivoAsync(SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoReques" +
+            "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoRespon" +
+            "se")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.insertarItemCarritoResponse insertarItemCarrito(SoftWA.ServiciosWSClient.insertarItemCarritoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoReques" +
+            "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoRespon" +
+            "se")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarItemCarritoResponse> insertarItemCarritoAsync(SoftWA.ServiciosWSClient.insertarItemCarritoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/eliminarItemCarritoReques" +
             "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/eliminarItemCarritoRespon" +
             "se")]
@@ -6687,69 +6648,308 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarItemCarritoResponse> eliminarItemCarritoAsync(SoftWA.ServiciosWSClient.eliminarItemCarritoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRe" +
-            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRe" +
-            "sponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCan" +
+            "tidadRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCan" +
+            "tidadResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse obtenerPorIdItemCarrito(SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest request);
+        SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadResponse listarItemCarritoRangoCantidad(SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRe" +
-            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRe" +
-            "sponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse> obtenerPorIdItemCarritoAsync(SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCan" +
+            "tidadRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCan" +
+            "tidadResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadResponse> listarItemCarritoRangoCantidadAsync(SoftWA.ServiciosWSClient.listarItemCarritoRangoCantidadRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarri" +
-            "toYProductoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarri" +
-            "toYProductoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProdu" +
+            "ctoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProdu" +
+            "ctoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse listarItemCarritoPorCarritoYProducto(SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest request);
+        SoftWA.ServiciosWSClient.listarItemCarritoPorProductoResponse listarItemCarritoPorProducto(SoftWA.ServiciosWSClient.listarItemCarritoPorProductoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarri" +
-            "toYProductoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarri" +
-            "toYProductoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse> listarItemCarritoPorCarritoYProductoAsync(SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProdu" +
+            "ctoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProdu" +
+            "ctoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoPorProductoResponse> listarItemCarritoPorProductoAsync(SoftWA.ServiciosWSClient.listarItemCarritoPorProductoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSub" +
+            "TotalRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSub" +
+            "TotalResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse listarItemCarritoRangoSubTotal(SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSub" +
+            "TotalRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSub" +
+            "TotalResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse> listarItemCarritoRangoSubTotalAsync(SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidad" +
+            "MinimaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidad" +
+            "MinimaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaResponse listarItemCarritoCantidadMinima(SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidad" +
+            "MinimaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidad" +
+            "MinimaResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaResponse> listarItemCarritoCantidadMinimaAsync(SoftWA.ServiciosWSClient.listarItemCarritoCantidadMinimaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCre" +
+            "acionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCre" +
+            "acionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse listarItemCarritoFechaCreacion(SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCre" +
+            "acionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCre" +
+            "acionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse> listarItemCarritoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoRangoSubTotal", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarItemCarritoRangoSubTotalRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoPorCarritoYProducto", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarItemCarritoPorCarritoYProductoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double min;
+        public int carritoId;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double max;
+        public int productoId;
         
-        public listarItemCarritoRangoSubTotalRequest() {
+        public listarItemCarritoPorCarritoYProductoRequest() {
         }
         
-        public listarItemCarritoRangoSubTotalRequest(double min, double max) {
-            this.min = min;
-            this.max = max;
+        public listarItemCarritoPorCarritoYProductoRequest(int carritoId, int productoId) {
+            this.carritoId = carritoId;
+            this.productoId = productoId;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoRangoSubTotalResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarItemCarritoRangoSubTotalResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoPorCarritoYProductoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarItemCarritoPorCarritoYProductoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.itemCarritoDTO[] @return;
         
-        public listarItemCarritoRangoSubTotalResponse() {
+        public listarItemCarritoPorCarritoYProductoResponse() {
         }
         
-        public listarItemCarritoRangoSubTotalResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
+        public listarItemCarritoPorCarritoYProductoResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdItemCarritoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idItemCarrito;
+        
+        public obtenerPorIdItemCarritoRequest() {
+        }
+        
+        public obtenerPorIdItemCarritoRequest(int idItemCarrito) {
+            this.idItemCarrito = idItemCarrito;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdItemCarritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.itemCarritoDTO @return;
+        
+        public obtenerPorIdItemCarritoResponse() {
+        }
+        
+        public obtenerPorIdItemCarritoResponse(SoftWA.ServiciosWSClient.itemCarritoDTO @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosItemCarritoRequest {
+        
+        public listarTodosItemCarritoRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosItemCarritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.itemCarritoDTO[] @return;
+        
+        public listarTodosItemCarritoResponse() {
+        }
+        
+        public listarTodosItemCarritoResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarItemCarritoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito;
+        
+        public modificarItemCarritoRequest() {
+        }
+        
+        public modificarItemCarritoRequest(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            this.itemCarrito = itemCarrito;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarItemCarritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarItemCarritoResponse() {
+        }
+        
+        public modificarItemCarritoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoInactivo", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarItemCarritoInactivoRequest {
+        
+        public listarItemCarritoInactivoRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoInactivoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarItemCarritoInactivoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.itemCarritoDTO[] @return;
+        
+        public listarItemCarritoInactivoResponse() {
+        }
+        
+        public listarItemCarritoInactivoResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarItemCarritoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito;
+        
+        public insertarItemCarritoRequest() {
+        }
+        
+        public insertarItemCarritoRequest(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            this.itemCarrito = itemCarrito;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarItemCarritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarItemCarritoResponse() {
+        }
+        
+        public insertarItemCarritoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarItemCarritoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito;
+        
+        public eliminarItemCarritoRequest() {
+        }
+        
+        public eliminarItemCarritoRequest(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            this.itemCarrito = itemCarrito;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarItemCarritoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarItemCarritoResponse() {
+        }
+        
+        public eliminarItemCarritoResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -6834,40 +7034,40 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoFechaCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarItemCarritoFechaCreacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoRangoSubTotal", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarItemCarritoRangoSubTotalRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaInicio;
+        public double min;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaFin;
+        public double max;
         
-        public listarItemCarritoFechaCreacionRequest() {
+        public listarItemCarritoRangoSubTotalRequest() {
         }
         
-        public listarItemCarritoFechaCreacionRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            this.fechaInicio = fechaInicio;
-            this.fechaFin = fechaFin;
+        public listarItemCarritoRangoSubTotalRequest(double min, double max) {
+            this.min = min;
+            this.max = max;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoFechaCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarItemCarritoFechaCreacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoRangoSubTotalResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarItemCarritoRangoSubTotalResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.itemCarritoDTO[] @return;
         
-        public listarItemCarritoFechaCreacionResponse() {
+        public listarItemCarritoRangoSubTotalResponse() {
         }
         
-        public listarItemCarritoFechaCreacionResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
+        public listarItemCarritoRangoSubTotalResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -6911,240 +7111,40 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarItemCarritoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoFechaCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarItemCarritoFechaCreacionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito;
-        
-        public insertarItemCarritoRequest() {
-        }
-        
-        public insertarItemCarritoRequest(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            this.itemCarrito = itemCarrito;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarItemCarritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarItemCarritoResponse() {
-        }
-        
-        public insertarItemCarritoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoInactivo", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarItemCarritoInactivoRequest {
-        
-        public listarItemCarritoInactivoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoInactivoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarItemCarritoInactivoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.itemCarritoDTO[] @return;
-        
-        public listarItemCarritoInactivoResponse() {
-        }
-        
-        public listarItemCarritoInactivoResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosItemCarritoRequest {
-        
-        public listarTodosItemCarritoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosItemCarritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.itemCarritoDTO[] @return;
-        
-        public listarTodosItemCarritoResponse() {
-        }
-        
-        public listarTodosItemCarritoResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarItemCarritoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito;
-        
-        public modificarItemCarritoRequest() {
-        }
-        
-        public modificarItemCarritoRequest(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            this.itemCarrito = itemCarrito;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarItemCarritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarItemCarritoResponse() {
-        }
-        
-        public modificarItemCarritoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarItemCarritoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito;
-        
-        public eliminarItemCarritoRequest() {
-        }
-        
-        public eliminarItemCarritoRequest(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            this.itemCarrito = itemCarrito;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarItemCarritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarItemCarritoResponse() {
-        }
-        
-        public eliminarItemCarritoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdItemCarrito", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdItemCarritoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idItemCarrito;
-        
-        public obtenerPorIdItemCarritoRequest() {
-        }
-        
-        public obtenerPorIdItemCarritoRequest(int idItemCarrito) {
-            this.idItemCarrito = idItemCarrito;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdItemCarritoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdItemCarritoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.itemCarritoDTO @return;
-        
-        public obtenerPorIdItemCarritoResponse() {
-        }
-        
-        public obtenerPorIdItemCarritoResponse(SoftWA.ServiciosWSClient.itemCarritoDTO @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoPorCarritoYProducto", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarItemCarritoPorCarritoYProductoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int carritoId;
+        public System.DateTime fechaInicio;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int productoId;
+        public System.DateTime fechaFin;
         
-        public listarItemCarritoPorCarritoYProductoRequest() {
+        public listarItemCarritoFechaCreacionRequest() {
         }
         
-        public listarItemCarritoPorCarritoYProductoRequest(int carritoId, int productoId) {
-            this.carritoId = carritoId;
-            this.productoId = productoId;
+        public listarItemCarritoFechaCreacionRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoPorCarritoYProductoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarItemCarritoPorCarritoYProductoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarItemCarritoFechaCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarItemCarritoFechaCreacionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.itemCarritoDTO[] @return;
         
-        public listarItemCarritoPorCarritoYProductoResponse() {
+        public listarItemCarritoFechaCreacionResponse() {
         }
         
-        public listarItemCarritoPorCarritoYProductoResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
+        public listarItemCarritoFechaCreacionResponse(SoftWA.ServiciosWSClient.itemCarritoDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -7177,28 +7177,162 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoRangoSubTotal(SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest request) {
-            return base.Channel.listarItemCarritoRangoSubTotal(request);
+        SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoPorCarritoYProducto(SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest request) {
+            return base.Channel.listarItemCarritoPorCarritoYProducto(request);
         }
         
-        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarItemCarritoRangoSubTotal(double min, double max) {
-            SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest();
-            inValue.min = min;
-            inValue.max = max;
-            SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoRangoSubTotal(inValue);
+        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarItemCarritoPorCarritoYProducto(int carritoId, int productoId) {
+            SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest();
+            inValue.carritoId = carritoId;
+            inValue.productoId = productoId;
+            SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoPorCarritoYProducto(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoRangoSubTotalAsync(SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest request) {
-            return base.Channel.listarItemCarritoRangoSubTotalAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoPorCarritoYProductoAsync(SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest request) {
+            return base.Channel.listarItemCarritoPorCarritoYProductoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse> listarItemCarritoRangoSubTotalAsync(double min, double max) {
-            SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest();
-            inValue.min = min;
-            inValue.max = max;
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoRangoSubTotalAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse> listarItemCarritoPorCarritoYProductoAsync(int carritoId, int productoId) {
+            SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest();
+            inValue.carritoId = carritoId;
+            inValue.productoId = productoId;
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoPorCarritoYProductoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.obtenerPorIdItemCarrito(SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest request) {
+            return base.Channel.obtenerPorIdItemCarrito(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.itemCarritoDTO obtenerPorIdItemCarrito(int idItemCarrito) {
+            SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest();
+            inValue.idItemCarrito = idItemCarrito;
+            SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).obtenerPorIdItemCarrito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.obtenerPorIdItemCarritoAsync(SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest request) {
+            return base.Channel.obtenerPorIdItemCarritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse> obtenerPorIdItemCarritoAsync(int idItemCarrito) {
+            SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest();
+            inValue.idItemCarrito = idItemCarrito;
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).obtenerPorIdItemCarritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.listarTodosItemCarrito(SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest request) {
+            return base.Channel.listarTodosItemCarrito(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarTodosItemCarrito() {
+            SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest();
+            SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarTodosItemCarrito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarTodosItemCarritoAsync(SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest request) {
+            return base.Channel.listarTodosItemCarritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse> listarTodosItemCarritoAsync() {
+            SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest();
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarTodosItemCarritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.modificarItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.modificarItemCarrito(SoftWA.ServiciosWSClient.modificarItemCarritoRequest request) {
+            return base.Channel.modificarItemCarrito(request);
+        }
+        
+        public int modificarItemCarrito(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            SoftWA.ServiciosWSClient.modificarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.modificarItemCarritoRequest();
+            inValue.itemCarrito = itemCarrito;
+            SoftWA.ServiciosWSClient.modificarItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).modificarItemCarrito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.modificarItemCarritoAsync(SoftWA.ServiciosWSClient.modificarItemCarritoRequest request) {
+            return base.Channel.modificarItemCarritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarItemCarritoResponse> modificarItemCarritoAsync(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            SoftWA.ServiciosWSClient.modificarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.modificarItemCarritoRequest();
+            inValue.itemCarrito = itemCarrito;
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).modificarItemCarritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoInactivo(SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest request) {
+            return base.Channel.listarItemCarritoInactivo(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarItemCarritoInactivo() {
+            SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest();
+            SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoInactivo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoInactivoAsync(SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest request) {
+            return base.Channel.listarItemCarritoInactivoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse> listarItemCarritoInactivoAsync() {
+            SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest();
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoInactivoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.insertarItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.insertarItemCarrito(SoftWA.ServiciosWSClient.insertarItemCarritoRequest request) {
+            return base.Channel.insertarItemCarrito(request);
+        }
+        
+        public int insertarItemCarrito(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            SoftWA.ServiciosWSClient.insertarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.insertarItemCarritoRequest();
+            inValue.itemCarrito = itemCarrito;
+            SoftWA.ServiciosWSClient.insertarItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).insertarItemCarrito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.insertarItemCarritoAsync(SoftWA.ServiciosWSClient.insertarItemCarritoRequest request) {
+            return base.Channel.insertarItemCarritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarItemCarritoResponse> insertarItemCarritoAsync(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            SoftWA.ServiciosWSClient.insertarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.insertarItemCarritoRequest();
+            inValue.itemCarrito = itemCarrito;
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).insertarItemCarritoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.eliminarItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.eliminarItemCarrito(SoftWA.ServiciosWSClient.eliminarItemCarritoRequest request) {
+            return base.Channel.eliminarItemCarrito(request);
+        }
+        
+        public int eliminarItemCarrito(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            SoftWA.ServiciosWSClient.eliminarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.eliminarItemCarritoRequest();
+            inValue.itemCarrito = itemCarrito;
+            SoftWA.ServiciosWSClient.eliminarItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).eliminarItemCarrito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.eliminarItemCarritoAsync(SoftWA.ServiciosWSClient.eliminarItemCarritoRequest request) {
+            return base.Channel.eliminarItemCarritoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarItemCarritoResponse> eliminarItemCarritoAsync(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
+            SoftWA.ServiciosWSClient.eliminarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.eliminarItemCarritoRequest();
+            inValue.itemCarrito = itemCarrito;
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).eliminarItemCarritoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7250,28 +7384,28 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoFechaCreacion(SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest request) {
-            return base.Channel.listarItemCarritoFechaCreacion(request);
+        SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoRangoSubTotal(SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest request) {
+            return base.Channel.listarItemCarritoRangoSubTotal(request);
         }
         
-        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarItemCarritoFechaCreacion(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoFechaCreacion(inValue);
+        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarItemCarritoRangoSubTotal(double min, double max) {
+            SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest();
+            inValue.min = min;
+            inValue.max = max;
+            SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoRangoSubTotal(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest request) {
-            return base.Channel.listarItemCarritoFechaCreacionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoRangoSubTotalAsync(SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest request) {
+            return base.Channel.listarItemCarritoRangoSubTotalAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse> listarItemCarritoFechaCreacionAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoFechaCreacionAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalResponse> listarItemCarritoRangoSubTotalAsync(double min, double max) {
+            SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoRangoSubTotalRequest();
+            inValue.min = min;
+            inValue.max = max;
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoRangoSubTotalAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7298,162 +7432,28 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.insertarItemCarrito(SoftWA.ServiciosWSClient.insertarItemCarritoRequest request) {
-            return base.Channel.insertarItemCarrito(request);
+        SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoFechaCreacion(SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest request) {
+            return base.Channel.listarItemCarritoFechaCreacion(request);
         }
         
-        public int insertarItemCarrito(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            SoftWA.ServiciosWSClient.insertarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.insertarItemCarritoRequest();
-            inValue.itemCarrito = itemCarrito;
-            SoftWA.ServiciosWSClient.insertarItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).insertarItemCarrito(inValue);
+        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarItemCarritoFechaCreacion(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoFechaCreacion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.insertarItemCarritoAsync(SoftWA.ServiciosWSClient.insertarItemCarritoRequest request) {
-            return base.Channel.insertarItemCarritoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest request) {
+            return base.Channel.listarItemCarritoFechaCreacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarItemCarritoResponse> insertarItemCarritoAsync(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            SoftWA.ServiciosWSClient.insertarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.insertarItemCarritoRequest();
-            inValue.itemCarrito = itemCarrito;
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).insertarItemCarritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoInactivo(SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest request) {
-            return base.Channel.listarItemCarritoInactivo(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarItemCarritoInactivo() {
-            SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest();
-            SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoInactivo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoInactivoAsync(SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest request) {
-            return base.Channel.listarItemCarritoInactivoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoInactivoResponse> listarItemCarritoInactivoAsync() {
-            SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoInactivoRequest();
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoInactivoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.listarTodosItemCarrito(SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest request) {
-            return base.Channel.listarTodosItemCarrito(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarTodosItemCarrito() {
-            SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest();
-            SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarTodosItemCarrito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarTodosItemCarritoAsync(SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest request) {
-            return base.Channel.listarTodosItemCarritoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosItemCarritoResponse> listarTodosItemCarritoAsync() {
-            SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosItemCarritoRequest();
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarTodosItemCarritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.modificarItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.modificarItemCarrito(SoftWA.ServiciosWSClient.modificarItemCarritoRequest request) {
-            return base.Channel.modificarItemCarrito(request);
-        }
-        
-        public int modificarItemCarrito(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            SoftWA.ServiciosWSClient.modificarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.modificarItemCarritoRequest();
-            inValue.itemCarrito = itemCarrito;
-            SoftWA.ServiciosWSClient.modificarItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).modificarItemCarrito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.modificarItemCarritoAsync(SoftWA.ServiciosWSClient.modificarItemCarritoRequest request) {
-            return base.Channel.modificarItemCarritoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarItemCarritoResponse> modificarItemCarritoAsync(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            SoftWA.ServiciosWSClient.modificarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.modificarItemCarritoRequest();
-            inValue.itemCarrito = itemCarrito;
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).modificarItemCarritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.eliminarItemCarrito(SoftWA.ServiciosWSClient.eliminarItemCarritoRequest request) {
-            return base.Channel.eliminarItemCarrito(request);
-        }
-        
-        public int eliminarItemCarrito(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            SoftWA.ServiciosWSClient.eliminarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.eliminarItemCarritoRequest();
-            inValue.itemCarrito = itemCarrito;
-            SoftWA.ServiciosWSClient.eliminarItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).eliminarItemCarrito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.eliminarItemCarritoAsync(SoftWA.ServiciosWSClient.eliminarItemCarritoRequest request) {
-            return base.Channel.eliminarItemCarritoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarItemCarritoResponse> eliminarItemCarritoAsync(SoftWA.ServiciosWSClient.itemCarritoDTO itemCarrito) {
-            SoftWA.ServiciosWSClient.eliminarItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.eliminarItemCarritoRequest();
-            inValue.itemCarrito = itemCarrito;
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).eliminarItemCarritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse SoftWA.ServiciosWSClient.ItemCarrito.obtenerPorIdItemCarrito(SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest request) {
-            return base.Channel.obtenerPorIdItemCarrito(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.itemCarritoDTO obtenerPorIdItemCarrito(int idItemCarrito) {
-            SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest();
-            inValue.idItemCarrito = idItemCarrito;
-            SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).obtenerPorIdItemCarrito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse> SoftWA.ServiciosWSClient.ItemCarrito.obtenerPorIdItemCarritoAsync(SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest request) {
-            return base.Channel.obtenerPorIdItemCarritoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoResponse> obtenerPorIdItemCarritoAsync(int idItemCarrito) {
-            SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdItemCarritoRequest();
-            inValue.idItemCarrito = idItemCarrito;
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).obtenerPorIdItemCarritoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoPorCarritoYProducto(SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest request) {
-            return base.Channel.listarItemCarritoPorCarritoYProducto(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.itemCarritoDTO[] listarItemCarritoPorCarritoYProducto(int carritoId, int productoId) {
-            SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest();
-            inValue.carritoId = carritoId;
-            inValue.productoId = productoId;
-            SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse retVal = ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoPorCarritoYProducto(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse> SoftWA.ServiciosWSClient.ItemCarrito.listarItemCarritoPorCarritoYProductoAsync(SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest request) {
-            return base.Channel.listarItemCarritoPorCarritoYProductoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoResponse> listarItemCarritoPorCarritoYProductoAsync(int carritoId, int productoId) {
-            SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoPorCarritoYProductoRequest();
-            inValue.carritoId = carritoId;
-            inValue.productoId = productoId;
-            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoPorCarritoYProductoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionResponse> listarItemCarritoFechaCreacionAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarItemCarritoFechaCreacionRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            return ((SoftWA.ServiciosWSClient.ItemCarrito)(this)).listarItemCarritoFechaCreacionAsync(inValue);
         }
     }
     
@@ -7462,43 +7462,52 @@ namespace SoftWA.ServiciosWSClient {
     public interface Persona {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPers" +
-            "onaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPers" +
-            "onaResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreApellidoParci" +
+            "alPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreApellidoParci" +
+            "alPersonaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse listarPorUsuarioCreacionPersona(SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest request);
+        SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse listarPorNombreApellidoParcialPersona(SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPers" +
-            "onaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPers" +
-            "onaResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse> listarPorUsuarioCreacionPersonaAsync(SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreApellidoParci" +
+            "alPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreApellidoParci" +
+            "alPersonaResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse> listarPorNombreApellidoParcialPersonaAsync(SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPer" +
-            "sonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPer" +
-            "sonaResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaRequ" +
+            "est", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaResp" +
+            "onse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse listarUltimosActualizadosPersona(SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest request);
+        SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse listarPorApellidoPersona(SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPer" +
-            "sonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPer" +
-            "sonaResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse> listarUltimosActualizadosPersonaAsync(SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaRequ" +
+            "est", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaResp" +
+            "onse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse> listarPorApellidoPersonaAsync(SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPerson" +
-            "aRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPerson" +
-            "aResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse listarPorNombreParcialPersona(SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest request);
+        SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse obtenerPorIdPersona(SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPerson" +
-            "aRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPerson" +
-            "aResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse> listarPorNombreParcialPersonaAsync(SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse> obtenerPorIdPersonaAsync(SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRequest" +
+            "", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRespons" +
+            "e")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPersonasActivosResponse listarPersonasActivos(SoftWA.ServiciosWSClient.listarPersonasActivosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRequest" +
+            "", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRespons" +
+            "e")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPersonasActivosResponse> listarPersonasActivosAsync(SoftWA.ServiciosWSClient.listarPersonasActivosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorFechasPersonaReques" +
@@ -7527,19 +7536,6 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPersonasInactivosResponse> listarPersonasInactivosAsync(SoftWA.ServiciosWSClient.listarPersonasInactivosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaRequ" +
-            "est", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaResp" +
-            "onse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse listarPorApellidoPersona(SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaRequ" +
-            "est", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaResp" +
-            "onse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse> listarPorApellidoPersonaAsync(SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorTelefonoPersonaReq" +
             "uest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorTelefonoPersonaRes" +
             "ponse")]
@@ -7551,28 +7547,6 @@ namespace SoftWA.ServiciosWSClient {
             "uest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorTelefonoPersonaRes" +
             "ponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorTelefonoPersonaResponse> obtenerPorTelefonoPersonaAsync(SoftWA.ServiciosWSClient.obtenerPorTelefonoPersonaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse obtenerPorIdPersona(SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse> obtenerPorIdPersonaAsync(SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRequest" +
-            "", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRespons" +
-            "e")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPersonasActivosResponse listarPersonasActivos(SoftWA.ServiciosWSClient.listarPersonasActivosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRequest" +
-            "", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRespons" +
-            "e")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPersonasActivosResponse> listarPersonasActivosAsync(SoftWA.ServiciosWSClient.listarPersonasActivosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarTodosPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarTodosPersonaResponse")]
@@ -7593,123 +7567,182 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPersonaResponse> modificarPersonaAsync(SoftWA.ServiciosWSClient.modificarPersonaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreApellidoParci" +
-            "alPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreApellidoParci" +
-            "alPersonaResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPerson" +
+            "aRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPerson" +
+            "aResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse listarPorNombreApellidoParcialPersona(SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest request);
+        SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse listarPorNombreParcialPersona(SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreApellidoParci" +
-            "alPersonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreApellidoParci" +
-            "alPersonaResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse> listarPorNombreApellidoParcialPersonaAsync(SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPerson" +
+            "aRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPerson" +
+            "aResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse> listarPorNombreParcialPersonaAsync(SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPers" +
+            "onaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPers" +
+            "onaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse listarPorUsuarioCreacionPersona(SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPers" +
+            "onaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPers" +
+            "onaResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse> listarPorUsuarioCreacionPersonaAsync(SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPer" +
+            "sonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPer" +
+            "sonaResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse listarUltimosActualizadosPersona(SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPer" +
+            "sonaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPer" +
+            "sonaResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse> listarUltimosActualizadosPersonaAsync(SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorUsuarioCreacionPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorUsuarioCreacionPersonaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int usuarioCreacionId;
-        
-        public listarPorUsuarioCreacionPersonaRequest() {
-        }
-        
-        public listarPorUsuarioCreacionPersonaRequest(int usuarioCreacionId) {
-            this.usuarioCreacionId = usuarioCreacionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorUsuarioCreacionPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorUsuarioCreacionPersonaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.personaDTO1[] @return;
-        
-        public listarPorUsuarioCreacionPersonaResponse() {
-        }
-        
-        public listarPorUsuarioCreacionPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarUltimosActualizadosPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarUltimosActualizadosPersonaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int dias;
-        
-        public listarUltimosActualizadosPersonaRequest() {
-        }
-        
-        public listarUltimosActualizadosPersonaRequest(int dias) {
-            this.dias = dias;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarUltimosActualizadosPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarUltimosActualizadosPersonaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.personaDTO1[] @return;
-        
-        public listarUltimosActualizadosPersonaResponse() {
-        }
-        
-        public listarUltimosActualizadosPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorNombreParcialPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorNombreParcialPersonaRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorNombreApellidoParcialPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorNombreApellidoParcialPersonaRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string nombreParcial;
         
-        public listarPorNombreParcialPersonaRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string apellidoParcial;
+        
+        public listarPorNombreApellidoParcialPersonaRequest() {
         }
         
-        public listarPorNombreParcialPersonaRequest(string nombreParcial) {
+        public listarPorNombreApellidoParcialPersonaRequest(string nombreParcial, string apellidoParcial) {
             this.nombreParcial = nombreParcial;
+            this.apellidoParcial = apellidoParcial;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorNombreParcialPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorNombreParcialPersonaResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorNombreApellidoParcialPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorNombreApellidoParcialPersonaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.personaDTO1[] @return;
         
-        public listarPorNombreParcialPersonaResponse() {
+        public listarPorNombreApellidoParcialPersonaResponse() {
         }
         
-        public listarPorNombreParcialPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
+        public listarPorNombreApellidoParcialPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorApellidoPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorApellidoPersonaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string apellido;
+        
+        public listarPorApellidoPersonaRequest() {
+        }
+        
+        public listarPorApellidoPersonaRequest(string apellido) {
+            this.apellido = apellido;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorApellidoPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorApellidoPersonaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.personaDTO1[] @return;
+        
+        public listarPorApellidoPersonaResponse() {
+        }
+        
+        public listarPorApellidoPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdPersonaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int personaId;
+        
+        public obtenerPorIdPersonaRequest() {
+        }
+        
+        public obtenerPorIdPersonaRequest(int personaId) {
+            this.personaId = personaId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdPersonaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.personaDTO1 @return;
+        
+        public obtenerPorIdPersonaResponse() {
+        }
+        
+        public obtenerPorIdPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1 @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPersonasActivos", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPersonasActivosRequest {
+        
+        public listarPersonasActivosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPersonasActivosResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPersonasActivosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.personaDTO1[] @return;
+        
+        public listarPersonasActivosResponse() {
+        }
+        
+        public listarPersonasActivosResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -7786,42 +7819,6 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorApellidoPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorApellidoPersonaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string apellido;
-        
-        public listarPorApellidoPersonaRequest() {
-        }
-        
-        public listarPorApellidoPersonaRequest(string apellido) {
-            this.apellido = apellido;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorApellidoPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorApellidoPersonaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.personaDTO1[] @return;
-        
-        public listarPorApellidoPersonaResponse() {
-        }
-        
-        public listarPorApellidoPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorTelefonoPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class obtenerPorTelefonoPersonaRequest {
         
@@ -7851,70 +7848,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public obtenerPorTelefonoPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1 @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdPersonaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int personaId;
-        
-        public obtenerPorIdPersonaRequest() {
-        }
-        
-        public obtenerPorIdPersonaRequest(int personaId) {
-            this.personaId = personaId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdPersonaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.personaDTO1 @return;
-        
-        public obtenerPorIdPersonaResponse() {
-        }
-        
-        public obtenerPorIdPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1 @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPersonasActivos", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPersonasActivosRequest {
-        
-        public listarPersonasActivosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPersonasActivosResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPersonasActivosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.personaDTO1[] @return;
-        
-        public listarPersonasActivosResponse() {
-        }
-        
-        public listarPersonasActivosResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -7986,40 +7919,107 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorNombreApellidoParcialPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorNombreApellidoParcialPersonaRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorNombreParcialPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorNombreParcialPersonaRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string nombreParcial;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string apellidoParcial;
-        
-        public listarPorNombreApellidoParcialPersonaRequest() {
+        public listarPorNombreParcialPersonaRequest() {
         }
         
-        public listarPorNombreApellidoParcialPersonaRequest(string nombreParcial, string apellidoParcial) {
+        public listarPorNombreParcialPersonaRequest(string nombreParcial) {
             this.nombreParcial = nombreParcial;
-            this.apellidoParcial = apellidoParcial;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorNombreApellidoParcialPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorNombreApellidoParcialPersonaResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorNombreParcialPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorNombreParcialPersonaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.personaDTO1[] @return;
         
-        public listarPorNombreApellidoParcialPersonaResponse() {
+        public listarPorNombreParcialPersonaResponse() {
         }
         
-        public listarPorNombreApellidoParcialPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
+        public listarPorNombreParcialPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorUsuarioCreacionPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorUsuarioCreacionPersonaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int usuarioCreacionId;
+        
+        public listarPorUsuarioCreacionPersonaRequest() {
+        }
+        
+        public listarPorUsuarioCreacionPersonaRequest(int usuarioCreacionId) {
+            this.usuarioCreacionId = usuarioCreacionId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorUsuarioCreacionPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorUsuarioCreacionPersonaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.personaDTO1[] @return;
+        
+        public listarPorUsuarioCreacionPersonaResponse() {
+        }
+        
+        public listarPorUsuarioCreacionPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarUltimosActualizadosPersona", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarUltimosActualizadosPersonaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int dias;
+        
+        public listarUltimosActualizadosPersonaRequest() {
+        }
+        
+        public listarUltimosActualizadosPersonaRequest(int dias) {
+            this.dias = dias;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarUltimosActualizadosPersonaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarUltimosActualizadosPersonaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.personaDTO1[] @return;
+        
+        public listarUltimosActualizadosPersonaResponse() {
+        }
+        
+        public listarUltimosActualizadosPersonaResponse(SoftWA.ServiciosWSClient.personaDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -8052,72 +8052,95 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse SoftWA.ServiciosWSClient.Persona.listarPorUsuarioCreacionPersona(SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest request) {
-            return base.Channel.listarPorUsuarioCreacionPersona(request);
+        SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse SoftWA.ServiciosWSClient.Persona.listarPorNombreApellidoParcialPersona(SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest request) {
+            return base.Channel.listarPorNombreApellidoParcialPersona(request);
         }
         
-        public SoftWA.ServiciosWSClient.personaDTO1[] listarPorUsuarioCreacionPersona(int usuarioCreacionId) {
-            SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest();
-            inValue.usuarioCreacionId = usuarioCreacionId;
-            SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorUsuarioCreacionPersona(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarPorUsuarioCreacionPersonaAsync(SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest request) {
-            return base.Channel.listarPorUsuarioCreacionPersonaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse> listarPorUsuarioCreacionPersonaAsync(int usuarioCreacionId) {
-            SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest();
-            inValue.usuarioCreacionId = usuarioCreacionId;
-            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorUsuarioCreacionPersonaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse SoftWA.ServiciosWSClient.Persona.listarUltimosActualizadosPersona(SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest request) {
-            return base.Channel.listarUltimosActualizadosPersona(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.personaDTO1[] listarUltimosActualizadosPersona(int dias) {
-            SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest();
-            inValue.dias = dias;
-            SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarUltimosActualizadosPersona(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarUltimosActualizadosPersonaAsync(SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest request) {
-            return base.Channel.listarUltimosActualizadosPersonaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse> listarUltimosActualizadosPersonaAsync(int dias) {
-            SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest();
-            inValue.dias = dias;
-            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarUltimosActualizadosPersonaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse SoftWA.ServiciosWSClient.Persona.listarPorNombreParcialPersona(SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest request) {
-            return base.Channel.listarPorNombreParcialPersona(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.personaDTO1[] listarPorNombreParcialPersona(string nombreParcial) {
-            SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest();
+        public SoftWA.ServiciosWSClient.personaDTO1[] listarPorNombreApellidoParcialPersona(string nombreParcial, string apellidoParcial) {
+            SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest();
             inValue.nombreParcial = nombreParcial;
-            SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorNombreParcialPersona(inValue);
+            inValue.apellidoParcial = apellidoParcial;
+            SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorNombreApellidoParcialPersona(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarPorNombreParcialPersonaAsync(SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest request) {
-            return base.Channel.listarPorNombreParcialPersonaAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarPorNombreApellidoParcialPersonaAsync(SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest request) {
+            return base.Channel.listarPorNombreApellidoParcialPersonaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse> listarPorNombreParcialPersonaAsync(string nombreParcial) {
-            SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest();
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse> listarPorNombreApellidoParcialPersonaAsync(string nombreParcial, string apellidoParcial) {
+            SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest();
             inValue.nombreParcial = nombreParcial;
-            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorNombreParcialPersonaAsync(inValue);
+            inValue.apellidoParcial = apellidoParcial;
+            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorNombreApellidoParcialPersonaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse SoftWA.ServiciosWSClient.Persona.listarPorApellidoPersona(SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest request) {
+            return base.Channel.listarPorApellidoPersona(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.personaDTO1[] listarPorApellidoPersona(string apellido) {
+            SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest();
+            inValue.apellido = apellido;
+            SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorApellidoPersona(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarPorApellidoPersonaAsync(SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest request) {
+            return base.Channel.listarPorApellidoPersonaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse> listarPorApellidoPersonaAsync(string apellido) {
+            SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest();
+            inValue.apellido = apellido;
+            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorApellidoPersonaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse SoftWA.ServiciosWSClient.Persona.obtenerPorIdPersona(SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest request) {
+            return base.Channel.obtenerPorIdPersona(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.personaDTO1 obtenerPorIdPersona(int personaId) {
+            SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest();
+            inValue.personaId = personaId;
+            SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).obtenerPorIdPersona(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse> SoftWA.ServiciosWSClient.Persona.obtenerPorIdPersonaAsync(SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest request) {
+            return base.Channel.obtenerPorIdPersonaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse> obtenerPorIdPersonaAsync(int personaId) {
+            SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest();
+            inValue.personaId = personaId;
+            return ((SoftWA.ServiciosWSClient.Persona)(this)).obtenerPorIdPersonaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPersonasActivosResponse SoftWA.ServiciosWSClient.Persona.listarPersonasActivos(SoftWA.ServiciosWSClient.listarPersonasActivosRequest request) {
+            return base.Channel.listarPersonasActivos(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.personaDTO1[] listarPersonasActivos() {
+            SoftWA.ServiciosWSClient.listarPersonasActivosRequest inValue = new SoftWA.ServiciosWSClient.listarPersonasActivosRequest();
+            SoftWA.ServiciosWSClient.listarPersonasActivosResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPersonasActivos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPersonasActivosResponse> SoftWA.ServiciosWSClient.Persona.listarPersonasActivosAsync(SoftWA.ServiciosWSClient.listarPersonasActivosRequest request) {
+            return base.Channel.listarPersonasActivosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPersonasActivosResponse> listarPersonasActivosAsync() {
+            SoftWA.ServiciosWSClient.listarPersonasActivosRequest inValue = new SoftWA.ServiciosWSClient.listarPersonasActivosRequest();
+            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPersonasActivosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8167,29 +8190,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse SoftWA.ServiciosWSClient.Persona.listarPorApellidoPersona(SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest request) {
-            return base.Channel.listarPorApellidoPersona(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.personaDTO1[] listarPorApellidoPersona(string apellido) {
-            SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest();
-            inValue.apellido = apellido;
-            SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorApellidoPersona(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarPorApellidoPersonaAsync(SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest request) {
-            return base.Channel.listarPorApellidoPersonaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorApellidoPersonaResponse> listarPorApellidoPersonaAsync(string apellido) {
-            SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorApellidoPersonaRequest();
-            inValue.apellido = apellido;
-            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorApellidoPersonaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.obtenerPorTelefonoPersonaResponse SoftWA.ServiciosWSClient.Persona.obtenerPorTelefonoPersona(SoftWA.ServiciosWSClient.obtenerPorTelefonoPersonaRequest request) {
             return base.Channel.obtenerPorTelefonoPersona(request);
         }
@@ -8210,50 +8210,6 @@ namespace SoftWA.ServiciosWSClient {
             SoftWA.ServiciosWSClient.obtenerPorTelefonoPersonaRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorTelefonoPersonaRequest();
             inValue.telefono = telefono;
             return ((SoftWA.ServiciosWSClient.Persona)(this)).obtenerPorTelefonoPersonaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse SoftWA.ServiciosWSClient.Persona.obtenerPorIdPersona(SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest request) {
-            return base.Channel.obtenerPorIdPersona(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.personaDTO1 obtenerPorIdPersona(int personaId) {
-            SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest();
-            inValue.personaId = personaId;
-            SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).obtenerPorIdPersona(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse> SoftWA.ServiciosWSClient.Persona.obtenerPorIdPersonaAsync(SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest request) {
-            return base.Channel.obtenerPorIdPersonaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPersonaResponse> obtenerPorIdPersonaAsync(int personaId) {
-            SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPersonaRequest();
-            inValue.personaId = personaId;
-            return ((SoftWA.ServiciosWSClient.Persona)(this)).obtenerPorIdPersonaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPersonasActivosResponse SoftWA.ServiciosWSClient.Persona.listarPersonasActivos(SoftWA.ServiciosWSClient.listarPersonasActivosRequest request) {
-            return base.Channel.listarPersonasActivos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.personaDTO1[] listarPersonasActivos() {
-            SoftWA.ServiciosWSClient.listarPersonasActivosRequest inValue = new SoftWA.ServiciosWSClient.listarPersonasActivosRequest();
-            SoftWA.ServiciosWSClient.listarPersonasActivosResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPersonasActivos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPersonasActivosResponse> SoftWA.ServiciosWSClient.Persona.listarPersonasActivosAsync(SoftWA.ServiciosWSClient.listarPersonasActivosRequest request) {
-            return base.Channel.listarPersonasActivosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPersonasActivosResponse> listarPersonasActivosAsync() {
-            SoftWA.ServiciosWSClient.listarPersonasActivosRequest inValue = new SoftWA.ServiciosWSClient.listarPersonasActivosRequest();
-            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPersonasActivosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8301,34 +8257,87 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse SoftWA.ServiciosWSClient.Persona.listarPorNombreApellidoParcialPersona(SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest request) {
-            return base.Channel.listarPorNombreApellidoParcialPersona(request);
+        SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse SoftWA.ServiciosWSClient.Persona.listarPorNombreParcialPersona(SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest request) {
+            return base.Channel.listarPorNombreParcialPersona(request);
         }
         
-        public SoftWA.ServiciosWSClient.personaDTO1[] listarPorNombreApellidoParcialPersona(string nombreParcial, string apellidoParcial) {
-            SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest();
+        public SoftWA.ServiciosWSClient.personaDTO1[] listarPorNombreParcialPersona(string nombreParcial) {
+            SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest();
             inValue.nombreParcial = nombreParcial;
-            inValue.apellidoParcial = apellidoParcial;
-            SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorNombreApellidoParcialPersona(inValue);
+            SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorNombreParcialPersona(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarPorNombreApellidoParcialPersonaAsync(SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest request) {
-            return base.Channel.listarPorNombreApellidoParcialPersonaAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarPorNombreParcialPersonaAsync(SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest request) {
+            return base.Channel.listarPorNombreParcialPersonaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaResponse> listarPorNombreApellidoParcialPersonaAsync(string nombreParcial, string apellidoParcial) {
-            SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorNombreApellidoParcialPersonaRequest();
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaResponse> listarPorNombreParcialPersonaAsync(string nombreParcial) {
+            SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorNombreParcialPersonaRequest();
             inValue.nombreParcial = nombreParcial;
-            inValue.apellidoParcial = apellidoParcial;
-            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorNombreApellidoParcialPersonaAsync(inValue);
+            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorNombreParcialPersonaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse SoftWA.ServiciosWSClient.Persona.listarPorUsuarioCreacionPersona(SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest request) {
+            return base.Channel.listarPorUsuarioCreacionPersona(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.personaDTO1[] listarPorUsuarioCreacionPersona(int usuarioCreacionId) {
+            SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest();
+            inValue.usuarioCreacionId = usuarioCreacionId;
+            SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorUsuarioCreacionPersona(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarPorUsuarioCreacionPersonaAsync(SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest request) {
+            return base.Channel.listarPorUsuarioCreacionPersonaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaResponse> listarPorUsuarioCreacionPersonaAsync(int usuarioCreacionId) {
+            SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarPorUsuarioCreacionPersonaRequest();
+            inValue.usuarioCreacionId = usuarioCreacionId;
+            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarPorUsuarioCreacionPersonaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse SoftWA.ServiciosWSClient.Persona.listarUltimosActualizadosPersona(SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest request) {
+            return base.Channel.listarUltimosActualizadosPersona(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.personaDTO1[] listarUltimosActualizadosPersona(int dias) {
+            SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest();
+            inValue.dias = dias;
+            SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse retVal = ((SoftWA.ServiciosWSClient.Persona)(this)).listarUltimosActualizadosPersona(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse> SoftWA.ServiciosWSClient.Persona.listarUltimosActualizadosPersonaAsync(SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest request) {
+            return base.Channel.listarUltimosActualizadosPersonaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaResponse> listarUltimosActualizadosPersonaAsync(int dias) {
+            SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest inValue = new SoftWA.ServiciosWSClient.listarUltimosActualizadosPersonaRequest();
+            inValue.dias = dias;
+            return ((SoftWA.ServiciosWSClient.Persona)(this)).listarUltimosActualizadosPersonaAsync(inValue);
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", ConfigurationName="ServiciosWSClient.Natural")]
     public interface Natural {
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse obtenerPorIdNatural(SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse> obtenerPorIdNaturalAsync(SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/listarPorGeneroNaturalReques" +
@@ -8355,13 +8364,13 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorDniNaturalResponse> obtenerPorDniNaturalAsync(SoftWA.ServiciosWSClient.obtenerPorDniNaturalRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse obtenerPorIdNatural(SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest request);
+        SoftWA.ServiciosWSClient.eliminarNaturalResponse eliminarNatural(SoftWA.ServiciosWSClient.eliminarNaturalRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/obtenerPorIdNaturalResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse> obtenerPorIdNaturalAsync(SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarNaturalResponse> eliminarNaturalAsync(SoftWA.ServiciosWSClient.eliminarNaturalRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/insertarNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/insertarNaturalResponse")]
@@ -8389,15 +8398,42 @@ namespace SoftWA.ServiciosWSClient {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/modificarNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/modificarNaturalResponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarNaturalResponse> modificarNaturalAsync(SoftWA.ServiciosWSClient.modificarNaturalRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdNatural", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdNaturalRequest {
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.eliminarNaturalResponse eliminarNatural(SoftWA.ServiciosWSClient.eliminarNaturalRequest request);
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int naturalId;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Natural/eliminarNaturalResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarNaturalResponse> eliminarNaturalAsync(SoftWA.ServiciosWSClient.eliminarNaturalRequest request);
+        public obtenerPorIdNaturalRequest() {
+        }
+        
+        public obtenerPorIdNaturalRequest(int naturalId) {
+            this.naturalId = naturalId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdNaturalResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdNaturalResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.naturalDTO @return;
+        
+        public obtenerPorIdNaturalResponse() {
+        }
+        
+        public obtenerPorIdNaturalResponse(SoftWA.ServiciosWSClient.naturalDTO @return) {
+            this.@return = @return;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -8475,35 +8511,35 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdNatural", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdNaturalRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarNatural", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarNaturalRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int naturalId;
+        public SoftWA.ServiciosWSClient.naturalDTO natural;
         
-        public obtenerPorIdNaturalRequest() {
+        public eliminarNaturalRequest() {
         }
         
-        public obtenerPorIdNaturalRequest(int naturalId) {
-            this.naturalId = naturalId;
+        public eliminarNaturalRequest(SoftWA.ServiciosWSClient.naturalDTO natural) {
+            this.natural = natural;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdNaturalResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdNaturalResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarNaturalResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarNaturalResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.naturalDTO @return;
+        public int @return;
         
-        public obtenerPorIdNaturalResponse() {
+        public eliminarNaturalResponse() {
         }
         
-        public obtenerPorIdNaturalResponse(SoftWA.ServiciosWSClient.naturalDTO @return) {
+        public eliminarNaturalResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -8608,42 +8644,6 @@ namespace SoftWA.ServiciosWSClient {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarNatural", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarNaturalRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.naturalDTO natural;
-        
-        public eliminarNaturalRequest() {
-        }
-        
-        public eliminarNaturalRequest(SoftWA.ServiciosWSClient.naturalDTO natural) {
-            this.natural = natural;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarNaturalResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarNaturalResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarNaturalResponse() {
-        }
-        
-        public eliminarNaturalResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface NaturalChannel : SoftWA.ServiciosWSClient.Natural, System.ServiceModel.IClientChannel {
     }
@@ -8669,6 +8669,29 @@ namespace SoftWA.ServiciosWSClient {
         
         public NaturalClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse SoftWA.ServiciosWSClient.Natural.obtenerPorIdNatural(SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest request) {
+            return base.Channel.obtenerPorIdNatural(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.naturalDTO obtenerPorIdNatural(int naturalId) {
+            SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest();
+            inValue.naturalId = naturalId;
+            SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse retVal = ((SoftWA.ServiciosWSClient.Natural)(this)).obtenerPorIdNatural(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse> SoftWA.ServiciosWSClient.Natural.obtenerPorIdNaturalAsync(SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest request) {
+            return base.Channel.obtenerPorIdNaturalAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse> obtenerPorIdNaturalAsync(int naturalId) {
+            SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest();
+            inValue.naturalId = naturalId;
+            return ((SoftWA.ServiciosWSClient.Natural)(this)).obtenerPorIdNaturalAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8718,26 +8741,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse SoftWA.ServiciosWSClient.Natural.obtenerPorIdNatural(SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest request) {
-            return base.Channel.obtenerPorIdNatural(request);
+        SoftWA.ServiciosWSClient.eliminarNaturalResponse SoftWA.ServiciosWSClient.Natural.eliminarNatural(SoftWA.ServiciosWSClient.eliminarNaturalRequest request) {
+            return base.Channel.eliminarNatural(request);
         }
         
-        public SoftWA.ServiciosWSClient.naturalDTO obtenerPorIdNatural(int naturalId) {
-            SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest();
-            inValue.naturalId = naturalId;
-            SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse retVal = ((SoftWA.ServiciosWSClient.Natural)(this)).obtenerPorIdNatural(inValue);
+        public int eliminarNatural(SoftWA.ServiciosWSClient.naturalDTO natural) {
+            SoftWA.ServiciosWSClient.eliminarNaturalRequest inValue = new SoftWA.ServiciosWSClient.eliminarNaturalRequest();
+            inValue.natural = natural;
+            SoftWA.ServiciosWSClient.eliminarNaturalResponse retVal = ((SoftWA.ServiciosWSClient.Natural)(this)).eliminarNatural(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse> SoftWA.ServiciosWSClient.Natural.obtenerPorIdNaturalAsync(SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest request) {
-            return base.Channel.obtenerPorIdNaturalAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarNaturalResponse> SoftWA.ServiciosWSClient.Natural.eliminarNaturalAsync(SoftWA.ServiciosWSClient.eliminarNaturalRequest request) {
+            return base.Channel.eliminarNaturalAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdNaturalResponse> obtenerPorIdNaturalAsync(int naturalId) {
-            SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdNaturalRequest();
-            inValue.naturalId = naturalId;
-            return ((SoftWA.ServiciosWSClient.Natural)(this)).obtenerPorIdNaturalAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarNaturalResponse> eliminarNaturalAsync(SoftWA.ServiciosWSClient.naturalDTO natural) {
+            SoftWA.ServiciosWSClient.eliminarNaturalRequest inValue = new SoftWA.ServiciosWSClient.eliminarNaturalRequest();
+            inValue.natural = natural;
+            return ((SoftWA.ServiciosWSClient.Natural)(this)).eliminarNaturalAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8806,112 +8829,11 @@ namespace SoftWA.ServiciosWSClient {
             inValue.natural = natural;
             return ((SoftWA.ServiciosWSClient.Natural)(this)).modificarNaturalAsync(inValue);
         }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarNaturalResponse SoftWA.ServiciosWSClient.Natural.eliminarNatural(SoftWA.ServiciosWSClient.eliminarNaturalRequest request) {
-            return base.Channel.eliminarNatural(request);
-        }
-        
-        public int eliminarNatural(SoftWA.ServiciosWSClient.naturalDTO natural) {
-            SoftWA.ServiciosWSClient.eliminarNaturalRequest inValue = new SoftWA.ServiciosWSClient.eliminarNaturalRequest();
-            inValue.natural = natural;
-            SoftWA.ServiciosWSClient.eliminarNaturalResponse retVal = ((SoftWA.ServiciosWSClient.Natural)(this)).eliminarNatural(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarNaturalResponse> SoftWA.ServiciosWSClient.Natural.eliminarNaturalAsync(SoftWA.ServiciosWSClient.eliminarNaturalRequest request) {
-            return base.Channel.eliminarNaturalAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarNaturalResponse> eliminarNaturalAsync(SoftWA.ServiciosWSClient.naturalDTO natural) {
-            SoftWA.ServiciosWSClient.eliminarNaturalRequest inValue = new SoftWA.ServiciosWSClient.eliminarNaturalRequest();
-            inValue.natural = natural;
-            return ((SoftWA.ServiciosWSClient.Natural)(this)).eliminarNaturalAsync(inValue);
-        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", ConfigurationName="ServiciosWSClient.PrecioPresentacion")]
     public interface PrecioPresentacion {
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPreci" +
-            "oPresentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPreci" +
-            "oPresentacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse listarTodosPrecioPresentacion(SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPreci" +
-            "oPresentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPreci" +
-            "oPresentacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse> listarTodosPrecioPresentacionAsync(SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioP" +
-            "resentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioP" +
-            "resentacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse modificarPrecioPresentacion(SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioP" +
-            "resentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioP" +
-            "resentacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse> modificarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrec" +
-            "ioPresentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrec" +
-            "ioPresentacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse obtenerPorIdPrecioPresentacion(SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrec" +
-            "ioPresentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrec" +
-            "ioPresentacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse> obtenerPorIdPrecioPresentacionAsync(SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionInactivosRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionInactivosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse listarPrecioPresentacionInactivos(SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionInactivosRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionInactivosResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse> listarPrecioPresentacionInactivosAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPr" +
-            "esentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPr" +
-            "esentacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse eliminarPrecioPresentacion(SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPr" +
-            "esentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPr" +
-            "esentacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse> eliminarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPr" +
-            "esentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPr" +
-            "esentacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse insertarPrecioPresentacion(SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPr" +
-            "esentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPr" +
-            "esentacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse> insertarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
@@ -8928,16 +8850,16 @@ namespace SoftWA.ServiciosWSClient {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorProductoTodosRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorProductoTodosResponse")]
+            "entacionPorPrecioMaximoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorPrecioMaximoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse listarPrecioPresentacionPorProductoTodos(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest request);
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse listarPrecioPresentacionPorPrecioMaximo(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorProductoTodosRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorProductoTodosResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse> listarPrecioPresentacionPorProductoTodosAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest request);
+            "entacionPorPrecioMaximoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorPrecioMaximoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse> listarPrecioPresentacionPorPrecioMaximoAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/buscarPrecioPres" +
@@ -8954,29 +8876,16 @@ namespace SoftWA.ServiciosWSClient {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorUsuarioCreacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorUsuarioCreacionResponse")]
+            "entacionPorProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorProductoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse listarPrecioPresentacionPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest request);
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse listarPrecioPresentacionPorProducto(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorUsuarioCreacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorUsuarioCreacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse> listarPrecioPresentacionPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorPrecioMaximoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorPrecioMaximoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse listarPrecioPresentacionPorPrecioMaximo(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorPrecioMaximoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorPrecioMaximoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse> listarPrecioPresentacionPorPrecioMaximoAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest request);
+            "entacionPorProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorProductoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse> listarPrecioPresentacionPorProductoAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
@@ -8993,6 +8902,32 @@ namespace SoftWA.ServiciosWSClient {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorProductoTodosRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorProductoTodosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse listarPrecioPresentacionPorProductoTodos(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorProductoTodosRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorProductoTodosResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse> listarPrecioPresentacionPorProductoTodosAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorUsuarioCreacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorUsuarioCreacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse listarPrecioPresentacionPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorUsuarioCreacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionPorUsuarioCreacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse> listarPrecioPresentacionPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
             "entacionPorRangoCantidadRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
             "entacionPorRangoCantidadResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -9005,217 +8940,82 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorRangoCantidadResponse> listarPrecioPresentacionPorRangoCantidadAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorRangoCantidadRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorProductoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPr" +
+            "esentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPr" +
+            "esentacionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse listarPrecioPresentacionPorProducto(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest request);
+        SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse insertarPrecioPresentacion(SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPr" +
+            "esentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPr" +
+            "esentacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse> insertarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPr" +
+            "esentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPr" +
+            "esentacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse eliminarPrecioPresentacion(SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPr" +
+            "esentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPr" +
+            "esentacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse> eliminarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrec" +
+            "ioPresentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrec" +
+            "ioPresentacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse obtenerPorIdPrecioPresentacion(SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrec" +
+            "ioPresentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrec" +
+            "ioPresentacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse> obtenerPorIdPrecioPresentacionAsync(SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioP" +
+            "resentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioP" +
+            "resentacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse modificarPrecioPresentacion(SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioP" +
+            "resentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioP" +
+            "resentacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse> modificarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPreci" +
+            "oPresentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPreci" +
+            "oPresentacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse listarTodosPrecioPresentacion(SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPreci" +
+            "oPresentacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPreci" +
+            "oPresentacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse> listarTodosPrecioPresentacionAsync(SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionInactivosRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionInactivosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse listarPrecioPresentacionInactivos(SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
-            "entacionPorProductoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse> listarPrecioPresentacionPorProductoAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosPrecioPresentacionRequest {
-        
-        public listarTodosPrecioPresentacionRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosPrecioPresentacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
-        
-        public listarTodosPrecioPresentacionResponse() {
-        }
-        
-        public listarTodosPrecioPresentacionResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarPrecioPresentacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion;
-        
-        public modificarPrecioPresentacionRequest() {
-        }
-        
-        public modificarPrecioPresentacionRequest(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            this.precioPresentacion = precioPresentacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarPrecioPresentacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarPrecioPresentacionResponse() {
-        }
-        
-        public modificarPrecioPresentacionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdPrecioPresentacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPrecioPresentacion;
-        
-        public obtenerPorIdPrecioPresentacionRequest() {
-        }
-        
-        public obtenerPorIdPrecioPresentacionRequest(int idPrecioPresentacion) {
-            this.idPrecioPresentacion = idPrecioPresentacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdPrecioPresentacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 @return;
-        
-        public obtenerPorIdPrecioPresentacionResponse() {
-        }
-        
-        public obtenerPorIdPrecioPresentacionResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1 @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionInactivos", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionInactivosRequest {
-        
-        public listarPrecioPresentacionInactivosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionInactivosResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionInactivosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
-        
-        public listarPrecioPresentacionInactivosResponse() {
-        }
-        
-        public listarPrecioPresentacionInactivosResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPrecioPresentacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion;
-        
-        public eliminarPrecioPresentacionRequest() {
-        }
-        
-        public eliminarPrecioPresentacionRequest(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            this.precioPresentacion = precioPresentacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPrecioPresentacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarPrecioPresentacionResponse() {
-        }
-        
-        public eliminarPrecioPresentacionResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarPrecioPresentacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion;
-        
-        public insertarPrecioPresentacionRequest() {
-        }
-        
-        public insertarPrecioPresentacionRequest(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            this.precioPresentacion = precioPresentacion;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarPrecioPresentacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarPrecioPresentacionResponse() {
-        }
-        
-        public insertarPrecioPresentacionResponse(int @return) {
-            this.@return = @return;
-        }
+            "entacionInactivosRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPres" +
+            "entacionInactivosResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse> listarPrecioPresentacionInactivosAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -9257,35 +9057,35 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorProductoTodos", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionPorProductoTodosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorPrecioMaximo", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionPorPrecioMaximoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int productoId;
+        public double precioMaximo;
         
-        public listarPrecioPresentacionPorProductoTodosRequest() {
+        public listarPrecioPresentacionPorPrecioMaximoRequest() {
         }
         
-        public listarPrecioPresentacionPorProductoTodosRequest(int productoId) {
-            this.productoId = productoId;
+        public listarPrecioPresentacionPorPrecioMaximoRequest(double precioMaximo) {
+            this.precioMaximo = precioMaximo;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorProductoTodosResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionPorProductoTodosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorPrecioMaximoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionPorPrecioMaximoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
         
-        public listarPrecioPresentacionPorProductoTodosResponse() {
+        public listarPrecioPresentacionPorPrecioMaximoResponse() {
         }
         
-        public listarPrecioPresentacionPorProductoTodosResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
+        public listarPrecioPresentacionPorPrecioMaximoResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -9339,71 +9139,35 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorUsuarioCreacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionPorUsuarioCreacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionPorProductoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int usuarioId;
+        public int productoId;
         
-        public listarPrecioPresentacionPorUsuarioCreacionRequest() {
+        public listarPrecioPresentacionPorProductoRequest() {
         }
         
-        public listarPrecioPresentacionPorUsuarioCreacionRequest(int usuarioId) {
-            this.usuarioId = usuarioId;
+        public listarPrecioPresentacionPorProductoRequest(int productoId) {
+            this.productoId = productoId;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorUsuarioCreacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionPorUsuarioCreacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorProductoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionPorProductoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
         
-        public listarPrecioPresentacionPorUsuarioCreacionResponse() {
+        public listarPrecioPresentacionPorProductoResponse() {
         }
         
-        public listarPrecioPresentacionPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorPrecioMaximo", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionPorPrecioMaximoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double precioMaximo;
-        
-        public listarPrecioPresentacionPorPrecioMaximoRequest() {
-        }
-        
-        public listarPrecioPresentacionPorPrecioMaximoRequest(double precioMaximo) {
-            this.precioMaximo = precioMaximo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorPrecioMaximoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionPorPrecioMaximoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
-        
-        public listarPrecioPresentacionPorPrecioMaximoResponse() {
-        }
-        
-        public listarPrecioPresentacionPorPrecioMaximoResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
+        public listarPrecioPresentacionPorProductoResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -9452,6 +9216,78 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorProductoTodos", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionPorProductoTodosRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int productoId;
+        
+        public listarPrecioPresentacionPorProductoTodosRequest() {
+        }
+        
+        public listarPrecioPresentacionPorProductoTodosRequest(int productoId) {
+            this.productoId = productoId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorProductoTodosResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionPorProductoTodosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
+        
+        public listarPrecioPresentacionPorProductoTodosResponse() {
+        }
+        
+        public listarPrecioPresentacionPorProductoTodosResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorUsuarioCreacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionPorUsuarioCreacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int usuarioId;
+        
+        public listarPrecioPresentacionPorUsuarioCreacionRequest() {
+        }
+        
+        public listarPrecioPresentacionPorUsuarioCreacionRequest(int usuarioId) {
+            this.usuarioId = usuarioId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorUsuarioCreacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionPorUsuarioCreacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
+        
+        public listarPrecioPresentacionPorUsuarioCreacionResponse() {
+        }
+        
+        public listarPrecioPresentacionPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorRangoCantidad", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class listarPrecioPresentacionPorRangoCantidadRequest {
         
@@ -9493,35 +9329,199 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionPorProductoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarPrecioPresentacionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int productoId;
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion;
         
-        public listarPrecioPresentacionPorProductoRequest() {
+        public insertarPrecioPresentacionRequest() {
         }
         
-        public listarPrecioPresentacionPorProductoRequest(int productoId) {
-            this.productoId = productoId;
+        public insertarPrecioPresentacionRequest(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            this.precioPresentacion = precioPresentacion;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionPorProductoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPrecioPresentacionPorProductoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarPrecioPresentacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarPrecioPresentacionResponse() {
+        }
+        
+        public insertarPrecioPresentacionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPrecioPresentacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion;
+        
+        public eliminarPrecioPresentacionRequest() {
+        }
+        
+        public eliminarPrecioPresentacionRequest(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            this.precioPresentacion = precioPresentacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPrecioPresentacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarPrecioPresentacionResponse() {
+        }
+        
+        public eliminarPrecioPresentacionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdPrecioPresentacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPrecioPresentacion;
+        
+        public obtenerPorIdPrecioPresentacionRequest() {
+        }
+        
+        public obtenerPorIdPrecioPresentacionRequest(int idPrecioPresentacion) {
+            this.idPrecioPresentacion = idPrecioPresentacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdPrecioPresentacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 @return;
+        
+        public obtenerPorIdPrecioPresentacionResponse() {
+        }
+        
+        public obtenerPorIdPrecioPresentacionResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1 @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarPrecioPresentacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion;
+        
+        public modificarPrecioPresentacionRequest() {
+        }
+        
+        public modificarPrecioPresentacionRequest(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            this.precioPresentacion = precioPresentacion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarPrecioPresentacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarPrecioPresentacionResponse() {
+        }
+        
+        public modificarPrecioPresentacionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPrecioPresentacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosPrecioPresentacionRequest {
+        
+        public listarTodosPrecioPresentacionRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPrecioPresentacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosPrecioPresentacionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
         
-        public listarPrecioPresentacionPorProductoResponse() {
+        public listarTodosPrecioPresentacionResponse() {
         }
         
-        public listarPrecioPresentacionPorProductoResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
+        public listarTodosPrecioPresentacionResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionInactivos", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionInactivosRequest {
+        
+        public listarPrecioPresentacionInactivosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPrecioPresentacionInactivosResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPrecioPresentacionInactivosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return;
+        
+        public listarPrecioPresentacionInactivosResponse() {
+        }
+        
+        public listarPrecioPresentacionInactivosResponse(SoftWA.ServiciosWSClient.precioPresentacionDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -9554,140 +9554,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarTodosPrecioPresentacion(SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest request) {
-            return base.Channel.listarTodosPrecioPresentacion(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarTodosPrecioPresentacion() {
-            SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest();
-            SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarTodosPrecioPresentacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarTodosPrecioPresentacionAsync(SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest request) {
-            return base.Channel.listarTodosPrecioPresentacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse> listarTodosPrecioPresentacionAsync() {
-            SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest();
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarTodosPrecioPresentacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.modificarPrecioPresentacion(SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest request) {
-            return base.Channel.modificarPrecioPresentacion(request);
-        }
-        
-        public int modificarPrecioPresentacion(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest();
-            inValue.precioPresentacion = precioPresentacion;
-            SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).modificarPrecioPresentacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.modificarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest request) {
-            return base.Channel.modificarPrecioPresentacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse> modificarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest();
-            inValue.precioPresentacion = precioPresentacion;
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).modificarPrecioPresentacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.obtenerPorIdPrecioPresentacion(SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest request) {
-            return base.Channel.obtenerPorIdPrecioPresentacion(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 obtenerPorIdPrecioPresentacion(int idPrecioPresentacion) {
-            SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest();
-            inValue.idPrecioPresentacion = idPrecioPresentacion;
-            SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).obtenerPorIdPrecioPresentacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.obtenerPorIdPrecioPresentacionAsync(SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest request) {
-            return base.Channel.obtenerPorIdPrecioPresentacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse> obtenerPorIdPrecioPresentacionAsync(int idPrecioPresentacion) {
-            SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest();
-            inValue.idPrecioPresentacion = idPrecioPresentacion;
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).obtenerPorIdPrecioPresentacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionInactivos(SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest request) {
-            return base.Channel.listarPrecioPresentacionInactivos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionInactivos() {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest();
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionInactivos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionInactivosAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest request) {
-            return base.Channel.listarPrecioPresentacionInactivosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse> listarPrecioPresentacionInactivosAsync() {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest();
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionInactivosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.eliminarPrecioPresentacion(SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest request) {
-            return base.Channel.eliminarPrecioPresentacion(request);
-        }
-        
-        public int eliminarPrecioPresentacion(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest();
-            inValue.precioPresentacion = precioPresentacion;
-            SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).eliminarPrecioPresentacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.eliminarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest request) {
-            return base.Channel.eliminarPrecioPresentacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse> eliminarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest();
-            inValue.precioPresentacion = precioPresentacion;
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).eliminarPrecioPresentacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.insertarPrecioPresentacion(SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest request) {
-            return base.Channel.insertarPrecioPresentacion(request);
-        }
-        
-        public int insertarPrecioPresentacion(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest();
-            inValue.precioPresentacion = precioPresentacion;
-            SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).insertarPrecioPresentacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.insertarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest request) {
-            return base.Channel.insertarPrecioPresentacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse> insertarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
-            SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest();
-            inValue.precioPresentacion = precioPresentacion;
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).insertarPrecioPresentacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.listarPrecioPresentacionPorTipoMedidaResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorTipoMedida(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorTipoMedidaRequest request) {
             return base.Channel.listarPrecioPresentacionPorTipoMedida(request);
         }
@@ -9711,26 +9577,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorProductoTodos(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest request) {
-            return base.Channel.listarPrecioPresentacionPorProductoTodos(request);
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorPrecioMaximo(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest request) {
+            return base.Channel.listarPrecioPresentacionPorPrecioMaximo(request);
         }
         
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionPorProductoTodos(int productoId) {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest();
-            inValue.productoId = productoId;
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorProductoTodos(inValue);
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionPorPrecioMaximo(double precioMaximo) {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest();
+            inValue.precioMaximo = precioMaximo;
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorPrecioMaximo(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorProductoTodosAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest request) {
-            return base.Channel.listarPrecioPresentacionPorProductoTodosAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorPrecioMaximoAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest request) {
+            return base.Channel.listarPrecioPresentacionPorPrecioMaximoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse> listarPrecioPresentacionPorProductoTodosAsync(int productoId) {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest();
-            inValue.productoId = productoId;
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorProductoTodosAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse> listarPrecioPresentacionPorPrecioMaximoAsync(double precioMaximo) {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest();
+            inValue.precioMaximo = precioMaximo;
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorPrecioMaximoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9761,49 +9627,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest request) {
-            return base.Channel.listarPrecioPresentacionPorUsuarioCreacion(request);
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorProducto(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest request) {
+            return base.Channel.listarPrecioPresentacionPorProducto(request);
         }
         
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionPorUsuarioCreacion(int usuarioId) {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest();
-            inValue.usuarioId = usuarioId;
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorUsuarioCreacion(inValue);
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionPorProducto(int productoId) {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest();
+            inValue.productoId = productoId;
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorProducto(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest request) {
-            return base.Channel.listarPrecioPresentacionPorUsuarioCreacionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorProductoAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest request) {
+            return base.Channel.listarPrecioPresentacionPorProductoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse> listarPrecioPresentacionPorUsuarioCreacionAsync(int usuarioId) {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest();
-            inValue.usuarioId = usuarioId;
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorUsuarioCreacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorPrecioMaximo(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest request) {
-            return base.Channel.listarPrecioPresentacionPorPrecioMaximo(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionPorPrecioMaximo(double precioMaximo) {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest();
-            inValue.precioMaximo = precioMaximo;
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorPrecioMaximo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorPrecioMaximoAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest request) {
-            return base.Channel.listarPrecioPresentacionPorPrecioMaximoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoResponse> listarPrecioPresentacionPorPrecioMaximoAsync(double precioMaximo) {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorPrecioMaximoRequest();
-            inValue.precioMaximo = precioMaximo;
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorPrecioMaximoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse> listarPrecioPresentacionPorProductoAsync(int productoId) {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest();
+            inValue.productoId = productoId;
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorProductoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9832,6 +9675,52 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorProductoTodos(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest request) {
+            return base.Channel.listarPrecioPresentacionPorProductoTodos(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionPorProductoTodos(int productoId) {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest();
+            inValue.productoId = productoId;
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorProductoTodos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorProductoTodosAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest request) {
+            return base.Channel.listarPrecioPresentacionPorProductoTodosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosResponse> listarPrecioPresentacionPorProductoTodosAsync(int productoId) {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoTodosRequest();
+            inValue.productoId = productoId;
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorProductoTodosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest request) {
+            return base.Channel.listarPrecioPresentacionPorUsuarioCreacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionPorUsuarioCreacion(int usuarioId) {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest();
+            inValue.usuarioId = usuarioId;
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorUsuarioCreacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest request) {
+            return base.Channel.listarPrecioPresentacionPorUsuarioCreacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionResponse> listarPrecioPresentacionPorUsuarioCreacionAsync(int usuarioId) {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorUsuarioCreacionRequest();
+            inValue.usuarioId = usuarioId;
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorUsuarioCreacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.listarPrecioPresentacionPorRangoCantidadResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorRangoCantidad(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorRangoCantidadRequest request) {
             return base.Channel.listarPrecioPresentacionPorRangoCantidad(request);
         }
@@ -9857,26 +9746,137 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorProducto(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest request) {
-            return base.Channel.listarPrecioPresentacionPorProducto(request);
+        SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.insertarPrecioPresentacion(SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest request) {
+            return base.Channel.insertarPrecioPresentacion(request);
         }
         
-        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionPorProducto(int productoId) {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest();
-            inValue.productoId = productoId;
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorProducto(inValue);
+        public int insertarPrecioPresentacion(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest();
+            inValue.precioPresentacion = precioPresentacion;
+            SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).insertarPrecioPresentacion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionPorProductoAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest request) {
-            return base.Channel.listarPrecioPresentacionPorProductoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.insertarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest request) {
+            return base.Channel.insertarPrecioPresentacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoResponse> listarPrecioPresentacionPorProductoAsync(int productoId) {
-            SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionPorProductoRequest();
-            inValue.productoId = productoId;
-            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionPorProductoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPrecioPresentacionResponse> insertarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.insertarPrecioPresentacionRequest();
+            inValue.precioPresentacion = precioPresentacion;
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).insertarPrecioPresentacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.eliminarPrecioPresentacion(SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest request) {
+            return base.Channel.eliminarPrecioPresentacion(request);
+        }
+        
+        public int eliminarPrecioPresentacion(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest();
+            inValue.precioPresentacion = precioPresentacion;
+            SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).eliminarPrecioPresentacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.eliminarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest request) {
+            return base.Channel.eliminarPrecioPresentacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPrecioPresentacionResponse> eliminarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.eliminarPrecioPresentacionRequest();
+            inValue.precioPresentacion = precioPresentacion;
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).eliminarPrecioPresentacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.obtenerPorIdPrecioPresentacion(SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest request) {
+            return base.Channel.obtenerPorIdPrecioPresentacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1 obtenerPorIdPrecioPresentacion(int idPrecioPresentacion) {
+            SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest();
+            inValue.idPrecioPresentacion = idPrecioPresentacion;
+            SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).obtenerPorIdPrecioPresentacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.obtenerPorIdPrecioPresentacionAsync(SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest request) {
+            return base.Channel.obtenerPorIdPrecioPresentacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionResponse> obtenerPorIdPrecioPresentacionAsync(int idPrecioPresentacion) {
+            SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdPrecioPresentacionRequest();
+            inValue.idPrecioPresentacion = idPrecioPresentacion;
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).obtenerPorIdPrecioPresentacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.modificarPrecioPresentacion(SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest request) {
+            return base.Channel.modificarPrecioPresentacion(request);
+        }
+        
+        public int modificarPrecioPresentacion(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest();
+            inValue.precioPresentacion = precioPresentacion;
+            SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).modificarPrecioPresentacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.modificarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest request) {
+            return base.Channel.modificarPrecioPresentacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPrecioPresentacionResponse> modificarPrecioPresentacionAsync(SoftWA.ServiciosWSClient.precioPresentacionDTO1 precioPresentacion) {
+            SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.modificarPrecioPresentacionRequest();
+            inValue.precioPresentacion = precioPresentacion;
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).modificarPrecioPresentacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarTodosPrecioPresentacion(SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest request) {
+            return base.Channel.listarTodosPrecioPresentacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarTodosPrecioPresentacion() {
+            SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest();
+            SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarTodosPrecioPresentacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarTodosPrecioPresentacionAsync(SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest request) {
+            return base.Channel.listarTodosPrecioPresentacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionResponse> listarTodosPrecioPresentacionAsync() {
+            SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest inValue = new SoftWA.ServiciosWSClient.listarTodosPrecioPresentacionRequest();
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarTodosPrecioPresentacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionInactivos(SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest request) {
+            return base.Channel.listarPrecioPresentacionInactivos(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.precioPresentacionDTO1[] listarPrecioPresentacionInactivos() {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest();
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse retVal = ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionInactivos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse> SoftWA.ServiciosWSClient.PrecioPresentacion.listarPrecioPresentacionInactivosAsync(SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest request) {
+            return base.Channel.listarPrecioPresentacionInactivosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosResponse> listarPrecioPresentacionInactivosAsync() {
+            SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarPrecioPresentacionInactivosRequest();
+            return ((SoftWA.ServiciosWSClient.PrecioPresentacion)(this)).listarPrecioPresentacionInactivosAsync(inValue);
         }
     }
     
@@ -9885,17 +9885,85 @@ namespace SoftWA.ServiciosWSClient {
     public interface Productos {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMi" +
-            "nimoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMi" +
-            "nimoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoResponse" +
+            "")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse listarProductosPorStockMinimo(SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest request);
+        SoftWA.ServiciosWSClient.modificarProductoResponse modificarProducto(SoftWA.ServiciosWSClient.modificarProductoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMi" +
-            "nimoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMi" +
-            "nimoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse> listarProductosPorStockMinimoAsync(SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoResponse" +
+            "")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarProductoResponse> modificarProductoAsync(SoftWA.ServiciosWSClient.modificarProductoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.eliminarProductoResponse eliminarProducto(SoftWA.ServiciosWSClient.eliminarProductoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarProductoResponse> eliminarProductoAsync(SoftWA.ServiciosWSClient.eliminarProductoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.insertarProductoResponse insertarProducto(SoftWA.ServiciosWSClient.insertarProductoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarProductoResponse> insertarProductoAsync(SoftWA.ServiciosWSClient.insertarProductoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFe" +
+            "chaCreacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFe" +
+            "chaCreacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse listarProductosPorRangoFechaCreacion(SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFe" +
+            "chaCreacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFe" +
+            "chaCreacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse> listarProductosPorRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescrip" +
+            "cionParcialRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescrip" +
+            "cionParcialResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse listarProductosPorDescripcionParcial(SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescrip" +
+            "cionParcialRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescrip" +
+            "cionParcialResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse> listarProductosPorDescripcionParcialAsync(SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreY" +
+            "PrecioMaximoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreY" +
+            "PrecioMaximoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse listarProductosPorNombreYPrecioMaximo(SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreY" +
+            "PrecioMaximoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreY" +
+            "PrecioMaximoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse> listarProductosPorNombreYPrecioMaximoAsync(SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoSt" +
+            "ockRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoSt" +
+            "ockResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse listarProductosPorRangoStock(SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoSt" +
+            "ockRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoSt" +
+            "ockResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse> listarProductosPorRangoStockAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoPr" +
@@ -9909,6 +9977,19 @@ namespace SoftWA.ServiciosWSClient {
             "ecioRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoPr" +
             "ecioResponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoPrecioResponse> listarProductosPorRangoPrecioAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoPrecioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMi" +
+            "nimoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMi" +
+            "nimoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse listarProductosPorStockMinimo(SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMi" +
+            "nimoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMi" +
+            "nimoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse> listarProductosPorStockMinimoAsync(SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorUsuario" +
@@ -9937,19 +10018,6 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorCategoriaResponse> listarProductosPorCategoriaAsync(SoftWA.ServiciosWSClient.listarProductosPorCategoriaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoSt" +
-            "ockRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoSt" +
-            "ockResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse listarProductosPorRangoStock(SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoSt" +
-            "ockRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoSt" +
-            "ockResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse> listarProductosPorRangoStockAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/obtenerPorIdProductoReque" +
             "st", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/obtenerPorIdProductoRespo" +
             "nse")]
@@ -9974,19 +10042,6 @@ namespace SoftWA.ServiciosWSClient {
             "t", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarTodosProductoRespon" +
             "se")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosProductoResponse> listarTodosProductoAsync(SoftWA.ServiciosWSClient.listarTodosProductoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosR" +
-            "equest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosR" +
-            "esponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarProductosInactivosResponse listarProductosInactivos(SoftWA.ServiciosWSClient.listarProductosInactivosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosR" +
-            "equest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosR" +
-            "esponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosInactivosResponse> listarProductosInactivosAsync(SoftWA.ServiciosWSClient.listarProductosInactivosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreR" +
@@ -10041,106 +10096,282 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.actualizarStockProductoResponse> actualizarStockProductoAsync(SoftWA.ServiciosWSClient.actualizarStockProductoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosR" +
+            "equest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosR" +
+            "esponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.eliminarProductoResponse eliminarProducto(SoftWA.ServiciosWSClient.eliminarProductoRequest request);
+        SoftWA.ServiciosWSClient.listarProductosInactivosResponse listarProductosInactivos(SoftWA.ServiciosWSClient.listarProductosInactivosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarProductoResponse> eliminarProductoAsync(SoftWA.ServiciosWSClient.eliminarProductoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarProductoResponse insertarProducto(SoftWA.ServiciosWSClient.insertarProductoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarProductoResponse> insertarProductoAsync(SoftWA.ServiciosWSClient.insertarProductoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoResponse" +
-            "")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.modificarProductoResponse modificarProducto(SoftWA.ServiciosWSClient.modificarProductoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoResponse" +
-            "")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarProductoResponse> modificarProductoAsync(SoftWA.ServiciosWSClient.modificarProductoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFe" +
-            "chaCreacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFe" +
-            "chaCreacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse listarProductosPorRangoFechaCreacion(SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFe" +
-            "chaCreacionRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFe" +
-            "chaCreacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse> listarProductosPorRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreY" +
-            "PrecioMaximoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreY" +
-            "PrecioMaximoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse listarProductosPorNombreYPrecioMaximo(SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreY" +
-            "PrecioMaximoRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreY" +
-            "PrecioMaximoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse> listarProductosPorNombreYPrecioMaximoAsync(SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescrip" +
-            "cionParcialRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescrip" +
-            "cionParcialResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse listarProductosPorDescripcionParcial(SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescrip" +
-            "cionParcialRequest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescrip" +
-            "cionParcialResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse> listarProductosPorDescripcionParcialAsync(SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosR" +
+            "equest", ReplyAction="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosR" +
+            "esponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosInactivosResponse> listarProductosInactivosAsync(SoftWA.ServiciosWSClient.listarProductosInactivosRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorStockMinimo", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorStockMinimoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarProductoRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int stockMinimo;
+        public SoftWA.ServiciosWSClient.productoDTO1 producto;
         
-        public listarProductosPorStockMinimoRequest() {
+        public modificarProductoRequest() {
         }
         
-        public listarProductosPorStockMinimoRequest(int stockMinimo) {
-            this.stockMinimo = stockMinimo;
+        public modificarProductoRequest(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            this.producto = producto;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorStockMinimoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorStockMinimoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarProductoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarProductoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarProductoResponse() {
+        }
+        
+        public modificarProductoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarProductoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.productoDTO1 producto;
+        
+        public eliminarProductoRequest() {
+        }
+        
+        public eliminarProductoRequest(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            this.producto = producto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarProductoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarProductoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarProductoResponse() {
+        }
+        
+        public eliminarProductoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarProductoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.productoDTO1 producto;
+        
+        public insertarProductoRequest() {
+        }
+        
+        public insertarProductoRequest(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            this.producto = producto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarProductoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarProductoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarProductoResponse() {
+        }
+        
+        public insertarProductoResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorRangoFechaCreacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorRangoFechaCreacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaInicio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaFin;
+        
+        public listarProductosPorRangoFechaCreacionRequest() {
+        }
+        
+        public listarProductosPorRangoFechaCreacionRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorRangoFechaCreacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorRangoFechaCreacionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.productoDTO1[] @return;
         
-        public listarProductosPorStockMinimoResponse() {
+        public listarProductosPorRangoFechaCreacionResponse() {
         }
         
-        public listarProductosPorStockMinimoResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
+        public listarProductosPorRangoFechaCreacionResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorDescripcionParcial", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorDescripcionParcialRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string descripcionParcial;
+        
+        public listarProductosPorDescripcionParcialRequest() {
+        }
+        
+        public listarProductosPorDescripcionParcialRequest(string descripcionParcial) {
+            this.descripcionParcial = descripcionParcial;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorDescripcionParcialResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorDescripcionParcialResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.productoDTO1[] @return;
+        
+        public listarProductosPorDescripcionParcialResponse() {
+        }
+        
+        public listarProductosPorDescripcionParcialResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorNombreYPrecioMaximo", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorNombreYPrecioMaximoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string nombre;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double precioMaximo;
+        
+        public listarProductosPorNombreYPrecioMaximoRequest() {
+        }
+        
+        public listarProductosPorNombreYPrecioMaximoRequest(string nombre, double precioMaximo) {
+            this.nombre = nombre;
+            this.precioMaximo = precioMaximo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorNombreYPrecioMaximoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorNombreYPrecioMaximoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.productoDTO1[] @return;
+        
+        public listarProductosPorNombreYPrecioMaximoResponse() {
+        }
+        
+        public listarProductosPorNombreYPrecioMaximoResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorRangoStock", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorRangoStockRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int stockMin;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int stockMax;
+        
+        public listarProductosPorRangoStockRequest() {
+        }
+        
+        public listarProductosPorRangoStockRequest(int stockMin, int stockMax) {
+            this.stockMin = stockMin;
+            this.stockMax = stockMax;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorRangoStockResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorRangoStockResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.productoDTO1[] @return;
+        
+        public listarProductosPorRangoStockResponse() {
+        }
+        
+        public listarProductosPorRangoStockResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -10182,6 +10413,42 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public listarProductosPorRangoPrecioResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorStockMinimo", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorStockMinimoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int stockMinimo;
+        
+        public listarProductosPorStockMinimoRequest() {
+        }
+        
+        public listarProductosPorStockMinimoRequest(int stockMinimo) {
+            this.stockMinimo = stockMinimo;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorStockMinimoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosPorStockMinimoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.productoDTO1[] @return;
+        
+        public listarProductosPorStockMinimoResponse() {
+        }
+        
+        public listarProductosPorStockMinimoResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -10261,47 +10528,6 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorRangoStock", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorRangoStockRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int stockMin;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int stockMax;
-        
-        public listarProductosPorRangoStockRequest() {
-        }
-        
-        public listarProductosPorRangoStockRequest(int stockMin, int stockMax) {
-            this.stockMin = stockMin;
-            this.stockMax = stockMax;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorRangoStockResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorRangoStockResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.productoDTO1[] @return;
-        
-        public listarProductosPorRangoStockResponse() {
-        }
-        
-        public listarProductosPorRangoStockResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class obtenerPorIdProductoRequest {
         
@@ -10359,34 +10585,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public listarTodosProductoResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosInactivos", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosInactivosRequest {
-        
-        public listarProductosInactivosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosInactivosResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosInactivosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.productoDTO1[] @return;
-        
-        public listarProductosInactivosResponse() {
-        }
-        
-        public listarProductosInactivosResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -10545,225 +10743,27 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarProductoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosInactivos", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosInactivosRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.productoDTO1 producto;
-        
-        public eliminarProductoRequest() {
-        }
-        
-        public eliminarProductoRequest(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            this.producto = producto;
+        public listarProductosInactivosRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarProductoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarProductoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarProductoResponse() {
-        }
-        
-        public eliminarProductoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarProductoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.productoDTO1 producto;
-        
-        public insertarProductoRequest() {
-        }
-        
-        public insertarProductoRequest(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            this.producto = producto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarProductoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarProductoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarProductoResponse() {
-        }
-        
-        public insertarProductoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarProducto", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarProductoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.productoDTO1 producto;
-        
-        public modificarProductoRequest() {
-        }
-        
-        public modificarProductoRequest(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            this.producto = producto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarProductoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarProductoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarProductoResponse() {
-        }
-        
-        public modificarProductoResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorRangoFechaCreacion", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorRangoFechaCreacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaInicio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaFin;
-        
-        public listarProductosPorRangoFechaCreacionRequest() {
-        }
-        
-        public listarProductosPorRangoFechaCreacionRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            this.fechaInicio = fechaInicio;
-            this.fechaFin = fechaFin;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorRangoFechaCreacionResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorRangoFechaCreacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosInactivosResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarProductosInactivosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.productoDTO1[] @return;
         
-        public listarProductosPorRangoFechaCreacionResponse() {
+        public listarProductosInactivosResponse() {
         }
         
-        public listarProductosPorRangoFechaCreacionResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorNombreYPrecioMaximo", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorNombreYPrecioMaximoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string nombre;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double precioMaximo;
-        
-        public listarProductosPorNombreYPrecioMaximoRequest() {
-        }
-        
-        public listarProductosPorNombreYPrecioMaximoRequest(string nombre, double precioMaximo) {
-            this.nombre = nombre;
-            this.precioMaximo = precioMaximo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorNombreYPrecioMaximoResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorNombreYPrecioMaximoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.productoDTO1[] @return;
-        
-        public listarProductosPorNombreYPrecioMaximoResponse() {
-        }
-        
-        public listarProductosPorNombreYPrecioMaximoResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorDescripcionParcial", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorDescripcionParcialRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string descripcionParcial;
-        
-        public listarProductosPorDescripcionParcialRequest() {
-        }
-        
-        public listarProductosPorDescripcionParcialRequest(string descripcionParcial) {
-            this.descripcionParcial = descripcionParcial;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarProductosPorDescripcionParcialResponse", WrapperNamespace="http://producto.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarProductosPorDescripcionParcialResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://producto.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.productoDTO1[] @return;
-        
-        public listarProductosPorDescripcionParcialResponse() {
-        }
-        
-        public listarProductosPorDescripcionParcialResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
+        public listarProductosInactivosResponse(SoftWA.ServiciosWSClient.productoDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -10796,26 +10796,170 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorStockMinimo(SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest request) {
-            return base.Channel.listarProductosPorStockMinimo(request);
+        SoftWA.ServiciosWSClient.modificarProductoResponse SoftWA.ServiciosWSClient.Productos.modificarProducto(SoftWA.ServiciosWSClient.modificarProductoRequest request) {
+            return base.Channel.modificarProducto(request);
         }
         
-        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorStockMinimo(int stockMinimo) {
-            SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest();
-            inValue.stockMinimo = stockMinimo;
-            SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorStockMinimo(inValue);
+        public int modificarProducto(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            SoftWA.ServiciosWSClient.modificarProductoRequest inValue = new SoftWA.ServiciosWSClient.modificarProductoRequest();
+            inValue.producto = producto;
+            SoftWA.ServiciosWSClient.modificarProductoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).modificarProducto(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorStockMinimoAsync(SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest request) {
-            return base.Channel.listarProductosPorStockMinimoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarProductoResponse> SoftWA.ServiciosWSClient.Productos.modificarProductoAsync(SoftWA.ServiciosWSClient.modificarProductoRequest request) {
+            return base.Channel.modificarProductoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse> listarProductosPorStockMinimoAsync(int stockMinimo) {
-            SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest();
-            inValue.stockMinimo = stockMinimo;
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorStockMinimoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarProductoResponse> modificarProductoAsync(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            SoftWA.ServiciosWSClient.modificarProductoRequest inValue = new SoftWA.ServiciosWSClient.modificarProductoRequest();
+            inValue.producto = producto;
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).modificarProductoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.eliminarProductoResponse SoftWA.ServiciosWSClient.Productos.eliminarProducto(SoftWA.ServiciosWSClient.eliminarProductoRequest request) {
+            return base.Channel.eliminarProducto(request);
+        }
+        
+        public int eliminarProducto(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            SoftWA.ServiciosWSClient.eliminarProductoRequest inValue = new SoftWA.ServiciosWSClient.eliminarProductoRequest();
+            inValue.producto = producto;
+            SoftWA.ServiciosWSClient.eliminarProductoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).eliminarProducto(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarProductoResponse> SoftWA.ServiciosWSClient.Productos.eliminarProductoAsync(SoftWA.ServiciosWSClient.eliminarProductoRequest request) {
+            return base.Channel.eliminarProductoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarProductoResponse> eliminarProductoAsync(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            SoftWA.ServiciosWSClient.eliminarProductoRequest inValue = new SoftWA.ServiciosWSClient.eliminarProductoRequest();
+            inValue.producto = producto;
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).eliminarProductoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.insertarProductoResponse SoftWA.ServiciosWSClient.Productos.insertarProducto(SoftWA.ServiciosWSClient.insertarProductoRequest request) {
+            return base.Channel.insertarProducto(request);
+        }
+        
+        public int insertarProducto(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            SoftWA.ServiciosWSClient.insertarProductoRequest inValue = new SoftWA.ServiciosWSClient.insertarProductoRequest();
+            inValue.producto = producto;
+            SoftWA.ServiciosWSClient.insertarProductoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).insertarProducto(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarProductoResponse> SoftWA.ServiciosWSClient.Productos.insertarProductoAsync(SoftWA.ServiciosWSClient.insertarProductoRequest request) {
+            return base.Channel.insertarProductoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarProductoResponse> insertarProductoAsync(SoftWA.ServiciosWSClient.productoDTO1 producto) {
+            SoftWA.ServiciosWSClient.insertarProductoRequest inValue = new SoftWA.ServiciosWSClient.insertarProductoRequest();
+            inValue.producto = producto;
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).insertarProductoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorRangoFechaCreacion(SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest request) {
+            return base.Channel.listarProductosPorRangoFechaCreacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorRangoFechaCreacion(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoFechaCreacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest request) {
+            return base.Channel.listarProductosPorRangoFechaCreacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse> listarProductosPorRangoFechaCreacionAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoFechaCreacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorDescripcionParcial(SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest request) {
+            return base.Channel.listarProductosPorDescripcionParcial(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorDescripcionParcial(string descripcionParcial) {
+            SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest();
+            inValue.descripcionParcial = descripcionParcial;
+            SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorDescripcionParcial(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorDescripcionParcialAsync(SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest request) {
+            return base.Channel.listarProductosPorDescripcionParcialAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse> listarProductosPorDescripcionParcialAsync(string descripcionParcial) {
+            SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest();
+            inValue.descripcionParcial = descripcionParcial;
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorDescripcionParcialAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorNombreYPrecioMaximo(SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest request) {
+            return base.Channel.listarProductosPorNombreYPrecioMaximo(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorNombreYPrecioMaximo(string nombre, double precioMaximo) {
+            SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest();
+            inValue.nombre = nombre;
+            inValue.precioMaximo = precioMaximo;
+            SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorNombreYPrecioMaximo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorNombreYPrecioMaximoAsync(SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest request) {
+            return base.Channel.listarProductosPorNombreYPrecioMaximoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse> listarProductosPorNombreYPrecioMaximoAsync(string nombre, double precioMaximo) {
+            SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest();
+            inValue.nombre = nombre;
+            inValue.precioMaximo = precioMaximo;
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorNombreYPrecioMaximoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorRangoStock(SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest request) {
+            return base.Channel.listarProductosPorRangoStock(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorRangoStock(int stockMin, int stockMax) {
+            SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest();
+            inValue.stockMin = stockMin;
+            inValue.stockMax = stockMax;
+            SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoStock(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorRangoStockAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest request) {
+            return base.Channel.listarProductosPorRangoStockAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse> listarProductosPorRangoStockAsync(int stockMin, int stockMax) {
+            SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest();
+            inValue.stockMin = stockMin;
+            inValue.stockMax = stockMax;
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoStockAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10841,6 +10985,29 @@ namespace SoftWA.ServiciosWSClient {
             inValue.precioMin = precioMin;
             inValue.precioMax = precioMax;
             return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoPrecioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorStockMinimo(SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest request) {
+            return base.Channel.listarProductosPorStockMinimo(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorStockMinimo(int stockMinimo) {
+            SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest();
+            inValue.stockMinimo = stockMinimo;
+            SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorStockMinimo(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorStockMinimoAsync(SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest request) {
+            return base.Channel.listarProductosPorStockMinimoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorStockMinimoResponse> listarProductosPorStockMinimoAsync(int stockMinimo) {
+            SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorStockMinimoRequest();
+            inValue.stockMinimo = stockMinimo;
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorStockMinimoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -10890,31 +11057,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorRangoStock(SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest request) {
-            return base.Channel.listarProductosPorRangoStock(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorRangoStock(int stockMin, int stockMax) {
-            SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest();
-            inValue.stockMin = stockMin;
-            inValue.stockMax = stockMax;
-            SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoStock(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorRangoStockAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest request) {
-            return base.Channel.listarProductosPorRangoStockAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoStockResponse> listarProductosPorRangoStockAsync(int stockMin, int stockMax) {
-            SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorRangoStockRequest();
-            inValue.stockMin = stockMin;
-            inValue.stockMax = stockMax;
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoStockAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.obtenerPorIdProductoResponse SoftWA.ServiciosWSClient.Productos.obtenerPorIdProducto(SoftWA.ServiciosWSClient.obtenerPorIdProductoRequest request) {
             return base.Channel.obtenerPorIdProducto(request);
         }
@@ -10956,27 +11098,6 @@ namespace SoftWA.ServiciosWSClient {
         public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosProductoResponse> listarTodosProductoAsync() {
             SoftWA.ServiciosWSClient.listarTodosProductoRequest inValue = new SoftWA.ServiciosWSClient.listarTodosProductoRequest();
             return ((SoftWA.ServiciosWSClient.Productos)(this)).listarTodosProductoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarProductosInactivosResponse SoftWA.ServiciosWSClient.Productos.listarProductosInactivos(SoftWA.ServiciosWSClient.listarProductosInactivosRequest request) {
-            return base.Channel.listarProductosInactivos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosInactivos() {
-            SoftWA.ServiciosWSClient.listarProductosInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarProductosInactivosRequest();
-            SoftWA.ServiciosWSClient.listarProductosInactivosResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosInactivos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosInactivosResponse> SoftWA.ServiciosWSClient.Productos.listarProductosInactivosAsync(SoftWA.ServiciosWSClient.listarProductosInactivosRequest request) {
-            return base.Channel.listarProductosInactivosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosInactivosResponse> listarProductosInactivosAsync() {
-            SoftWA.ServiciosWSClient.listarProductosInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarProductosInactivosRequest();
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosInactivosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11076,151 +11197,39 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarProductoResponse SoftWA.ServiciosWSClient.Productos.eliminarProducto(SoftWA.ServiciosWSClient.eliminarProductoRequest request) {
-            return base.Channel.eliminarProducto(request);
+        SoftWA.ServiciosWSClient.listarProductosInactivosResponse SoftWA.ServiciosWSClient.Productos.listarProductosInactivos(SoftWA.ServiciosWSClient.listarProductosInactivosRequest request) {
+            return base.Channel.listarProductosInactivos(request);
         }
         
-        public int eliminarProducto(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            SoftWA.ServiciosWSClient.eliminarProductoRequest inValue = new SoftWA.ServiciosWSClient.eliminarProductoRequest();
-            inValue.producto = producto;
-            SoftWA.ServiciosWSClient.eliminarProductoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).eliminarProducto(inValue);
+        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosInactivos() {
+            SoftWA.ServiciosWSClient.listarProductosInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarProductosInactivosRequest();
+            SoftWA.ServiciosWSClient.listarProductosInactivosResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosInactivos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarProductoResponse> SoftWA.ServiciosWSClient.Productos.eliminarProductoAsync(SoftWA.ServiciosWSClient.eliminarProductoRequest request) {
-            return base.Channel.eliminarProductoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosInactivosResponse> SoftWA.ServiciosWSClient.Productos.listarProductosInactivosAsync(SoftWA.ServiciosWSClient.listarProductosInactivosRequest request) {
+            return base.Channel.listarProductosInactivosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarProductoResponse> eliminarProductoAsync(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            SoftWA.ServiciosWSClient.eliminarProductoRequest inValue = new SoftWA.ServiciosWSClient.eliminarProductoRequest();
-            inValue.producto = producto;
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).eliminarProductoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarProductoResponse SoftWA.ServiciosWSClient.Productos.insertarProducto(SoftWA.ServiciosWSClient.insertarProductoRequest request) {
-            return base.Channel.insertarProducto(request);
-        }
-        
-        public int insertarProducto(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            SoftWA.ServiciosWSClient.insertarProductoRequest inValue = new SoftWA.ServiciosWSClient.insertarProductoRequest();
-            inValue.producto = producto;
-            SoftWA.ServiciosWSClient.insertarProductoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).insertarProducto(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarProductoResponse> SoftWA.ServiciosWSClient.Productos.insertarProductoAsync(SoftWA.ServiciosWSClient.insertarProductoRequest request) {
-            return base.Channel.insertarProductoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarProductoResponse> insertarProductoAsync(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            SoftWA.ServiciosWSClient.insertarProductoRequest inValue = new SoftWA.ServiciosWSClient.insertarProductoRequest();
-            inValue.producto = producto;
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).insertarProductoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.modificarProductoResponse SoftWA.ServiciosWSClient.Productos.modificarProducto(SoftWA.ServiciosWSClient.modificarProductoRequest request) {
-            return base.Channel.modificarProducto(request);
-        }
-        
-        public int modificarProducto(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            SoftWA.ServiciosWSClient.modificarProductoRequest inValue = new SoftWA.ServiciosWSClient.modificarProductoRequest();
-            inValue.producto = producto;
-            SoftWA.ServiciosWSClient.modificarProductoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).modificarProducto(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarProductoResponse> SoftWA.ServiciosWSClient.Productos.modificarProductoAsync(SoftWA.ServiciosWSClient.modificarProductoRequest request) {
-            return base.Channel.modificarProductoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarProductoResponse> modificarProductoAsync(SoftWA.ServiciosWSClient.productoDTO1 producto) {
-            SoftWA.ServiciosWSClient.modificarProductoRequest inValue = new SoftWA.ServiciosWSClient.modificarProductoRequest();
-            inValue.producto = producto;
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).modificarProductoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorRangoFechaCreacion(SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest request) {
-            return base.Channel.listarProductosPorRangoFechaCreacion(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorRangoFechaCreacion(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoFechaCreacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest request) {
-            return base.Channel.listarProductosPorRangoFechaCreacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionResponse> listarProductosPorRangoFechaCreacionAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorRangoFechaCreacionRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorRangoFechaCreacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorNombreYPrecioMaximo(SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest request) {
-            return base.Channel.listarProductosPorNombreYPrecioMaximo(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorNombreYPrecioMaximo(string nombre, double precioMaximo) {
-            SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest();
-            inValue.nombre = nombre;
-            inValue.precioMaximo = precioMaximo;
-            SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorNombreYPrecioMaximo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorNombreYPrecioMaximoAsync(SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest request) {
-            return base.Channel.listarProductosPorNombreYPrecioMaximoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoResponse> listarProductosPorNombreYPrecioMaximoAsync(string nombre, double precioMaximo) {
-            SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorNombreYPrecioMaximoRequest();
-            inValue.nombre = nombre;
-            inValue.precioMaximo = precioMaximo;
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorNombreYPrecioMaximoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse SoftWA.ServiciosWSClient.Productos.listarProductosPorDescripcionParcial(SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest request) {
-            return base.Channel.listarProductosPorDescripcionParcial(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.productoDTO1[] listarProductosPorDescripcionParcial(string descripcionParcial) {
-            SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest();
-            inValue.descripcionParcial = descripcionParcial;
-            SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse retVal = ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorDescripcionParcial(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse> SoftWA.ServiciosWSClient.Productos.listarProductosPorDescripcionParcialAsync(SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest request) {
-            return base.Channel.listarProductosPorDescripcionParcialAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialResponse> listarProductosPorDescripcionParcialAsync(string descripcionParcial) {
-            SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest inValue = new SoftWA.ServiciosWSClient.listarProductosPorDescripcionParcialRequest();
-            inValue.descripcionParcial = descripcionParcial;
-            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosPorDescripcionParcialAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarProductosInactivosResponse> listarProductosInactivosAsync() {
+            SoftWA.ServiciosWSClient.listarProductosInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarProductosInactivosRequest();
+            return ((SoftWA.ServiciosWSClient.Productos)(this)).listarProductosInactivosAsync(inValue);
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", ConfigurationName="ServiciosWSClient.Usuario")]
     public interface Usuario {
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse listarPorRolUsuario(SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse> listarPorRolUsuarioAsync(SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarTodosUsuariosRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarTodosUsuariosResponse")]
@@ -11245,15 +11254,6 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.buscarPorEmailUsuarioResponse> buscarPorEmailUsuarioAsync(SoftWA.ServiciosWSClient.buscarPorEmailUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse listarPorRolUsuario(SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/listarPorRolUsuarioResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse> listarPorRolUsuarioAsync(SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/obtenerPorIdUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/obtenerPorIdUsuarioResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -11261,15 +11261,6 @@ namespace SoftWA.ServiciosWSClient {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/obtenerPorIdUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/obtenerPorIdUsuarioResponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdUsuarioResponse> obtenerPorIdUsuarioAsync(SoftWA.ServiciosWSClient.obtenerPorIdUsuarioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarUsuarioResponse insertarUsuario(SoftWA.ServiciosWSClient.insertarUsuarioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarUsuarioResponse> insertarUsuarioAsync(SoftWA.ServiciosWSClient.insertarUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/autenticarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/autenticarUsuarioResponse")]
@@ -11281,6 +11272,15 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.autenticarUsuarioResponse> autenticarUsuarioAsync(SoftWA.ServiciosWSClient.autenticarUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.eliminarUsuarioResponse eliminarUsuario(SoftWA.ServiciosWSClient.eliminarUsuarioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarUsuarioResponse> eliminarUsuarioAsync(SoftWA.ServiciosWSClient.eliminarUsuarioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/modificarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/modificarUsuarioResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -11290,13 +11290,49 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarUsuarioResponse> modificarUsuarioAsync(SoftWA.ServiciosWSClient.modificarUsuarioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.eliminarUsuarioResponse eliminarUsuario(SoftWA.ServiciosWSClient.eliminarUsuarioRequest request);
+        SoftWA.ServiciosWSClient.insertarUsuarioResponse insertarUsuario(SoftWA.ServiciosWSClient.insertarUsuarioRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/eliminarUsuarioResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarUsuarioResponse> eliminarUsuarioAsync(SoftWA.ServiciosWSClient.eliminarUsuarioRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Usuario/insertarUsuarioResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarUsuarioResponse> insertarUsuarioAsync(SoftWA.ServiciosWSClient.insertarUsuarioRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorRolUsuario", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorRolUsuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int rolId;
+        
+        public listarPorRolUsuarioRequest() {
+        }
+        
+        public listarPorRolUsuarioRequest(int rolId) {
+            this.rolId = rolId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorRolUsuarioResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPorRolUsuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.usuarioDTO1[] @return;
+        
+        public listarPorRolUsuarioResponse() {
+        }
+        
+        public listarPorRolUsuarioResponse(SoftWA.ServiciosWSClient.usuarioDTO1[] @return) {
+            this.@return = @return;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -11366,42 +11402,6 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorRolUsuario", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorRolUsuarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int rolId;
-        
-        public listarPorRolUsuarioRequest() {
-        }
-        
-        public listarPorRolUsuarioRequest(int rolId) {
-            this.rolId = rolId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPorRolUsuarioResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPorRolUsuarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.usuarioDTO1[] @return;
-        
-        public listarPorRolUsuarioResponse() {
-        }
-        
-        public listarPorRolUsuarioResponse(SoftWA.ServiciosWSClient.usuarioDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdUsuario", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class obtenerPorIdUsuarioRequest {
         
@@ -11431,42 +11431,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public obtenerPorIdUsuarioResponse(SoftWA.ServiciosWSClient.usuarioDTO1 @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarUsuario", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarUsuarioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.usuarioDTO1 usuario;
-        
-        public insertarUsuarioRequest() {
-        }
-        
-        public insertarUsuarioRequest(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
-            this.usuario = usuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarUsuarioResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarUsuarioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarUsuarioResponse() {
-        }
-        
-        public insertarUsuarioResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -11515,6 +11479,42 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarUsuario", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarUsuarioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.usuarioDTO1 usuario;
+        
+        public eliminarUsuarioRequest() {
+        }
+        
+        public eliminarUsuarioRequest(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
+            this.usuario = usuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarUsuarioResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarUsuarioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarUsuarioResponse() {
+        }
+        
+        public eliminarUsuarioResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="modificarUsuario", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class modificarUsuarioRequest {
         
@@ -11551,17 +11551,17 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarUsuario", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarUsuarioRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarUsuario", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarUsuarioRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.usuarioDTO1 usuario;
         
-        public eliminarUsuarioRequest() {
+        public insertarUsuarioRequest() {
         }
         
-        public eliminarUsuarioRequest(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
+        public insertarUsuarioRequest(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
             this.usuario = usuario;
         }
     }
@@ -11569,17 +11569,17 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarUsuarioResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarUsuarioResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarUsuarioResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarUsuarioResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public eliminarUsuarioResponse() {
+        public insertarUsuarioResponse() {
         }
         
-        public eliminarUsuarioResponse(int @return) {
+        public insertarUsuarioResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -11609,6 +11609,29 @@ namespace SoftWA.ServiciosWSClient {
         
         public UsuarioClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse SoftWA.ServiciosWSClient.Usuario.listarPorRolUsuario(SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest request) {
+            return base.Channel.listarPorRolUsuario(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.usuarioDTO1[] listarPorRolUsuario(int rolId) {
+            SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest inValue = new SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest();
+            inValue.rolId = rolId;
+            SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse retVal = ((SoftWA.ServiciosWSClient.Usuario)(this)).listarPorRolUsuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse> SoftWA.ServiciosWSClient.Usuario.listarPorRolUsuarioAsync(SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest request) {
+            return base.Channel.listarPorRolUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse> listarPorRolUsuarioAsync(int rolId) {
+            SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest inValue = new SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest();
+            inValue.rolId = rolId;
+            return ((SoftWA.ServiciosWSClient.Usuario)(this)).listarPorRolUsuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11656,29 +11679,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse SoftWA.ServiciosWSClient.Usuario.listarPorRolUsuario(SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest request) {
-            return base.Channel.listarPorRolUsuario(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.usuarioDTO1[] listarPorRolUsuario(int rolId) {
-            SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest inValue = new SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest();
-            inValue.rolId = rolId;
-            SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse retVal = ((SoftWA.ServiciosWSClient.Usuario)(this)).listarPorRolUsuario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse> SoftWA.ServiciosWSClient.Usuario.listarPorRolUsuarioAsync(SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest request) {
-            return base.Channel.listarPorRolUsuarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPorRolUsuarioResponse> listarPorRolUsuarioAsync(int rolId) {
-            SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest inValue = new SoftWA.ServiciosWSClient.listarPorRolUsuarioRequest();
-            inValue.rolId = rolId;
-            return ((SoftWA.ServiciosWSClient.Usuario)(this)).listarPorRolUsuarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.obtenerPorIdUsuarioResponse SoftWA.ServiciosWSClient.Usuario.obtenerPorIdUsuario(SoftWA.ServiciosWSClient.obtenerPorIdUsuarioRequest request) {
             return base.Channel.obtenerPorIdUsuario(request);
         }
@@ -11699,29 +11699,6 @@ namespace SoftWA.ServiciosWSClient {
             SoftWA.ServiciosWSClient.obtenerPorIdUsuarioRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdUsuarioRequest();
             inValue.idUsuario = idUsuario;
             return ((SoftWA.ServiciosWSClient.Usuario)(this)).obtenerPorIdUsuarioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarUsuarioResponse SoftWA.ServiciosWSClient.Usuario.insertarUsuario(SoftWA.ServiciosWSClient.insertarUsuarioRequest request) {
-            return base.Channel.insertarUsuario(request);
-        }
-        
-        public int insertarUsuario(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
-            SoftWA.ServiciosWSClient.insertarUsuarioRequest inValue = new SoftWA.ServiciosWSClient.insertarUsuarioRequest();
-            inValue.usuario = usuario;
-            SoftWA.ServiciosWSClient.insertarUsuarioResponse retVal = ((SoftWA.ServiciosWSClient.Usuario)(this)).insertarUsuario(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarUsuarioResponse> SoftWA.ServiciosWSClient.Usuario.insertarUsuarioAsync(SoftWA.ServiciosWSClient.insertarUsuarioRequest request) {
-            return base.Channel.insertarUsuarioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarUsuarioResponse> insertarUsuarioAsync(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
-            SoftWA.ServiciosWSClient.insertarUsuarioRequest inValue = new SoftWA.ServiciosWSClient.insertarUsuarioRequest();
-            inValue.usuario = usuario;
-            return ((SoftWA.ServiciosWSClient.Usuario)(this)).insertarUsuarioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -11750,6 +11727,29 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.eliminarUsuarioResponse SoftWA.ServiciosWSClient.Usuario.eliminarUsuario(SoftWA.ServiciosWSClient.eliminarUsuarioRequest request) {
+            return base.Channel.eliminarUsuario(request);
+        }
+        
+        public int eliminarUsuario(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
+            SoftWA.ServiciosWSClient.eliminarUsuarioRequest inValue = new SoftWA.ServiciosWSClient.eliminarUsuarioRequest();
+            inValue.usuario = usuario;
+            SoftWA.ServiciosWSClient.eliminarUsuarioResponse retVal = ((SoftWA.ServiciosWSClient.Usuario)(this)).eliminarUsuario(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarUsuarioResponse> SoftWA.ServiciosWSClient.Usuario.eliminarUsuarioAsync(SoftWA.ServiciosWSClient.eliminarUsuarioRequest request) {
+            return base.Channel.eliminarUsuarioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarUsuarioResponse> eliminarUsuarioAsync(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
+            SoftWA.ServiciosWSClient.eliminarUsuarioRequest inValue = new SoftWA.ServiciosWSClient.eliminarUsuarioRequest();
+            inValue.usuario = usuario;
+            return ((SoftWA.ServiciosWSClient.Usuario)(this)).eliminarUsuarioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.modificarUsuarioResponse SoftWA.ServiciosWSClient.Usuario.modificarUsuario(SoftWA.ServiciosWSClient.modificarUsuarioRequest request) {
             return base.Channel.modificarUsuario(request);
         }
@@ -11773,54 +11773,32 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarUsuarioResponse SoftWA.ServiciosWSClient.Usuario.eliminarUsuario(SoftWA.ServiciosWSClient.eliminarUsuarioRequest request) {
-            return base.Channel.eliminarUsuario(request);
+        SoftWA.ServiciosWSClient.insertarUsuarioResponse SoftWA.ServiciosWSClient.Usuario.insertarUsuario(SoftWA.ServiciosWSClient.insertarUsuarioRequest request) {
+            return base.Channel.insertarUsuario(request);
         }
         
-        public int eliminarUsuario(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
-            SoftWA.ServiciosWSClient.eliminarUsuarioRequest inValue = new SoftWA.ServiciosWSClient.eliminarUsuarioRequest();
+        public int insertarUsuario(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
+            SoftWA.ServiciosWSClient.insertarUsuarioRequest inValue = new SoftWA.ServiciosWSClient.insertarUsuarioRequest();
             inValue.usuario = usuario;
-            SoftWA.ServiciosWSClient.eliminarUsuarioResponse retVal = ((SoftWA.ServiciosWSClient.Usuario)(this)).eliminarUsuario(inValue);
+            SoftWA.ServiciosWSClient.insertarUsuarioResponse retVal = ((SoftWA.ServiciosWSClient.Usuario)(this)).insertarUsuario(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarUsuarioResponse> SoftWA.ServiciosWSClient.Usuario.eliminarUsuarioAsync(SoftWA.ServiciosWSClient.eliminarUsuarioRequest request) {
-            return base.Channel.eliminarUsuarioAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarUsuarioResponse> SoftWA.ServiciosWSClient.Usuario.insertarUsuarioAsync(SoftWA.ServiciosWSClient.insertarUsuarioRequest request) {
+            return base.Channel.insertarUsuarioAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarUsuarioResponse> eliminarUsuarioAsync(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
-            SoftWA.ServiciosWSClient.eliminarUsuarioRequest inValue = new SoftWA.ServiciosWSClient.eliminarUsuarioRequest();
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarUsuarioResponse> insertarUsuarioAsync(SoftWA.ServiciosWSClient.usuarioDTO1 usuario) {
+            SoftWA.ServiciosWSClient.insertarUsuarioRequest inValue = new SoftWA.ServiciosWSClient.insertarUsuarioRequest();
             inValue.usuario = usuario;
-            return ((SoftWA.ServiciosWSClient.Usuario)(this)).eliminarUsuarioAsync(inValue);
+            return ((SoftWA.ServiciosWSClient.Usuario)(this)).insertarUsuarioAsync(inValue);
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", ConfigurationName="ServiciosWSClient.Direccion")]
     public interface Direccion {
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarDireccionResponse insertarDireccion(SoftWA.ServiciosWSClient.insertarDireccionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarDireccionResponse> insertarDireccionAsync(SoftWA.ServiciosWSClient.insertarDireccionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionReque" +
-            "st", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionRespo" +
-            "nse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.obtenerPorIdDireccionResponse obtenerPorIdDireccion(SoftWA.ServiciosWSClient.obtenerPorIdDireccionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionReque" +
-            "st", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionRespo" +
-            "nse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdDireccionResponse> obtenerPorIdDireccionAsync(SoftWA.ServiciosWSClient.obtenerPorIdDireccionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/listarTodosDireccionReques" +
@@ -11836,13 +11814,26 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosDireccionResponse> listarTodosDireccionAsync(SoftWA.ServiciosWSClient.listarTodosDireccionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionReque" +
+            "st", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionRespo" +
+            "nse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.eliminarDireccionResponse eliminarDireccion(SoftWA.ServiciosWSClient.eliminarDireccionRequest request);
+        SoftWA.ServiciosWSClient.obtenerPorIdDireccionResponse obtenerPorIdDireccion(SoftWA.ServiciosWSClient.obtenerPorIdDireccionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarDireccionResponse> eliminarDireccionAsync(SoftWA.ServiciosWSClient.eliminarDireccionRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionReque" +
+            "st", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/obtenerPorIdDireccionRespo" +
+            "nse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdDireccionResponse> obtenerPorIdDireccionAsync(SoftWA.ServiciosWSClient.obtenerPorIdDireccionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.insertarDireccionResponse insertarDireccion(SoftWA.ServiciosWSClient.insertarDireccionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/insertarDireccionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarDireccionResponse> insertarDireccionAsync(SoftWA.ServiciosWSClient.insertarDireccionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/modificarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/modificarDireccionResponse" +
@@ -11854,40 +11845,41 @@ namespace SoftWA.ServiciosWSClient {
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/modificarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/modificarDireccionResponse" +
             "")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarDireccionResponse> modificarDireccionAsync(SoftWA.ServiciosWSClient.modificarDireccionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.eliminarDireccionResponse eliminarDireccion(SoftWA.ServiciosWSClient.eliminarDireccionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Direccion/eliminarDireccionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarDireccionResponse> eliminarDireccionAsync(SoftWA.ServiciosWSClient.eliminarDireccionRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDireccion", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarDireccionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosDireccion", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosDireccionRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.direccionDTO1 direccion;
-        
-        public insertarDireccionRequest() {
-        }
-        
-        public insertarDireccionRequest(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
-            this.direccion = direccion;
+        public listarTodosDireccionRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDireccionResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarDireccionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosDireccionResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosDireccionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.direccionDTO1[] @return;
         
-        public insertarDireccionResponse() {
+        public listarTodosDireccionResponse() {
         }
         
-        public insertarDireccionResponse(int @return) {
+        public listarTodosDireccionResponse(SoftWA.ServiciosWSClient.direccionDTO1[] @return) {
             this.@return = @return;
         }
     }
@@ -11931,45 +11923,17 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosDireccion", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosDireccionRequest {
-        
-        public listarTodosDireccionRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosDireccionResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosDireccionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.direccionDTO1[] @return;
-        
-        public listarTodosDireccionResponse() {
-        }
-        
-        public listarTodosDireccionResponse(SoftWA.ServiciosWSClient.direccionDTO1[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDireccion", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarDireccionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDireccion", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarDireccionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.direccionDTO1 direccion;
         
-        public eliminarDireccionRequest() {
+        public insertarDireccionRequest() {
         }
         
-        public eliminarDireccionRequest(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
+        public insertarDireccionRequest(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
             this.direccion = direccion;
         }
     }
@@ -11977,17 +11941,17 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDireccionResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarDireccionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarDireccionResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarDireccionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int @return;
         
-        public eliminarDireccionResponse() {
+        public insertarDireccionResponse() {
         }
         
-        public eliminarDireccionResponse(int @return) {
+        public insertarDireccionResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -12028,6 +11992,42 @@ namespace SoftWA.ServiciosWSClient {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDireccion", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarDireccionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.direccionDTO1 direccion;
+        
+        public eliminarDireccionRequest() {
+        }
+        
+        public eliminarDireccionRequest(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
+            this.direccion = direccion;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarDireccionResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarDireccionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarDireccionResponse() {
+        }
+        
+        public eliminarDireccionResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface DireccionChannel : SoftWA.ServiciosWSClient.Direccion, System.ServiceModel.IClientChannel {
     }
@@ -12056,26 +12056,24 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarDireccionResponse SoftWA.ServiciosWSClient.Direccion.insertarDireccion(SoftWA.ServiciosWSClient.insertarDireccionRequest request) {
-            return base.Channel.insertarDireccion(request);
+        SoftWA.ServiciosWSClient.listarTodosDireccionResponse SoftWA.ServiciosWSClient.Direccion.listarTodosDireccion(SoftWA.ServiciosWSClient.listarTodosDireccionRequest request) {
+            return base.Channel.listarTodosDireccion(request);
         }
         
-        public int insertarDireccion(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
-            SoftWA.ServiciosWSClient.insertarDireccionRequest inValue = new SoftWA.ServiciosWSClient.insertarDireccionRequest();
-            inValue.direccion = direccion;
-            SoftWA.ServiciosWSClient.insertarDireccionResponse retVal = ((SoftWA.ServiciosWSClient.Direccion)(this)).insertarDireccion(inValue);
+        public SoftWA.ServiciosWSClient.direccionDTO1[] listarTodosDireccion() {
+            SoftWA.ServiciosWSClient.listarTodosDireccionRequest inValue = new SoftWA.ServiciosWSClient.listarTodosDireccionRequest();
+            SoftWA.ServiciosWSClient.listarTodosDireccionResponse retVal = ((SoftWA.ServiciosWSClient.Direccion)(this)).listarTodosDireccion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarDireccionResponse> SoftWA.ServiciosWSClient.Direccion.insertarDireccionAsync(SoftWA.ServiciosWSClient.insertarDireccionRequest request) {
-            return base.Channel.insertarDireccionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosDireccionResponse> SoftWA.ServiciosWSClient.Direccion.listarTodosDireccionAsync(SoftWA.ServiciosWSClient.listarTodosDireccionRequest request) {
+            return base.Channel.listarTodosDireccionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarDireccionResponse> insertarDireccionAsync(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
-            SoftWA.ServiciosWSClient.insertarDireccionRequest inValue = new SoftWA.ServiciosWSClient.insertarDireccionRequest();
-            inValue.direccion = direccion;
-            return ((SoftWA.ServiciosWSClient.Direccion)(this)).insertarDireccionAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosDireccionResponse> listarTodosDireccionAsync() {
+            SoftWA.ServiciosWSClient.listarTodosDireccionRequest inValue = new SoftWA.ServiciosWSClient.listarTodosDireccionRequest();
+            return ((SoftWA.ServiciosWSClient.Direccion)(this)).listarTodosDireccionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -12102,47 +12100,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarTodosDireccionResponse SoftWA.ServiciosWSClient.Direccion.listarTodosDireccion(SoftWA.ServiciosWSClient.listarTodosDireccionRequest request) {
-            return base.Channel.listarTodosDireccion(request);
+        SoftWA.ServiciosWSClient.insertarDireccionResponse SoftWA.ServiciosWSClient.Direccion.insertarDireccion(SoftWA.ServiciosWSClient.insertarDireccionRequest request) {
+            return base.Channel.insertarDireccion(request);
         }
         
-        public SoftWA.ServiciosWSClient.direccionDTO1[] listarTodosDireccion() {
-            SoftWA.ServiciosWSClient.listarTodosDireccionRequest inValue = new SoftWA.ServiciosWSClient.listarTodosDireccionRequest();
-            SoftWA.ServiciosWSClient.listarTodosDireccionResponse retVal = ((SoftWA.ServiciosWSClient.Direccion)(this)).listarTodosDireccion(inValue);
+        public int insertarDireccion(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
+            SoftWA.ServiciosWSClient.insertarDireccionRequest inValue = new SoftWA.ServiciosWSClient.insertarDireccionRequest();
+            inValue.direccion = direccion;
+            SoftWA.ServiciosWSClient.insertarDireccionResponse retVal = ((SoftWA.ServiciosWSClient.Direccion)(this)).insertarDireccion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosDireccionResponse> SoftWA.ServiciosWSClient.Direccion.listarTodosDireccionAsync(SoftWA.ServiciosWSClient.listarTodosDireccionRequest request) {
-            return base.Channel.listarTodosDireccionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarDireccionResponse> SoftWA.ServiciosWSClient.Direccion.insertarDireccionAsync(SoftWA.ServiciosWSClient.insertarDireccionRequest request) {
+            return base.Channel.insertarDireccionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosDireccionResponse> listarTodosDireccionAsync() {
-            SoftWA.ServiciosWSClient.listarTodosDireccionRequest inValue = new SoftWA.ServiciosWSClient.listarTodosDireccionRequest();
-            return ((SoftWA.ServiciosWSClient.Direccion)(this)).listarTodosDireccionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarDireccionResponse SoftWA.ServiciosWSClient.Direccion.eliminarDireccion(SoftWA.ServiciosWSClient.eliminarDireccionRequest request) {
-            return base.Channel.eliminarDireccion(request);
-        }
-        
-        public int eliminarDireccion(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
-            SoftWA.ServiciosWSClient.eliminarDireccionRequest inValue = new SoftWA.ServiciosWSClient.eliminarDireccionRequest();
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarDireccionResponse> insertarDireccionAsync(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
+            SoftWA.ServiciosWSClient.insertarDireccionRequest inValue = new SoftWA.ServiciosWSClient.insertarDireccionRequest();
             inValue.direccion = direccion;
-            SoftWA.ServiciosWSClient.eliminarDireccionResponse retVal = ((SoftWA.ServiciosWSClient.Direccion)(this)).eliminarDireccion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarDireccionResponse> SoftWA.ServiciosWSClient.Direccion.eliminarDireccionAsync(SoftWA.ServiciosWSClient.eliminarDireccionRequest request) {
-            return base.Channel.eliminarDireccionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarDireccionResponse> eliminarDireccionAsync(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
-            SoftWA.ServiciosWSClient.eliminarDireccionRequest inValue = new SoftWA.ServiciosWSClient.eliminarDireccionRequest();
-            inValue.direccion = direccion;
-            return ((SoftWA.ServiciosWSClient.Direccion)(this)).eliminarDireccionAsync(inValue);
+            return ((SoftWA.ServiciosWSClient.Direccion)(this)).insertarDireccionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -12167,76 +12144,34 @@ namespace SoftWA.ServiciosWSClient {
             inValue.direccion = direccion;
             return ((SoftWA.ServiciosWSClient.Direccion)(this)).modificarDireccionAsync(inValue);
         }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.eliminarDireccionResponse SoftWA.ServiciosWSClient.Direccion.eliminarDireccion(SoftWA.ServiciosWSClient.eliminarDireccionRequest request) {
+            return base.Channel.eliminarDireccion(request);
+        }
+        
+        public int eliminarDireccion(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
+            SoftWA.ServiciosWSClient.eliminarDireccionRequest inValue = new SoftWA.ServiciosWSClient.eliminarDireccionRequest();
+            inValue.direccion = direccion;
+            SoftWA.ServiciosWSClient.eliminarDireccionResponse retVal = ((SoftWA.ServiciosWSClient.Direccion)(this)).eliminarDireccion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarDireccionResponse> SoftWA.ServiciosWSClient.Direccion.eliminarDireccionAsync(SoftWA.ServiciosWSClient.eliminarDireccionRequest request) {
+            return base.Channel.eliminarDireccionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarDireccionResponse> eliminarDireccionAsync(SoftWA.ServiciosWSClient.direccionDTO1 direccion) {
+            SoftWA.ServiciosWSClient.eliminarDireccionRequest inValue = new SoftWA.ServiciosWSClient.eliminarDireccionRequest();
+            inValue.direccion = direccion;
+            return ((SoftWA.ServiciosWSClient.Direccion)(this)).eliminarDireccionAsync(inValue);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", ConfigurationName="ServiciosWSClient.Comprobante")]
     public interface Comprobante {
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSe" +
-            "rieRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSe" +
-            "rieResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse listarComprobanteNumeroSerie(SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSe" +
-            "rieRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSe" +
-            "rieResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse> listarComprobanteNumeroSerieAsync(SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosT" +
-            "odosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosT" +
-            "odosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse listarComprobantePedidosTodos(SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosT" +
-            "odosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosT" +
-            "odosResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse> listarComprobantePedidosTodosAsync(SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTot" +
-            "alRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTot" +
-            "alResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse listarComprobanteRangoTotal(SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTot" +
-            "alRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTot" +
-            "alResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse> listarComprobanteRangoTotalAsync(SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoFec" +
-            "haRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoFec" +
-            "haResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse listarComprobanteRangoFecha(SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoFec" +
-            "haRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoFec" +
-            "haResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse> listarComprobanteRangoFechaAsync(SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioC" +
-            "reacionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioC" +
-            "reacionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse listarComprobanteUsuarioCreacion(SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioC" +
-            "reacionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioC" +
-            "reacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse> listarComprobanteUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/modificarComprobanteReque" +
@@ -12252,17 +12187,17 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarComprobanteResponse> modificarComprobanteAsync(SoftWA.ServiciosWSClient.modificarComprobanteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteReques" +
-            "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteRespon" +
-            "se")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivo" +
+            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivo" +
+            "Response")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarComprobanteResponse insertarComprobante(SoftWA.ServiciosWSClient.insertarComprobanteRequest request);
+        SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse listarComprobanteInactivo(SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteReques" +
-            "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteRespon" +
-            "se")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarComprobanteResponse> insertarComprobanteAsync(SoftWA.ServiciosWSClient.insertarComprobanteRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivo" +
+            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivo" +
+            "Response")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse> listarComprobanteInactivoAsync(SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/eliminarComprobanteReques" +
@@ -12278,30 +12213,17 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarComprobanteResponse> eliminarComprobanteAsync(SoftWA.ServiciosWSClient.eliminarComprobanteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRe" +
-            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRe" +
-            "sponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteReques" +
+            "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteRespon" +
+            "se")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarComprobantePedidoResponse listarComprobantePedido(SoftWA.ServiciosWSClient.listarComprobantePedidoRequest request);
+        SoftWA.ServiciosWSClient.insertarComprobanteResponse insertarComprobante(SoftWA.ServiciosWSClient.insertarComprobanteRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRe" +
-            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRe" +
-            "sponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidoResponse> listarComprobantePedidoAsync(SoftWA.ServiciosWSClient.listarComprobantePedidoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivo" +
-            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivo" +
-            "Response")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse listarComprobanteInactivo(SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivo" +
-            "Request", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivo" +
-            "Response")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse> listarComprobanteInactivoAsync(SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteReques" +
+            "t", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteRespon" +
+            "se")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarComprobanteResponse> insertarComprobanteAsync(SoftWA.ServiciosWSClient.insertarComprobanteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePorTipoR" +
@@ -12330,6 +12252,19 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosComprobanteResponse> listarTodosComprobanteAsync(SoftWA.ServiciosWSClient.listarTodosComprobanteRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRe" +
+            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRe" +
+            "sponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarComprobantePedidoResponse listarComprobantePedido(SoftWA.ServiciosWSClient.listarComprobantePedidoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRe" +
+            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidoResponse> listarComprobantePedidoAsync(SoftWA.ServiciosWSClient.listarComprobantePedidoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/obtenerPorIdComprobanteRe" +
             "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/obtenerPorIdComprobanteRe" +
             "sponse")]
@@ -12341,196 +12276,71 @@ namespace SoftWA.ServiciosWSClient {
             "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/obtenerPorIdComprobanteRe" +
             "sponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdComprobanteResponse> obtenerPorIdComprobanteAsync(SoftWA.ServiciosWSClient.obtenerPorIdComprobanteRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteNumeroSerie", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteNumeroSerieRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string serie;
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioC" +
+            "reacionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioC" +
+            "reacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse listarComprobanteUsuarioCreacion(SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest request);
         
-        public listarComprobanteNumeroSerieRequest() {
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioC" +
+            "reacionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioC" +
+            "reacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse> listarComprobanteUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest request);
         
-        public listarComprobanteNumeroSerieRequest(string serie) {
-            this.serie = serie;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteNumeroSerieResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteNumeroSerieResponse {
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoFec" +
+            "haRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoFec" +
+            "haResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse listarComprobanteRangoFecha(SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest request);
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoFec" +
+            "haRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoFec" +
+            "haResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse> listarComprobanteRangoFechaAsync(SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest request);
         
-        public listarComprobanteNumeroSerieResponse() {
-        }
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSe" +
+            "rieRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSe" +
+            "rieResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse listarComprobanteNumeroSerie(SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest request);
         
-        public listarComprobanteNumeroSerieResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobantePedidosTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobantePedidosTodosRequest {
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSe" +
+            "rieRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSe" +
+            "rieResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse> listarComprobanteNumeroSerieAsync(SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest request);
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int pedidoId;
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTot" +
+            "alRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTot" +
+            "alResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse listarComprobanteRangoTotal(SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest request);
         
-        public listarComprobantePedidosTodosRequest() {
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTot" +
+            "alRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTot" +
+            "alResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse> listarComprobanteRangoTotalAsync(SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest request);
         
-        public listarComprobantePedidosTodosRequest(int pedidoId) {
-            this.pedidoId = pedidoId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobantePedidosTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobantePedidosTodosResponse {
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosT" +
+            "odosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosT" +
+            "odosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse listarComprobantePedidosTodos(SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest request);
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
-        
-        public listarComprobantePedidosTodosResponse() {
-        }
-        
-        public listarComprobantePedidosTodosResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteRangoTotal", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteRangoTotalRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double totalMin;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public double totalMax;
-        
-        public listarComprobanteRangoTotalRequest() {
-        }
-        
-        public listarComprobanteRangoTotalRequest(double totalMin, double totalMax) {
-            this.totalMin = totalMin;
-            this.totalMax = totalMax;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteRangoTotalResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteRangoTotalResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
-        
-        public listarComprobanteRangoTotalResponse() {
-        }
-        
-        public listarComprobanteRangoTotalResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteRangoFecha", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteRangoFechaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaInicio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaFin;
-        
-        public listarComprobanteRangoFechaRequest() {
-        }
-        
-        public listarComprobanteRangoFechaRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            this.fechaInicio = fechaInicio;
-            this.fechaFin = fechaFin;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteRangoFechaResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteRangoFechaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
-        
-        public listarComprobanteRangoFechaResponse() {
-        }
-        
-        public listarComprobanteRangoFechaResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteUsuarioCreacionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int usuarioId;
-        
-        public listarComprobanteUsuarioCreacionRequest() {
-        }
-        
-        public listarComprobanteUsuarioCreacionRequest(int usuarioId) {
-            this.usuarioId = usuarioId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteUsuarioCreacionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
-        
-        public listarComprobanteUsuarioCreacionResponse() {
-        }
-        
-        public listarComprobanteUsuarioCreacionResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
-            this.@return = @return;
-        }
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosT" +
+            "odosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosT" +
+            "odosResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse> listarComprobantePedidosTodosAsync(SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -12572,35 +12382,27 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarComprobante", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarComprobanteRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteInactivo", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteInactivoRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.comprobanteDTO comprobante;
-        
-        public insertarComprobanteRequest() {
-        }
-        
-        public insertarComprobanteRequest(SoftWA.ServiciosWSClient.comprobanteDTO comprobante) {
-            this.comprobante = comprobante;
+        public listarComprobanteInactivoRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarComprobanteResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarComprobanteResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteInactivoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteInactivoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
         
-        public insertarComprobanteResponse() {
+        public listarComprobanteInactivoResponse() {
         }
         
-        public insertarComprobanteResponse(int @return) {
+        public listarComprobanteInactivoResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -12644,63 +12446,35 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobantePedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobantePedidoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarComprobante", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarComprobanteRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int pedidoId;
+        public SoftWA.ServiciosWSClient.comprobanteDTO comprobante;
         
-        public listarComprobantePedidoRequest() {
+        public insertarComprobanteRequest() {
         }
         
-        public listarComprobantePedidoRequest(int pedidoId) {
-            this.pedidoId = pedidoId;
+        public insertarComprobanteRequest(SoftWA.ServiciosWSClient.comprobanteDTO comprobante) {
+            this.comprobante = comprobante;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobantePedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobantePedidoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarComprobanteResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarComprobanteResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
         
-        public listarComprobantePedidoResponse() {
+        public insertarComprobanteResponse() {
         }
         
-        public listarComprobantePedidoResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteInactivo", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteInactivoRequest {
-        
-        public listarComprobanteInactivoRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteInactivoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarComprobanteInactivoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
-        
-        public listarComprobanteInactivoResponse() {
-        }
-        
-        public listarComprobanteInactivoResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
+        public insertarComprobanteResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -12772,6 +12546,42 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobantePedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobantePedidoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int pedidoId;
+        
+        public listarComprobantePedidoRequest() {
+        }
+        
+        public listarComprobantePedidoRequest(int pedidoId) {
+            this.pedidoId = pedidoId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobantePedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobantePedidoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
+        
+        public listarComprobantePedidoResponse() {
+        }
+        
+        public listarComprobantePedidoResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdComprobante", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class obtenerPorIdComprobanteRequest {
         
@@ -12805,6 +12615,196 @@ namespace SoftWA.ServiciosWSClient {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteUsuarioCreacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int usuarioId;
+        
+        public listarComprobanteUsuarioCreacionRequest() {
+        }
+        
+        public listarComprobanteUsuarioCreacionRequest(int usuarioId) {
+            this.usuarioId = usuarioId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteUsuarioCreacionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
+        
+        public listarComprobanteUsuarioCreacionResponse() {
+        }
+        
+        public listarComprobanteUsuarioCreacionResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteRangoFecha", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteRangoFechaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaInicio;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public System.DateTime fechaFin;
+        
+        public listarComprobanteRangoFechaRequest() {
+        }
+        
+        public listarComprobanteRangoFechaRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteRangoFechaResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteRangoFechaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
+        
+        public listarComprobanteRangoFechaResponse() {
+        }
+        
+        public listarComprobanteRangoFechaResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteNumeroSerie", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteNumeroSerieRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string serie;
+        
+        public listarComprobanteNumeroSerieRequest() {
+        }
+        
+        public listarComprobanteNumeroSerieRequest(string serie) {
+            this.serie = serie;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteNumeroSerieResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteNumeroSerieResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
+        
+        public listarComprobanteNumeroSerieResponse() {
+        }
+        
+        public listarComprobanteNumeroSerieResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteRangoTotal", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteRangoTotalRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double totalMin;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public double totalMax;
+        
+        public listarComprobanteRangoTotalRequest() {
+        }
+        
+        public listarComprobanteRangoTotalRequest(double totalMin, double totalMax) {
+            this.totalMin = totalMin;
+            this.totalMax = totalMax;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobanteRangoTotalResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobanteRangoTotalResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
+        
+        public listarComprobanteRangoTotalResponse() {
+        }
+        
+        public listarComprobanteRangoTotalResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobantePedidosTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobantePedidosTodosRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int pedidoId;
+        
+        public listarComprobantePedidosTodosRequest() {
+        }
+        
+        public listarComprobantePedidosTodosRequest(int pedidoId) {
+            this.pedidoId = pedidoId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarComprobantePedidosTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarComprobantePedidosTodosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] @return;
+        
+        public listarComprobantePedidosTodosResponse() {
+        }
+        
+        public listarComprobantePedidosTodosResponse(SoftWA.ServiciosWSClient.comprobanteDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface ComprobanteChannel : SoftWA.ServiciosWSClient.Comprobante, System.ServiceModel.IClientChannel {
     }
@@ -12833,125 +12833,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteNumeroSerie(SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest request) {
-            return base.Channel.listarComprobanteNumeroSerie(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteNumeroSerie(string serie) {
-            SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest();
-            inValue.serie = serie;
-            SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteNumeroSerie(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteNumeroSerieAsync(SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest request) {
-            return base.Channel.listarComprobanteNumeroSerieAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse> listarComprobanteNumeroSerieAsync(string serie) {
-            SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest();
-            inValue.serie = serie;
-            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteNumeroSerieAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobantePedidosTodos(SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest request) {
-            return base.Channel.listarComprobantePedidosTodos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobantePedidosTodos(int pedidoId) {
-            SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest inValue = new SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest();
-            inValue.pedidoId = pedidoId;
-            SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobantePedidosTodos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobantePedidosTodosAsync(SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest request) {
-            return base.Channel.listarComprobantePedidosTodosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse> listarComprobantePedidosTodosAsync(int pedidoId) {
-            SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest inValue = new SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest();
-            inValue.pedidoId = pedidoId;
-            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobantePedidosTodosAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteRangoTotal(SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest request) {
-            return base.Channel.listarComprobanteRangoTotal(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteRangoTotal(double totalMin, double totalMax) {
-            SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest();
-            inValue.totalMin = totalMin;
-            inValue.totalMax = totalMax;
-            SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteRangoTotal(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteRangoTotalAsync(SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest request) {
-            return base.Channel.listarComprobanteRangoTotalAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse> listarComprobanteRangoTotalAsync(double totalMin, double totalMax) {
-            SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest();
-            inValue.totalMin = totalMin;
-            inValue.totalMax = totalMax;
-            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteRangoTotalAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteRangoFecha(SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest request) {
-            return base.Channel.listarComprobanteRangoFecha(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteRangoFecha(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteRangoFecha(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteRangoFechaAsync(SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest request) {
-            return base.Channel.listarComprobanteRangoFechaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse> listarComprobanteRangoFechaAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteRangoFechaAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteUsuarioCreacion(SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest request) {
-            return base.Channel.listarComprobanteUsuarioCreacion(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteUsuarioCreacion(int usuarioId) {
-            SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest();
-            inValue.usuarioId = usuarioId;
-            SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteUsuarioCreacion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest request) {
-            return base.Channel.listarComprobanteUsuarioCreacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse> listarComprobanteUsuarioCreacionAsync(int usuarioId) {
-            SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest();
-            inValue.usuarioId = usuarioId;
-            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteUsuarioCreacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.modificarComprobanteResponse SoftWA.ServiciosWSClient.Comprobante.modificarComprobante(SoftWA.ServiciosWSClient.modificarComprobanteRequest request) {
             return base.Channel.modificarComprobante(request);
         }
@@ -12975,26 +12856,24 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarComprobanteResponse SoftWA.ServiciosWSClient.Comprobante.insertarComprobante(SoftWA.ServiciosWSClient.insertarComprobanteRequest request) {
-            return base.Channel.insertarComprobante(request);
+        SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteInactivo(SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest request) {
+            return base.Channel.listarComprobanteInactivo(request);
         }
         
-        public int insertarComprobante(SoftWA.ServiciosWSClient.comprobanteDTO comprobante) {
-            SoftWA.ServiciosWSClient.insertarComprobanteRequest inValue = new SoftWA.ServiciosWSClient.insertarComprobanteRequest();
-            inValue.comprobante = comprobante;
-            SoftWA.ServiciosWSClient.insertarComprobanteResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).insertarComprobante(inValue);
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteInactivo() {
+            SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest();
+            SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteInactivo(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarComprobanteResponse> SoftWA.ServiciosWSClient.Comprobante.insertarComprobanteAsync(SoftWA.ServiciosWSClient.insertarComprobanteRequest request) {
-            return base.Channel.insertarComprobanteAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteInactivoAsync(SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest request) {
+            return base.Channel.listarComprobanteInactivoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarComprobanteResponse> insertarComprobanteAsync(SoftWA.ServiciosWSClient.comprobanteDTO comprobante) {
-            SoftWA.ServiciosWSClient.insertarComprobanteRequest inValue = new SoftWA.ServiciosWSClient.insertarComprobanteRequest();
-            inValue.comprobante = comprobante;
-            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).insertarComprobanteAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse> listarComprobanteInactivoAsync() {
+            SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest();
+            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteInactivoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -13021,47 +12900,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarComprobantePedidoResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobantePedido(SoftWA.ServiciosWSClient.listarComprobantePedidoRequest request) {
-            return base.Channel.listarComprobantePedido(request);
+        SoftWA.ServiciosWSClient.insertarComprobanteResponse SoftWA.ServiciosWSClient.Comprobante.insertarComprobante(SoftWA.ServiciosWSClient.insertarComprobanteRequest request) {
+            return base.Channel.insertarComprobante(request);
         }
         
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobantePedido(int pedidoId) {
-            SoftWA.ServiciosWSClient.listarComprobantePedidoRequest inValue = new SoftWA.ServiciosWSClient.listarComprobantePedidoRequest();
-            inValue.pedidoId = pedidoId;
-            SoftWA.ServiciosWSClient.listarComprobantePedidoResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobantePedido(inValue);
+        public int insertarComprobante(SoftWA.ServiciosWSClient.comprobanteDTO comprobante) {
+            SoftWA.ServiciosWSClient.insertarComprobanteRequest inValue = new SoftWA.ServiciosWSClient.insertarComprobanteRequest();
+            inValue.comprobante = comprobante;
+            SoftWA.ServiciosWSClient.insertarComprobanteResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).insertarComprobante(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidoResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobantePedidoAsync(SoftWA.ServiciosWSClient.listarComprobantePedidoRequest request) {
-            return base.Channel.listarComprobantePedidoAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarComprobanteResponse> SoftWA.ServiciosWSClient.Comprobante.insertarComprobanteAsync(SoftWA.ServiciosWSClient.insertarComprobanteRequest request) {
+            return base.Channel.insertarComprobanteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidoResponse> listarComprobantePedidoAsync(int pedidoId) {
-            SoftWA.ServiciosWSClient.listarComprobantePedidoRequest inValue = new SoftWA.ServiciosWSClient.listarComprobantePedidoRequest();
-            inValue.pedidoId = pedidoId;
-            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobantePedidoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteInactivo(SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest request) {
-            return base.Channel.listarComprobanteInactivo(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteInactivo() {
-            SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest();
-            SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteInactivo(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteInactivoAsync(SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest request) {
-            return base.Channel.listarComprobanteInactivoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteInactivoResponse> listarComprobanteInactivoAsync() {
-            SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteInactivoRequest();
-            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteInactivoAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarComprobanteResponse> insertarComprobanteAsync(SoftWA.ServiciosWSClient.comprobanteDTO comprobante) {
+            SoftWA.ServiciosWSClient.insertarComprobanteRequest inValue = new SoftWA.ServiciosWSClient.insertarComprobanteRequest();
+            inValue.comprobante = comprobante;
+            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).insertarComprobanteAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -13109,6 +12967,29 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarComprobantePedidoResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobantePedido(SoftWA.ServiciosWSClient.listarComprobantePedidoRequest request) {
+            return base.Channel.listarComprobantePedido(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobantePedido(int pedidoId) {
+            SoftWA.ServiciosWSClient.listarComprobantePedidoRequest inValue = new SoftWA.ServiciosWSClient.listarComprobantePedidoRequest();
+            inValue.pedidoId = pedidoId;
+            SoftWA.ServiciosWSClient.listarComprobantePedidoResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobantePedido(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidoResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobantePedidoAsync(SoftWA.ServiciosWSClient.listarComprobantePedidoRequest request) {
+            return base.Channel.listarComprobantePedidoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidoResponse> listarComprobantePedidoAsync(int pedidoId) {
+            SoftWA.ServiciosWSClient.listarComprobantePedidoRequest inValue = new SoftWA.ServiciosWSClient.listarComprobantePedidoRequest();
+            inValue.pedidoId = pedidoId;
+            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobantePedidoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.obtenerPorIdComprobanteResponse SoftWA.ServiciosWSClient.Comprobante.obtenerPorIdComprobante(SoftWA.ServiciosWSClient.obtenerPorIdComprobanteRequest request) {
             return base.Channel.obtenerPorIdComprobante(request);
         }
@@ -13130,11 +13011,141 @@ namespace SoftWA.ServiciosWSClient {
             inValue.idComprobante = idComprobante;
             return ((SoftWA.ServiciosWSClient.Comprobante)(this)).obtenerPorIdComprobanteAsync(inValue);
         }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteUsuarioCreacion(SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest request) {
+            return base.Channel.listarComprobanteUsuarioCreacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteUsuarioCreacion(int usuarioId) {
+            SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest();
+            inValue.usuarioId = usuarioId;
+            SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteUsuarioCreacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest request) {
+            return base.Channel.listarComprobanteUsuarioCreacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionResponse> listarComprobanteUsuarioCreacionAsync(int usuarioId) {
+            SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteUsuarioCreacionRequest();
+            inValue.usuarioId = usuarioId;
+            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteUsuarioCreacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteRangoFecha(SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest request) {
+            return base.Channel.listarComprobanteRangoFecha(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteRangoFecha(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteRangoFecha(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteRangoFechaAsync(SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest request) {
+            return base.Channel.listarComprobanteRangoFechaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoFechaResponse> listarComprobanteRangoFechaAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteRangoFechaRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteRangoFechaAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteNumeroSerie(SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest request) {
+            return base.Channel.listarComprobanteNumeroSerie(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteNumeroSerie(string serie) {
+            SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest();
+            inValue.serie = serie;
+            SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteNumeroSerie(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteNumeroSerieAsync(SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest request) {
+            return base.Channel.listarComprobanteNumeroSerieAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieResponse> listarComprobanteNumeroSerieAsync(string serie) {
+            SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteNumeroSerieRequest();
+            inValue.serie = serie;
+            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteNumeroSerieAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobanteRangoTotal(SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest request) {
+            return base.Channel.listarComprobanteRangoTotal(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobanteRangoTotal(double totalMin, double totalMax) {
+            SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest();
+            inValue.totalMin = totalMin;
+            inValue.totalMax = totalMax;
+            SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteRangoTotal(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobanteRangoTotalAsync(SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest request) {
+            return base.Channel.listarComprobanteRangoTotalAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobanteRangoTotalResponse> listarComprobanteRangoTotalAsync(double totalMin, double totalMax) {
+            SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest inValue = new SoftWA.ServiciosWSClient.listarComprobanteRangoTotalRequest();
+            inValue.totalMin = totalMin;
+            inValue.totalMax = totalMax;
+            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobanteRangoTotalAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse SoftWA.ServiciosWSClient.Comprobante.listarComprobantePedidosTodos(SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest request) {
+            return base.Channel.listarComprobantePedidosTodos(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.comprobanteDTO[] listarComprobantePedidosTodos(int pedidoId) {
+            SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest inValue = new SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest();
+            inValue.pedidoId = pedidoId;
+            SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse retVal = ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobantePedidosTodos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse> SoftWA.ServiciosWSClient.Comprobante.listarComprobantePedidosTodosAsync(SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest request) {
+            return base.Channel.listarComprobantePedidosTodosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarComprobantePedidosTodosResponse> listarComprobantePedidosTodosAsync(int pedidoId) {
+            SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest inValue = new SoftWA.ServiciosWSClient.listarComprobantePedidosTodosRequest();
+            inValue.pedidoId = pedidoId;
+            return ((SoftWA.ServiciosWSClient.Comprobante)(this)).listarComprobantePedidosTodosAsync(inValue);
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", ConfigurationName="ServiciosWSClient.Juridica")]
     public interface Juridica {
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaResponse" +
+            "")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarTodosJuridicaResponse listarTodosJuridica(SoftWA.ServiciosWSClient.listarTodosJuridicaRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaResponse" +
+            "")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosJuridicaResponse> listarTodosJuridicaAsync(SoftWA.ServiciosWSClient.listarTodosJuridicaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorRucJuridicaReques" +
@@ -13163,15 +13174,13 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdJuridicaResponse> obtenerPorIdJuridicaAsync(SoftWA.ServiciosWSClient.obtenerPorIdJuridicaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaResponse" +
-            "")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarTodosJuridicaResponse listarTodosJuridica(SoftWA.ServiciosWSClient.listarTodosJuridicaRequest request);
+        SoftWA.ServiciosWSClient.modificarJuridicaResponse modificarJuridica(SoftWA.ServiciosWSClient.modificarJuridicaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaResponse" +
-            "")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosJuridicaResponse> listarTodosJuridicaAsync(SoftWA.ServiciosWSClient.listarTodosJuridicaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarJuridicaResponse> modificarJuridicaAsync(SoftWA.ServiciosWSClient.modificarJuridicaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/eliminarJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/eliminarJuridicaResponse")]
@@ -13190,15 +13199,34 @@ namespace SoftWA.ServiciosWSClient {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/insertarJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/insertarJuridicaResponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarJuridicaResponse> insertarJuridicaAsync(SoftWA.ServiciosWSClient.insertarJuridicaRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosJuridica", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosJuridicaRequest {
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.modificarJuridicaResponse modificarJuridica(SoftWA.ServiciosWSClient.modificarJuridicaRequest request);
+        public listarTodosJuridicaRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosJuridicaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosJuridicaResponse {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaRequest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarJuridicaResponse> modificarJuridicaAsync(SoftWA.ServiciosWSClient.modificarJuridicaRequest request);
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.juridicaDTO[] @return;
+        
+        public listarTodosJuridicaResponse() {
+        }
+        
+        public listarTodosJuridicaResponse(SoftWA.ServiciosWSClient.juridicaDTO[] @return) {
+            this.@return = @return;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -13276,27 +13304,35 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosJuridica", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosJuridicaRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarJuridica", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarJuridicaRequest {
         
-        public listarTodosJuridicaRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.juridicaDTO juridica;
+        
+        public modificarJuridicaRequest() {
+        }
+        
+        public modificarJuridicaRequest(SoftWA.ServiciosWSClient.juridicaDTO juridica) {
+            this.juridica = juridica;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosJuridicaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosJuridicaResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarJuridicaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarJuridicaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.juridicaDTO[] @return;
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
         
-        public listarTodosJuridicaResponse() {
+        public modificarJuridicaResponse() {
         }
         
-        public listarTodosJuridicaResponse(SoftWA.ServiciosWSClient.juridicaDTO[] @return) {
+        public modificarJuridicaResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -13373,42 +13409,6 @@ namespace SoftWA.ServiciosWSClient {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarJuridica", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarJuridicaRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.juridicaDTO juridica;
-        
-        public modificarJuridicaRequest() {
-        }
-        
-        public modificarJuridicaRequest(SoftWA.ServiciosWSClient.juridicaDTO juridica) {
-            this.juridica = juridica;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarJuridicaResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarJuridicaResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarJuridicaResponse() {
-        }
-        
-        public modificarJuridicaResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface JuridicaChannel : SoftWA.ServiciosWSClient.Juridica, System.ServiceModel.IClientChannel {
     }
@@ -13434,6 +13434,27 @@ namespace SoftWA.ServiciosWSClient {
         
         public JuridicaClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarTodosJuridicaResponse SoftWA.ServiciosWSClient.Juridica.listarTodosJuridica(SoftWA.ServiciosWSClient.listarTodosJuridicaRequest request) {
+            return base.Channel.listarTodosJuridica(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.juridicaDTO[] listarTodosJuridica() {
+            SoftWA.ServiciosWSClient.listarTodosJuridicaRequest inValue = new SoftWA.ServiciosWSClient.listarTodosJuridicaRequest();
+            SoftWA.ServiciosWSClient.listarTodosJuridicaResponse retVal = ((SoftWA.ServiciosWSClient.Juridica)(this)).listarTodosJuridica(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosJuridicaResponse> SoftWA.ServiciosWSClient.Juridica.listarTodosJuridicaAsync(SoftWA.ServiciosWSClient.listarTodosJuridicaRequest request) {
+            return base.Channel.listarTodosJuridicaAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosJuridicaResponse> listarTodosJuridicaAsync() {
+            SoftWA.ServiciosWSClient.listarTodosJuridicaRequest inValue = new SoftWA.ServiciosWSClient.listarTodosJuridicaRequest();
+            return ((SoftWA.ServiciosWSClient.Juridica)(this)).listarTodosJuridicaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -13483,24 +13504,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarTodosJuridicaResponse SoftWA.ServiciosWSClient.Juridica.listarTodosJuridica(SoftWA.ServiciosWSClient.listarTodosJuridicaRequest request) {
-            return base.Channel.listarTodosJuridica(request);
+        SoftWA.ServiciosWSClient.modificarJuridicaResponse SoftWA.ServiciosWSClient.Juridica.modificarJuridica(SoftWA.ServiciosWSClient.modificarJuridicaRequest request) {
+            return base.Channel.modificarJuridica(request);
         }
         
-        public SoftWA.ServiciosWSClient.juridicaDTO[] listarTodosJuridica() {
-            SoftWA.ServiciosWSClient.listarTodosJuridicaRequest inValue = new SoftWA.ServiciosWSClient.listarTodosJuridicaRequest();
-            SoftWA.ServiciosWSClient.listarTodosJuridicaResponse retVal = ((SoftWA.ServiciosWSClient.Juridica)(this)).listarTodosJuridica(inValue);
+        public int modificarJuridica(SoftWA.ServiciosWSClient.juridicaDTO juridica) {
+            SoftWA.ServiciosWSClient.modificarJuridicaRequest inValue = new SoftWA.ServiciosWSClient.modificarJuridicaRequest();
+            inValue.juridica = juridica;
+            SoftWA.ServiciosWSClient.modificarJuridicaResponse retVal = ((SoftWA.ServiciosWSClient.Juridica)(this)).modificarJuridica(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosJuridicaResponse> SoftWA.ServiciosWSClient.Juridica.listarTodosJuridicaAsync(SoftWA.ServiciosWSClient.listarTodosJuridicaRequest request) {
-            return base.Channel.listarTodosJuridicaAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarJuridicaResponse> SoftWA.ServiciosWSClient.Juridica.modificarJuridicaAsync(SoftWA.ServiciosWSClient.modificarJuridicaRequest request) {
+            return base.Channel.modificarJuridicaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosJuridicaResponse> listarTodosJuridicaAsync() {
-            SoftWA.ServiciosWSClient.listarTodosJuridicaRequest inValue = new SoftWA.ServiciosWSClient.listarTodosJuridicaRequest();
-            return ((SoftWA.ServiciosWSClient.Juridica)(this)).listarTodosJuridicaAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarJuridicaResponse> modificarJuridicaAsync(SoftWA.ServiciosWSClient.juridicaDTO juridica) {
+            SoftWA.ServiciosWSClient.modificarJuridicaRequest inValue = new SoftWA.ServiciosWSClient.modificarJuridicaRequest();
+            inValue.juridica = juridica;
+            return ((SoftWA.ServiciosWSClient.Juridica)(this)).modificarJuridicaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -13548,29 +13571,6 @@ namespace SoftWA.ServiciosWSClient {
             inValue.juridica = juridica;
             return ((SoftWA.ServiciosWSClient.Juridica)(this)).insertarJuridicaAsync(inValue);
         }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.modificarJuridicaResponse SoftWA.ServiciosWSClient.Juridica.modificarJuridica(SoftWA.ServiciosWSClient.modificarJuridicaRequest request) {
-            return base.Channel.modificarJuridica(request);
-        }
-        
-        public int modificarJuridica(SoftWA.ServiciosWSClient.juridicaDTO juridica) {
-            SoftWA.ServiciosWSClient.modificarJuridicaRequest inValue = new SoftWA.ServiciosWSClient.modificarJuridicaRequest();
-            inValue.juridica = juridica;
-            SoftWA.ServiciosWSClient.modificarJuridicaResponse retVal = ((SoftWA.ServiciosWSClient.Juridica)(this)).modificarJuridica(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarJuridicaResponse> SoftWA.ServiciosWSClient.Juridica.modificarJuridicaAsync(SoftWA.ServiciosWSClient.modificarJuridicaRequest request) {
-            return base.Channel.modificarJuridicaAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarJuridicaResponse> modificarJuridicaAsync(SoftWA.ServiciosWSClient.juridicaDTO juridica) {
-            SoftWA.ServiciosWSClient.modificarJuridicaRequest inValue = new SoftWA.ServiciosWSClient.modificarJuridicaRequest();
-            inValue.juridica = juridica;
-            return ((SoftWA.ServiciosWSClient.Juridica)(this)).modificarJuridicaAsync(inValue);
-        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -13578,26 +13578,13 @@ namespace SoftWA.ServiciosWSClient {
     public interface Envio {
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRe" +
-            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRe" +
-            "sponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse listarEnvioRangoFechaCreacion(SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest request);
+        SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse listarEnvioRangoFecha(SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRe" +
-            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRe" +
-            "sponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse> listarEnvioRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarEnvioInactivosResponse listarEnvioInactivos(SoftWA.ServiciosWSClient.listarEnvioInactivosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioInactivosResponse> listarEnvioInactivosAsync(SoftWA.ServiciosWSClient.listarEnvioInactivosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse> listarEnvioRangoFechaAsync(SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioUsuarioCreacionReque" +
@@ -13622,6 +13609,15 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioDireccionResponse> listarEnvioDireccionAsync(SoftWA.ServiciosWSClient.listarEnvioDireccionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse listarEnvioEntregados(SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse> listarEnvioEntregadosAsync(SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPendientesRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPendientesResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -13631,22 +13627,58 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioPendientesResponse> listarEnvioPendientesAsync(SoftWA.ServiciosWSClient.listarEnvioPendientesRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse listarEnvioRangoFecha(SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest request);
+        SoftWA.ServiciosWSClient.listarEnvioInactivosResponse listarEnvioInactivos(SoftWA.ServiciosWSClient.listarEnvioInactivosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse> listarEnvioRangoFechaAsync(SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioInactivosResponse> listarEnvioInactivosAsync(SoftWA.ServiciosWSClient.listarEnvioInactivosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse listarEnvioEntregados(SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest request);
+        SoftWA.ServiciosWSClient.listarEnvioPedidoResponse listarEnvioPedido(SoftWA.ServiciosWSClient.listarEnvioPedidoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse> listarEnvioEntregadosAsync(SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioPedidoResponse> listarEnvioPedidoAsync(SoftWA.ServiciosWSClient.listarEnvioPedidoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.insertarEnvioResponse insertarEnvio(SoftWA.ServiciosWSClient.insertarEnvioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarEnvioResponse> insertarEnvioAsync(SoftWA.ServiciosWSClient.insertarEnvioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse obtenerPorIdEnvio(SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse> obtenerPorIdEnvioAsync(SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarTodosEnvioResponse listarTodosEnvio(SoftWA.ServiciosWSClient.listarTodosEnvioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosEnvioResponse> listarTodosEnvioAsync(SoftWA.ServiciosWSClient.listarTodosEnvioRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.modificarEnvioResponse modificarEnvio(SoftWA.ServiciosWSClient.modificarEnvioRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarEnvioResponse> modificarEnvioAsync(SoftWA.ServiciosWSClient.modificarEnvioRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/eliminarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/eliminarEnvioResponse")]
@@ -13667,56 +13699,24 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioEstadoResponse> listarEnvioEstadoAsync(SoftWA.ServiciosWSClient.listarEnvioEstadoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRe" +
+            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRe" +
+            "sponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse obtenerPorIdEnvio(SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest request);
+        SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse listarEnvioRangoFechaCreacion(SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse> obtenerPorIdEnvioAsync(SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarEnvioResponse insertarEnvio(SoftWA.ServiciosWSClient.insertarEnvioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarEnvioResponse> insertarEnvioAsync(SoftWA.ServiciosWSClient.insertarEnvioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarTodosEnvioResponse listarTodosEnvio(SoftWA.ServiciosWSClient.listarTodosEnvioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosEnvioResponse> listarTodosEnvioAsync(SoftWA.ServiciosWSClient.listarTodosEnvioRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarEnvioPedidoResponse listarEnvioPedido(SoftWA.ServiciosWSClient.listarEnvioPedidoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioPedidoResponse> listarEnvioPedidoAsync(SoftWA.ServiciosWSClient.listarEnvioPedidoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.modificarEnvioResponse modificarEnvio(SoftWA.ServiciosWSClient.modificarEnvioRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarEnvioResponse> modificarEnvioAsync(SoftWA.ServiciosWSClient.modificarEnvioRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRe" +
+            "quest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRe" +
+            "sponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse> listarEnvioRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioRangoFechaCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioRangoFechaCreacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioRangoFecha", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioRangoFechaRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
@@ -13726,10 +13726,10 @@ namespace SoftWA.ServiciosWSClient {
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public System.DateTime fechaFin;
         
-        public listarEnvioRangoFechaCreacionRequest() {
+        public listarEnvioRangoFechaRequest() {
         }
         
-        public listarEnvioRangoFechaCreacionRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
+        public listarEnvioRangoFechaRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
             this.fechaInicio = fechaInicio;
             this.fechaFin = fechaFin;
         }
@@ -13738,45 +13738,17 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioRangoFechaCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioRangoFechaCreacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioRangoFechaResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioRangoFechaResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.envioDTO[] @return;
         
-        public listarEnvioRangoFechaCreacionResponse() {
+        public listarEnvioRangoFechaResponse() {
         }
         
-        public listarEnvioRangoFechaCreacionResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioInactivos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioInactivosRequest {
-        
-        public listarEnvioInactivosRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioInactivosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioInactivosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.envioDTO[] @return;
-        
-        public listarEnvioInactivosResponse() {
-        }
-        
-        public listarEnvioInactivosResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
+        public listarEnvioRangoFechaResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -13856,6 +13828,34 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioEntregados", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioEntregadosRequest {
+        
+        public listarEnvioEntregadosRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioEntregadosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioEntregadosResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.envioDTO[] @return;
+        
+        public listarEnvioEntregadosResponse() {
+        }
+        
+        public listarEnvioEntregadosResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioPendientes", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class listarEnvioPendientesRequest {
         
@@ -13884,40 +13884,27 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioRangoFecha", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioRangoFechaRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioInactivos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioInactivosRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaInicio;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public System.DateTime fechaFin;
-        
-        public listarEnvioRangoFechaRequest() {
-        }
-        
-        public listarEnvioRangoFechaRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            this.fechaInicio = fechaInicio;
-            this.fechaFin = fechaFin;
+        public listarEnvioInactivosRequest() {
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioRangoFechaResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioRangoFechaResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioInactivosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioInactivosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.envioDTO[] @return;
         
-        public listarEnvioRangoFechaResponse() {
+        public listarEnvioInactivosResponse() {
         }
         
-        public listarEnvioRangoFechaResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
+        public listarEnvioInactivosResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -13925,27 +13912,171 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioEntregados", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioEntregadosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioPedidoRequest {
         
-        public listarEnvioEntregadosRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int pedidoId;
+        
+        public listarEnvioPedidoRequest() {
+        }
+        
+        public listarEnvioPedidoRequest(int pedidoId) {
+            this.pedidoId = pedidoId;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioEntregadosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioEntregadosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioPedidoResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.envioDTO[] @return;
         
-        public listarEnvioEntregadosResponse() {
+        public listarEnvioPedidoResponse() {
         }
         
-        public listarEnvioEntregadosResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
+        public listarEnvioPedidoResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEnvio", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarEnvioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.envioDTO envio;
+        
+        public insertarEnvioRequest() {
+        }
+        
+        public insertarEnvioRequest(SoftWA.ServiciosWSClient.envioDTO envio) {
+            this.envio = envio;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEnvioResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarEnvioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarEnvioResponse() {
+        }
+        
+        public insertarEnvioResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdEnvio", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdEnvioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idEnvio;
+        
+        public obtenerPorIdEnvioRequest() {
+        }
+        
+        public obtenerPorIdEnvioRequest(int idEnvio) {
+            this.idEnvio = idEnvio;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdEnvioResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class obtenerPorIdEnvioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.envioDTO @return;
+        
+        public obtenerPorIdEnvioResponse() {
+        }
+        
+        public obtenerPorIdEnvioResponse(SoftWA.ServiciosWSClient.envioDTO @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosEnvio", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosEnvioRequest {
+        
+        public listarTodosEnvioRequest() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosEnvioResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarTodosEnvioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.envioDTO[] @return;
+        
+        public listarTodosEnvioResponse() {
+        }
+        
+        public listarTodosEnvioResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEnvio", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarEnvioRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.envioDTO envio;
+        
+        public modificarEnvioRequest() {
+        }
+        
+        public modificarEnvioRequest(SoftWA.ServiciosWSClient.envioDTO envio) {
+            this.envio = envio;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEnvioResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarEnvioResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarEnvioResponse() {
+        }
+        
+        public modificarEnvioResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -14025,171 +14156,40 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdEnvio", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdEnvioRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioRangoFechaCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioRangoFechaCreacionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idEnvio;
+        public System.DateTime fechaInicio;
         
-        public obtenerPorIdEnvioRequest() {
-        }
-        
-        public obtenerPorIdEnvioRequest(int idEnvio) {
-            this.idEnvio = idEnvio;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtenerPorIdEnvioResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class obtenerPorIdEnvioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.envioDTO @return;
+        public System.DateTime fechaFin;
         
-        public obtenerPorIdEnvioResponse() {
+        public listarEnvioRangoFechaCreacionRequest() {
         }
         
-        public obtenerPorIdEnvioResponse(SoftWA.ServiciosWSClient.envioDTO @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEnvio", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarEnvioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.envioDTO envio;
-        
-        public insertarEnvioRequest() {
-        }
-        
-        public insertarEnvioRequest(SoftWA.ServiciosWSClient.envioDTO envio) {
-            this.envio = envio;
+        public listarEnvioRangoFechaCreacionRequest(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            this.fechaInicio = fechaInicio;
+            this.fechaFin = fechaFin;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarEnvioResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarEnvioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarEnvioResponse() {
-        }
-        
-        public insertarEnvioResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosEnvio", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosEnvioRequest {
-        
-        public listarTodosEnvioRequest() {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosEnvioResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarTodosEnvioResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioRangoFechaCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarEnvioRangoFechaCreacionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.envioDTO[] @return;
         
-        public listarTodosEnvioResponse() {
+        public listarEnvioRangoFechaCreacionResponse() {
         }
         
-        public listarTodosEnvioResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioPedidoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int pedidoId;
-        
-        public listarEnvioPedidoRequest() {
-        }
-        
-        public listarEnvioPedidoRequest(int pedidoId) {
-            this.pedidoId = pedidoId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarEnvioPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarEnvioPedidoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.envioDTO[] @return;
-        
-        public listarEnvioPedidoResponse() {
-        }
-        
-        public listarEnvioPedidoResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEnvio", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarEnvioRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.envioDTO envio;
-        
-        public modificarEnvioRequest() {
-        }
-        
-        public modificarEnvioRequest(SoftWA.ServiciosWSClient.envioDTO envio) {
-            this.envio = envio;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarEnvioResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarEnvioResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarEnvioResponse() {
-        }
-        
-        public modificarEnvioResponse(int @return) {
+        public listarEnvioRangoFechaCreacionResponse(SoftWA.ServiciosWSClient.envioDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -14222,49 +14222,28 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse SoftWA.ServiciosWSClient.Envio.listarEnvioRangoFechaCreacion(SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest request) {
-            return base.Channel.listarEnvioRangoFechaCreacion(request);
+        SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse SoftWA.ServiciosWSClient.Envio.listarEnvioRangoFecha(SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest request) {
+            return base.Channel.listarEnvioRangoFecha(request);
         }
         
-        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioRangoFechaCreacion(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest();
+        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioRangoFecha(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest();
             inValue.fechaInicio = fechaInicio;
             inValue.fechaFin = fechaFin;
-            SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioRangoFechaCreacion(inValue);
+            SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioRangoFecha(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest request) {
-            return base.Channel.listarEnvioRangoFechaCreacionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioRangoFechaAsync(SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest request) {
+            return base.Channel.listarEnvioRangoFechaAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse> listarEnvioRangoFechaCreacionAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest();
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse> listarEnvioRangoFechaAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest();
             inValue.fechaInicio = fechaInicio;
             inValue.fechaFin = fechaFin;
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioRangoFechaCreacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarEnvioInactivosResponse SoftWA.ServiciosWSClient.Envio.listarEnvioInactivos(SoftWA.ServiciosWSClient.listarEnvioInactivosRequest request) {
-            return base.Channel.listarEnvioInactivos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioInactivos() {
-            SoftWA.ServiciosWSClient.listarEnvioInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioInactivosRequest();
-            SoftWA.ServiciosWSClient.listarEnvioInactivosResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioInactivos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioInactivosResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioInactivosAsync(SoftWA.ServiciosWSClient.listarEnvioInactivosRequest request) {
-            return base.Channel.listarEnvioInactivosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioInactivosResponse> listarEnvioInactivosAsync() {
-            SoftWA.ServiciosWSClient.listarEnvioInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioInactivosRequest();
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioInactivosAsync(inValue);
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioRangoFechaAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -14314,6 +14293,27 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse SoftWA.ServiciosWSClient.Envio.listarEnvioEntregados(SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest request) {
+            return base.Channel.listarEnvioEntregados(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioEntregados() {
+            SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest();
+            SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioEntregados(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioEntregadosAsync(SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest request) {
+            return base.Channel.listarEnvioEntregadosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse> listarEnvioEntregadosAsync() {
+            SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest();
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioEntregadosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.listarEnvioPendientesResponse SoftWA.ServiciosWSClient.Envio.listarEnvioPendientes(SoftWA.ServiciosWSClient.listarEnvioPendientesRequest request) {
             return base.Channel.listarEnvioPendientes(request);
         }
@@ -14335,49 +14335,137 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse SoftWA.ServiciosWSClient.Envio.listarEnvioRangoFecha(SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest request) {
-            return base.Channel.listarEnvioRangoFecha(request);
+        SoftWA.ServiciosWSClient.listarEnvioInactivosResponse SoftWA.ServiciosWSClient.Envio.listarEnvioInactivos(SoftWA.ServiciosWSClient.listarEnvioInactivosRequest request) {
+            return base.Channel.listarEnvioInactivos(request);
         }
         
-        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioRangoFecha(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioRangoFecha(inValue);
+        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioInactivos() {
+            SoftWA.ServiciosWSClient.listarEnvioInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioInactivosRequest();
+            SoftWA.ServiciosWSClient.listarEnvioInactivosResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioInactivos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioRangoFechaAsync(SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest request) {
-            return base.Channel.listarEnvioRangoFechaAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioInactivosResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioInactivosAsync(SoftWA.ServiciosWSClient.listarEnvioInactivosRequest request) {
+            return base.Channel.listarEnvioInactivosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaResponse> listarEnvioRangoFechaAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
-            SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioRangoFechaRequest();
-            inValue.fechaInicio = fechaInicio;
-            inValue.fechaFin = fechaFin;
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioRangoFechaAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioInactivosResponse> listarEnvioInactivosAsync() {
+            SoftWA.ServiciosWSClient.listarEnvioInactivosRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioInactivosRequest();
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioInactivosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse SoftWA.ServiciosWSClient.Envio.listarEnvioEntregados(SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest request) {
-            return base.Channel.listarEnvioEntregados(request);
+        SoftWA.ServiciosWSClient.listarEnvioPedidoResponse SoftWA.ServiciosWSClient.Envio.listarEnvioPedido(SoftWA.ServiciosWSClient.listarEnvioPedidoRequest request) {
+            return base.Channel.listarEnvioPedido(request);
         }
         
-        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioEntregados() {
-            SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest();
-            SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioEntregados(inValue);
+        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioPedido(int pedidoId) {
+            SoftWA.ServiciosWSClient.listarEnvioPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioPedidoRequest();
+            inValue.pedidoId = pedidoId;
+            SoftWA.ServiciosWSClient.listarEnvioPedidoResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioPedido(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioEntregadosAsync(SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest request) {
-            return base.Channel.listarEnvioEntregadosAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioPedidoResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioPedidoAsync(SoftWA.ServiciosWSClient.listarEnvioPedidoRequest request) {
+            return base.Channel.listarEnvioPedidoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioEntregadosResponse> listarEnvioEntregadosAsync() {
-            SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioEntregadosRequest();
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioEntregadosAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioPedidoResponse> listarEnvioPedidoAsync(int pedidoId) {
+            SoftWA.ServiciosWSClient.listarEnvioPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioPedidoRequest();
+            inValue.pedidoId = pedidoId;
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioPedidoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.insertarEnvioResponse SoftWA.ServiciosWSClient.Envio.insertarEnvio(SoftWA.ServiciosWSClient.insertarEnvioRequest request) {
+            return base.Channel.insertarEnvio(request);
+        }
+        
+        public int insertarEnvio(SoftWA.ServiciosWSClient.envioDTO envio) {
+            SoftWA.ServiciosWSClient.insertarEnvioRequest inValue = new SoftWA.ServiciosWSClient.insertarEnvioRequest();
+            inValue.envio = envio;
+            SoftWA.ServiciosWSClient.insertarEnvioResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).insertarEnvio(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarEnvioResponse> SoftWA.ServiciosWSClient.Envio.insertarEnvioAsync(SoftWA.ServiciosWSClient.insertarEnvioRequest request) {
+            return base.Channel.insertarEnvioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarEnvioResponse> insertarEnvioAsync(SoftWA.ServiciosWSClient.envioDTO envio) {
+            SoftWA.ServiciosWSClient.insertarEnvioRequest inValue = new SoftWA.ServiciosWSClient.insertarEnvioRequest();
+            inValue.envio = envio;
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).insertarEnvioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse SoftWA.ServiciosWSClient.Envio.obtenerPorIdEnvio(SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest request) {
+            return base.Channel.obtenerPorIdEnvio(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.envioDTO obtenerPorIdEnvio(int idEnvio) {
+            SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest();
+            inValue.idEnvio = idEnvio;
+            SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).obtenerPorIdEnvio(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse> SoftWA.ServiciosWSClient.Envio.obtenerPorIdEnvioAsync(SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest request) {
+            return base.Channel.obtenerPorIdEnvioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse> obtenerPorIdEnvioAsync(int idEnvio) {
+            SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest();
+            inValue.idEnvio = idEnvio;
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).obtenerPorIdEnvioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarTodosEnvioResponse SoftWA.ServiciosWSClient.Envio.listarTodosEnvio(SoftWA.ServiciosWSClient.listarTodosEnvioRequest request) {
+            return base.Channel.listarTodosEnvio(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.envioDTO[] listarTodosEnvio() {
+            SoftWA.ServiciosWSClient.listarTodosEnvioRequest inValue = new SoftWA.ServiciosWSClient.listarTodosEnvioRequest();
+            SoftWA.ServiciosWSClient.listarTodosEnvioResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarTodosEnvio(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosEnvioResponse> SoftWA.ServiciosWSClient.Envio.listarTodosEnvioAsync(SoftWA.ServiciosWSClient.listarTodosEnvioRequest request) {
+            return base.Channel.listarTodosEnvioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosEnvioResponse> listarTodosEnvioAsync() {
+            SoftWA.ServiciosWSClient.listarTodosEnvioRequest inValue = new SoftWA.ServiciosWSClient.listarTodosEnvioRequest();
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarTodosEnvioAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.modificarEnvioResponse SoftWA.ServiciosWSClient.Envio.modificarEnvio(SoftWA.ServiciosWSClient.modificarEnvioRequest request) {
+            return base.Channel.modificarEnvio(request);
+        }
+        
+        public int modificarEnvio(SoftWA.ServiciosWSClient.envioDTO envio) {
+            SoftWA.ServiciosWSClient.modificarEnvioRequest inValue = new SoftWA.ServiciosWSClient.modificarEnvioRequest();
+            inValue.envio = envio;
+            SoftWA.ServiciosWSClient.modificarEnvioResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).modificarEnvio(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarEnvioResponse> SoftWA.ServiciosWSClient.Envio.modificarEnvioAsync(SoftWA.ServiciosWSClient.modificarEnvioRequest request) {
+            return base.Channel.modificarEnvioAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarEnvioResponse> modificarEnvioAsync(SoftWA.ServiciosWSClient.envioDTO envio) {
+            SoftWA.ServiciosWSClient.modificarEnvioRequest inValue = new SoftWA.ServiciosWSClient.modificarEnvioRequest();
+            inValue.envio = envio;
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).modificarEnvioAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -14427,122 +14515,47 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse SoftWA.ServiciosWSClient.Envio.obtenerPorIdEnvio(SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest request) {
-            return base.Channel.obtenerPorIdEnvio(request);
+        SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse SoftWA.ServiciosWSClient.Envio.listarEnvioRangoFechaCreacion(SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest request) {
+            return base.Channel.listarEnvioRangoFechaCreacion(request);
         }
         
-        public SoftWA.ServiciosWSClient.envioDTO obtenerPorIdEnvio(int idEnvio) {
-            SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest();
-            inValue.idEnvio = idEnvio;
-            SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).obtenerPorIdEnvio(inValue);
+        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioRangoFechaCreacion(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioRangoFechaCreacion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse> SoftWA.ServiciosWSClient.Envio.obtenerPorIdEnvioAsync(SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest request) {
-            return base.Channel.obtenerPorIdEnvioAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioRangoFechaCreacionAsync(SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest request) {
+            return base.Channel.listarEnvioRangoFechaCreacionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.obtenerPorIdEnvioResponse> obtenerPorIdEnvioAsync(int idEnvio) {
-            SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest inValue = new SoftWA.ServiciosWSClient.obtenerPorIdEnvioRequest();
-            inValue.idEnvio = idEnvio;
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).obtenerPorIdEnvioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarEnvioResponse SoftWA.ServiciosWSClient.Envio.insertarEnvio(SoftWA.ServiciosWSClient.insertarEnvioRequest request) {
-            return base.Channel.insertarEnvio(request);
-        }
-        
-        public int insertarEnvio(SoftWA.ServiciosWSClient.envioDTO envio) {
-            SoftWA.ServiciosWSClient.insertarEnvioRequest inValue = new SoftWA.ServiciosWSClient.insertarEnvioRequest();
-            inValue.envio = envio;
-            SoftWA.ServiciosWSClient.insertarEnvioResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).insertarEnvio(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarEnvioResponse> SoftWA.ServiciosWSClient.Envio.insertarEnvioAsync(SoftWA.ServiciosWSClient.insertarEnvioRequest request) {
-            return base.Channel.insertarEnvioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarEnvioResponse> insertarEnvioAsync(SoftWA.ServiciosWSClient.envioDTO envio) {
-            SoftWA.ServiciosWSClient.insertarEnvioRequest inValue = new SoftWA.ServiciosWSClient.insertarEnvioRequest();
-            inValue.envio = envio;
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).insertarEnvioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarTodosEnvioResponse SoftWA.ServiciosWSClient.Envio.listarTodosEnvio(SoftWA.ServiciosWSClient.listarTodosEnvioRequest request) {
-            return base.Channel.listarTodosEnvio(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.envioDTO[] listarTodosEnvio() {
-            SoftWA.ServiciosWSClient.listarTodosEnvioRequest inValue = new SoftWA.ServiciosWSClient.listarTodosEnvioRequest();
-            SoftWA.ServiciosWSClient.listarTodosEnvioResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarTodosEnvio(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosEnvioResponse> SoftWA.ServiciosWSClient.Envio.listarTodosEnvioAsync(SoftWA.ServiciosWSClient.listarTodosEnvioRequest request) {
-            return base.Channel.listarTodosEnvioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosEnvioResponse> listarTodosEnvioAsync() {
-            SoftWA.ServiciosWSClient.listarTodosEnvioRequest inValue = new SoftWA.ServiciosWSClient.listarTodosEnvioRequest();
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarTodosEnvioAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarEnvioPedidoResponse SoftWA.ServiciosWSClient.Envio.listarEnvioPedido(SoftWA.ServiciosWSClient.listarEnvioPedidoRequest request) {
-            return base.Channel.listarEnvioPedido(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.envioDTO[] listarEnvioPedido(int pedidoId) {
-            SoftWA.ServiciosWSClient.listarEnvioPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioPedidoRequest();
-            inValue.pedidoId = pedidoId;
-            SoftWA.ServiciosWSClient.listarEnvioPedidoResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioPedido(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioPedidoResponse> SoftWA.ServiciosWSClient.Envio.listarEnvioPedidoAsync(SoftWA.ServiciosWSClient.listarEnvioPedidoRequest request) {
-            return base.Channel.listarEnvioPedidoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioPedidoResponse> listarEnvioPedidoAsync(int pedidoId) {
-            SoftWA.ServiciosWSClient.listarEnvioPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioPedidoRequest();
-            inValue.pedidoId = pedidoId;
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioPedidoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.modificarEnvioResponse SoftWA.ServiciosWSClient.Envio.modificarEnvio(SoftWA.ServiciosWSClient.modificarEnvioRequest request) {
-            return base.Channel.modificarEnvio(request);
-        }
-        
-        public int modificarEnvio(SoftWA.ServiciosWSClient.envioDTO envio) {
-            SoftWA.ServiciosWSClient.modificarEnvioRequest inValue = new SoftWA.ServiciosWSClient.modificarEnvioRequest();
-            inValue.envio = envio;
-            SoftWA.ServiciosWSClient.modificarEnvioResponse retVal = ((SoftWA.ServiciosWSClient.Envio)(this)).modificarEnvio(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarEnvioResponse> SoftWA.ServiciosWSClient.Envio.modificarEnvioAsync(SoftWA.ServiciosWSClient.modificarEnvioRequest request) {
-            return base.Channel.modificarEnvioAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarEnvioResponse> modificarEnvioAsync(SoftWA.ServiciosWSClient.envioDTO envio) {
-            SoftWA.ServiciosWSClient.modificarEnvioRequest inValue = new SoftWA.ServiciosWSClient.modificarEnvioRequest();
-            inValue.envio = envio;
-            return ((SoftWA.ServiciosWSClient.Envio)(this)).modificarEnvioAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionResponse> listarEnvioRangoFechaCreacionAsync(System.DateTime fechaInicio, System.DateTime fechaFin) {
+            SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarEnvioRangoFechaCreacionRequest();
+            inValue.fechaInicio = fechaInicio;
+            inValue.fechaFin = fechaFin;
+            return ((SoftWA.ServiciosWSClient.Envio)(this)).listarEnvioRangoFechaCreacionAsync(inValue);
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", ConfigurationName="ServiciosWSClient.PedidoItem")]
     public interface PedidoItem {
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorProduct" +
+            "oTodosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorProduct" +
+            "oTodosResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse listarPedidoItemPorProductoTodos(SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorProduct" +
+            "oTodosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorProduct" +
+            "oTodosResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse> listarPedidoItemPorProductoTodosAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/obtenerPorIdPedidoItemRequ" +
@@ -14571,6 +14584,19 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarPedidoItemResponse> modificarPedidoItemAsync(SoftWA.ServiciosWSClient.modificarPedidoItemRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoR" +
+            "equest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoR" +
+            "esponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse listarPedidoItemPorPedido(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoR" +
+            "equest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoR" +
+            "esponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse> listarPedidoItemPorPedidoAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarTodosPedidoItemReque" +
             "st", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarTodosPedidoItemRespo" +
             "nse")]
@@ -14584,17 +14610,39 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarTodosPedidoItemResponse> listarTodosPedidoItemAsync(SoftWA.ServiciosWSClient.listarTodosPedidoItemRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoT" +
-            "odosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoT" +
-            "odosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/eliminarPedidoItemRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/eliminarPedidoItemResponse" +
+            "")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse listarPedidoItemPorPedidoTodos(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest request);
+        SoftWA.ServiciosWSClient.eliminarPedidoItemResponse eliminarPedidoItem(SoftWA.ServiciosWSClient.eliminarPedidoItemRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoT" +
-            "odosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoT" +
-            "odosResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse> listarPedidoItemPorPedidoTodosAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/eliminarPedidoItemRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/eliminarPedidoItemResponse" +
+            "")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPedidoItemResponse> eliminarPedidoItemAsync(SoftWA.ServiciosWSClient.eliminarPedidoItemRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/insertarPedidoItemRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/insertarPedidoItemResponse" +
+            "")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.insertarPedidoItemResponse insertarPedidoItem(SoftWA.ServiciosWSClient.insertarPedidoItemRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/insertarPedidoItemRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/insertarPedidoItemResponse" +
+            "")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPedidoItemResponse> insertarPedidoItemAsync(SoftWA.ServiciosWSClient.insertarPedidoItemRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorUsuario" +
+            "CreacionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorUsuario" +
+            "CreacionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse listarPedidoItemPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorUsuario" +
+            "CreacionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorUsuario" +
+            "CreacionResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse> listarPedidoItemPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoY" +
@@ -14623,30 +14671,17 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorRangoCantidadResponse> listarPedidoItemPorRangoCantidadAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorRangoCantidadRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorUsuario" +
-            "CreacionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorUsuario" +
-            "CreacionResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoT" +
+            "odosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoT" +
+            "odosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse listarPedidoItemPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest request);
+        SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse listarPedidoItemPorPedidoTodos(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorUsuario" +
-            "CreacionRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorUsuario" +
-            "CreacionResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse> listarPedidoItemPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorProduct" +
-            "oTodosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorProduct" +
-            "oTodosResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse listarPedidoItemPorProductoTodos(SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorProduct" +
-            "oTodosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorProduct" +
-            "oTodosResponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse> listarPedidoItemPorProductoTodosAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoT" +
+            "odosRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoT" +
+            "odosResponse")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse> listarPedidoItemPorPedidoTodosAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorRangoPr" +
@@ -14660,41 +14695,42 @@ namespace SoftWA.ServiciosWSClient {
             "ecioRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorRangoPr" +
             "ecioResponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorRangoPrecioResponse> listarPedidoItemPorRangoPrecioAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorRangoPrecioRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorProductoTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoItemPorProductoTodosRequest {
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoR" +
-            "equest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoR" +
-            "esponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse listarPedidoItemPorPedido(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest request);
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idProducto;
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoR" +
-            "equest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/listarPedidoItemPorPedidoR" +
-            "esponse")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse> listarPedidoItemPorPedidoAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest request);
+        public listarPedidoItemPorProductoTodosRequest() {
+        }
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/insertarPedidoItemRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/insertarPedidoItemResponse" +
-            "")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.insertarPedidoItemResponse insertarPedidoItem(SoftWA.ServiciosWSClient.insertarPedidoItemRequest request);
+        public listarPedidoItemPorProductoTodosRequest(int idProducto) {
+            this.idProducto = idProducto;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorProductoTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoItemPorProductoTodosResponse {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/insertarPedidoItemRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/insertarPedidoItemResponse" +
-            "")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPedidoItemResponse> insertarPedidoItemAsync(SoftWA.ServiciosWSClient.insertarPedidoItemRequest request);
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pedidoItemDTO[] @return;
         
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/eliminarPedidoItemRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/eliminarPedidoItemResponse" +
-            "")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.eliminarPedidoItemResponse eliminarPedidoItem(SoftWA.ServiciosWSClient.eliminarPedidoItemRequest request);
+        public listarPedidoItemPorProductoTodosResponse() {
+        }
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/eliminarPedidoItemRequest", ReplyAction="http://pedido.services.softprog.pucp.edu.pe/PedidoItem/eliminarPedidoItemResponse" +
-            "")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPedidoItemResponse> eliminarPedidoItemAsync(SoftWA.ServiciosWSClient.eliminarPedidoItemRequest request);
+        public listarPedidoItemPorProductoTodosResponse(SoftWA.ServiciosWSClient.pedidoItemDTO[] @return) {
+            this.@return = @return;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -14772,6 +14808,42 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoItemPorPedidoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idPedido;
+        
+        public listarPedidoItemPorPedidoRequest() {
+        }
+        
+        public listarPedidoItemPorPedidoRequest(int idPedido) {
+            this.idPedido = idPedido;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoItemPorPedidoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pedidoItemDTO[] @return;
+        
+        public listarPedidoItemPorPedidoResponse() {
+        }
+        
+        public listarPedidoItemPorPedidoResponse(SoftWA.ServiciosWSClient.pedidoItemDTO[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="listarTodosPedidoItem", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class listarTodosPedidoItemRequest {
         
@@ -14800,35 +14872,107 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorPedidoTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoItemPorPedidoTodosRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPedidoItem", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPedidoItemRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPedido;
+        public SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem;
         
-        public listarPedidoItemPorPedidoTodosRequest() {
+        public eliminarPedidoItemRequest() {
         }
         
-        public listarPedidoItemPorPedidoTodosRequest(int idPedido) {
-            this.idPedido = idPedido;
+        public eliminarPedidoItemRequest(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
+            this.pedidoItem = pedidoItem;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorPedidoTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoItemPorPedidoTodosResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPedidoItemResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class eliminarPedidoItemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public eliminarPedidoItemResponse() {
+        }
+        
+        public eliminarPedidoItemResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPedidoItem", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarPedidoItemRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem;
+        
+        public insertarPedidoItemRequest() {
+        }
+        
+        public insertarPedidoItemRequest(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
+            this.pedidoItem = pedidoItem;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPedidoItemResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class insertarPedidoItemResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public insertarPedidoItemResponse() {
+        }
+        
+        public insertarPedidoItemResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoItemPorUsuarioCreacionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int idUsuario;
+        
+        public listarPedidoItemPorUsuarioCreacionRequest() {
+        }
+        
+        public listarPedidoItemPorUsuarioCreacionRequest(int idUsuario) {
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoItemPorUsuarioCreacionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.pedidoItemDTO[] @return;
         
-        public listarPedidoItemPorPedidoTodosResponse() {
+        public listarPedidoItemPorUsuarioCreacionResponse() {
         }
         
-        public listarPedidoItemPorPedidoTodosResponse(SoftWA.ServiciosWSClient.pedidoItemDTO[] @return) {
+        public listarPedidoItemPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.pedidoItemDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -14918,71 +15062,35 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorUsuarioCreacion", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoItemPorUsuarioCreacionRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorPedidoTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoItemPorPedidoTodosRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idUsuario;
+        public int idPedido;
         
-        public listarPedidoItemPorUsuarioCreacionRequest() {
+        public listarPedidoItemPorPedidoTodosRequest() {
         }
         
-        public listarPedidoItemPorUsuarioCreacionRequest(int idUsuario) {
-            this.idUsuario = idUsuario;
+        public listarPedidoItemPorPedidoTodosRequest(int idPedido) {
+            this.idPedido = idPedido;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorUsuarioCreacionResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoItemPorUsuarioCreacionResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorPedidoTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class listarPedidoItemPorPedidoTodosResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SoftWA.ServiciosWSClient.pedidoItemDTO[] @return;
         
-        public listarPedidoItemPorUsuarioCreacionResponse() {
+        public listarPedidoItemPorPedidoTodosResponse() {
         }
         
-        public listarPedidoItemPorUsuarioCreacionResponse(SoftWA.ServiciosWSClient.pedidoItemDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorProductoTodos", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoItemPorProductoTodosRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idProducto;
-        
-        public listarPedidoItemPorProductoTodosRequest() {
-        }
-        
-        public listarPedidoItemPorProductoTodosRequest(int idProducto) {
-            this.idProducto = idProducto;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorProductoTodosResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoItemPorProductoTodosResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoItemDTO[] @return;
-        
-        public listarPedidoItemPorProductoTodosResponse() {
-        }
-        
-        public listarPedidoItemPorProductoTodosResponse(SoftWA.ServiciosWSClient.pedidoItemDTO[] @return) {
+        public listarPedidoItemPorPedidoTodosResponse(SoftWA.ServiciosWSClient.pedidoItemDTO[] @return) {
             this.@return = @return;
         }
     }
@@ -15028,114 +15136,6 @@ namespace SoftWA.ServiciosWSClient {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorPedido", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoItemPorPedidoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int idPedido;
-        
-        public listarPedidoItemPorPedidoRequest() {
-        }
-        
-        public listarPedidoItemPorPedidoRequest(int idPedido) {
-            this.idPedido = idPedido;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="listarPedidoItemPorPedidoResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class listarPedidoItemPorPedidoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoItemDTO[] @return;
-        
-        public listarPedidoItemPorPedidoResponse() {
-        }
-        
-        public listarPedidoItemPorPedidoResponse(SoftWA.ServiciosWSClient.pedidoItemDTO[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPedidoItem", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarPedidoItemRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem;
-        
-        public insertarPedidoItemRequest() {
-        }
-        
-        public insertarPedidoItemRequest(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
-            this.pedidoItem = pedidoItem;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="insertarPedidoItemResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class insertarPedidoItemResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public insertarPedidoItemResponse() {
-        }
-        
-        public insertarPedidoItemResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPedidoItem", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPedidoItemRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem;
-        
-        public eliminarPedidoItemRequest() {
-        }
-        
-        public eliminarPedidoItemRequest(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
-            this.pedidoItem = pedidoItem;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarPedidoItemResponse", WrapperNamespace="http://pedido.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class eliminarPedidoItemResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://pedido.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public eliminarPedidoItemResponse() {
-        }
-        
-        public eliminarPedidoItemResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface PedidoItemChannel : SoftWA.ServiciosWSClient.PedidoItem, System.ServiceModel.IClientChannel {
     }
@@ -15161,6 +15161,29 @@ namespace SoftWA.ServiciosWSClient {
         
         public PedidoItemClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorProductoTodos(SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest request) {
+            return base.Channel.listarPedidoItemPorProductoTodos(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pedidoItemDTO[] listarPedidoItemPorProductoTodos(int idProducto) {
+            SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest();
+            inValue.idProducto = idProducto;
+            SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorProductoTodos(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse> SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorProductoTodosAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest request) {
+            return base.Channel.listarPedidoItemPorProductoTodosAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse> listarPedidoItemPorProductoTodosAsync(int idProducto) {
+            SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest();
+            inValue.idProducto = idProducto;
+            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorProductoTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -15210,6 +15233,29 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorPedido(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest request) {
+            return base.Channel.listarPedidoItemPorPedido(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pedidoItemDTO[] listarPedidoItemPorPedido(int idPedido) {
+            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest();
+            inValue.idPedido = idPedido;
+            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorPedido(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse> SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorPedidoAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest request) {
+            return base.Channel.listarPedidoItemPorPedidoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse> listarPedidoItemPorPedidoAsync(int idPedido) {
+            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest();
+            inValue.idPedido = idPedido;
+            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorPedidoAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.listarTodosPedidoItemResponse SoftWA.ServiciosWSClient.PedidoItem.listarTodosPedidoItem(SoftWA.ServiciosWSClient.listarTodosPedidoItemRequest request) {
             return base.Channel.listarTodosPedidoItem(request);
         }
@@ -15231,26 +15277,72 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorPedidoTodos(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest request) {
-            return base.Channel.listarPedidoItemPorPedidoTodos(request);
+        SoftWA.ServiciosWSClient.eliminarPedidoItemResponse SoftWA.ServiciosWSClient.PedidoItem.eliminarPedidoItem(SoftWA.ServiciosWSClient.eliminarPedidoItemRequest request) {
+            return base.Channel.eliminarPedidoItem(request);
         }
         
-        public SoftWA.ServiciosWSClient.pedidoItemDTO[] listarPedidoItemPorPedidoTodos(int idPedido) {
-            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest();
-            inValue.idPedido = idPedido;
-            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorPedidoTodos(inValue);
+        public int eliminarPedidoItem(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
+            SoftWA.ServiciosWSClient.eliminarPedidoItemRequest inValue = new SoftWA.ServiciosWSClient.eliminarPedidoItemRequest();
+            inValue.pedidoItem = pedidoItem;
+            SoftWA.ServiciosWSClient.eliminarPedidoItemResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).eliminarPedidoItem(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse> SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorPedidoTodosAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest request) {
-            return base.Channel.listarPedidoItemPorPedidoTodosAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPedidoItemResponse> SoftWA.ServiciosWSClient.PedidoItem.eliminarPedidoItemAsync(SoftWA.ServiciosWSClient.eliminarPedidoItemRequest request) {
+            return base.Channel.eliminarPedidoItemAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse> listarPedidoItemPorPedidoTodosAsync(int idPedido) {
-            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest();
-            inValue.idPedido = idPedido;
-            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorPedidoTodosAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPedidoItemResponse> eliminarPedidoItemAsync(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
+            SoftWA.ServiciosWSClient.eliminarPedidoItemRequest inValue = new SoftWA.ServiciosWSClient.eliminarPedidoItemRequest();
+            inValue.pedidoItem = pedidoItem;
+            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).eliminarPedidoItemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.insertarPedidoItemResponse SoftWA.ServiciosWSClient.PedidoItem.insertarPedidoItem(SoftWA.ServiciosWSClient.insertarPedidoItemRequest request) {
+            return base.Channel.insertarPedidoItem(request);
+        }
+        
+        public int insertarPedidoItem(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
+            SoftWA.ServiciosWSClient.insertarPedidoItemRequest inValue = new SoftWA.ServiciosWSClient.insertarPedidoItemRequest();
+            inValue.pedidoItem = pedidoItem;
+            SoftWA.ServiciosWSClient.insertarPedidoItemResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).insertarPedidoItem(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPedidoItemResponse> SoftWA.ServiciosWSClient.PedidoItem.insertarPedidoItemAsync(SoftWA.ServiciosWSClient.insertarPedidoItemRequest request) {
+            return base.Channel.insertarPedidoItemAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPedidoItemResponse> insertarPedidoItemAsync(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
+            SoftWA.ServiciosWSClient.insertarPedidoItemRequest inValue = new SoftWA.ServiciosWSClient.insertarPedidoItemRequest();
+            inValue.pedidoItem = pedidoItem;
+            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).insertarPedidoItemAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest request) {
+            return base.Channel.listarPedidoItemPorUsuarioCreacion(request);
+        }
+        
+        public SoftWA.ServiciosWSClient.pedidoItemDTO[] listarPedidoItemPorUsuarioCreacion(int idUsuario) {
+            SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest();
+            inValue.idUsuario = idUsuario;
+            SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorUsuarioCreacion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest request) {
+            return base.Channel.listarPedidoItemPorUsuarioCreacionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse> listarPedidoItemPorUsuarioCreacionAsync(int idUsuario) {
+            SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest();
+            inValue.idUsuario = idUsuario;
+            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorUsuarioCreacionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -15304,49 +15396,26 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorUsuarioCreacion(SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest request) {
-            return base.Channel.listarPedidoItemPorUsuarioCreacion(request);
+        SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorPedidoTodos(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest request) {
+            return base.Channel.listarPedidoItemPorPedidoTodos(request);
         }
         
-        public SoftWA.ServiciosWSClient.pedidoItemDTO[] listarPedidoItemPorUsuarioCreacion(int idUsuario) {
-            SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest();
-            inValue.idUsuario = idUsuario;
-            SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorUsuarioCreacion(inValue);
+        public SoftWA.ServiciosWSClient.pedidoItemDTO[] listarPedidoItemPorPedidoTodos(int idPedido) {
+            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest();
+            inValue.idPedido = idPedido;
+            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorPedidoTodos(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse> SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorUsuarioCreacionAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest request) {
-            return base.Channel.listarPedidoItemPorUsuarioCreacionAsync(request);
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse> SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorPedidoTodosAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest request) {
+            return base.Channel.listarPedidoItemPorPedidoTodosAsync(request);
         }
         
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionResponse> listarPedidoItemPorUsuarioCreacionAsync(int idUsuario) {
-            SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorUsuarioCreacionRequest();
-            inValue.idUsuario = idUsuario;
-            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorUsuarioCreacionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorProductoTodos(SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest request) {
-            return base.Channel.listarPedidoItemPorProductoTodos(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.pedidoItemDTO[] listarPedidoItemPorProductoTodos(int idProducto) {
-            SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest();
-            inValue.idProducto = idProducto;
-            SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorProductoTodos(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse> SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorProductoTodosAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest request) {
-            return base.Channel.listarPedidoItemPorProductoTodosAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosResponse> listarPedidoItemPorProductoTodosAsync(int idProducto) {
-            SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorProductoTodosRequest();
-            inValue.idProducto = idProducto;
-            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorProductoTodosAsync(inValue);
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosResponse> listarPedidoItemPorPedidoTodosAsync(int idPedido) {
+            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoTodosRequest();
+            inValue.idPedido = idPedido;
+            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorPedidoTodosAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -15373,75 +15442,6 @@ namespace SoftWA.ServiciosWSClient {
             inValue.max = max;
             return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorRangoPrecioAsync(inValue);
         }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorPedido(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest request) {
-            return base.Channel.listarPedidoItemPorPedido(request);
-        }
-        
-        public SoftWA.ServiciosWSClient.pedidoItemDTO[] listarPedidoItemPorPedido(int idPedido) {
-            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest();
-            inValue.idPedido = idPedido;
-            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorPedido(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse> SoftWA.ServiciosWSClient.PedidoItem.listarPedidoItemPorPedidoAsync(SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest request) {
-            return base.Channel.listarPedidoItemPorPedidoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoResponse> listarPedidoItemPorPedidoAsync(int idPedido) {
-            SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest inValue = new SoftWA.ServiciosWSClient.listarPedidoItemPorPedidoRequest();
-            inValue.idPedido = idPedido;
-            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).listarPedidoItemPorPedidoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.insertarPedidoItemResponse SoftWA.ServiciosWSClient.PedidoItem.insertarPedidoItem(SoftWA.ServiciosWSClient.insertarPedidoItemRequest request) {
-            return base.Channel.insertarPedidoItem(request);
-        }
-        
-        public int insertarPedidoItem(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
-            SoftWA.ServiciosWSClient.insertarPedidoItemRequest inValue = new SoftWA.ServiciosWSClient.insertarPedidoItemRequest();
-            inValue.pedidoItem = pedidoItem;
-            SoftWA.ServiciosWSClient.insertarPedidoItemResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).insertarPedidoItem(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPedidoItemResponse> SoftWA.ServiciosWSClient.PedidoItem.insertarPedidoItemAsync(SoftWA.ServiciosWSClient.insertarPedidoItemRequest request) {
-            return base.Channel.insertarPedidoItemAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarPedidoItemResponse> insertarPedidoItemAsync(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
-            SoftWA.ServiciosWSClient.insertarPedidoItemRequest inValue = new SoftWA.ServiciosWSClient.insertarPedidoItemRequest();
-            inValue.pedidoItem = pedidoItem;
-            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).insertarPedidoItemAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.eliminarPedidoItemResponse SoftWA.ServiciosWSClient.PedidoItem.eliminarPedidoItem(SoftWA.ServiciosWSClient.eliminarPedidoItemRequest request) {
-            return base.Channel.eliminarPedidoItem(request);
-        }
-        
-        public int eliminarPedidoItem(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
-            SoftWA.ServiciosWSClient.eliminarPedidoItemRequest inValue = new SoftWA.ServiciosWSClient.eliminarPedidoItemRequest();
-            inValue.pedidoItem = pedidoItem;
-            SoftWA.ServiciosWSClient.eliminarPedidoItemResponse retVal = ((SoftWA.ServiciosWSClient.PedidoItem)(this)).eliminarPedidoItem(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPedidoItemResponse> SoftWA.ServiciosWSClient.PedidoItem.eliminarPedidoItemAsync(SoftWA.ServiciosWSClient.eliminarPedidoItemRequest request) {
-            return base.Channel.eliminarPedidoItemAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarPedidoItemResponse> eliminarPedidoItemAsync(SoftWA.ServiciosWSClient.pedidoItemDTO pedidoItem) {
-            SoftWA.ServiciosWSClient.eliminarPedidoItemRequest inValue = new SoftWA.ServiciosWSClient.eliminarPedidoItemRequest();
-            inValue.pedidoItem = pedidoItem;
-            return ((SoftWA.ServiciosWSClient.PedidoItem)(this)).eliminarPedidoItemAsync(inValue);
-        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -15462,19 +15462,6 @@ namespace SoftWA.ServiciosWSClient {
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.insertarAdministradorResponse> insertarAdministradorAsync(SoftWA.ServiciosWSClient.insertarAdministradorRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministrador" +
-            "Request", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministrador" +
-            "Response")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        SoftWA.ServiciosWSClient.modificarAdministradorResponse modificarAdministrador(SoftWA.ServiciosWSClient.modificarAdministradorRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministrador" +
-            "Request", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministrador" +
-            "Response")]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarAdministradorResponse> modificarAdministradorAsync(SoftWA.ServiciosWSClient.modificarAdministradorRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorR" +
             "equest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorR" +
             "esponse")]
@@ -15486,6 +15473,19 @@ namespace SoftWA.ServiciosWSClient {
             "equest", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorR" +
             "esponse")]
         System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.eliminarAdministradorResponse> eliminarAdministradorAsync(SoftWA.ServiciosWSClient.eliminarAdministradorRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministrador" +
+            "Request", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministrador" +
+            "Response")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        SoftWA.ServiciosWSClient.modificarAdministradorResponse modificarAdministrador(SoftWA.ServiciosWSClient.modificarAdministradorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministrador" +
+            "Request", ReplyAction="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministrador" +
+            "Response")]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarAdministradorResponse> modificarAdministradorAsync(SoftWA.ServiciosWSClient.modificarAdministradorRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/obtenerPorIdAdministra" +
@@ -15553,42 +15553,6 @@ namespace SoftWA.ServiciosWSClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAdministrador", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarAdministradorRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public SoftWA.ServiciosWSClient.administradorDTO administrador;
-        
-        public modificarAdministradorRequest() {
-        }
-        
-        public modificarAdministradorRequest(SoftWA.ServiciosWSClient.administradorDTO administrador) {
-            this.administrador = administrador;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAdministradorResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
-    public partial class modificarAdministradorResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public modificarAdministradorResponse() {
-        }
-        
-        public modificarAdministradorResponse(int @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="eliminarAdministrador", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
     public partial class eliminarAdministradorRequest {
         
@@ -15618,6 +15582,42 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         public eliminarAdministradorResponse(int @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAdministrador", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarAdministradorRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public SoftWA.ServiciosWSClient.administradorDTO administrador;
+        
+        public modificarAdministradorRequest() {
+        }
+        
+        public modificarAdministradorRequest(SoftWA.ServiciosWSClient.administradorDTO administrador) {
+            this.administrador = administrador;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="modificarAdministradorResponse", WrapperNamespace="http://usuario.services.softprog.pucp.edu.pe/", IsWrapped=true)]
+    public partial class modificarAdministradorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://usuario.services.softprog.pucp.edu.pe/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int @return;
+        
+        public modificarAdministradorResponse() {
+        }
+        
+        public modificarAdministradorResponse(int @return) {
             this.@return = @return;
         }
     }
@@ -15737,29 +15737,6 @@ namespace SoftWA.ServiciosWSClient {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        SoftWA.ServiciosWSClient.modificarAdministradorResponse SoftWA.ServiciosWSClient.Administrador.modificarAdministrador(SoftWA.ServiciosWSClient.modificarAdministradorRequest request) {
-            return base.Channel.modificarAdministrador(request);
-        }
-        
-        public int modificarAdministrador(SoftWA.ServiciosWSClient.administradorDTO administrador) {
-            SoftWA.ServiciosWSClient.modificarAdministradorRequest inValue = new SoftWA.ServiciosWSClient.modificarAdministradorRequest();
-            inValue.administrador = administrador;
-            SoftWA.ServiciosWSClient.modificarAdministradorResponse retVal = ((SoftWA.ServiciosWSClient.Administrador)(this)).modificarAdministrador(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarAdministradorResponse> SoftWA.ServiciosWSClient.Administrador.modificarAdministradorAsync(SoftWA.ServiciosWSClient.modificarAdministradorRequest request) {
-            return base.Channel.modificarAdministradorAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarAdministradorResponse> modificarAdministradorAsync(SoftWA.ServiciosWSClient.administradorDTO administrador) {
-            SoftWA.ServiciosWSClient.modificarAdministradorRequest inValue = new SoftWA.ServiciosWSClient.modificarAdministradorRequest();
-            inValue.administrador = administrador;
-            return ((SoftWA.ServiciosWSClient.Administrador)(this)).modificarAdministradorAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         SoftWA.ServiciosWSClient.eliminarAdministradorResponse SoftWA.ServiciosWSClient.Administrador.eliminarAdministrador(SoftWA.ServiciosWSClient.eliminarAdministradorRequest request) {
             return base.Channel.eliminarAdministrador(request);
         }
@@ -15780,6 +15757,29 @@ namespace SoftWA.ServiciosWSClient {
             SoftWA.ServiciosWSClient.eliminarAdministradorRequest inValue = new SoftWA.ServiciosWSClient.eliminarAdministradorRequest();
             inValue.administrador = administrador;
             return ((SoftWA.ServiciosWSClient.Administrador)(this)).eliminarAdministradorAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        SoftWA.ServiciosWSClient.modificarAdministradorResponse SoftWA.ServiciosWSClient.Administrador.modificarAdministrador(SoftWA.ServiciosWSClient.modificarAdministradorRequest request) {
+            return base.Channel.modificarAdministrador(request);
+        }
+        
+        public int modificarAdministrador(SoftWA.ServiciosWSClient.administradorDTO administrador) {
+            SoftWA.ServiciosWSClient.modificarAdministradorRequest inValue = new SoftWA.ServiciosWSClient.modificarAdministradorRequest();
+            inValue.administrador = administrador;
+            SoftWA.ServiciosWSClient.modificarAdministradorResponse retVal = ((SoftWA.ServiciosWSClient.Administrador)(this)).modificarAdministrador(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarAdministradorResponse> SoftWA.ServiciosWSClient.Administrador.modificarAdministradorAsync(SoftWA.ServiciosWSClient.modificarAdministradorRequest request) {
+            return base.Channel.modificarAdministradorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<SoftWA.ServiciosWSClient.modificarAdministradorResponse> modificarAdministradorAsync(SoftWA.ServiciosWSClient.administradorDTO administrador) {
+            SoftWA.ServiciosWSClient.modificarAdministradorRequest inValue = new SoftWA.ServiciosWSClient.modificarAdministradorRequest();
+            inValue.administrador = administrador;
+            return ((SoftWA.ServiciosWSClient.Administrador)(this)).modificarAdministradorAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
