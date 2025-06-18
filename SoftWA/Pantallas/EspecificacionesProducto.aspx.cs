@@ -39,6 +39,9 @@ namespace SoftWA.Pantallas
                         lblCategoria.Text = producto.categoria.ToString();
                         lblPrecio.Text = producto.precio.ToString();
                         imgProducto = new Image();
+                        //habilitar solo si tiene stock
+                        btnAgregarCarrito.Enabled = producto.stock > 0;
+                        lblSinStock.Visible = producto.stock == 0;
                     }
                 }
             }
