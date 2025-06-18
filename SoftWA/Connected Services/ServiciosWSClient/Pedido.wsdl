@@ -5,23 +5,41 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Pedido?xsd=1" namespace="http://pedido.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarPedidoPorRangoTotal">
-    <part name="parameters" element="tns:listarPedidoPorRangoTotal" />
+  <message name="listarTodosPedido">
+    <part name="parameters" element="tns:listarTodosPedido" />
   </message>
-  <message name="listarPedidoPorRangoTotalResponse">
-    <part name="parameters" element="tns:listarPedidoPorRangoTotalResponse" />
+  <message name="listarTodosPedidoResponse">
+    <part name="parameters" element="tns:listarTodosPedidoResponse" />
+  </message>
+  <message name="insertarPedido">
+    <part name="parameters" element="tns:insertarPedido" />
+  </message>
+  <message name="insertarPedidoResponse">
+    <part name="parameters" element="tns:insertarPedidoResponse" />
+  </message>
+  <message name="modificarPedido">
+    <part name="parameters" element="tns:modificarPedido" />
+  </message>
+  <message name="modificarPedidoResponse">
+    <part name="parameters" element="tns:modificarPedidoResponse" />
+  </message>
+  <message name="eliminarPedido">
+    <part name="parameters" element="tns:eliminarPedido" />
+  </message>
+  <message name="eliminarPedidoResponse">
+    <part name="parameters" element="tns:eliminarPedidoResponse" />
+  </message>
+  <message name="obtenerPorIdPedido">
+    <part name="parameters" element="tns:obtenerPorIdPedido" />
+  </message>
+  <message name="obtenerPorIdPedidoResponse">
+    <part name="parameters" element="tns:obtenerPorIdPedidoResponse" />
   </message>
   <message name="listarPedidoPorFecha">
     <part name="parameters" element="tns:listarPedidoPorFecha" />
   </message>
   <message name="listarPedidoPorFechaResponse">
     <part name="parameters" element="tns:listarPedidoPorFechaResponse" />
-  </message>
-  <message name="listarPedidoPorPersona">
-    <part name="parameters" element="tns:listarPedidoPorPersona" />
-  </message>
-  <message name="listarPedidoPorPersonaResponse">
-    <part name="parameters" element="tns:listarPedidoPorPersonaResponse" />
   </message>
   <message name="listarPedidoPorEstado">
     <part name="parameters" element="tns:listarPedidoPorEstado" />
@@ -35,41 +53,17 @@
   <message name="listarPedidoInactivoResponse">
     <part name="parameters" element="tns:listarPedidoInactivoResponse" />
   </message>
-  <message name="modificarPedido">
-    <part name="parameters" element="tns:modificarPedido" />
+  <message name="listarPedidoPorPersona">
+    <part name="parameters" element="tns:listarPedidoPorPersona" />
   </message>
-  <message name="modificarPedidoResponse">
-    <part name="parameters" element="tns:modificarPedidoResponse" />
+  <message name="listarPedidoPorPersonaResponse">
+    <part name="parameters" element="tns:listarPedidoPorPersonaResponse" />
   </message>
-  <message name="obtenerPorIdPedido">
-    <part name="parameters" element="tns:obtenerPorIdPedido" />
+  <message name="listarPedidoPorRangoTotal">
+    <part name="parameters" element="tns:listarPedidoPorRangoTotal" />
   </message>
-  <message name="obtenerPorIdPedidoResponse">
-    <part name="parameters" element="tns:obtenerPorIdPedidoResponse" />
-  </message>
-  <message name="eliminarPedido">
-    <part name="parameters" element="tns:eliminarPedido" />
-  </message>
-  <message name="eliminarPedidoResponse">
-    <part name="parameters" element="tns:eliminarPedidoResponse" />
-  </message>
-  <message name="listarTodosPedido">
-    <part name="parameters" element="tns:listarTodosPedido" />
-  </message>
-  <message name="listarTodosPedidoResponse">
-    <part name="parameters" element="tns:listarTodosPedidoResponse" />
-  </message>
-  <message name="insertarPedido">
-    <part name="parameters" element="tns:insertarPedido" />
-  </message>
-  <message name="insertarPedidoResponse">
-    <part name="parameters" element="tns:insertarPedidoResponse" />
-  </message>
-  <message name="listarPedidoPorUsuarioCreacion">
-    <part name="parameters" element="tns:listarPedidoPorUsuarioCreacion" />
-  </message>
-  <message name="listarPedidoPorUsuarioCreacionResponse">
-    <part name="parameters" element="tns:listarPedidoPorUsuarioCreacionResponse" />
+  <message name="listarPedidoPorRangoTotalResponse">
+    <part name="parameters" element="tns:listarPedidoPorRangoTotalResponse" />
   </message>
   <message name="listarPedidoPorEstadoYFecha">
     <part name="parameters" element="tns:listarPedidoPorEstadoYFecha" />
@@ -83,18 +77,36 @@
   <message name="listarPedidoPorPersonaYEstadoResponse">
     <part name="parameters" element="tns:listarPedidoPorPersonaYEstadoResponse" />
   </message>
+  <message name="listarPedidoPorUsuarioCreacion">
+    <part name="parameters" element="tns:listarPedidoPorUsuarioCreacion" />
+  </message>
+  <message name="listarPedidoPorUsuarioCreacionResponse">
+    <part name="parameters" element="tns:listarPedidoPorUsuarioCreacionResponse" />
+  </message>
   <portType name="Pedido">
-    <operation name="listarPedidoPorRangoTotal">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalRequest" message="tns:listarPedidoPorRangoTotal" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalResponse" message="tns:listarPedidoPorRangoTotalResponse" />
+    <operation name="listarTodosPedido">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoRequest" message="tns:listarTodosPedido" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoResponse" message="tns:listarTodosPedidoResponse" />
+    </operation>
+    <operation name="insertarPedido">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/insertarPedidoRequest" message="tns:insertarPedido" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/insertarPedidoResponse" message="tns:insertarPedidoResponse" />
+    </operation>
+    <operation name="modificarPedido">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/modificarPedidoRequest" message="tns:modificarPedido" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/modificarPedidoResponse" message="tns:modificarPedidoResponse" />
+    </operation>
+    <operation name="eliminarPedido">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/eliminarPedidoRequest" message="tns:eliminarPedido" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/eliminarPedidoResponse" message="tns:eliminarPedidoResponse" />
+    </operation>
+    <operation name="obtenerPorIdPedido">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoRequest" message="tns:obtenerPorIdPedido" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoResponse" message="tns:obtenerPorIdPedidoResponse" />
     </operation>
     <operation name="listarPedidoPorFecha">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorFechaRequest" message="tns:listarPedidoPorFecha" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorFechaResponse" message="tns:listarPedidoPorFechaResponse" />
-    </operation>
-    <operation name="listarPedidoPorPersona">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaRequest" message="tns:listarPedidoPorPersona" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaResponse" message="tns:listarPedidoPorPersonaResponse" />
     </operation>
     <operation name="listarPedidoPorEstado">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoRequest" message="tns:listarPedidoPorEstado" />
@@ -104,29 +116,13 @@
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoRequest" message="tns:listarPedidoInactivo" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoInactivoResponse" message="tns:listarPedidoInactivoResponse" />
     </operation>
-    <operation name="modificarPedido">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/modificarPedidoRequest" message="tns:modificarPedido" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/modificarPedidoResponse" message="tns:modificarPedidoResponse" />
+    <operation name="listarPedidoPorPersona">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaRequest" message="tns:listarPedidoPorPersona" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaResponse" message="tns:listarPedidoPorPersonaResponse" />
     </operation>
-    <operation name="obtenerPorIdPedido">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoRequest" message="tns:obtenerPorIdPedido" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/obtenerPorIdPedidoResponse" message="tns:obtenerPorIdPedidoResponse" />
-    </operation>
-    <operation name="eliminarPedido">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/eliminarPedidoRequest" message="tns:eliminarPedido" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/eliminarPedidoResponse" message="tns:eliminarPedidoResponse" />
-    </operation>
-    <operation name="listarTodosPedido">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoRequest" message="tns:listarTodosPedido" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarTodosPedidoResponse" message="tns:listarTodosPedidoResponse" />
-    </operation>
-    <operation name="insertarPedido">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/insertarPedidoRequest" message="tns:insertarPedido" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/insertarPedidoResponse" message="tns:insertarPedidoResponse" />
-    </operation>
-    <operation name="listarPedidoPorUsuarioCreacion">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacionRequest" message="tns:listarPedidoPorUsuarioCreacion" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacionResponse" message="tns:listarPedidoPorUsuarioCreacionResponse" />
+    <operation name="listarPedidoPorRangoTotal">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalRequest" message="tns:listarPedidoPorRangoTotal" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorRangoTotalResponse" message="tns:listarPedidoPorRangoTotalResponse" />
     </operation>
     <operation name="listarPedidoPorEstadoYFecha">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorEstadoYFechaRequest" message="tns:listarPedidoPorEstadoYFecha" />
@@ -136,10 +132,50 @@
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoRequest" message="tns:listarPedidoPorPersonaYEstado" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorPersonaYEstadoResponse" message="tns:listarPedidoPorPersonaYEstadoResponse" />
     </operation>
+    <operation name="listarPedidoPorUsuarioCreacion">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacionRequest" message="tns:listarPedidoPorUsuarioCreacion" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pedido/listarPedidoPorUsuarioCreacionResponse" message="tns:listarPedidoPorUsuarioCreacionResponse" />
+    </operation>
   </portType>
   <binding name="PedidoPortBinding" type="tns:Pedido">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarPedidoPorRangoTotal">
+    <operation name="listarTodosPedido">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarPedido">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarPedido">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPedido">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdPedido">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -149,15 +185,6 @@
       </output>
     </operation>
     <operation name="listarPedidoPorFecha">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPedidoPorPersona">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -184,7 +211,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="modificarPedido">
+    <operation name="listarPedidoPorPersona">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -193,43 +220,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="obtenerPorIdPedido">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarPedido">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarTodosPedido">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertarPedido">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPedidoPorUsuarioCreacion">
+    <operation name="listarPedidoPorRangoTotal">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -248,6 +239,15 @@
       </output>
     </operation>
     <operation name="listarPedidoPorPersonaYEstado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPedidoPorUsuarioCreacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

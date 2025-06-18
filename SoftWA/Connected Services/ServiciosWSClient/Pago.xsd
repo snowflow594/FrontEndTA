@@ -175,18 +175,18 @@
       <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarPagoInactivo">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarPagoInactivoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarTodosPago">
     <xs:sequence />
   </xs:complexType>
   <xs:complexType name="listarTodosPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagoInactivo">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPagoInactivoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
     </xs:sequence>

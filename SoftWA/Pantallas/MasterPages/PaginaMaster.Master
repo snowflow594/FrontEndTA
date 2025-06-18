@@ -1,4 +1,4 @@
-﻿<%@  Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaster.Master.cs" Inherits="SoftWA.Pantallas.MasterPages.PaginaMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaster.Master.cs" Inherits="SoftWA.Pantallas.MasterPages.PaginaMaster" %>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -95,8 +95,9 @@
         <!-- Navbar principal -->
         <nav class="navbar navbar-expand-lg shadow-sm">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="Inicio.aspx"> <!--aqúí iría el logo de la empresa-->
-                    <img src="#" alt="Logo CIAPASA" style="height: 30px;" />
+                <a class="navbar-brand d-flex align-items-center gap-2" href="Inicio.aspx">
+                    <!--aqúí iría el logo de la empresa-->
+                    <img src="#" alt="CIAPASA" style="height: 30px;" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>
@@ -107,10 +108,9 @@
                         <li class="nav-item"><a class="nav-link" href="Productos.aspx">Productos</a></li>
                         <li class="nav-item"><a class="nav-link" href="Categorias.aspx">Categorías</a></li>
                     </ul>
-                    <div class="d-flex me-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar productos..." />
-                        <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
-                    </div>
+                    <asp:TextBox ID="txtBuscar" runat="server" CssClass="form-control me-2" placeholder="Buscar productos..." />
+                    <asp:Button ID="btnBuscar" runat="server" CssClass="btn btn-outline-secondary" Text="🔍"
+                        OnClick="btnBuscar_Click" />
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link position-relative" href="Carrito.aspx">

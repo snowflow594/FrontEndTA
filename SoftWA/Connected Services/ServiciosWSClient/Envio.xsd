@@ -28,14 +28,9 @@
   <xs:element name="modificarEnvioResponse" type="tns:modificarEnvioResponse" />
   <xs:element name="obtenerPorIdEnvio" type="tns:obtenerPorIdEnvio" />
   <xs:element name="obtenerPorIdEnvioResponse" type="tns:obtenerPorIdEnvioResponse" />
-  <xs:complexType name="listarEnvioDireccion">
+  <xs:complexType name="insertarEnvio">
     <xs:sequence>
-      <xs:element minOccurs="0" name="direccionId" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarEnvioDireccionResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:envioDTO" />
+      <xs:element minOccurs="0" name="envio" type="tns:envioDTO" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="envioDTO">
@@ -177,14 +172,19 @@
       <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="insertarEnvio">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="envio" type="tns:envioDTO" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="insertarEnvioResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEnvioDireccion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="direccionId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarEnvioDireccionResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:envioDTO" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarEnvioEstado">
@@ -253,15 +253,14 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:envioDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarEnvioRangoFecha">
+  <xs:complexType name="eliminarEnvio">
     <xs:sequence>
-      <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="envio" type="tns:envioDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarEnvioRangoFechaResponse">
+  <xs:complexType name="eliminarEnvioResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:envioDTO" />
+      <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarEnvioInactivos">
@@ -272,14 +271,15 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:envioDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarEnvio">
+  <xs:complexType name="listarEnvioRangoFecha">
     <xs:sequence>
-      <xs:element minOccurs="0" name="envio" type="tns:envioDTO" />
+      <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarEnvioResponse">
+  <xs:complexType name="listarEnvioRangoFechaResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:envioDTO" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarEnvioRangoFechaCreacion">

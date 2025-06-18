@@ -8,12 +8,18 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <h5 class="mb-1">Dirección de Envío:</h5>
-                    <p class="mb-0"><strong>Alias:</strong>
-                        <asp:Label ID="lblAlias" runat="server" /></p>
-                    <p class="mb-0"><strong>Dirección:</strong>
-                        <asp:Label ID="lblDireccion" runat="server" /></p>
-                    <p class="mb-0"><strong>Ciudad:</strong>
-                        <asp:Label ID="lblCiudad" runat="server" /></p>
+                    <p class="mb-0">
+                        <strong>Alias:</strong>
+                        <asp:Label ID="lblAlias" runat="server" />
+                    </p>
+                    <p class="mb-0">
+                        <strong>Dirección:</strong>
+                        <asp:Label ID="lblDireccion" runat="server" />
+                    </p>
+                    <p class="mb-0">
+                        <strong>Ciudad:</strong>
+                        <asp:Label ID="lblCiudad" runat="server" />
+                    </p>
                 </div>
                 <div>
                     <a href="DireccionEnvio.aspx" class="btn btn-outline-secondary">Modificar Dirección</a>
@@ -51,17 +57,57 @@
             <div class="col-md-5">
                 <div class="card p-4 shadow-sm">
                     <h5 class="mb-3">Resumen de Pedido</h5>
-                    <p><strong>Subtotal:</strong> S/
-                        <asp:Label ID="lblSubtotal" runat="server" Text="0.00" /></p>
-                    <p><strong>Impuesto (18%):</strong> S/
-                        <asp:Label ID="lblIGV" runat="server" Text="0.00" /></p>
-                    <p><strong>Envío:</strong> S/
-                        <asp:Label ID="lblEnvio" runat="server" Text="-" /></p>
+                    <p>
+                        <strong>Subtotal:</strong> S/
+                        <asp:Label ID="lblSubtotal" runat="server" Text="0.00" />
+                    </p>
+                    <p>
+                        <strong>Impuesto (18%):</strong> S/
+                        <asp:Label ID="lblIGV" runat="server" Text="0.00" />
+                    </p>
+                    <p>
+                        <strong>Envío:</strong> S/
+                        <asp:Label ID="lblEnvio" runat="server" Text="-" />
+                    </p>
                     <hr />
-                    <p class="fs-5"><strong>Total:</strong> S/
-                        <asp:Label ID="lblTotal" runat="server" Text="0.00" /></p>
+                    <p class="fs-5">
+                        <strong>Total:</strong> S/
+                        <asp:Label ID="lblTotal" runat="server" Text="0.00" />
+                    </p>
                 </div>
             </div>
+
+            <!-- Elegir tipo de comprobante -->
+            <div class="mb-3">
+                <label class="form-label">Tipo de comprobante</label>
+                <asp:RadioButtonList ID="rblTipoComprobante" runat="server" AutoPostBack="true"
+                    CssClass="form-check" OnSelectedIndexChanged="rblTipoComprobante_SelectedIndexChanged" RepeatDirection="Horizontal">
+                    <asp:ListItem Text="Boleta" Value="boleta" Selected="True" />
+                    <asp:ListItem Text="Factura" Value="factura" />
+                </asp:RadioButtonList>
+            </div>
+
+            <!-- Campos comunes -->
+            <div class="mb-3">
+                <label class="form-label">Correo de envío</label>
+                <asp:TextBox ID="txtCorreoEnvio" runat="server" CssClass="form-control" />
+            </div>
+
+            <!-- Solo para Factura -->
+            <asp:PlaceHolder ID="phFactura" runat="server" Visible="false">
+                <div class="mb-3">
+                    <label class="form-label">RUC</label>
+                    <asp:TextBox ID="txtRUC" runat="server" CssClass="form-control" MaxLength="11" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Razón Social</label>
+                    <asp:TextBox ID="txtRazonSocial" runat="server" CssClass="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Dirección Fiscal</label>
+                    <asp:TextBox ID="txtDireccionFiscal" runat="server" CssClass="form-control" />
+                </div>
+            </asp:PlaceHolder>
         </div>
     </div>
 </asp:Content>

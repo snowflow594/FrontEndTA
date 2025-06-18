@@ -199,6 +199,16 @@
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="eliminarItemCarrito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="itemCarrito" type="tns:itemCarritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarItemCarritoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarItemCarritoPorCarritoYProducto">
     <xs:sequence>
       <xs:element name="carritoId" type="xs:int" />
@@ -208,16 +218,6 @@
   <xs:complexType name="listarItemCarritoPorCarritoYProductoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:itemCarritoDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarItemCarrito">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="itemCarrito" type="tns:itemCarritoDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarItemCarritoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="insertarItemCarrito">

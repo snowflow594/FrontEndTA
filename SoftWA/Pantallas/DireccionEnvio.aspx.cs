@@ -1,4 +1,5 @@
-﻿using SoftWA.ServiciosWSClient;
+﻿using SoftWA.DireccionWSClient;
+using SoftWA.ServiciosWSClient;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,7 +13,7 @@ namespace SoftWA.Pantallas
     public partial class DireccionEnvio : System.Web.UI.Page
     {
         private ItemCarritoClient itemCarritoWSClient = new ItemCarritoClient();
-        private DireccionClient direccionWSClient = new DireccionClient();
+        private SoftWA.DireccionWSClient.DireccionClient direccionWSClient = new DireccionWSClient.DireccionClient();
         private CarritoClient carritoWSClient = new CarritoClient();
         private PersonaClient personaWSClient = new PersonaClient();
 
@@ -60,25 +61,44 @@ namespace SoftWA.Pantallas
                 int idPersona = Convert.ToInt32(Session["idPersona"]);
                 int idUsuario = Convert.ToInt32(Session["idUsuario"]);
 
-                var nuevaDireccion = new SoftWA.ServiciosWSClient.direccionDTO1
+                var nuevaDireccion = new DireccionWSClient.direccionDTO
                 {
-                    personaId = new SoftWA.ServiciosWSClient.personaDTO1 { id = idPersona},
+                    personaId = new DireccionWSClient.personaDTO { id = idPersona },
                     alias = txtAlias.Text,
                     direccion = txtDireccion.Text,
                     ciudad = txtCiudad.Text,
                     referencia = txtReferencia.Text,
-                    usuarioCreacion = new SoftWA.ServiciosWSClient.usuarioDTO1 { id = idUsuario}
+                    usuarioCreacion = new DireccionWSClient.usuarioDTO { id = idUsuario }
                 };
 
-                int i = direccionWSClient.insertarDireccion(nuevaDireccion);
-                lblMensaje.CssClass = "text-success mt-2 d-block";
-                lblMensaje.Text = "¡Dirección guardada con éxito!";
+                int i = direccionWSClient.insertarDireccion(nuevaDireccion); //aquí hay un error, creo que se duplican las clases o algo así porque sale direccionDTO y direccionDTO1 con el servicio completo agrupado
 
-                //aquí falta guardar el id en session
+                // Obtener la última dirección registrada por esa persona y usuario
+                var listaDirecciones = direccionWSClient.listarTodosDireccion();
 
+                var ultimaDireccion = listaDirecciones?
+                    .Where(d => d != null &&
+                                d.personaId != null && d.personaId.id == idPersona &&
+                                d.usuarioCreacion != null && d.usuarioCreacion.id == idUsuario &&
+                                d.direccion == txtDireccion.Text && d.alias == txtAlias.Text)
+                    .OrderByDescending(d => d.id)
+                    .FirstOrDefault();
+
+                if (ultimaDireccion != null)
+                {
+                    Session["idDireccionSelececionada"] = ultimaDireccion.id;
+                    lblMensaje.CssClass = "text-success mt-2 d-block";
+                    lblMensaje.Text = "¡Dirección guardada con éxito!";
+                }
+                else
+                {
+                    lblMensaje.CssClass = "text-danger mt-2 d-block";
+                    lblMensaje.Text = "No se pudo guardar la dirección. Intenta nuevamente.";
+                }
                 Response.Redirect("DireccionEnvio.aspx");
             }
         }
+
 
         protected void btnVerDirecciones_Click(object sender, EventArgs e)
         {
@@ -93,7 +113,14 @@ namespace SoftWA.Pantallas
                 return;
             }
 
-            Response.Redirect("DatosPago.aspx");
+            Response.Redirect("DatosDePago.aspx");
+        }
+
+        [System.Web.Services.WebMethod(EnableSession = true)]
+        public static bool SeleccionarDireccion(int idDireccion)
+        {
+            HttpContext.Current.Session["idDireccionSelececionada"] = idDireccion;
+            return true;
         }
     }
 }

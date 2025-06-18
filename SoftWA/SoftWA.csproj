@@ -68,6 +68,9 @@
     <Reference Include="MySql.Data, Version=9.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.9.3.0\lib\net48\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="NodaTime, Version=3.2.2.0, Culture=neutral, PublicKeyToken=4226afe0d9b296d1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NodaTime.3.2.2\lib\netstandard2.0\NodaTime.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -123,6 +126,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Connected Services\DireccionWSClient\Direccion.wsdl" />
+    <None Include="Connected Services\DireccionWSClient\Direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.direccionDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.eliminarDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.insertarDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.listarTodosDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.modificarDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.obtenerPorIdDireccionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\ServiciosWSClient\Administrador.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Administrador.xsd">
       <SubType>Designer</SubType>
@@ -152,6 +177,12 @@
     <None Include="Connected Services\ServiciosWSClient\configuration91.svcinfo" />
     <None Include="Connected Services\ServiciosWSClient\configuration.svcinfo" />
     <None Include="Connected Services\ServiciosWSClient\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\DireccionWSClient\configuration91.svcinfo" />
+    <None Include="Connected Services\DireccionWSClient\configuration.svcinfo" />
+    <None Include="Connected Services\DireccionWSClient\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -199,6 +230,7 @@
     <Content Include="Pantallas\DireccionesGuardadas.aspx" />
     <Content Include="Pantallas\EspecificacionesProducto.aspx" />
     <Content Include="Pantallas\Inicio.aspx" />
+    <Content Include="Pantallas\Productos.aspx" />
     <Content Include="Pantallas\ResumenDelPedido.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -809,6 +841,10 @@
     <None Include="Connected Services\ServiciosWSClient\Usuario.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-3.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.1.js" />
     <Content Include="Scripts\jquery-3.7.1.min.js" />
@@ -817,6 +853,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\DireccionWSClient\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiciosWSClient\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -871,6 +912,13 @@
     <Compile Include="Pantallas\MasterPages\PaginaMaster.Master.designer.cs">
       <DependentUpon>PaginaMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\Productos.aspx.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Productos.aspx.designer.cs">
+      <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\ResumenDelPedido.aspx.cs">
       <DependentUpon>ResumenDelPedido.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -879,6 +927,11 @@
       <DependentUpon>ResumenDelPedido.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -917,7 +970,11 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\DireccionWSClient\" />
     <WCFMetadataStorage Include="Connected Services\ServiciosWSClient\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

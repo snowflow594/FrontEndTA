@@ -5,24 +5,6 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Administrador?xsd=1" namespace="http://usuario.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="insertarAdministrador">
-    <part name="parameters" element="tns:insertarAdministrador" />
-  </message>
-  <message name="insertarAdministradorResponse">
-    <part name="parameters" element="tns:insertarAdministradorResponse" />
-  </message>
-  <message name="eliminarAdministrador">
-    <part name="parameters" element="tns:eliminarAdministrador" />
-  </message>
-  <message name="eliminarAdministradorResponse">
-    <part name="parameters" element="tns:eliminarAdministradorResponse" />
-  </message>
-  <message name="modificarAdministrador">
-    <part name="parameters" element="tns:modificarAdministrador" />
-  </message>
-  <message name="modificarAdministradorResponse">
-    <part name="parameters" element="tns:modificarAdministradorResponse" />
-  </message>
   <message name="obtenerPorIdAdministrador">
     <part name="parameters" element="tns:obtenerPorIdAdministrador" />
   </message>
@@ -35,19 +17,25 @@
   <message name="listarTodosAdministradorResponse">
     <part name="parameters" element="tns:listarTodosAdministradorResponse" />
   </message>
+  <message name="eliminarAdministrador">
+    <part name="parameters" element="tns:eliminarAdministrador" />
+  </message>
+  <message name="eliminarAdministradorResponse">
+    <part name="parameters" element="tns:eliminarAdministradorResponse" />
+  </message>
+  <message name="insertarAdministrador">
+    <part name="parameters" element="tns:insertarAdministrador" />
+  </message>
+  <message name="insertarAdministradorResponse">
+    <part name="parameters" element="tns:insertarAdministradorResponse" />
+  </message>
+  <message name="modificarAdministrador">
+    <part name="parameters" element="tns:modificarAdministrador" />
+  </message>
+  <message name="modificarAdministradorResponse">
+    <part name="parameters" element="tns:modificarAdministradorResponse" />
+  </message>
   <portType name="Administrador">
-    <operation name="insertarAdministrador">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/insertarAdministradorRequest" message="tns:insertarAdministrador" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/insertarAdministradorResponse" message="tns:insertarAdministradorResponse" />
-    </operation>
-    <operation name="eliminarAdministrador">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorRequest" message="tns:eliminarAdministrador" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorResponse" message="tns:eliminarAdministradorResponse" />
-    </operation>
-    <operation name="modificarAdministrador">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministradorRequest" message="tns:modificarAdministrador" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministradorResponse" message="tns:modificarAdministradorResponse" />
-    </operation>
     <operation name="obtenerPorIdAdministrador">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/obtenerPorIdAdministradorRequest" message="tns:obtenerPorIdAdministrador" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/obtenerPorIdAdministradorResponse" message="tns:obtenerPorIdAdministradorResponse" />
@@ -56,10 +44,31 @@
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/listarTodosAdministradorRequest" message="tns:listarTodosAdministrador" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/listarTodosAdministradorResponse" message="tns:listarTodosAdministradorResponse" />
     </operation>
+    <operation name="eliminarAdministrador">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorRequest" message="tns:eliminarAdministrador" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/eliminarAdministradorResponse" message="tns:eliminarAdministradorResponse" />
+    </operation>
+    <operation name="insertarAdministrador">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/insertarAdministradorRequest" message="tns:insertarAdministrador" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/insertarAdministradorResponse" message="tns:insertarAdministradorResponse" />
+    </operation>
+    <operation name="modificarAdministrador">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministradorRequest" message="tns:modificarAdministrador" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Administrador/modificarAdministradorResponse" message="tns:modificarAdministradorResponse" />
+    </operation>
   </portType>
   <binding name="AdministradorPortBinding" type="tns:Administrador">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="insertarAdministrador">
+    <operation name="obtenerPorIdAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosAdministrador">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -77,25 +86,16 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="insertarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="modificarAdministrador">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerPorIdAdministrador">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarTodosAdministrador">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

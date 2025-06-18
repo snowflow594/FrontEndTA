@@ -27,67 +27,117 @@ namespace SoftWA.Pantallas
             if (Session["idCarrito"] != null)
             {
                 int idCarrito = Convert.ToInt32(Session["idCarrito"]);
-                var carrito = carritoWS.obtenerPorIdCarrito(idCarrito);
-
-                if (carrito != null && carrito.items != null)
-                {
-                    rptCarrito.DataSource = carrito.items;
-                    rptCarrito.DataBind();
-
-                    double subtotal = 0;
-                    foreach (var item in carrito.items)
+                var todosLosItems = itemCarritoWS.listarTodosItemCarrito();
+                var items = todosLosItems
+                    .Where(item => item.carrito != null && item.carrito.idCarrito == idCarrito && item.producto != null)
+                    .ToList();
+                var itemsAgrupados = items
+                    .GroupBy(i => i.producto.idProducto)
+                    .Select(grupo =>
                     {
-                        subtotal += item.subtotal;
-                    }
+                        int idProducto = grupo.Key;
+                        var productoCompleto = productoWS.obtenerPorIdProducto(idProducto);
 
-                    double igv = subtotal * 0.18;
-                    double total = subtotal + igv;
+                        return new itemCarritoDTO
+                        {
+                            producto = new productoDTO
+                            {
+                                idProducto = productoCompleto.idProducto,
+                                nombre = productoCompleto.nombre,
+                                descripcion = productoCompleto.descripcion,
+                                precio = productoCompleto.precio,
+                                stock = productoCompleto.stock
+                            },
+                            cantidad = grupo.Sum(i => i.cantidad),
+                            subtotal = grupo.Sum(i => i.subtotal)
+                        };
+                    })
+                    .ToList();
 
-                    lblSubtotal.Text = subtotal.ToString("F2");
-                    lblIGV.Text = igv.ToString("F2");
-                    lblTotal.Text = total.ToString("F2");
-                }
-                else
-                {
-                    lblSubtotal.Text = "0.00";
-                    lblIGV.Text = "0.00";
-                    lblTotal.Text = "0.00";
-                }
+                rptCarrito.DataSource = itemsAgrupados;
+                rptCarrito.DataBind();
+
+                double subtotal = itemsAgrupados.Sum(i => i.subtotal);
+                double igv = subtotal * 0.18;
+                double total = subtotal + igv;
+
+                lblSubtotal.Text = subtotal.ToString("F2");
+                lblIGV.Text = igv.ToString("F2");
+                lblTotal.Text = total.ToString("F2");
             }
         }
 
         protected void rptCarrito_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            int idItem = Convert.ToInt32(e.CommandArgument);
+            int idProducto = Convert.ToInt32(e.CommandArgument);
 
-            var item = itemCarritoWS.obtenerPorIdItemCarrito(idItem); 
+            int idCarrito = Convert.ToInt32(Session["idCarrito"]);
+            var todosLosItems = itemCarritoWS.listarTodosItemCarrito();
+
+            var item = todosLosItems
+                .FirstOrDefault(i => i.carrito != null
+                                  && i.carrito.idCarrito == idCarrito
+                                  && i.producto != null
+                                  && i.producto.idProducto == idProducto);
 
             if (item != null)
             {
+                var productoCompleto = productoWS.obtenerPorIdProducto(item.producto.idProducto);
+
                 if (e.CommandName == "Aumentar")
                 {
-                    item.cantidad += 1;
-                    item.subtotal = item.cantidad * item.producto.precio;
-                    item.usuarioActualizacion = new SoftWA.ServiciosWSClient.usuarioDTO { id = 4 };
-                    itemCarritoWS.modificarItemCarrito(item);
+                    var nuevoItem = new itemCarritoDTO
+                    {
+                        idItemCarrito = item.idItemCarrito,
+                        cantidad = item.cantidad + 1,
+                        subtotal = (item.cantidad + 1) * productoCompleto.precio,
+                        usuarioActualizacion = new usuarioDTO { id = 4 }
+                    };
+
+                    itemCarritoWS.modificarItemCarrito(nuevoItem);
                 }
                 else if (e.CommandName == "Disminuir")
                 {
                     if (item.cantidad > 1)
                     {
-                        item.cantidad -= 1;
-                        item.subtotal = item.cantidad * item.producto.precio;
-                        item.usuarioActualizacion = new SoftWA.ServiciosWSClient.usuarioDTO { id = 4 };
-                        itemCarritoWS.modificarItemCarrito(item);
+                        var nuevoItem = new itemCarritoDTO
+                        {
+                            idItemCarrito = item.idItemCarrito,
+                            cantidad = item.cantidad - 1,
+                            subtotal = (item.cantidad - 1) * productoCompleto.precio,
+                            usuarioActualizacion = new usuarioDTO { id = 4 }
+                        };
+
+                        itemCarritoWS.modificarItemCarrito(nuevoItem);
                     }
                     else
                     {
-                        itemCarritoWS.eliminarItemCarrito(item);
+                        //si cantidad = 1, se elimina
+                        var eliminarItem = new itemCarritoDTO
+                        {
+                            idItemCarrito = item.idItemCarrito,
+                            usuarioActualizacion = new usuarioDTO { id = 4 }
+                        };
+
+                        itemCarritoWS.eliminarItemCarrito(eliminarItem);
                         ScriptManager.RegisterStartupScript(this, GetType(), "eliminado", "alert('Producto eliminado del carrito.');", true);
                     }
                 }
+                else if (e.CommandName == "Eliminar")
+                {
+                    // Eliminar directamente
+                    var eliminarCompleto = new itemCarritoDTO
+                    {
+                        idItemCarrito = item.idItemCarrito,
+                        usuarioActualizacion = new usuarioDTO { id = 4 }
+                    };
+
+                    itemCarritoWS.eliminarItemCarrito(eliminarCompleto);
+                    ScriptManager.RegisterStartupScript(this, GetType(), "eliminado", "alert('Producto eliminado del carrito.');", true);
+                }
             }
-            CargarCarrito();
+            CargarCarrito(); // recarga la vista con los cambios
         }
+
     }
 }
