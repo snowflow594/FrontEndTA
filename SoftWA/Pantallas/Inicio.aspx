@@ -34,15 +34,15 @@
     <section class="py-5">
         <div class="container">
             <h2 class="mb-4 text-center">Categorías Destacadas</h2>
-            <div class="row g-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 <asp:Repeater ID="rptCategorias" runat="server">
                     <ItemTemplate>
-                        <div class="col-md-4">
-                            <div class="card h-100 shadow-sm">
-                                <img src="../Content/Imagenes/olla.png" />
-                                <div class="card-body text-center">
-                                    <h5 class="card-title"><%# Eval("nombre") %></h5>
-                                    <a href='EspecificacionesProducto.aspx?id=<%# Eval("idProducto") %>' class="btn btn-outline-dark">Ver Detalles</a>
+                        <div class="col">
+                            <div class="card h-100 shadow-sm border-0">
+                                <img src="../Content/Imagenes/olla.png" class="card-img-top img-fluid" style="object-fit: contain; height: 180px;" alt="Imagen producto" />
+                                <div class="card-body d-flex flex-column text-center">
+                                    <h6 class="card-title mb-2"><%# Eval("nombre") %></h6>
+                                    <a href='EspecificacionesProducto.aspx?id=<%# Eval("idProducto") %>' class="btn btn-outline-dark mt-auto">Ver Detalles</a>
                                 </div>
                             </div>
                         </div>
