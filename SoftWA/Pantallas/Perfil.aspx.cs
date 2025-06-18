@@ -90,6 +90,7 @@ namespace SoftWA.Pantallas
                     lblMessage.Text = "Los administradores no pueden editar aquí.";
                     lblMessage.CssClass = "mt-3 text-danger";
                     lblMessage.Visible = true;
+                    Response.Redirect("InicioAdmin.aspx");
                 }
             }
         }
@@ -103,7 +104,7 @@ namespace SoftWA.Pantallas
             // Actualiza extras según rol
             if (pnlNatural.Visible)
             {
-
+                naturalBO = new NaturalClient();
                 naturalDTO nat = new naturalDTO();
                 try
                 {
