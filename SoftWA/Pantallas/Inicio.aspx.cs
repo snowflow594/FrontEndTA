@@ -19,22 +19,17 @@ namespace SoftWA.Pantallas
         {
             if (!IsPostBack)
             {
-                CargarProductos();
+                CargarProductosDestacados();
             }
         }
 
-        private void CargarProductos()
+        private void CargarProductosDestacados()
         {
-            try
-            {
-                var productos = productoWSClient.listarTodosProducto().ToList();
-                rptCategorias.DataSource = productos;
-                rptCategorias.DataBind();
-            }
-            catch (Exception ex)
-            {
-                Response.Write("<script>alert('Error al cargar productos: " + ex.Message + "');</script>");
-            }
+            var productos = productoWSClient.listarTodosProducto();
+            var destacados = productos.Take(4).ToList(); // Mostrar solo los primeros 4
+
+            rptCategorias.DataSource = destacados;
+            rptCategorias.DataBind();
         }
     }
 }

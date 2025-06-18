@@ -42,12 +42,17 @@
                                 <img src="../Content/Imagenes/olla.png" class="card-img-top img-fluid" style="object-fit: contain; height: 180px;" alt="Imagen producto" />
                                 <div class="card-body d-flex flex-column text-center">
                                     <h6 class="card-title mb-2"><%# Eval("nombre") %></h6>
+                                    <p class="text-success fw-bold">S/ <%# Eval("precio", "{0:F2}") %></p>
                                     <a href='EspecificacionesProducto.aspx?id=<%# Eval("idProducto") %>' class="btn btn-outline-dark mt-auto">Ver Detalles</a>
                                 </div>
                             </div>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="Productos.aspx" class="btn btn-cta px-4 py-2">Ver todos los productos</a>
             </div>
         </div>
     </section>
