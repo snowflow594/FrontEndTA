@@ -203,6 +203,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Estilos\carritostyle.css" />
+    <Content Include="Content\Estilos\siteReportes.css" />
     <Content Include="Content\fontawesome\all.css" />
     <Content Include="Content\fontawesome\all.min.css" />
     <Content Include="Content\fontawesome\brands.css" />
@@ -224,13 +225,21 @@
     <Content Include="Content\Imagenes\olla.png" />
     <Content Include="Content\Imagenes\perfil.png" />
     <Content Include="Content\Imagenes\sarten.png" />
+    <Content Include="Pantallas\Autentificacion.aspx" />
     <Content Include="Pantallas\Carrito.aspx" />
     <Content Include="Pantallas\DatosDePago.aspx" />
     <Content Include="Pantallas\DireccionEnvio.aspx" />
     <Content Include="Pantallas\DireccionesGuardadas.aspx" />
     <Content Include="Pantallas\EspecificacionesProducto.aspx" />
     <Content Include="Pantallas\Inicio.aspx" />
+    <Content Include="Pantallas\InicioAdmin.aspx" />
+    <Content Include="Pantallas\Perfil.aspx" />
     <Content Include="Pantallas\Productos.aspx" />
+    <Content Include="Pantallas\RecuperarContrasena.aspx" />
+    <Content Include="Pantallas\RegistrarUsuario.aspx" />
+    <Content Include="Pantallas\ReporteClientes.aspx" />
+    <Content Include="Pantallas\ReporteIngresos.aspx" />
+    <Content Include="Pantallas\ReporteProductos.aspx" />
     <Content Include="Pantallas\ResumenDelPedido.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -841,6 +850,9 @@
     <None Include="Connected Services\ServiciosWSClient\Usuario.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Pantallas\MasterPages\Cabecera.master" />
+    <Content Include="Pantallas\MasterPages\PaginaInicio.master" />
+    <Content Include="Pantallas\MasterPages\SiteAdmin.master" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -862,6 +874,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Autentificacion.aspx.cs">
+      <DependentUpon>Autentificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Autentificacion.aspx.designer.cs">
+      <DependentUpon>Autentificacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\Carrito.aspx.cs">
       <DependentUpon>Carrito.aspx</DependentUpon>
@@ -905,6 +924,27 @@
     <Compile Include="Pantallas\Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\InicioAdmin.aspx.cs">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\InicioAdmin.aspx.designer.cs">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\MasterPages\Cabecera.master.cs">
+      <DependentUpon>Cabecera.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\MasterPages\Cabecera.master.designer.cs">
+      <DependentUpon>Cabecera.master</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\MasterPages\PaginaInicio.master.cs">
+      <DependentUpon>PaginaInicio.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\MasterPages\PaginaInicio.master.designer.cs">
+      <DependentUpon>PaginaInicio.master</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\MasterPages\PaginaMaster.Master.cs">
       <DependentUpon>PaginaMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -912,12 +952,61 @@
     <Compile Include="Pantallas\MasterPages\PaginaMaster.Master.designer.cs">
       <DependentUpon>PaginaMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas\MasterPages\SiteAdmin.master.cs">
+      <DependentUpon>SiteAdmin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\MasterPages\SiteAdmin.master.designer.cs">
+      <DependentUpon>SiteAdmin.master</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas\Productos.aspx.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pantallas\Productos.aspx.designer.cs">
       <DependentUpon>Productos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\RecuperarContrasena.aspx.cs">
+      <DependentUpon>RecuperarContrasena.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\RecuperarContrasena.aspx.designer.cs">
+      <DependentUpon>RecuperarContrasena.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\RegistrarUsuario.aspx.cs">
+      <DependentUpon>RegistrarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\RegistrarUsuario.aspx.designer.cs">
+      <DependentUpon>RegistrarUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\ReporteClientes.aspx.cs">
+      <DependentUpon>ReporteClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\ReporteClientes.aspx.designer.cs">
+      <DependentUpon>ReporteClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\ReporteIngresos.aspx.cs">
+      <DependentUpon>ReporteIngresos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\ReporteIngresos.aspx.designer.cs">
+      <DependentUpon>ReporteIngresos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\ReporteProductos.aspx.cs">
+      <DependentUpon>ReporteProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pantallas\ReporteProductos.aspx.designer.cs">
+      <DependentUpon>ReporteProductos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pantallas\ResumenDelPedido.aspx.cs">
       <DependentUpon>ResumenDelPedido.aspx</DependentUpon>
@@ -972,9 +1061,6 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\DireccionWSClient\" />
     <WCFMetadataStorage Include="Connected Services\ServiciosWSClient\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WebReferences Include="Web References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

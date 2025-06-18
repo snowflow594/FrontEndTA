@@ -160,6 +160,16 @@
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="obtenerPorIdPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPersonaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:personaDTO" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarPersonasInactivos">
     <xs:sequence />
   </xs:complexType>
@@ -177,16 +187,6 @@
   <xs:complexType name="listarPorFechasPersonaResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:personaDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="obtenerPorIdPersona">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="personaId" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="obtenerPorIdPersonaResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:personaDTO" />
     </xs:sequence>
   </xs:complexType>
 </xs:schema>

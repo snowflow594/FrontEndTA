@@ -103,7 +103,7 @@
   </xs:complexType>
   <xs:complexType name="obtenerPorIdJuridica">
     <xs:sequence>
-      <xs:element minOccurs="0" name="juridicaId" type="xs:int" />
+      <xs:element name="juridica_IdPersona" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="obtenerPorIdJuridicaResponse">

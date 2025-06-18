@@ -86,8 +86,8 @@
           <i class="far fa-clock"></i>L-V 9:00-18:00
                 </div>
                 <div>
-                    <a href="Login.aspx"><i class="fas fa-user"></i>Inicia Sesión</a>
-                    <a href="Registro.aspx"><i class="fas fa-user-plus"></i>Regístrate</a>
+                    <a href="Autentificacion.aspx"><i class="fas fa-user"></i>Inicia Sesión</a>
+                    <a href="RegistrarUsuario.aspx"><i class="fas fa-user-plus"></i>Regístrate</a>
                 </div>
             </div>
         </div>

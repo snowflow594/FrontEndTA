@@ -158,16 +158,6 @@
       <xs:element minOccurs="0" name="return" type="tns:carritoDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarCarrito">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="carrito" type="tns:carritoDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarCarritoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarCarritoPorRangoTotal">
     <xs:sequence>
       <xs:element minOccurs="0" name="montoMinimo" type="xs:double" />
@@ -179,12 +169,12 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:carritoDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="modificarCarrito">
+  <xs:complexType name="eliminarCarrito">
     <xs:sequence>
       <xs:element minOccurs="0" name="carrito" type="tns:carritoDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="modificarCarritoResponse">
+  <xs:complexType name="eliminarCarritoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
@@ -208,6 +198,16 @@
   <xs:complexType name="listarCarritoPorRangoFechaCreacionResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:carritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCarrito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="carrito" type="tns:carritoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCarritoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="insertarCarrito">

@@ -5,35 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Comprobante?xsd=1" namespace="http://pedido.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarTodosComprobante">
-    <part name="parameters" element="tns:listarTodosComprobante" />
-  </message>
-  <message name="listarTodosComprobanteResponse">
-    <part name="parameters" element="tns:listarTodosComprobanteResponse" />
-  </message>
   <message name="listarComprobantePorTipo">
     <part name="parameters" element="tns:listarComprobantePorTipo" />
   </message>
   <message name="listarComprobantePorTipoResponse">
     <part name="parameters" element="tns:listarComprobantePorTipoResponse" />
-  </message>
-  <message name="obtenerPorIdComprobante">
-    <part name="parameters" element="tns:obtenerPorIdComprobante" />
-  </message>
-  <message name="obtenerPorIdComprobanteResponse">
-    <part name="parameters" element="tns:obtenerPorIdComprobanteResponse" />
-  </message>
-  <message name="insertarComprobante">
-    <part name="parameters" element="tns:insertarComprobante" />
-  </message>
-  <message name="insertarComprobanteResponse">
-    <part name="parameters" element="tns:insertarComprobanteResponse" />
-  </message>
-  <message name="listarComprobantePedido">
-    <part name="parameters" element="tns:listarComprobantePedido" />
-  </message>
-  <message name="listarComprobantePedidoResponse">
-    <part name="parameters" element="tns:listarComprobantePedidoResponse" />
   </message>
   <message name="listarComprobanteInactivo">
     <part name="parameters" element="tns:listarComprobanteInactivo" />
@@ -41,11 +17,35 @@
   <message name="listarComprobanteInactivoResponse">
     <part name="parameters" element="tns:listarComprobanteInactivoResponse" />
   </message>
+  <message name="insertarComprobante">
+    <part name="parameters" element="tns:insertarComprobante" />
+  </message>
+  <message name="insertarComprobanteResponse">
+    <part name="parameters" element="tns:insertarComprobanteResponse" />
+  </message>
+  <message name="obtenerPorIdComprobante">
+    <part name="parameters" element="tns:obtenerPorIdComprobante" />
+  </message>
+  <message name="obtenerPorIdComprobanteResponse">
+    <part name="parameters" element="tns:obtenerPorIdComprobanteResponse" />
+  </message>
+  <message name="listarTodosComprobante">
+    <part name="parameters" element="tns:listarTodosComprobante" />
+  </message>
+  <message name="listarTodosComprobanteResponse">
+    <part name="parameters" element="tns:listarTodosComprobanteResponse" />
+  </message>
   <message name="modificarComprobante">
     <part name="parameters" element="tns:modificarComprobante" />
   </message>
   <message name="modificarComprobanteResponse">
     <part name="parameters" element="tns:modificarComprobanteResponse" />
+  </message>
+  <message name="listarComprobantePedido">
+    <part name="parameters" element="tns:listarComprobantePedido" />
+  </message>
+  <message name="listarComprobantePedidoResponse">
+    <part name="parameters" element="tns:listarComprobantePedidoResponse" />
   </message>
   <message name="eliminarComprobante">
     <part name="parameters" element="tns:eliminarComprobante" />
@@ -58,6 +58,12 @@
   </message>
   <message name="listarComprobanteUsuarioCreacionResponse">
     <part name="parameters" element="tns:listarComprobanteUsuarioCreacionResponse" />
+  </message>
+  <message name="listarComprobanteRangoTotal">
+    <part name="parameters" element="tns:listarComprobanteRangoTotal" />
+  </message>
+  <message name="listarComprobanteRangoTotalResponse">
+    <part name="parameters" element="tns:listarComprobanteRangoTotalResponse" />
   </message>
   <message name="listarComprobantePedidosTodos">
     <part name="parameters" element="tns:listarComprobantePedidosTodos" />
@@ -77,40 +83,34 @@
   <message name="listarComprobanteNumeroSerieResponse">
     <part name="parameters" element="tns:listarComprobanteNumeroSerieResponse" />
   </message>
-  <message name="listarComprobanteRangoTotal">
-    <part name="parameters" element="tns:listarComprobanteRangoTotal" />
-  </message>
-  <message name="listarComprobanteRangoTotalResponse">
-    <part name="parameters" element="tns:listarComprobanteRangoTotalResponse" />
-  </message>
   <portType name="Comprobante">
-    <operation name="listarTodosComprobante">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarTodosComprobanteRequest" message="tns:listarTodosComprobante" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarTodosComprobanteResponse" message="tns:listarTodosComprobanteResponse" />
-    </operation>
     <operation name="listarComprobantePorTipo">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePorTipoRequest" message="tns:listarComprobantePorTipo" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePorTipoResponse" message="tns:listarComprobantePorTipoResponse" />
-    </operation>
-    <operation name="obtenerPorIdComprobante">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/obtenerPorIdComprobanteRequest" message="tns:obtenerPorIdComprobante" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/obtenerPorIdComprobanteResponse" message="tns:obtenerPorIdComprobanteResponse" />
-    </operation>
-    <operation name="insertarComprobante">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteRequest" message="tns:insertarComprobante" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteResponse" message="tns:insertarComprobanteResponse" />
-    </operation>
-    <operation name="listarComprobantePedido">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRequest" message="tns:listarComprobantePedido" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoResponse" message="tns:listarComprobantePedidoResponse" />
     </operation>
     <operation name="listarComprobanteInactivo">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivoRequest" message="tns:listarComprobanteInactivo" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteInactivoResponse" message="tns:listarComprobanteInactivoResponse" />
     </operation>
+    <operation name="insertarComprobante">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteRequest" message="tns:insertarComprobante" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/insertarComprobanteResponse" message="tns:insertarComprobanteResponse" />
+    </operation>
+    <operation name="obtenerPorIdComprobante">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/obtenerPorIdComprobanteRequest" message="tns:obtenerPorIdComprobante" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/obtenerPorIdComprobanteResponse" message="tns:obtenerPorIdComprobanteResponse" />
+    </operation>
+    <operation name="listarTodosComprobante">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarTodosComprobanteRequest" message="tns:listarTodosComprobante" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarTodosComprobanteResponse" message="tns:listarTodosComprobanteResponse" />
+    </operation>
     <operation name="modificarComprobante">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/modificarComprobanteRequest" message="tns:modificarComprobante" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/modificarComprobanteResponse" message="tns:modificarComprobanteResponse" />
+    </operation>
+    <operation name="listarComprobantePedido">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoRequest" message="tns:listarComprobantePedido" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidoResponse" message="tns:listarComprobantePedidoResponse" />
     </operation>
     <operation name="eliminarComprobante">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/eliminarComprobanteRequest" message="tns:eliminarComprobante" />
@@ -119,6 +119,10 @@
     <operation name="listarComprobanteUsuarioCreacion">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioCreacionRequest" message="tns:listarComprobanteUsuarioCreacion" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteUsuarioCreacionResponse" message="tns:listarComprobanteUsuarioCreacionResponse" />
+    </operation>
+    <operation name="listarComprobanteRangoTotal">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTotalRequest" message="tns:listarComprobanteRangoTotal" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTotalResponse" message="tns:listarComprobanteRangoTotalResponse" />
     </operation>
     <operation name="listarComprobantePedidosTodos">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobantePedidosTodosRequest" message="tns:listarComprobantePedidosTodos" />
@@ -132,50 +136,10 @@
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSerieRequest" message="tns:listarComprobanteNumeroSerie" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteNumeroSerieResponse" message="tns:listarComprobanteNumeroSerieResponse" />
     </operation>
-    <operation name="listarComprobanteRangoTotal">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTotalRequest" message="tns:listarComprobanteRangoTotal" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Comprobante/listarComprobanteRangoTotalResponse" message="tns:listarComprobanteRangoTotalResponse" />
-    </operation>
   </portType>
   <binding name="ComprobantePortBinding" type="tns:Comprobante">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarTodosComprobante">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="listarComprobantePorTipo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerPorIdComprobante">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertarComprobante">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarComprobantePedido">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -193,7 +157,43 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="insertarComprobante">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdComprobante">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosComprobante">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="modificarComprobante">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarComprobantePedido">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -212,6 +212,15 @@
       </output>
     </operation>
     <operation name="listarComprobanteUsuarioCreacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarComprobanteRangoTotal">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -239,15 +248,6 @@
       </output>
     </operation>
     <operation name="listarComprobanteNumeroSerie">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarComprobanteRangoTotal">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

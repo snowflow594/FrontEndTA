@@ -1,0 +1,312 @@
+﻿html, body, form {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+}
+
+.gfg {
+    height: 50px;
+    width: 50px;
+}
+
+.mynav {
+    color: #fff;
+}
+
+    .mynav li a {
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        border-radius: 5px;
+        padding: 8px 5px;
+    }
+
+        .mynav li a.active {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .mynav li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .mynav li a i {
+            width: 25px;
+            text-align: center;
+        }
+
+.notification-badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    float: right;
+    color: #222;
+    font-size: 14px;
+    padding: 0px 8px;
+    border-radius: 2px;
+}
+
+.table table tbody tr td a,
+.table table tbody tr td span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.table table > tbody > tr > td > span {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.table table > tbody > tr > td:first-child > a,
+.table table > tbody > tr > td:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.table table > tbody > tr > td:last-child > a,
+.table table > tbody > tr > td:last-child > span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.table table > tbody > tr > td > a:hover,
+.table table > tbody > tr > td > span:hover,
+.table table > tbody > tr > td > a:focus,
+.table table > tbody > tr > td > span:focus {
+    z-index: 2;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+nav ul.nav {
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+    nav ul.nav .nav-item {
+        margin-bottom: 1rem;
+    }
+
+    nav ul.nav .nav-link {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        transition: background 0.2s;
+    }
+
+        nav ul.nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            text-decoration: none;
+        }
+
+.content-container {
+    padding: 24px;
+    background-color: white;
+}
+
+.page-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 24px;
+}
+
+.date-range-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.date-range-label {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.date-input {
+    padding: 8px 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.date-separator {
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.products-table {
+    width: 100%;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+    .products-table th {
+        background-color: #F9FAFB;
+        padding: 12px 8px;
+        text-align: center;
+        font-weight: 500;
+        border-right: 1px solid #D1D5DB;
+        border-bottom: 1px solid #D1D5DB;
+    }
+
+        .products-table th:last-child {
+            border-right: none;
+        }
+
+    .products-table td {
+        padding: 12px 8px;
+        border-right: 1px solid #D1D5DB;
+        border-bottom: 1px solid #D1D5DB;
+        vertical-align: middle;
+    }
+
+        .products-table td:last-child {
+            border-right: none;
+        }
+
+    .products-table tr:hover {
+        background-color: #F9FAFB;
+    }
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.generate-report-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.generate-report-btn {
+    padding: 8px 24px;
+    background-color: white;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+    .generate-report-btn:hover {
+        background-color: #F9FAFB;
+    }
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pagination-btn {
+    padding: 6px 12px;
+    border: 1px solid #D1D5DB;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    min-width: 32px;
+    text-align: center;
+}
+
+    .pagination-btn:hover {
+        background-color: #F3F4F6;
+    }
+
+    .pagination-btn.active {
+        background-color: #3B82F6;
+        color: white;
+        border-color: #3B82F6;
+    }
+
+    .pagination-btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+.gridview-centered {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #D1D5DB;
+}
+
+    .gridview-centered th,
+    .gridview-centered td {
+        border: 1px solid #D1D5DB;
+    }
+
+.filtros-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    gap: 24px;
+}
+
+.filtros-izquierda {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    max-width: 75%;
+}
+
+    .filtros-izquierda .filtro-item {
+        display: flex;
+        align-items: center;
+        min-width: 220px;
+        margin-bottom: 8px;
+    }
+
+.filtros-derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 160px;
+}
+
+@media (max-width: 900px) {
+    .filtros-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filtros-izquierda {
+        max-width: 100%;
+    }
+
+    .filtros-derecha {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}

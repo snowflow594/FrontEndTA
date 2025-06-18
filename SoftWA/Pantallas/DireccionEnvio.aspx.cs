@@ -13,7 +13,7 @@ namespace SoftWA.Pantallas
     public partial class DireccionEnvio : System.Web.UI.Page
     {
         private ItemCarritoClient itemCarritoWSClient = new ItemCarritoClient();
-        private SoftWA.DireccionWSClient.DireccionClient direccionWSClient = new DireccionWSClient.DireccionClient();
+        private SoftWA.ServiciosWSClient.DireccionClient direccionWSClient = new ServiciosWSClient.DireccionClient();
         private CarritoClient carritoWSClient = new CarritoClient();
         private PersonaClient personaWSClient = new PersonaClient();
 
@@ -61,14 +61,14 @@ namespace SoftWA.Pantallas
                 int idPersona = Convert.ToInt32(Session["idPersona"]);
                 int idUsuario = Convert.ToInt32(Session["idUsuario"]);
 
-                var nuevaDireccion = new DireccionWSClient.direccionDTO
+                var nuevaDireccion = new ServiciosWSClient.direccionDTO1
                 {
-                    personaId = new DireccionWSClient.personaDTO { id = idPersona },
+                    personaId = new ServiciosWSClient.personaDTO1 { id = idPersona },
                     alias = txtAlias.Text,
                     direccion = txtDireccion.Text,
                     ciudad = txtCiudad.Text,
                     referencia = txtReferencia.Text,
-                    usuarioCreacion = new DireccionWSClient.usuarioDTO { id = idUsuario }
+                    usuarioCreacion = new ServiciosWSClient.usuarioDTO1 { id = idUsuario }
                 };
 
                 int i = direccionWSClient.insertarDireccion(nuevaDireccion); //aquí hay un error, creo que se duplican las clases o algo así porque sale direccionDTO y direccionDTO1 con el servicio completo agrupado

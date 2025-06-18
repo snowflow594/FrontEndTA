@@ -93,16 +93,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:naturalDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="eliminarNatural">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="natural" type="tns:naturalDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="eliminarNaturalResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarPorGeneroNatural">
     <xs:sequence>
       <xs:element minOccurs="0" name="genero" type="xs:string" />
@@ -113,9 +103,19 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:naturalDTO" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="eliminarNatural">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="natural" type="tns:naturalDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarNaturalResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="obtenerPorIdNatural">
     <xs:sequence>
-      <xs:element minOccurs="0" name="naturalId" type="xs:int" />
+      <xs:element minOccurs="0" name="natural_IdPersona" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="obtenerPorIdNaturalResponse">

@@ -5,17 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/ItemCarrito?xsd=1" namespace="http://pedido.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarTodosItemCarrito">
-    <part name="parameters" element="tns:listarTodosItemCarrito" />
+  <message name="listarItemCarritoInactivo">
+    <part name="parameters" element="tns:listarItemCarritoInactivo" />
   </message>
-  <message name="listarTodosItemCarritoResponse">
-    <part name="parameters" element="tns:listarTodosItemCarritoResponse" />
-  </message>
-  <message name="obtenerPorIdItemCarrito">
-    <part name="parameters" element="tns:obtenerPorIdItemCarrito" />
-  </message>
-  <message name="obtenerPorIdItemCarritoResponse">
-    <part name="parameters" element="tns:obtenerPorIdItemCarritoResponse" />
+  <message name="listarItemCarritoInactivoResponse">
+    <part name="parameters" element="tns:listarItemCarritoInactivoResponse" />
   </message>
   <message name="insertarItemCarrito">
     <part name="parameters" element="tns:insertarItemCarrito" />
@@ -23,23 +17,29 @@
   <message name="insertarItemCarritoResponse">
     <part name="parameters" element="tns:insertarItemCarritoResponse" />
   </message>
+  <message name="listarTodosItemCarrito">
+    <part name="parameters" element="tns:listarTodosItemCarrito" />
+  </message>
+  <message name="listarTodosItemCarritoResponse">
+    <part name="parameters" element="tns:listarTodosItemCarritoResponse" />
+  </message>
   <message name="modificarItemCarrito">
     <part name="parameters" element="tns:modificarItemCarrito" />
   </message>
   <message name="modificarItemCarritoResponse">
     <part name="parameters" element="tns:modificarItemCarritoResponse" />
   </message>
-  <message name="listarItemCarritoInactivo">
-    <part name="parameters" element="tns:listarItemCarritoInactivo" />
-  </message>
-  <message name="listarItemCarritoInactivoResponse">
-    <part name="parameters" element="tns:listarItemCarritoInactivoResponse" />
-  </message>
   <message name="eliminarItemCarrito">
     <part name="parameters" element="tns:eliminarItemCarrito" />
   </message>
   <message name="eliminarItemCarritoResponse">
     <part name="parameters" element="tns:eliminarItemCarritoResponse" />
+  </message>
+  <message name="obtenerPorIdItemCarrito">
+    <part name="parameters" element="tns:obtenerPorIdItemCarrito" />
+  </message>
+  <message name="obtenerPorIdItemCarritoResponse">
+    <part name="parameters" element="tns:obtenerPorIdItemCarritoResponse" />
   </message>
   <message name="listarItemCarritoPorCarritoYProducto">
     <part name="parameters" element="tns:listarItemCarritoPorCarritoYProducto" />
@@ -53,12 +53,6 @@
   <message name="listarItemCarritoPorProductoResponse">
     <part name="parameters" element="tns:listarItemCarritoPorProductoResponse" />
   </message>
-  <message name="listarItemCarritoCantidadMinima">
-    <part name="parameters" element="tns:listarItemCarritoCantidadMinima" />
-  </message>
-  <message name="listarItemCarritoCantidadMinimaResponse">
-    <part name="parameters" element="tns:listarItemCarritoCantidadMinimaResponse" />
-  </message>
   <message name="listarItemCarritoRangoCantidad">
     <part name="parameters" element="tns:listarItemCarritoRangoCantidad" />
   </message>
@@ -71,6 +65,12 @@
   <message name="listarItemCarritoRangoSubTotalResponse">
     <part name="parameters" element="tns:listarItemCarritoRangoSubTotalResponse" />
   </message>
+  <message name="listarItemCarritoCantidadMinima">
+    <part name="parameters" element="tns:listarItemCarritoCantidadMinima" />
+  </message>
+  <message name="listarItemCarritoCantidadMinimaResponse">
+    <part name="parameters" element="tns:listarItemCarritoCantidadMinimaResponse" />
+  </message>
   <message name="listarItemCarritoFechaCreacion">
     <part name="parameters" element="tns:listarItemCarritoFechaCreacion" />
   </message>
@@ -78,29 +78,29 @@
     <part name="parameters" element="tns:listarItemCarritoFechaCreacionResponse" />
   </message>
   <portType name="ItemCarrito">
-    <operation name="listarTodosItemCarrito">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarTodosItemCarritoRequest" message="tns:listarTodosItemCarrito" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarTodosItemCarritoResponse" message="tns:listarTodosItemCarritoResponse" />
-    </operation>
-    <operation name="obtenerPorIdItemCarrito">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRequest" message="tns:obtenerPorIdItemCarrito" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoResponse" message="tns:obtenerPorIdItemCarritoResponse" />
+    <operation name="listarItemCarritoInactivo">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivoRequest" message="tns:listarItemCarritoInactivo" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivoResponse" message="tns:listarItemCarritoInactivoResponse" />
     </operation>
     <operation name="insertarItemCarrito">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoRequest" message="tns:insertarItemCarrito" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/insertarItemCarritoResponse" message="tns:insertarItemCarritoResponse" />
     </operation>
+    <operation name="listarTodosItemCarrito">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarTodosItemCarritoRequest" message="tns:listarTodosItemCarrito" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarTodosItemCarritoResponse" message="tns:listarTodosItemCarritoResponse" />
+    </operation>
     <operation name="modificarItemCarrito">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/modificarItemCarritoRequest" message="tns:modificarItemCarrito" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/modificarItemCarritoResponse" message="tns:modificarItemCarritoResponse" />
     </operation>
-    <operation name="listarItemCarritoInactivo">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivoRequest" message="tns:listarItemCarritoInactivo" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoInactivoResponse" message="tns:listarItemCarritoInactivoResponse" />
-    </operation>
     <operation name="eliminarItemCarrito">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/eliminarItemCarritoRequest" message="tns:eliminarItemCarrito" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/eliminarItemCarritoResponse" message="tns:eliminarItemCarritoResponse" />
+    </operation>
+    <operation name="obtenerPorIdItemCarrito">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoRequest" message="tns:obtenerPorIdItemCarrito" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/obtenerPorIdItemCarritoResponse" message="tns:obtenerPorIdItemCarritoResponse" />
     </operation>
     <operation name="listarItemCarritoPorCarritoYProducto">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorCarritoYProductoRequest" message="tns:listarItemCarritoPorCarritoYProducto" />
@@ -110,10 +110,6 @@
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProductoRequest" message="tns:listarItemCarritoPorProducto" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoPorProductoResponse" message="tns:listarItemCarritoPorProductoResponse" />
     </operation>
-    <operation name="listarItemCarritoCantidadMinima">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidadMinimaRequest" message="tns:listarItemCarritoCantidadMinima" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidadMinimaResponse" message="tns:listarItemCarritoCantidadMinimaResponse" />
-    </operation>
     <operation name="listarItemCarritoRangoCantidad">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCantidadRequest" message="tns:listarItemCarritoRangoCantidad" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoCantidadResponse" message="tns:listarItemCarritoRangoCantidadResponse" />
@@ -122,6 +118,10 @@
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSubTotalRequest" message="tns:listarItemCarritoRangoSubTotal" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoRangoSubTotalResponse" message="tns:listarItemCarritoRangoSubTotalResponse" />
     </operation>
+    <operation name="listarItemCarritoCantidadMinima">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidadMinimaRequest" message="tns:listarItemCarritoCantidadMinima" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoCantidadMinimaResponse" message="tns:listarItemCarritoCantidadMinimaResponse" />
+    </operation>
     <operation name="listarItemCarritoFechaCreacion">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCreacionRequest" message="tns:listarItemCarritoFechaCreacion" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/ItemCarrito/listarItemCarritoFechaCreacionResponse" message="tns:listarItemCarritoFechaCreacionResponse" />
@@ -129,16 +129,7 @@
   </portType>
   <binding name="ItemCarritoPortBinding" type="tns:ItemCarrito">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarTodosItemCarrito">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerPorIdItemCarrito">
+    <operation name="listarItemCarritoInactivo">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -156,6 +147,15 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="listarTodosItemCarrito">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="modificarItemCarrito">
       <soap:operation soapAction="" />
       <input>
@@ -165,7 +165,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarItemCarritoInactivo">
+    <operation name="eliminarItemCarrito">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -174,7 +174,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarItemCarrito">
+    <operation name="obtenerPorIdItemCarrito">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -201,15 +201,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarItemCarritoCantidadMinima">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="listarItemCarritoRangoCantidad">
       <soap:operation soapAction="" />
       <input>
@@ -220,6 +211,15 @@
       </output>
     </operation>
     <operation name="listarItemCarritoRangoSubTotal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarItemCarritoCantidadMinima">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

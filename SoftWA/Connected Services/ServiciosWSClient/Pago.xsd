@@ -175,18 +175,18 @@
       <xs:element minOccurs="0" name="usuarioCreacion" type="tns:usuarioDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarTodosPago">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarTodosPagoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarPagoInactivo">
     <xs:sequence />
   </xs:complexType>
   <xs:complexType name="listarPagoInactivoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarTodosPago">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosPagoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
     </xs:sequence>
@@ -274,16 +274,6 @@
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="obtenerPorIdPago">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="idPago" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="obtenerPorIdPagoResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:pagoDTO" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarPagoPorUsuarioCreacion">
     <xs:sequence>
       <xs:element name="usuarioId" type="xs:int" />
@@ -292,6 +282,16 @@
   <xs:complexType name="listarPagoPorUsuarioCreacionResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pagoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPago" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPorIdPagoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:pagoDTO" />
     </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="tipoMedida">

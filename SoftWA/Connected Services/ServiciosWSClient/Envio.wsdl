@@ -5,6 +5,42 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Envio?xsd=1" namespace="http://pedido.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
+  <message name="listarEnvioRangoFechaCreacion">
+    <part name="parameters" element="tns:listarEnvioRangoFechaCreacion" />
+  </message>
+  <message name="listarEnvioRangoFechaCreacionResponse">
+    <part name="parameters" element="tns:listarEnvioRangoFechaCreacionResponse" />
+  </message>
+  <message name="listarEnvioPedido">
+    <part name="parameters" element="tns:listarEnvioPedido" />
+  </message>
+  <message name="listarEnvioPedidoResponse">
+    <part name="parameters" element="tns:listarEnvioPedidoResponse" />
+  </message>
+  <message name="insertarEnvio">
+    <part name="parameters" element="tns:insertarEnvio" />
+  </message>
+  <message name="insertarEnvioResponse">
+    <part name="parameters" element="tns:insertarEnvioResponse" />
+  </message>
+  <message name="obtenerPorIdEnvio">
+    <part name="parameters" element="tns:obtenerPorIdEnvio" />
+  </message>
+  <message name="obtenerPorIdEnvioResponse">
+    <part name="parameters" element="tns:obtenerPorIdEnvioResponse" />
+  </message>
+  <message name="listarTodosEnvio">
+    <part name="parameters" element="tns:listarTodosEnvio" />
+  </message>
+  <message name="listarTodosEnvioResponse">
+    <part name="parameters" element="tns:listarTodosEnvioResponse" />
+  </message>
+  <message name="eliminarEnvio">
+    <part name="parameters" element="tns:eliminarEnvio" />
+  </message>
+  <message name="eliminarEnvioResponse">
+    <part name="parameters" element="tns:eliminarEnvioResponse" />
+  </message>
   <message name="modificarEnvio">
     <part name="parameters" element="tns:modificarEnvio" />
   </message>
@@ -17,47 +53,11 @@
   <message name="listarEnvioEstadoResponse">
     <part name="parameters" element="tns:listarEnvioEstadoResponse" />
   </message>
-  <message name="listarTodosEnvio">
-    <part name="parameters" element="tns:listarTodosEnvio" />
-  </message>
-  <message name="listarTodosEnvioResponse">
-    <part name="parameters" element="tns:listarTodosEnvioResponse" />
-  </message>
-  <message name="listarEnvioPedido">
-    <part name="parameters" element="tns:listarEnvioPedido" />
-  </message>
-  <message name="listarEnvioPedidoResponse">
-    <part name="parameters" element="tns:listarEnvioPedidoResponse" />
-  </message>
-  <message name="obtenerPorIdEnvio">
-    <part name="parameters" element="tns:obtenerPorIdEnvio" />
-  </message>
-  <message name="obtenerPorIdEnvioResponse">
-    <part name="parameters" element="tns:obtenerPorIdEnvioResponse" />
-  </message>
-  <message name="insertarEnvio">
-    <part name="parameters" element="tns:insertarEnvio" />
-  </message>
-  <message name="insertarEnvioResponse">
-    <part name="parameters" element="tns:insertarEnvioResponse" />
-  </message>
-  <message name="eliminarEnvio">
-    <part name="parameters" element="tns:eliminarEnvio" />
-  </message>
-  <message name="eliminarEnvioResponse">
-    <part name="parameters" element="tns:eliminarEnvioResponse" />
-  </message>
   <message name="listarEnvioInactivos">
     <part name="parameters" element="tns:listarEnvioInactivos" />
   </message>
   <message name="listarEnvioInactivosResponse">
     <part name="parameters" element="tns:listarEnvioInactivosResponse" />
-  </message>
-  <message name="listarEnvioRangoFecha">
-    <part name="parameters" element="tns:listarEnvioRangoFecha" />
-  </message>
-  <message name="listarEnvioRangoFechaResponse">
-    <part name="parameters" element="tns:listarEnvioRangoFechaResponse" />
   </message>
   <message name="listarEnvioDireccion">
     <part name="parameters" element="tns:listarEnvioDireccion" />
@@ -65,11 +65,23 @@
   <message name="listarEnvioDireccionResponse">
     <part name="parameters" element="tns:listarEnvioDireccionResponse" />
   </message>
+  <message name="listarEnvioPendientes">
+    <part name="parameters" element="tns:listarEnvioPendientes" />
+  </message>
+  <message name="listarEnvioPendientesResponse">
+    <part name="parameters" element="tns:listarEnvioPendientesResponse" />
+  </message>
   <message name="listarEnvioUsuarioCreacion">
     <part name="parameters" element="tns:listarEnvioUsuarioCreacion" />
   </message>
   <message name="listarEnvioUsuarioCreacionResponse">
     <part name="parameters" element="tns:listarEnvioUsuarioCreacionResponse" />
+  </message>
+  <message name="listarEnvioRangoFecha">
+    <part name="parameters" element="tns:listarEnvioRangoFecha" />
+  </message>
+  <message name="listarEnvioRangoFechaResponse">
+    <part name="parameters" element="tns:listarEnvioRangoFechaResponse" />
   </message>
   <message name="listarEnvioEntregados">
     <part name="parameters" element="tns:listarEnvioEntregados" />
@@ -77,19 +89,31 @@
   <message name="listarEnvioEntregadosResponse">
     <part name="parameters" element="tns:listarEnvioEntregadosResponse" />
   </message>
-  <message name="listarEnvioPendientes">
-    <part name="parameters" element="tns:listarEnvioPendientes" />
-  </message>
-  <message name="listarEnvioPendientesResponse">
-    <part name="parameters" element="tns:listarEnvioPendientesResponse" />
-  </message>
-  <message name="listarEnvioRangoFechaCreacion">
-    <part name="parameters" element="tns:listarEnvioRangoFechaCreacion" />
-  </message>
-  <message name="listarEnvioRangoFechaCreacionResponse">
-    <part name="parameters" element="tns:listarEnvioRangoFechaCreacionResponse" />
-  </message>
   <portType name="Envio">
+    <operation name="listarEnvioRangoFechaCreacion">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRequest" message="tns:listarEnvioRangoFechaCreacion" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionResponse" message="tns:listarEnvioRangoFechaCreacionResponse" />
+    </operation>
+    <operation name="listarEnvioPedido">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoRequest" message="tns:listarEnvioPedido" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoResponse" message="tns:listarEnvioPedidoResponse" />
+    </operation>
+    <operation name="insertarEnvio">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioRequest" message="tns:insertarEnvio" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioResponse" message="tns:insertarEnvioResponse" />
+    </operation>
+    <operation name="obtenerPorIdEnvio">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioRequest" message="tns:obtenerPorIdEnvio" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioResponse" message="tns:obtenerPorIdEnvioResponse" />
+    </operation>
+    <operation name="listarTodosEnvio">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioRequest" message="tns:listarTodosEnvio" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioResponse" message="tns:listarTodosEnvioResponse" />
+    </operation>
+    <operation name="eliminarEnvio">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/eliminarEnvioRequest" message="tns:eliminarEnvio" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/eliminarEnvioResponse" message="tns:eliminarEnvioResponse" />
+    </operation>
     <operation name="modificarEnvio">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioRequest" message="tns:modificarEnvio" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/modificarEnvioResponse" message="tns:modificarEnvioResponse" />
@@ -98,57 +122,87 @@
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEstadoRequest" message="tns:listarEnvioEstado" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEstadoResponse" message="tns:listarEnvioEstadoResponse" />
     </operation>
-    <operation name="listarTodosEnvio">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioRequest" message="tns:listarTodosEnvio" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarTodosEnvioResponse" message="tns:listarTodosEnvioResponse" />
-    </operation>
-    <operation name="listarEnvioPedido">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoRequest" message="tns:listarEnvioPedido" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPedidoResponse" message="tns:listarEnvioPedidoResponse" />
-    </operation>
-    <operation name="obtenerPorIdEnvio">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioRequest" message="tns:obtenerPorIdEnvio" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/obtenerPorIdEnvioResponse" message="tns:obtenerPorIdEnvioResponse" />
-    </operation>
-    <operation name="insertarEnvio">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioRequest" message="tns:insertarEnvio" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/insertarEnvioResponse" message="tns:insertarEnvioResponse" />
-    </operation>
-    <operation name="eliminarEnvio">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/eliminarEnvioRequest" message="tns:eliminarEnvio" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/eliminarEnvioResponse" message="tns:eliminarEnvioResponse" />
-    </operation>
     <operation name="listarEnvioInactivos">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosRequest" message="tns:listarEnvioInactivos" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioInactivosResponse" message="tns:listarEnvioInactivosResponse" />
-    </operation>
-    <operation name="listarEnvioRangoFecha">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaRequest" message="tns:listarEnvioRangoFecha" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaResponse" message="tns:listarEnvioRangoFechaResponse" />
     </operation>
     <operation name="listarEnvioDireccion">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioDireccionRequest" message="tns:listarEnvioDireccion" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioDireccionResponse" message="tns:listarEnvioDireccionResponse" />
     </operation>
+    <operation name="listarEnvioPendientes">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPendientesRequest" message="tns:listarEnvioPendientes" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPendientesResponse" message="tns:listarEnvioPendientesResponse" />
+    </operation>
     <operation name="listarEnvioUsuarioCreacion">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioUsuarioCreacionRequest" message="tns:listarEnvioUsuarioCreacion" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioUsuarioCreacionResponse" message="tns:listarEnvioUsuarioCreacionResponse" />
+    </operation>
+    <operation name="listarEnvioRangoFecha">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaRequest" message="tns:listarEnvioRangoFecha" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaResponse" message="tns:listarEnvioRangoFechaResponse" />
     </operation>
     <operation name="listarEnvioEntregados">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosRequest" message="tns:listarEnvioEntregados" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioEntregadosResponse" message="tns:listarEnvioEntregadosResponse" />
     </operation>
-    <operation name="listarEnvioPendientes">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPendientesRequest" message="tns:listarEnvioPendientes" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioPendientesResponse" message="tns:listarEnvioPendientesResponse" />
-    </operation>
-    <operation name="listarEnvioRangoFechaCreacion">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionRequest" message="tns:listarEnvioRangoFechaCreacion" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Envio/listarEnvioRangoFechaCreacionResponse" message="tns:listarEnvioRangoFechaCreacionResponse" />
-    </operation>
   </portType>
   <binding name="EnvioPortBinding" type="tns:Envio">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarEnvioRangoFechaCreacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarEnvioPedido">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarEnvio">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdEnvio">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosEnvio">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarEnvio">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="modificarEnvio">
       <soap:operation soapAction="" />
       <input>
@@ -167,61 +221,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarTodosEnvio">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarEnvioPedido">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerPorIdEnvio">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertarEnvio">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarEnvio">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="listarEnvioInactivos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarEnvioRangoFecha">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -239,24 +239,6 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarEnvioUsuarioCreacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarEnvioEntregados">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="listarEnvioPendientes">
       <soap:operation soapAction="" />
       <input>
@@ -266,7 +248,25 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarEnvioRangoFechaCreacion">
+    <operation name="listarEnvioUsuarioCreacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarEnvioRangoFecha">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarEnvioEntregados">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
