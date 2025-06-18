@@ -301,7 +301,7 @@
                     </div>
 
                     <div class="text-center mt-3">
-                        <asp:HyperLink ID="hlVuelta" runat="server" NavigateUrl="~/Inicio.aspx"
+                        <asp:HyperLink ID="hlVuelta" runat="server" NavigateUrl="~/Pantallas/Inicio.aspx"
                             CssClass="btn btn-outline-secondary">Regresar</asp:HyperLink>
                     </div>
 

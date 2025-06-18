@@ -148,7 +148,7 @@
                   Text="Restablecer contraseña" OnClick="btnConfirmRec_Click" />
               </div>
               <div class="text-center mt-3">
-                <asp:HyperLink NavigateUrl="~/Autentificacion.aspx" runat="server"
+                <asp:HyperLink NavigateUrl="Autentificacion.aspx" runat="server"
                   CssClass="small text-decoration-none">
                   Volver al inicio
                 </asp:HyperLink>
