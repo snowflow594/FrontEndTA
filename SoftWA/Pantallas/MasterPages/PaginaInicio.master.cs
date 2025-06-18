@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SoftWA.Pantallas.MasterPages
 {
-    public partial class PaginaInicio : System.Web.UI.Page
+    public partial class PaginaInicio : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

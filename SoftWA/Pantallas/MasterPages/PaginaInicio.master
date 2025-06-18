@@ -57,7 +57,7 @@
             <a href="RegistrarUsuario.aspx"><i class="fas fa-user-plus"></i> Regístrate</a>
           <% } else {
                // casteo al DTO que guardaste en sesión
-               var user = (SoftProgWeb.ServiciosWS.usuarioDTO1) Session["UsuarioAutenticado"];
+               var user = (SoftWA.ServiciosWSClient.usuarioDTO1) Session["UsuarioAutenticado"];
           %>
             <span>Hola, bienvenido a la página de compras  <strong><%= user.email %></strong></span>
             <asp:LinkButton ID="lnkLogout" runat="server" CssClass="text-decoration-none" OnClick="Logout_Click">

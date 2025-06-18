@@ -14,6 +14,7 @@ namespace SoftWA.Pantallas
         private JuridicaClient juridicaBO;
         private NaturalClient naturalBO;
         private AdministradorClient administradorBO;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             // Verificar autenticación
@@ -22,6 +23,7 @@ namespace SoftWA.Pantallas
                 Response.Redirect("Autentificacion.aspx");
                 return;
             }
+
 
             if (!IsPostBack)
             {
