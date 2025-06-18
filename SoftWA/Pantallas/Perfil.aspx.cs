@@ -97,11 +97,11 @@ namespace SoftWA.Pantallas
             var user = (usuarioDTO1)Session["UsuarioAutenticado"];
             pnlNatural.Visible = user.rol.id == 3;
             pnlJuridica.Visible = user.rol.id == 2;
-
+            int result = 0;
             // Actualiza extras según rol
             if (pnlNatural.Visible)
             {
-                naturalBO = new NaturalClient();
+
                 naturalDTO nat = new naturalDTO();
                 try
                 {
@@ -112,8 +112,10 @@ namespace SoftWA.Pantallas
                     nat.dni = int.Parse(txtDNI.Text);
                     nat.fechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text);
                     nat.genero = ddlGenero.SelectedValue;
-                    var perNatural = new NaturalClient();
-                    perNatural.modificarNatural(nat);
+                    nat.usuarioActualizacion = user;
+                    naturalBO = new NaturalClient();
+                    naturalBO.modificarNatural(nat);
+                    Response.Redirect("Inicio.aspx");
                 }
                 catch
                 {
@@ -122,41 +124,60 @@ namespace SoftWA.Pantallas
 
 
             }
-            if (pnlJuridica.Visible)
+            if (user.rol.id == 2)
             {
                 juridicaBO = new JuridicaClient();
                 juridicaDTO jur = new juridicaDTO();
-
+                //jur = null;
                 try
                 {
                     jur = juridicaBO.obtenerPorIdJuridica(user.id);
-
-                    jur.ruc = txtRUC.Text;
-                    jur.razonSocial = txtRazonSocial.Text;
-                    jur.representanteLegal = txtRepresentante.Text;
-                    jur.usuario = user;
-                    jur.id_juridica = user.id;
-                    jur.id = user.id;
-
-                    juridicaBO = new JuridicaClient();
-                    juridicaBO.modificarJuridica(jur);
+                    juridicaDTO juridicoPe = new juridicaDTO();
+                    usuarioDTO1 usuario12 = new usuarioDTO1();
+                    usuario12 = user;
+                    juridicoPe.id_juridica = jur.id;
+                    juridicoPe.ruc = txtRUC.Text;
+                    juridicoPe.razonSocial = txtRazonSocial.Text;
+                    juridicoPe.representanteLegal = txtRepresentante.Text;
+                    juridicoPe.apellidos = txtApellidos.Text;
+                    juridicoPe.nombres = txtNombres.Text;
+                    juridicoPe.telefono = txtTelefono.Text;
+                    juridicoPe.usuario = usuario12;
+                    juridicoPe.usuarioActualizacion = usuario12;
+                    juridicoPe.activo = 1;
+                    juridicoPe.id = jur.id;
+                    result = juridicaBO.modificarJuridica(juridicoPe);
                     Response.Redirect("Inicio.aspx");
 
 
                 }
                 catch
                 {
+                    result = 0;
+                    jur = null;
                     lblMessage.Text = "Datos Juridicos no actualizados .";
                 }
+
+
             }
 
 
             //Session["UsuarioAutenticado"] = user;
+            if (result != 0)
+            {
+                lblMessage.Text = "Datos actualizados correctamente de modificar.";
+                lblMessage.CssClass = "mt-3 text-success";
+                lblMessage.Visible = true;
+            }
+            else
+            {
+                lblMessage.Text = "Datos No se actualizaron de modificar.";
+                lblMessage.CssClass = "mt-3 text-success";
+                lblMessage.Visible = true;
+            }
 
-            lblMessage.Text = "Datos actualizados correctamente.";
-            lblMessage.CssClass = "mt-3 text-success";
-            lblMessage.Visible = true;
-            //Response.Redirect("Inicio.aspx");
+
+            Response.Redirect("Inicio.aspx");
 
         }
 
