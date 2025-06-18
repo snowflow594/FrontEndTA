@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pantallas/MasterPages/PaginaInicio.master" AutoEventWireup="true" CodeBehind="Perfil.aspx.cs" Inherits="SoftWA.Pantallas.Perfil" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pantallas/MasterPages/PaginaMaster.Master" AutoEventWireup="true" CodeBehind="Perfil.aspx.cs" Inherits="SoftWA.Pantallas.Perfil" %>
 <asp:Content ID="ContentTitle" ContentPlaceHolderID="Title" runat="server">
   Mi Perfil
 </asp:Content>
