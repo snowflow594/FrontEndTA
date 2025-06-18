@@ -126,5 +126,11 @@ namespace SoftWA.Pantallas.MasterPages
             }
         }
 
+        protected void linkLogout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("Inicio.aspx");
+        }
+
     }
 }
