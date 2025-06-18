@@ -33,7 +33,7 @@
     <!-- Sección de categorías rápidas -->
     <section class="py-5">
         <div class="container">
-            <h2 class="mb-4 text-center">Categorías Destacadas</h2>
+            <h2 class="mb-4 text-center">Productos Destacados</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                 <asp:Repeater ID="rptCategorias" runat="server">
                     <ItemTemplate>
