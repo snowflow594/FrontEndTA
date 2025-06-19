@@ -120,12 +120,19 @@ namespace SoftWA.Pantallas
                         };
 
                         itemCarritoWS.eliminarItemCarrito(eliminarItem);
-                        ScriptManager.RegisterStartupScript(this, GetType(), "eliminado", "alert('Producto eliminado del carrito.');", true);
                     }
                 }
                 else if (e.CommandName == "Eliminar")
                 {
                     // Eliminar directamente
+                    var cambiarCantidad = new itemCarritoDTO
+                    {
+                        idItemCarrito = item.idItemCarrito,
+                        cantidad = 1,
+                        subtotal = productoCompleto.precio,
+                        usuarioActualizacion = new usuarioDTO { id = 4 }
+                    };
+                    itemCarritoWS.modificarItemCarrito(cambiarCantidad);
                     var eliminarCompleto = new itemCarritoDTO
                     {
                         idItemCarrito = item.idItemCarrito,

@@ -5,23 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Juridica?xsd=1" namespace="http://usuario.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarTodosJuridica">
-    <part name="parameters" element="tns:listarTodosJuridica" />
+  <message name="eliminarJuridica">
+    <part name="parameters" element="tns:eliminarJuridica" />
   </message>
-  <message name="listarTodosJuridicaResponse">
-    <part name="parameters" element="tns:listarTodosJuridicaResponse" />
-  </message>
-  <message name="obtenerPorRucJuridica">
-    <part name="parameters" element="tns:obtenerPorRucJuridica" />
-  </message>
-  <message name="obtenerPorRucJuridicaResponse">
-    <part name="parameters" element="tns:obtenerPorRucJuridicaResponse" />
-  </message>
-  <message name="obtenerPorIdJuridica">
-    <part name="parameters" element="tns:obtenerPorIdJuridica" />
-  </message>
-  <message name="obtenerPorIdJuridicaResponse">
-    <part name="parameters" element="tns:obtenerPorIdJuridicaResponse" />
+  <message name="eliminarJuridicaResponse">
+    <part name="parameters" element="tns:eliminarJuridicaResponse" />
   </message>
   <message name="insertarJuridica">
     <part name="parameters" element="tns:insertarJuridica" />
@@ -35,24 +23,28 @@
   <message name="modificarJuridicaResponse">
     <part name="parameters" element="tns:modificarJuridicaResponse" />
   </message>
-  <message name="eliminarJuridica">
-    <part name="parameters" element="tns:eliminarJuridica" />
+  <message name="obtenerPorRucJuridica">
+    <part name="parameters" element="tns:obtenerPorRucJuridica" />
   </message>
-  <message name="eliminarJuridicaResponse">
-    <part name="parameters" element="tns:eliminarJuridicaResponse" />
+  <message name="obtenerPorRucJuridicaResponse">
+    <part name="parameters" element="tns:obtenerPorRucJuridicaResponse" />
+  </message>
+  <message name="obtenerPorIdJuridica">
+    <part name="parameters" element="tns:obtenerPorIdJuridica" />
+  </message>
+  <message name="obtenerPorIdJuridicaResponse">
+    <part name="parameters" element="tns:obtenerPorIdJuridicaResponse" />
+  </message>
+  <message name="listarTodosJuridica">
+    <part name="parameters" element="tns:listarTodosJuridica" />
+  </message>
+  <message name="listarTodosJuridicaResponse">
+    <part name="parameters" element="tns:listarTodosJuridicaResponse" />
   </message>
   <portType name="Juridica">
-    <operation name="listarTodosJuridica">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaRequest" message="tns:listarTodosJuridica" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaResponse" message="tns:listarTodosJuridicaResponse" />
-    </operation>
-    <operation name="obtenerPorRucJuridica">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorRucJuridicaRequest" message="tns:obtenerPorRucJuridica" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorRucJuridicaResponse" message="tns:obtenerPorRucJuridicaResponse" />
-    </operation>
-    <operation name="obtenerPorIdJuridica">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorIdJuridicaRequest" message="tns:obtenerPorIdJuridica" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorIdJuridicaResponse" message="tns:obtenerPorIdJuridicaResponse" />
+    <operation name="eliminarJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/eliminarJuridicaRequest" message="tns:eliminarJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/eliminarJuridicaResponse" message="tns:eliminarJuridicaResponse" />
     </operation>
     <operation name="insertarJuridica">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/insertarJuridicaRequest" message="tns:insertarJuridica" />
@@ -62,32 +54,22 @@
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaRequest" message="tns:modificarJuridica" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/modificarJuridicaResponse" message="tns:modificarJuridicaResponse" />
     </operation>
-    <operation name="eliminarJuridica">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/eliminarJuridicaRequest" message="tns:eliminarJuridica" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/eliminarJuridicaResponse" message="tns:eliminarJuridicaResponse" />
+    <operation name="obtenerPorRucJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorRucJuridicaRequest" message="tns:obtenerPorRucJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorRucJuridicaResponse" message="tns:obtenerPorRucJuridicaResponse" />
+    </operation>
+    <operation name="obtenerPorIdJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorIdJuridicaRequest" message="tns:obtenerPorIdJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/obtenerPorIdJuridicaResponse" message="tns:obtenerPorIdJuridicaResponse" />
+    </operation>
+    <operation name="listarTodosJuridica">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaRequest" message="tns:listarTodosJuridica" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Juridica/listarTodosJuridicaResponse" message="tns:listarTodosJuridicaResponse" />
     </operation>
   </portType>
   <binding name="JuridicaPortBinding" type="tns:Juridica">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarTodosJuridica">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerPorRucJuridica">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerPorIdJuridica">
+    <operation name="eliminarJuridica">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -114,7 +96,25 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarJuridica">
+    <operation name="obtenerPorRucJuridica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPorIdJuridica">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosJuridica">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

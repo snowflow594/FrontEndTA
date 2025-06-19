@@ -71,6 +71,84 @@
             background: var(--brand-green);
             color: #fff;
         }
+
+        #heroCarousel .carousel-item {
+              height: 550px;
+              overflow: hidden;
+         }
+        #heroCarousel .carousel-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        /* Carousel cards */
+        #carouselCategorias .card {
+          transition: transform .3s, box-shadow .3s;
+        }
+        #carouselCategorias .card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 20px rgba(0,0,0,.15)!important;
+        }
+        /* Fija la altura de la imagen y la ajusta */
+        #carouselCategorias .card-img-top {
+          height: 250px;
+          object-fit: cover;
+        }
+
+        .section-title {
+          position: relative;
+          display: inline-block;       /* para centrar bien el subrayado */
+          font-size: 2.5rem;           /* un poco más grande */
+          font-weight: 700;
+          color: var(--brand-dark);     /* color principal */
+          margin-bottom: 1.5rem;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+
+        /* Línea de acento bajo el texto */
+        .section-title::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: -0.5rem;              /* separación bajo el texto */
+          transform: translateX(-50%);
+          width: 80px;                  /* ancho de la línea */
+          height: 4px;                  /* grosor de la línea */
+          background: var(--brand-green);
+          border-radius: 2px;
+        }
+
+        /* Punto de color al final */
+        .section-title::before {
+          content: "•";
+          position: absolute;
+          right: -1.2rem;               /* justo al lado derecho */
+          top: 0;
+          font-size: 2.5rem;
+          color: var(--brand-green);
+        }
+        .section-title-alt {
+          color: var(--brand-green);      /* color de acento */
+          font-size: 2.5rem;              /* tamaño mayor */
+          font-weight: 700;               /* negrita */
+          text-transform: uppercase;      /* todo en mayúsculas */
+          position: relative;             /* para la pseudo-barra */
+          margin-bottom: 1.5rem;          /* separación */
+        }
+
+        .section-title-alt::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -0.5rem;                /* justo debajo del texto */
+          width: 60px;                    /* largo de la barra */
+          height: 4px;                    /* grosor */
+          background: var(--brand-green); /* mismo color de acento */
+          border-radius: 2px;
+        }
+
     </style>
     <asp:ContentPlaceHolder ID="HeadExtras" runat="server" />
 </head>
@@ -81,7 +159,7 @@
         <div class="topbar py-1">
             <div class="container d-flex justify-content-between">
                 <div>
-                    <i class="fas fa-map-marker-alt"></i>Entrega a Lima  
+                    <i class="fas fa-map-marker-alt me-2"></i>Entrega a Lima  
           &nbsp;&nbsp;|&nbsp;&nbsp; 
           <i class="far fa-clock"></i>L-V 9:00-18:00
                 </div>
@@ -110,7 +188,7 @@
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="Inicio.aspx">
                     <!--aqúí iría el logo de la empresa-->
-                    <img src="#" alt="CIAPASA" style="height: 30px;" />
+                    <img src="../../Content/Imagenes/logo.jpg" alt="CIAPASA" style="height: 30px;" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                     <span class="navbar-toggler-icon"></span>

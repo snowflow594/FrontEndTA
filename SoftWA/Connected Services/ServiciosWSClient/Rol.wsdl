@@ -5,6 +5,18 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Rol?xsd=1" namespace="http://usuario.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
+  <message name="listarTodosRoles">
+    <part name="parameters" element="tns:listarTodosRoles" />
+  </message>
+  <message name="listarTodosRolesResponse">
+    <part name="parameters" element="tns:listarTodosRolesResponse" />
+  </message>
+  <message name="modificarRol">
+    <part name="parameters" element="tns:modificarRol" />
+  </message>
+  <message name="modificarRolResponse">
+    <part name="parameters" element="tns:modificarRolResponse" />
+  </message>
   <message name="eliminarRol">
     <part name="parameters" element="tns:eliminarRol" />
   </message>
@@ -17,25 +29,21 @@
   <message name="insertarRolResponse">
     <part name="parameters" element="tns:insertarRolResponse" />
   </message>
-  <message name="listarTodosRoles">
-    <part name="parameters" element="tns:listarTodosRoles" />
-  </message>
-  <message name="listarTodosRolesResponse">
-    <part name="parameters" element="tns:listarTodosRolesResponse" />
-  </message>
   <message name="obtenerPorIdRol">
     <part name="parameters" element="tns:obtenerPorIdRol" />
   </message>
   <message name="obtenerPorIdRolResponse">
     <part name="parameters" element="tns:obtenerPorIdRolResponse" />
   </message>
-  <message name="modificarRol">
-    <part name="parameters" element="tns:modificarRol" />
-  </message>
-  <message name="modificarRolResponse">
-    <part name="parameters" element="tns:modificarRolResponse" />
-  </message>
   <portType name="Rol">
+    <operation name="listarTodosRoles">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/listarTodosRolesRequest" message="tns:listarTodosRoles" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/listarTodosRolesResponse" message="tns:listarTodosRolesResponse" />
+    </operation>
+    <operation name="modificarRol">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/modificarRolRequest" message="tns:modificarRol" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/modificarRolResponse" message="tns:modificarRolResponse" />
+    </operation>
     <operation name="eliminarRol">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolRequest" message="tns:eliminarRol" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/eliminarRolResponse" message="tns:eliminarRolResponse" />
@@ -44,21 +52,31 @@
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolRequest" message="tns:insertarRol" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/insertarRolResponse" message="tns:insertarRolResponse" />
     </operation>
-    <operation name="listarTodosRoles">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/listarTodosRolesRequest" message="tns:listarTodosRoles" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/listarTodosRolesResponse" message="tns:listarTodosRolesResponse" />
-    </operation>
     <operation name="obtenerPorIdRol">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/obtenerPorIdRolRequest" message="tns:obtenerPorIdRol" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/obtenerPorIdRolResponse" message="tns:obtenerPorIdRolResponse" />
     </operation>
-    <operation name="modificarRol">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/modificarRolRequest" message="tns:modificarRol" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Rol/modificarRolResponse" message="tns:modificarRolResponse" />
-    </operation>
   </portType>
   <binding name="RolPortBinding" type="tns:Rol">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarTodosRoles">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarRol">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="eliminarRol">
       <soap:operation soapAction="" />
       <input>
@@ -77,25 +95,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarTodosRoles">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="obtenerPorIdRol">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="modificarRol">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

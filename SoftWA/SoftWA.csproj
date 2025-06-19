@@ -126,28 +126,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\DireccionWSClient\Direccion.wsdl" />
-    <None Include="Connected Services\DireccionWSClient\Direccion.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.direccionDTO.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.eliminarDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.insertarDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.listarTodosDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.modificarDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\DireccionWSClient\SoftWA.DireccionWSClient.obtenerPorIdDireccionResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
     <None Include="Connected Services\ServiciosWSClient\Administrador.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Administrador.xsd">
       <SubType>Designer</SubType>
@@ -177,12 +155,6 @@
     <None Include="Connected Services\ServiciosWSClient\configuration91.svcinfo" />
     <None Include="Connected Services\ServiciosWSClient\configuration.svcinfo" />
     <None Include="Connected Services\ServiciosWSClient\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\DireccionWSClient\configuration91.svcinfo" />
-    <None Include="Connected Services\DireccionWSClient\configuration.svcinfo" />
-    <None Include="Connected Services\DireccionWSClient\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -222,8 +194,18 @@
     <Content Include="Content\fontawesome\v4-shims.min.css" />
     <Content Include="Content\fontawesome\v5-font-face.css" />
     <Content Include="Content\fontawesome\v5-font-face.min.css" />
+    <Content Include="Content\Imagenes\logo.jpg" />
     <Content Include="Content\Imagenes\olla.png" />
     <Content Include="Content\Imagenes\perfil.png" />
+    <Content Include="Content\Imagenes\Presentacion\Cuchillos.jpg" />
+    <Content Include="Content\Imagenes\Presentacion\OllaInicio.jpg" />
+    <Content Include="Content\Imagenes\Presentacion\Sartenes.jpg" />
+    <Content Include="Content\Imagenes\Productos\Categorias\1.jpg" />
+    <Content Include="Content\Imagenes\Productos\Categorias\2.jpg" />
+    <Content Include="Content\Imagenes\Productos\Categorias\3.jpg" />
+    <Content Include="Content\Imagenes\Productos\Categorias\4.jpg" />
+    <Content Include="Content\Imagenes\Productos\Categorias\5.jpg" />
+    <Content Include="Content\Imagenes\Productos\Categorias\6.jpg" />
     <Content Include="Content\Imagenes\sarten.png" />
     <Content Include="Pantallas\Autentificacion.aspx" />
     <Content Include="Pantallas\Carrito.aspx" />
@@ -256,6 +238,9 @@
     <Content Include="Content\fontawesome\fa-v4compatibility.ttf" />
     <Content Include="Content\fontawesome\fa-v4compatibility.woff2" />
     <Content Include="Pantallas\MasterPages\PaginaMaster.Master" />
+    <Content Include="Pantallas\MasterPages\Cabecera.master" />
+    <Content Include="Pantallas\MasterPages\PaginaInicio.master" />
+    <Content Include="Pantallas\MasterPages\SiteAdmin.master" />
     <None Include="Connected Services\ServiciosWSClient\Carrito.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Comprobante.wsdl" />
     <None Include="Connected Services\ServiciosWSClient\Direccion.wsdl" />
@@ -850,9 +835,6 @@
     <None Include="Connected Services\ServiciosWSClient\Usuario.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Pantallas\MasterPages\Cabecera.master" />
-    <Content Include="Pantallas\MasterPages\PaginaInicio.master" />
-    <Content Include="Pantallas\MasterPages\SiteAdmin.master" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -865,11 +847,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\DireccionWSClient\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\ServiciosWSClient\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1059,7 +1036,6 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\DireccionWSClient\" />
     <WCFMetadataStorage Include="Connected Services\ServiciosWSClient\" />
   </ItemGroup>
   <PropertyGroup>

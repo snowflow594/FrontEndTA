@@ -6,7 +6,8 @@
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://kitchencenter.pe/cdn/shop/files/51206-100.jpg?v=1741210390" class="d-block w-100" alt="Utensilios 1">
+                <%------------------------Le agregue una carpeta de fotos y asi lo enlace--%>
+                <img src="../Content/Imagenes/Presentacion/OllaInicio.jpg" class="d-block w-100" alt="Utensilios 1">
                 <div class="carousel-caption d-none d-md-block text-start">
                     <h1 class="display-4">Bienvenido a CIAPASA</h1>
                     <p class="lead">Descubre los mejores utensilios para tu cocina.</p>
@@ -14,13 +15,23 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://hogaruniversal.vtexassets.com/arquivos/ids/167580/L37480-OLLA-PRESION-SILVER-EXPRESS-6-L---02.jpg?v=638736004417070000" class="d-block w-100" alt="Utensilios 2">
+                <img src="../Content/Imagenes/Presentacion/Cuchillos.jpg" class="d-block w-100" alt="Utensilios 2">
                 <div class="carousel-caption d-none d-md-block text-start">
                     <h1 class="display-4">Calidad y Durabilidad</h1>
                     <p class="lead">Ollas, sartenes y más, al mejor precio.</p>
                     <a href="Productos.aspx" class="btn btn-cta btn-lg">Ver Colección</a>
                 </div>
             </div>
+            <%------------------------Le agregue Otro imagen de carrusel aca--%>
+            <div class="carousel-item">
+                <img src="../Content/Imagenes/Presentacion/Sartenes.jpg" class="d-block w-100" alt="Utensilios 3">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h1 class="display-4">Garantia y Devolución</h1>
+                    <p class="lead">Si viene con fallo de fabrica, obtienes un cambio de producto, 100% Garantizable.</p>
+                    <a href="Productos.aspx" class="btn btn-cta btn-lg">Ver Colección</a>
+                </div>
+            </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -30,32 +41,106 @@
         </button>
     </div>
 
-    <!-- Sección de categorías rápidas -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4 text-center">Productos Destacados</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-                <asp:Repeater ID="rptCategorias" runat="server">
-                    <ItemTemplate>
-                        <div class="col">
-                            <div class="card h-100 shadow-sm border-0">
-                                <img src="../Content/Imagenes/olla.png" class="card-img-top img-fluid" style="object-fit: contain; height: 180px;" alt="Imagen producto" />
-                                <div class="card-body d-flex flex-column text-center">
-                                    <h6 class="card-title mb-2"><%# Eval("nombre") %></h6>
-                                    <p class="text-success fw-bold">S/ <%# Eval("precio", "{0:F2}") %></p>
-                                    <a href='EspecificacionesProducto.aspx?id=<%# Eval("idProducto") %>' class="btn btn-outline-dark mt-auto">Ver Detalles</a>
-                                </div>
-                            </div>
-                        </div>
-                    </ItemTemplate>
-                </asp:Repeater>
-            </div>
+      <!-- Sección de categorías como carrusel -->
+  <section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title">Categorías Destacadas</h2>
 
-            <div class="text-center mt-4">
-                <a href="Productos.aspx" class="btn btn-cta px-4 py-2">Ver todos los productos</a>
+    <div id="carouselCategorias" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="6000">
+
+      <!-- Indicators como puntitos -->
+      <div class="carousel-indicators mb-5">
+        <asp:Repeater ID="rptCategoriasCarousel" runat="server">
+          <ItemTemplate>
+            <button
+              type="button"
+              data-bs-target="#carouselCategorias"
+              data-bs-slide-to="<%# Container.ItemIndex %>"
+              class="<%# Container.ItemIndex == 0 ? "active" : "" %>"
+              aria-current="<%# Container.ItemIndex == 0 ? "true" : "false" %>"
+              aria-label="Slide <%# Container.ItemIndex+1 %>"
+            ></button>
+          </ItemTemplate>
+        </asp:Repeater>
+      </div>
+
+      <!-- Slides -->
+      <div class="carousel-inner">
+        <asp:Repeater ID="Repeater1" runat="server">
+          <ItemTemplate>
+            <div class="carousel-item <%# Container.ItemIndex == 0 ? "active" : "" %>">
+              <div class="card border-0 shadow mx-auto" style="max-width: 360px; border-radius:1rem;">
+                <div class="overflow-hidden" style="border-top-left-radius:1rem; border-top-right-radius:1rem;">
+                  <img
+                    src="../Content/Imagenes/Productos/Categorias/<%# Eval("idProducto") %>.jpg"
+                    class="card-img-top"
+                    alt="<%# Eval("nombre") %>"
+                  />
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title mb-3 fw-bold"><%# Eval("nombre") %></h5>
+                  <a
+                    href='EspecificacionesProducto.aspx?id=<%# Eval("idProducto") %>'
+                    class="btn btn-cta px-4 py-2 shadow-sm"
+                  >Ver Detalles</a>
+                </div>
+              </div>
             </div>
+          </ItemTemplate>
+        </asp:Repeater>
+      </div>
+
+          <!-- Controles personalizados -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselCategorias"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon custom-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselCategorias"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon custom-icon"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
+      </div>
     </section>
+
+
+    <!-- Sección Productos Precio mas bajo -->
+     <!-- Best Sellers: Scroll horizontal -->
+  <div class="container py-5" id="bestSellers">
+    <h2 class="mb-4 section-title-alt">Productos de Remate</h2>
+
+    <div class="d-flex overflow-auto gap-3 snap-x">
+      <asp:Repeater ID="rptBestSellers" runat="server">
+        <ItemTemplate>
+          <div class="card flex-shrink-0 shadow-sm" style="width: 240px; scroll-snap-align: start;">
+            <img
+              src="../Content/Imagenes/Productos/Categorias/<%# Eval("idProducto") %>.jpg"
+              class="card-img-top"
+              alt="<%# Eval("nombre") %>"
+              style="height:180px; object-fit:cover;"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title mb-2"><%# Eval("nombre") %></h5>
+              <a
+                href='EspecificacionesProducto.aspx?id=<%# Eval("idProducto") %>'
+                class="btn btn-cta btn-sm px-3"
+              >Ver</a>
+            </div>
+          </div>
+        </ItemTemplate>
+      </asp:Repeater>
+    </div>
+  </div>
 
     <!-- Sección de cards de acción rápida -->
     <div class="container py-5">

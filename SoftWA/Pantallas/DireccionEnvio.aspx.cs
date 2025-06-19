@@ -1,5 +1,4 @@
-﻿using SoftWA.DireccionWSClient;
-using SoftWA.ServiciosWSClient;
+﻿using SoftWA.ServiciosWSClient;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,7 +12,7 @@ namespace SoftWA.Pantallas
     public partial class DireccionEnvio : System.Web.UI.Page
     {
         private ItemCarritoClient itemCarritoWSClient = new ItemCarritoClient();
-        private SoftWA.ServiciosWSClient.DireccionClient direccionWSClient = new ServiciosWSClient.DireccionClient();
+        private DireccionClient direccionWSClient = new ServiciosWSClient.DireccionClient();
         private CarritoClient carritoWSClient = new CarritoClient();
         private PersonaClient personaWSClient = new PersonaClient();
 

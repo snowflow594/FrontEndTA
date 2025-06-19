@@ -19,17 +19,61 @@ namespace SoftWA.Pantallas
         {
             if (!IsPostBack)
             {
-                CargarProductosDestacados();
+                CargarProductos();
+                CargarBestSellers();
             }
         }
 
-        private void CargarProductosDestacados()
+        private void CargarProductos()
         {
-            var productos = productoWSClient.listarTodosProducto();
-            var destacados = productos.Take(4).ToList(); // Mostrar solo los primeros 4
+            try
+            {
+                //----------------------ACA HE MODIFICADO ALGUNOS VALORES O AREGUE-------------------------------
+                // 1) Obtienes todos
+                var productos = productoWSClient
+                                  .listarTodosProducto()
+                                  .ToList();
 
-            rptCategorias.DataSource = destacados;
-            rptCategorias.DataBind();
+                // 2) Te quedas con los 3 primeros
+                var primerosTres = productos
+                                      .Take(3)
+                                      .ToList();
+
+                // 3) Bind de tu carrusel a esos 3
+                Repeater1.DataSource = primerosTres;
+                Repeater1.DataBind();
+
+                rptCategoriasCarousel.DataSource = primerosTres;
+                rptCategoriasCarousel.DataBind();
+
+                //----------------------HASTA AQUI EH MODIFICADO ALGUNOS VALORES O AREGUE-------------------------------
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('Error al cargar productos: " + ex.Message + "');</script>");
+            }
+        }
+
+        protected void CargarBestSellers()
+        {
+            try
+            {
+                // 1) Obtengo todos los productos
+                var productos = productoWSClient.listarProductosPorRangoPrecio(0, 800).ToList();
+
+                // 2) Ordeno por la métrica que quieras; p.ej. los menos vendidos:
+                //    Aquí asumo que tu DTO tiene una propiedad 'cantidadVendida'
+                var menosVendidos = productos.Take(6).ToList();
+
+                // 3) Bind al repeater de “Productos de Remate”
+                rptBestSellers.DataSource = menosVendidos;
+                rptBestSellers.DataBind();
+            }
+            catch (Exception ex)
+            {
+                ScriptManager.RegisterStartupScript(this, GetType(),
+                    "errBest", $"alert('Error al cargar Best Sellers: {ex.Message}');", true);
+            }
         }
     }
 }

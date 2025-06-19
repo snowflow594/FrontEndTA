@@ -5,42 +5,6 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Pago?xsd=1" namespace="http://pedido.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarPagoPorPedidosTodos">
-    <part name="parameters" element="tns:listarPagoPorPedidosTodos" />
-  </message>
-  <message name="listarPagoPorPedidosTodosResponse">
-    <part name="parameters" element="tns:listarPagoPorPedidosTodosResponse" />
-  </message>
-  <message name="listarPagoPorMontoMinimo">
-    <part name="parameters" element="tns:listarPagoPorMontoMinimo" />
-  </message>
-  <message name="listarPagoPorMontoMinimoResponse">
-    <part name="parameters" element="tns:listarPagoPorMontoMinimoResponse" />
-  </message>
-  <message name="listarPagoRangoFechaPago">
-    <part name="parameters" element="tns:listarPagoRangoFechaPago" />
-  </message>
-  <message name="listarPagoRangoFechaPagoResponse">
-    <part name="parameters" element="tns:listarPagoRangoFechaPagoResponse" />
-  </message>
-  <message name="listarPagoPorPedido">
-    <part name="parameters" element="tns:listarPagoPorPedido" />
-  </message>
-  <message name="listarPagoPorPedidoResponse">
-    <part name="parameters" element="tns:listarPagoPorPedidoResponse" />
-  </message>
-  <message name="listarPagoPorEstadoYFecha">
-    <part name="parameters" element="tns:listarPagoPorEstadoYFecha" />
-  </message>
-  <message name="listarPagoPorEstadoYFechaResponse">
-    <part name="parameters" element="tns:listarPagoPorEstadoYFechaResponse" />
-  </message>
-  <message name="listarPagoPorRangoMonto">
-    <part name="parameters" element="tns:listarPagoPorRangoMonto" />
-  </message>
-  <message name="listarPagoPorRangoMontoResponse">
-    <part name="parameters" element="tns:listarPagoPorRangoMontoResponse" />
-  </message>
   <message name="listarPagoPorUsuarioCreacion">
     <part name="parameters" element="tns:listarPagoPorUsuarioCreacion" />
   </message>
@@ -52,6 +16,12 @@
   </message>
   <message name="listarPagoInactivoResponse">
     <part name="parameters" element="tns:listarPagoInactivoResponse" />
+  </message>
+  <message name="eliminarPago">
+    <part name="parameters" element="tns:eliminarPago" />
+  </message>
+  <message name="eliminarPagoResponse">
+    <part name="parameters" element="tns:eliminarPagoResponse" />
   </message>
   <message name="obtenerPorIdPago">
     <part name="parameters" element="tns:obtenerPorIdPago" />
@@ -65,11 +35,11 @@
   <message name="listarTodosPagoResponse">
     <part name="parameters" element="tns:listarTodosPagoResponse" />
   </message>
-  <message name="eliminarPago">
-    <part name="parameters" element="tns:eliminarPago" />
+  <message name="insertarPago">
+    <part name="parameters" element="tns:insertarPago" />
   </message>
-  <message name="eliminarPagoResponse">
-    <part name="parameters" element="tns:eliminarPagoResponse" />
+  <message name="insertarPagoResponse">
+    <part name="parameters" element="tns:insertarPagoResponse" />
   </message>
   <message name="modificarPago">
     <part name="parameters" element="tns:modificarPago" />
@@ -77,37 +47,43 @@
   <message name="modificarPagoResponse">
     <part name="parameters" element="tns:modificarPagoResponse" />
   </message>
-  <message name="insertarPago">
-    <part name="parameters" element="tns:insertarPago" />
+  <message name="listarPagoRangoFechaPago">
+    <part name="parameters" element="tns:listarPagoRangoFechaPago" />
   </message>
-  <message name="insertarPagoResponse">
-    <part name="parameters" element="tns:insertarPagoResponse" />
+  <message name="listarPagoRangoFechaPagoResponse">
+    <part name="parameters" element="tns:listarPagoRangoFechaPagoResponse" />
+  </message>
+  <message name="listarPagoPorMontoMinimo">
+    <part name="parameters" element="tns:listarPagoPorMontoMinimo" />
+  </message>
+  <message name="listarPagoPorMontoMinimoResponse">
+    <part name="parameters" element="tns:listarPagoPorMontoMinimoResponse" />
+  </message>
+  <message name="listarPagoPorRangoMonto">
+    <part name="parameters" element="tns:listarPagoPorRangoMonto" />
+  </message>
+  <message name="listarPagoPorRangoMontoResponse">
+    <part name="parameters" element="tns:listarPagoPorRangoMontoResponse" />
+  </message>
+  <message name="listarPagoPorEstadoYFecha">
+    <part name="parameters" element="tns:listarPagoPorEstadoYFecha" />
+  </message>
+  <message name="listarPagoPorEstadoYFechaResponse">
+    <part name="parameters" element="tns:listarPagoPorEstadoYFechaResponse" />
+  </message>
+  <message name="listarPagoPorPedido">
+    <part name="parameters" element="tns:listarPagoPorPedido" />
+  </message>
+  <message name="listarPagoPorPedidoResponse">
+    <part name="parameters" element="tns:listarPagoPorPedidoResponse" />
+  </message>
+  <message name="listarPagoPorPedidosTodos">
+    <part name="parameters" element="tns:listarPagoPorPedidosTodos" />
+  </message>
+  <message name="listarPagoPorPedidosTodosResponse">
+    <part name="parameters" element="tns:listarPagoPorPedidosTodosResponse" />
   </message>
   <portType name="Pago">
-    <operation name="listarPagoPorPedidosTodos">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRequest" message="tns:listarPagoPorPedidosTodos" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosResponse" message="tns:listarPagoPorPedidosTodosResponse" />
-    </operation>
-    <operation name="listarPagoPorMontoMinimo">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorMontoMinimoRequest" message="tns:listarPagoPorMontoMinimo" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorMontoMinimoResponse" message="tns:listarPagoPorMontoMinimoResponse" />
-    </operation>
-    <operation name="listarPagoRangoFechaPago">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoRangoFechaPagoRequest" message="tns:listarPagoRangoFechaPago" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoRangoFechaPagoResponse" message="tns:listarPagoRangoFechaPagoResponse" />
-    </operation>
-    <operation name="listarPagoPorPedido">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoRequest" message="tns:listarPagoPorPedido" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoResponse" message="tns:listarPagoPorPedidoResponse" />
-    </operation>
-    <operation name="listarPagoPorEstadoYFecha">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorEstadoYFechaRequest" message="tns:listarPagoPorEstadoYFecha" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorEstadoYFechaResponse" message="tns:listarPagoPorEstadoYFechaResponse" />
-    </operation>
-    <operation name="listarPagoPorRangoMonto">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorRangoMontoRequest" message="tns:listarPagoPorRangoMonto" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorRangoMontoResponse" message="tns:listarPagoPorRangoMontoResponse" />
-    </operation>
     <operation name="listarPagoPorUsuarioCreacion">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionRequest" message="tns:listarPagoPorUsuarioCreacion" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorUsuarioCreacionResponse" message="tns:listarPagoPorUsuarioCreacionResponse" />
@@ -115,6 +91,10 @@
     <operation name="listarPagoInactivo">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoInactivoRequest" message="tns:listarPagoInactivo" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoInactivoResponse" message="tns:listarPagoInactivoResponse" />
+    </operation>
+    <operation name="eliminarPago">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoRequest" message="tns:eliminarPago" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoResponse" message="tns:eliminarPagoResponse" />
     </operation>
     <operation name="obtenerPorIdPago">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/obtenerPorIdPagoRequest" message="tns:obtenerPorIdPago" />
@@ -124,75 +104,41 @@
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoRequest" message="tns:listarTodosPago" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarTodosPagoResponse" message="tns:listarTodosPagoResponse" />
     </operation>
-    <operation name="eliminarPago">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoRequest" message="tns:eliminarPago" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/eliminarPagoResponse" message="tns:eliminarPagoResponse" />
+    <operation name="insertarPago">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoRequest" message="tns:insertarPago" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoResponse" message="tns:insertarPagoResponse" />
     </operation>
     <operation name="modificarPago">
       <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/modificarPagoRequest" message="tns:modificarPago" />
       <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/modificarPagoResponse" message="tns:modificarPagoResponse" />
     </operation>
-    <operation name="insertarPago">
-      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoRequest" message="tns:insertarPago" />
-      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/insertarPagoResponse" message="tns:insertarPagoResponse" />
+    <operation name="listarPagoRangoFechaPago">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoRangoFechaPagoRequest" message="tns:listarPagoRangoFechaPago" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoRangoFechaPagoResponse" message="tns:listarPagoRangoFechaPagoResponse" />
+    </operation>
+    <operation name="listarPagoPorMontoMinimo">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorMontoMinimoRequest" message="tns:listarPagoPorMontoMinimo" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorMontoMinimoResponse" message="tns:listarPagoPorMontoMinimoResponse" />
+    </operation>
+    <operation name="listarPagoPorRangoMonto">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorRangoMontoRequest" message="tns:listarPagoPorRangoMonto" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorRangoMontoResponse" message="tns:listarPagoPorRangoMontoResponse" />
+    </operation>
+    <operation name="listarPagoPorEstadoYFecha">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorEstadoYFechaRequest" message="tns:listarPagoPorEstadoYFecha" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorEstadoYFechaResponse" message="tns:listarPagoPorEstadoYFechaResponse" />
+    </operation>
+    <operation name="listarPagoPorPedido">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoRequest" message="tns:listarPagoPorPedido" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidoResponse" message="tns:listarPagoPorPedidoResponse" />
+    </operation>
+    <operation name="listarPagoPorPedidosTodos">
+      <input wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosRequest" message="tns:listarPagoPorPedidosTodos" />
+      <output wsam:Action="http://pedido.services.softprog.pucp.edu.pe/Pago/listarPagoPorPedidosTodosResponse" message="tns:listarPagoPorPedidosTodosResponse" />
     </operation>
   </portType>
   <binding name="PagoPortBinding" type="tns:Pago">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarPagoPorPedidosTodos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPagoPorMontoMinimo">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPagoRangoFechaPago">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPagoPorPedido">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPagoPorEstadoYFecha">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPagoPorRangoMonto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="listarPagoPorUsuarioCreacion">
       <soap:operation soapAction="" />
       <input>
@@ -203,6 +149,15 @@
       </output>
     </operation>
     <operation name="listarPagoInactivo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPago">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -229,7 +184,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarPago">
+    <operation name="insertarPago">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -247,7 +202,52 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="insertarPago">
+    <operation name="listarPagoRangoFechaPago">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPagoPorMontoMinimo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPagoPorRangoMonto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPagoPorEstadoYFecha">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPagoPorPedido">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPagoPorPedidosTodos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

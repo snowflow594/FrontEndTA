@@ -36,12 +36,13 @@
   <xs:element name="modificarProductoResponse" type="tns:modificarProductoResponse" />
   <xs:element name="obtenerPorIdProducto" type="tns:obtenerPorIdProducto" />
   <xs:element name="obtenerPorIdProductoResponse" type="tns:obtenerPorIdProductoResponse" />
-  <xs:complexType name="listarProductosPorDescripcionParcial">
+  <xs:complexType name="listarProductosPorRangoFechaCreacion">
     <xs:sequence>
-      <xs:element minOccurs="0" name="descripcionParcial" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarProductosPorDescripcionParcialResponse">
+  <xs:complexType name="listarProductosPorRangoFechaCreacionResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
     </xs:sequence>
@@ -95,13 +96,12 @@
       <xs:element minOccurs="0" name="nombre" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarProductosPorRangoFechaCreacion">
+  <xs:complexType name="listarProductosPorDescripcionParcial">
     <xs:sequence>
-      <xs:element minOccurs="0" name="fechaInicio" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="fechaFin" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="descripcionParcial" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarProductosPorRangoFechaCreacionResponse">
+  <xs:complexType name="listarProductosPorDescripcionParcialResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
     </xs:sequence>
@@ -127,16 +127,6 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarProductosPorNombre">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarProductosPorNombreResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
-    </xs:sequence>
-  </xs:complexType>
   <xs:complexType name="listarProductosPorStockMinimo">
     <xs:sequence>
       <xs:element name="stockMinimo" type="xs:int" />
@@ -155,6 +145,16 @@
   <xs:complexType name="modificarProductoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarProductosPorNombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarProductosPorNombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarProductosPorCategoria">
@@ -208,18 +208,13 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarTodosProducto">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarTodosProductoResponse">
+  <xs:complexType name="listarProductosPorNombreYPrecioMaximo">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="precioMaximo" type="xs:double" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarProductosInactivos">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarProductosInactivosResponse">
+  <xs:complexType name="listarProductosPorNombreYPrecioMaximoResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
     </xs:sequence>
@@ -244,13 +239,18 @@
       <xs:element minOccurs="0" name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarProductosPorNombreYPrecioMaximo">
+  <xs:complexType name="listarTodosProducto">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarTodosProductoResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="nombre" type="xs:string" />
-      <xs:element name="precioMaximo" type="xs:double" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="listarProductosPorNombreYPrecioMaximoResponse">
+  <xs:complexType name="listarProductosInactivos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarProductosInactivosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:productoDTO" />
     </xs:sequence>

@@ -17,17 +17,17 @@
   <message name="listarPorUsuarioCreacionPersonaResponse">
     <part name="parameters" element="tns:listarPorUsuarioCreacionPersonaResponse" />
   </message>
-  <message name="listarPorNombreParcialPersona">
-    <part name="parameters" element="tns:listarPorNombreParcialPersona" />
-  </message>
-  <message name="listarPorNombreParcialPersonaResponse">
-    <part name="parameters" element="tns:listarPorNombreParcialPersonaResponse" />
-  </message>
   <message name="listarUltimosActualizadosPersona">
     <part name="parameters" element="tns:listarUltimosActualizadosPersona" />
   </message>
   <message name="listarUltimosActualizadosPersonaResponse">
     <part name="parameters" element="tns:listarUltimosActualizadosPersonaResponse" />
+  </message>
+  <message name="listarPorNombreParcialPersona">
+    <part name="parameters" element="tns:listarPorNombreParcialPersona" />
+  </message>
+  <message name="listarPorNombreParcialPersonaResponse">
+    <part name="parameters" element="tns:listarPorNombreParcialPersonaResponse" />
   </message>
   <message name="listarTodosPersona">
     <part name="parameters" element="tns:listarTodosPersona" />
@@ -47,11 +47,11 @@
   <message name="obtenerPorIdPersonaResponse">
     <part name="parameters" element="tns:obtenerPorIdPersonaResponse" />
   </message>
-  <message name="obtenerPorTelefonoPersona">
-    <part name="parameters" element="tns:obtenerPorTelefonoPersona" />
+  <message name="listarPersonasInactivos">
+    <part name="parameters" element="tns:listarPersonasInactivos" />
   </message>
-  <message name="obtenerPorTelefonoPersonaResponse">
-    <part name="parameters" element="tns:obtenerPorTelefonoPersonaResponse" />
+  <message name="listarPersonasInactivosResponse">
+    <part name="parameters" element="tns:listarPersonasInactivosResponse" />
   </message>
   <message name="listarPersonasActivos">
     <part name="parameters" element="tns:listarPersonasActivos" />
@@ -59,17 +59,17 @@
   <message name="listarPersonasActivosResponse">
     <part name="parameters" element="tns:listarPersonasActivosResponse" />
   </message>
-  <message name="listarPersonasInactivos">
-    <part name="parameters" element="tns:listarPersonasInactivos" />
-  </message>
-  <message name="listarPersonasInactivosResponse">
-    <part name="parameters" element="tns:listarPersonasInactivosResponse" />
-  </message>
   <message name="listarPorFechasPersona">
     <part name="parameters" element="tns:listarPorFechasPersona" />
   </message>
   <message name="listarPorFechasPersonaResponse">
     <part name="parameters" element="tns:listarPorFechasPersonaResponse" />
+  </message>
+  <message name="obtenerPorTelefonoPersona">
+    <part name="parameters" element="tns:obtenerPorTelefonoPersona" />
+  </message>
+  <message name="obtenerPorTelefonoPersonaResponse">
+    <part name="parameters" element="tns:obtenerPorTelefonoPersonaResponse" />
   </message>
   <message name="listarPorApellidoPersona">
     <part name="parameters" element="tns:listarPorApellidoPersona" />
@@ -86,13 +86,13 @@
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPersonaRequest" message="tns:listarPorUsuarioCreacionPersona" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorUsuarioCreacionPersonaResponse" message="tns:listarPorUsuarioCreacionPersonaResponse" />
     </operation>
-    <operation name="listarPorNombreParcialPersona">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPersonaRequest" message="tns:listarPorNombreParcialPersona" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPersonaResponse" message="tns:listarPorNombreParcialPersonaResponse" />
-    </operation>
     <operation name="listarUltimosActualizadosPersona">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPersonaRequest" message="tns:listarUltimosActualizadosPersona" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarUltimosActualizadosPersonaResponse" message="tns:listarUltimosActualizadosPersonaResponse" />
+    </operation>
+    <operation name="listarPorNombreParcialPersona">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPersonaRequest" message="tns:listarPorNombreParcialPersona" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorNombreParcialPersonaResponse" message="tns:listarPorNombreParcialPersonaResponse" />
     </operation>
     <operation name="listarTodosPersona">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarTodosPersonaRequest" message="tns:listarTodosPersona" />
@@ -106,21 +106,21 @@
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaRequest" message="tns:obtenerPorIdPersona" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorIdPersonaResponse" message="tns:obtenerPorIdPersonaResponse" />
     </operation>
-    <operation name="obtenerPorTelefonoPersona">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorTelefonoPersonaRequest" message="tns:obtenerPorTelefonoPersona" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorTelefonoPersonaResponse" message="tns:obtenerPorTelefonoPersonaResponse" />
+    <operation name="listarPersonasInactivos">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasInactivosRequest" message="tns:listarPersonasInactivos" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasInactivosResponse" message="tns:listarPersonasInactivosResponse" />
     </operation>
     <operation name="listarPersonasActivos">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosRequest" message="tns:listarPersonasActivos" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasActivosResponse" message="tns:listarPersonasActivosResponse" />
     </operation>
-    <operation name="listarPersonasInactivos">
-      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasInactivosRequest" message="tns:listarPersonasInactivos" />
-      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPersonasInactivosResponse" message="tns:listarPersonasInactivosResponse" />
-    </operation>
     <operation name="listarPorFechasPersona">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorFechasPersonaRequest" message="tns:listarPorFechasPersona" />
       <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorFechasPersonaResponse" message="tns:listarPorFechasPersonaResponse" />
+    </operation>
+    <operation name="obtenerPorTelefonoPersona">
+      <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorTelefonoPersonaRequest" message="tns:obtenerPorTelefonoPersona" />
+      <output wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/obtenerPorTelefonoPersonaResponse" message="tns:obtenerPorTelefonoPersonaResponse" />
     </operation>
     <operation name="listarPorApellidoPersona">
       <input wsam:Action="http://usuario.services.softprog.pucp.edu.pe/Persona/listarPorApellidoPersonaRequest" message="tns:listarPorApellidoPersona" />
@@ -147,7 +147,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarPorNombreParcialPersona">
+    <operation name="listarUltimosActualizadosPersona">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -156,7 +156,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarUltimosActualizadosPersona">
+    <operation name="listarPorNombreParcialPersona">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -192,7 +192,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="obtenerPorTelefonoPersona">
+    <operation name="listarPersonasInactivos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -210,7 +210,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarPersonasInactivos">
+    <operation name="listarPorFechasPersona">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -219,7 +219,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarPorFechasPersona">
+    <operation name="obtenerPorTelefonoPersona">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

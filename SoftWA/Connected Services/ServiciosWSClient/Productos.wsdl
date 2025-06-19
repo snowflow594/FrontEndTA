@@ -5,53 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/Productos?xsd=1" namespace="http://producto.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="listarTodosProducto">
-    <part name="parameters" element="tns:listarTodosProducto" />
+  <message name="listarProductosPorRangoFechaCreacion">
+    <part name="parameters" element="tns:listarProductosPorRangoFechaCreacion" />
   </message>
-  <message name="listarTodosProductoResponse">
-    <part name="parameters" element="tns:listarTodosProductoResponse" />
-  </message>
-  <message name="listarProductosInactivos">
-    <part name="parameters" element="tns:listarProductosInactivos" />
-  </message>
-  <message name="listarProductosInactivosResponse">
-    <part name="parameters" element="tns:listarProductosInactivosResponse" />
-  </message>
-  <message name="listarProductosSinStock">
-    <part name="parameters" element="tns:listarProductosSinStock" />
-  </message>
-  <message name="listarProductosSinStockResponse">
-    <part name="parameters" element="tns:listarProductosSinStockResponse" />
-  </message>
-  <message name="actualizarStockProducto">
-    <part name="parameters" element="tns:actualizarStockProducto" />
-  </message>
-  <message name="actualizarStockProductoResponse">
-    <part name="parameters" element="tns:actualizarStockProductoResponse" />
-  </message>
-  <message name="obtenerPorIdProducto">
-    <part name="parameters" element="tns:obtenerPorIdProducto" />
-  </message>
-  <message name="obtenerPorIdProductoResponse">
-    <part name="parameters" element="tns:obtenerPorIdProductoResponse" />
-  </message>
-  <message name="listarProductosPorNombre">
-    <part name="parameters" element="tns:listarProductosPorNombre" />
-  </message>
-  <message name="listarProductosPorNombreResponse">
-    <part name="parameters" element="tns:listarProductosPorNombreResponse" />
-  </message>
-  <message name="listarProductosPaginado">
-    <part name="parameters" element="tns:listarProductosPaginado" />
-  </message>
-  <message name="listarProductosPaginadoResponse">
-    <part name="parameters" element="tns:listarProductosPaginadoResponse" />
-  </message>
-  <message name="listarProductosPorNombreYPrecioMaximo">
-    <part name="parameters" element="tns:listarProductosPorNombreYPrecioMaximo" />
-  </message>
-  <message name="listarProductosPorNombreYPrecioMaximoResponse">
-    <part name="parameters" element="tns:listarProductosPorNombreYPrecioMaximoResponse" />
+  <message name="listarProductosPorRangoFechaCreacionResponse">
+    <part name="parameters" element="tns:listarProductosPorRangoFechaCreacionResponse" />
   </message>
   <message name="listarProductosPorDescripcionParcial">
     <part name="parameters" element="tns:listarProductosPorDescripcionParcial" />
@@ -59,11 +17,17 @@
   <message name="listarProductosPorDescripcionParcialResponse">
     <part name="parameters" element="tns:listarProductosPorDescripcionParcialResponse" />
   </message>
-  <message name="listarProductosPorRangoFechaCreacion">
-    <part name="parameters" element="tns:listarProductosPorRangoFechaCreacion" />
+  <message name="listarProductosPorNombreYPrecioMaximo">
+    <part name="parameters" element="tns:listarProductosPorNombreYPrecioMaximo" />
   </message>
-  <message name="listarProductosPorRangoFechaCreacionResponse">
-    <part name="parameters" element="tns:listarProductosPorRangoFechaCreacionResponse" />
+  <message name="listarProductosPorNombreYPrecioMaximoResponse">
+    <part name="parameters" element="tns:listarProductosPorNombreYPrecioMaximoResponse" />
+  </message>
+  <message name="listarProductosPorCategoria">
+    <part name="parameters" element="tns:listarProductosPorCategoria" />
+  </message>
+  <message name="listarProductosPorCategoriaResponse">
+    <part name="parameters" element="tns:listarProductosPorCategoriaResponse" />
   </message>
   <message name="listarProductosPorStockMinimo">
     <part name="parameters" element="tns:listarProductosPorStockMinimo" />
@@ -71,11 +35,11 @@
   <message name="listarProductosPorStockMinimoResponse">
     <part name="parameters" element="tns:listarProductosPorStockMinimoResponse" />
   </message>
-  <message name="listarProductosPorCategoria">
-    <part name="parameters" element="tns:listarProductosPorCategoria" />
+  <message name="listarProductosPorUsuarioCreacion">
+    <part name="parameters" element="tns:listarProductosPorUsuarioCreacion" />
   </message>
-  <message name="listarProductosPorCategoriaResponse">
-    <part name="parameters" element="tns:listarProductosPorCategoriaResponse" />
+  <message name="listarProductosPorUsuarioCreacionResponse">
+    <part name="parameters" element="tns:listarProductosPorUsuarioCreacionResponse" />
   </message>
   <message name="listarProductosPorRangoStock">
     <part name="parameters" element="tns:listarProductosPorRangoStock" />
@@ -89,11 +53,11 @@
   <message name="listarProductosPorRangoPrecioResponse">
     <part name="parameters" element="tns:listarProductosPorRangoPrecioResponse" />
   </message>
-  <message name="listarProductosPorUsuarioCreacion">
-    <part name="parameters" element="tns:listarProductosPorUsuarioCreacion" />
+  <message name="eliminarProducto">
+    <part name="parameters" element="tns:eliminarProducto" />
   </message>
-  <message name="listarProductosPorUsuarioCreacionResponse">
-    <part name="parameters" element="tns:listarProductosPorUsuarioCreacionResponse" />
+  <message name="eliminarProductoResponse">
+    <part name="parameters" element="tns:eliminarProductoResponse" />
   </message>
   <message name="insertarProducto">
     <part name="parameters" element="tns:insertarProducto" />
@@ -107,60 +71,72 @@
   <message name="modificarProductoResponse">
     <part name="parameters" element="tns:modificarProductoResponse" />
   </message>
-  <message name="eliminarProducto">
-    <part name="parameters" element="tns:eliminarProducto" />
+  <message name="obtenerPorIdProducto">
+    <part name="parameters" element="tns:obtenerPorIdProducto" />
   </message>
-  <message name="eliminarProductoResponse">
-    <part name="parameters" element="tns:eliminarProductoResponse" />
+  <message name="obtenerPorIdProductoResponse">
+    <part name="parameters" element="tns:obtenerPorIdProductoResponse" />
+  </message>
+  <message name="listarProductosPorNombre">
+    <part name="parameters" element="tns:listarProductosPorNombre" />
+  </message>
+  <message name="listarProductosPorNombreResponse">
+    <part name="parameters" element="tns:listarProductosPorNombreResponse" />
+  </message>
+  <message name="listarProductosSinStock">
+    <part name="parameters" element="tns:listarProductosSinStock" />
+  </message>
+  <message name="listarProductosSinStockResponse">
+    <part name="parameters" element="tns:listarProductosSinStockResponse" />
+  </message>
+  <message name="actualizarStockProducto">
+    <part name="parameters" element="tns:actualizarStockProducto" />
+  </message>
+  <message name="actualizarStockProductoResponse">
+    <part name="parameters" element="tns:actualizarStockProductoResponse" />
+  </message>
+  <message name="listarTodosProducto">
+    <part name="parameters" element="tns:listarTodosProducto" />
+  </message>
+  <message name="listarTodosProductoResponse">
+    <part name="parameters" element="tns:listarTodosProductoResponse" />
+  </message>
+  <message name="listarProductosInactivos">
+    <part name="parameters" element="tns:listarProductosInactivos" />
+  </message>
+  <message name="listarProductosInactivosResponse">
+    <part name="parameters" element="tns:listarProductosInactivosResponse" />
+  </message>
+  <message name="listarProductosPaginado">
+    <part name="parameters" element="tns:listarProductosPaginado" />
+  </message>
+  <message name="listarProductosPaginadoResponse">
+    <part name="parameters" element="tns:listarProductosPaginadoResponse" />
   </message>
   <portType name="Productos">
-    <operation name="listarTodosProducto">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarTodosProductoRequest" message="tns:listarTodosProducto" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarTodosProductoResponse" message="tns:listarTodosProductoResponse" />
-    </operation>
-    <operation name="listarProductosInactivos">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosRequest" message="tns:listarProductosInactivos" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosResponse" message="tns:listarProductosInactivosResponse" />
-    </operation>
-    <operation name="listarProductosSinStock">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosSinStockRequest" message="tns:listarProductosSinStock" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosSinStockResponse" message="tns:listarProductosSinStockResponse" />
-    </operation>
-    <operation name="actualizarStockProducto">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/actualizarStockProductoRequest" message="tns:actualizarStockProducto" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/actualizarStockProductoResponse" message="tns:actualizarStockProductoResponse" />
-    </operation>
-    <operation name="obtenerPorIdProducto">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/obtenerPorIdProductoRequest" message="tns:obtenerPorIdProducto" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/obtenerPorIdProductoResponse" message="tns:obtenerPorIdProductoResponse" />
-    </operation>
-    <operation name="listarProductosPorNombre">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreRequest" message="tns:listarProductosPorNombre" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreResponse" message="tns:listarProductosPorNombreResponse" />
-    </operation>
-    <operation name="listarProductosPaginado">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPaginadoRequest" message="tns:listarProductosPaginado" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPaginadoResponse" message="tns:listarProductosPaginadoResponse" />
-    </operation>
-    <operation name="listarProductosPorNombreYPrecioMaximo">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreYPrecioMaximoRequest" message="tns:listarProductosPorNombreYPrecioMaximo" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreYPrecioMaximoResponse" message="tns:listarProductosPorNombreYPrecioMaximoResponse" />
+    <operation name="listarProductosPorRangoFechaCreacion">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFechaCreacionRequest" message="tns:listarProductosPorRangoFechaCreacion" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFechaCreacionResponse" message="tns:listarProductosPorRangoFechaCreacionResponse" />
     </operation>
     <operation name="listarProductosPorDescripcionParcial">
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescripcionParcialRequest" message="tns:listarProductosPorDescripcionParcial" />
       <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorDescripcionParcialResponse" message="tns:listarProductosPorDescripcionParcialResponse" />
     </operation>
-    <operation name="listarProductosPorRangoFechaCreacion">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFechaCreacionRequest" message="tns:listarProductosPorRangoFechaCreacion" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoFechaCreacionResponse" message="tns:listarProductosPorRangoFechaCreacionResponse" />
+    <operation name="listarProductosPorNombreYPrecioMaximo">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreYPrecioMaximoRequest" message="tns:listarProductosPorNombreYPrecioMaximo" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreYPrecioMaximoResponse" message="tns:listarProductosPorNombreYPrecioMaximoResponse" />
+    </operation>
+    <operation name="listarProductosPorCategoria">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorCategoriaRequest" message="tns:listarProductosPorCategoria" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorCategoriaResponse" message="tns:listarProductosPorCategoriaResponse" />
     </operation>
     <operation name="listarProductosPorStockMinimo">
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMinimoRequest" message="tns:listarProductosPorStockMinimo" />
       <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorStockMinimoResponse" message="tns:listarProductosPorStockMinimoResponse" />
     </operation>
-    <operation name="listarProductosPorCategoria">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorCategoriaRequest" message="tns:listarProductosPorCategoria" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorCategoriaResponse" message="tns:listarProductosPorCategoriaResponse" />
+    <operation name="listarProductosPorUsuarioCreacion">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorUsuarioCreacionRequest" message="tns:listarProductosPorUsuarioCreacion" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorUsuarioCreacionResponse" message="tns:listarProductosPorUsuarioCreacionResponse" />
     </operation>
     <operation name="listarProductosPorRangoStock">
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoStockRequest" message="tns:listarProductosPorRangoStock" />
@@ -170,9 +146,9 @@
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoPrecioRequest" message="tns:listarProductosPorRangoPrecio" />
       <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorRangoPrecioResponse" message="tns:listarProductosPorRangoPrecioResponse" />
     </operation>
-    <operation name="listarProductosPorUsuarioCreacion">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorUsuarioCreacionRequest" message="tns:listarProductosPorUsuarioCreacion" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorUsuarioCreacionResponse" message="tns:listarProductosPorUsuarioCreacionResponse" />
+    <operation name="eliminarProducto">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoRequest" message="tns:eliminarProducto" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoResponse" message="tns:eliminarProductoResponse" />
     </operation>
     <operation name="insertarProducto">
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/insertarProductoRequest" message="tns:insertarProducto" />
@@ -182,77 +158,38 @@
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoRequest" message="tns:modificarProducto" />
       <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/modificarProductoResponse" message="tns:modificarProductoResponse" />
     </operation>
-    <operation name="eliminarProducto">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoRequest" message="tns:eliminarProducto" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/eliminarProductoResponse" message="tns:eliminarProductoResponse" />
+    <operation name="obtenerPorIdProducto">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/obtenerPorIdProductoRequest" message="tns:obtenerPorIdProducto" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/obtenerPorIdProductoResponse" message="tns:obtenerPorIdProductoResponse" />
+    </operation>
+    <operation name="listarProductosPorNombre">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreRequest" message="tns:listarProductosPorNombre" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPorNombreResponse" message="tns:listarProductosPorNombreResponse" />
+    </operation>
+    <operation name="listarProductosSinStock">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosSinStockRequest" message="tns:listarProductosSinStock" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosSinStockResponse" message="tns:listarProductosSinStockResponse" />
+    </operation>
+    <operation name="actualizarStockProducto">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/actualizarStockProductoRequest" message="tns:actualizarStockProducto" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/actualizarStockProductoResponse" message="tns:actualizarStockProductoResponse" />
+    </operation>
+    <operation name="listarTodosProducto">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarTodosProductoRequest" message="tns:listarTodosProducto" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarTodosProductoResponse" message="tns:listarTodosProductoResponse" />
+    </operation>
+    <operation name="listarProductosInactivos">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosRequest" message="tns:listarProductosInactivos" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosInactivosResponse" message="tns:listarProductosInactivosResponse" />
+    </operation>
+    <operation name="listarProductosPaginado">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPaginadoRequest" message="tns:listarProductosPaginado" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/Productos/listarProductosPaginadoResponse" message="tns:listarProductosPaginadoResponse" />
     </operation>
   </portType>
   <binding name="ProductosPortBinding" type="tns:Productos">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="listarTodosProducto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarProductosInactivos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarProductosSinStock">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="actualizarStockProducto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="obtenerPorIdProducto">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarProductosPorNombre">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarProductosPaginado">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarProductosPorNombreYPrecioMaximo">
+    <operation name="listarProductosPorRangoFechaCreacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -270,7 +207,16 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarProductosPorRangoFechaCreacion">
+    <operation name="listarProductosPorNombreYPrecioMaximo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarProductosPorCategoria">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -288,7 +234,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarProductosPorCategoria">
+    <operation name="listarProductosPorUsuarioCreacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -315,7 +261,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarProductosPorUsuarioCreacion">
+    <operation name="eliminarProducto">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -342,7 +288,61 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="eliminarProducto">
+    <operation name="obtenerPorIdProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarProductosPorNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarProductosSinStock">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="actualizarStockProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTodosProducto">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarProductosInactivos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarProductosPaginado">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

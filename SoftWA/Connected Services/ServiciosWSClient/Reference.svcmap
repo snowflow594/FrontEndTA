@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="89b5f48d-0ade-4e22-8522-080f9e8ce982" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="1a2618e8-97a1-44ed-8bac-86e55a0928c1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,39 +22,39 @@
     <MetadataSource Address="http://localhost:8080/SoftProgWS/servicios.disco" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Carrito.wsdl" MetadataType="Wsdl" ID="ec62fd12-5c28-41b1-bd09-83ea8b24c532" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Carrito?WSDL" />
-    <MetadataFile FileName="Pedido.wsdl" MetadataType="Wsdl" ID="3d724755-534c-4122-b65c-33a0b7c10208" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Pedido?WSDL" />
-    <MetadataFile FileName="Persona.xsd" MetadataType="Schema" ID="8805727b-acf0-4dbb-b5a6-b334a5c96569" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Persona?xsd=1" />
-    <MetadataFile FileName="Productos.xsd" MetadataType="Schema" ID="46616c3b-62d2-4409-a302-d5866d169865" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Productos?xsd=1" />
-    <MetadataFile FileName="Pedido.xsd" MetadataType="Schema" ID="462ad2da-290a-4825-bf63-f6b195164e0f" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Pedido?xsd=1" />
-    <MetadataFile FileName="Pago.wsdl" MetadataType="Wsdl" ID="abc86c3f-22a3-42e4-83a5-d65083b45396" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Pago?WSDL" />
-    <MetadataFile FileName="ItemCarrito.xsd" MetadataType="Schema" ID="a9507f6a-979b-4e6d-a75a-3eb7b3623d0d" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/ItemCarrito?xsd=1" />
-    <MetadataFile FileName="Rol.wsdl" MetadataType="Wsdl" ID="c2dc163e-fbc0-474c-9b9f-35f517a46601" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Rol?WSDL" />
-    <MetadataFile FileName="ItemCarrito.wsdl" MetadataType="Wsdl" ID="349b7927-0d40-4769-8d59-778d867c141e" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/ItemCarrito?WSDL" />
-    <MetadataFile FileName="Juridica.xsd" MetadataType="Schema" ID="9434a7f2-f07d-44b2-b89d-43f89db71241" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Juridica?xsd=1" />
-    <MetadataFile FileName="Persona.wsdl" MetadataType="Wsdl" ID="e4c9322b-8d7f-4583-a70d-04855e984672" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Persona?WSDL" />
-    <MetadataFile FileName="Natural.wsdl" MetadataType="Wsdl" ID="7a5bdb7f-2d5e-4855-965f-8f8b7e7613ee" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Natural?WSDL" />
-    <MetadataFile FileName="PrecioPresentacion.wsdl" MetadataType="Wsdl" ID="d154300a-71b7-409f-9bef-d41e369cc513" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/PrecioPresentacion?WSDL" />
-    <MetadataFile FileName="Natural.xsd" MetadataType="Schema" ID="80d96ac2-c0e4-4f2a-a5e8-955eb967319f" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Natural?xsd=1" />
-    <MetadataFile FileName="Rol.xsd" MetadataType="Schema" ID="6049ddbd-d5c8-49f6-a165-59a545eb0953" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Rol?xsd=1" />
-    <MetadataFile FileName="Productos.wsdl" MetadataType="Wsdl" ID="9b2f6234-860f-4aae-bfa1-772dd79a3dc0" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Productos?WSDL" />
-    <MetadataFile FileName="Usuario.wsdl" MetadataType="Wsdl" ID="c89a5fd9-c46a-45f7-8781-c68f0eefb9c1" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Usuario?WSDL" />
-    <MetadataFile FileName="Direccion.wsdl" MetadataType="Wsdl" ID="cd8fe9c4-bb26-4a12-bbbf-079e5fbf53a7" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Direccion?WSDL" />
-    <MetadataFile FileName="Comprobante.wsdl" MetadataType="Wsdl" ID="2d76dcb1-bd23-479e-aa86-da0d76a95a2d" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Comprobante?WSDL" />
-    <MetadataFile FileName="Envio.xsd" MetadataType="Schema" ID="eae0e61d-8f0f-40fb-b251-c098e91e432f" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Envio?xsd=1" />
-    <MetadataFile FileName="servicios.disco" MetadataType="Disco" ID="fee6c797-8e6f-4651-befb-fa9e08a1b96c" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/servicios.disco" />
-    <MetadataFile FileName="Pago.xsd" MetadataType="Schema" ID="9b6c4ebf-ca96-448d-be13-5d463586313d" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Pago?xsd=1" />
-    <MetadataFile FileName="Juridica.wsdl" MetadataType="Wsdl" ID="3cf8aa9a-8043-4e51-a925-09626be27606" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Juridica?WSDL" />
-    <MetadataFile FileName="Administrador.xsd" MetadataType="Schema" ID="4c692ac9-8123-4a01-a896-626b27dcadb0" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Administrador?xsd=1" />
-    <MetadataFile FileName="Envio.wsdl" MetadataType="Wsdl" ID="bb4970e1-fe4f-4060-87db-6d3f4e608b03" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Envio?WSDL" />
-    <MetadataFile FileName="PedidoItem.wsdl" MetadataType="Wsdl" ID="de828bd8-5f97-4018-9c79-df48220aeec3" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/PedidoItem?WSDL" />
-    <MetadataFile FileName="Comprobante.xsd" MetadataType="Schema" ID="b4c0e0df-411e-4118-95e2-c88c95d01874" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Comprobante?xsd=1" />
-    <MetadataFile FileName="Administrador.wsdl" MetadataType="Wsdl" ID="c399586a-f769-4582-8cf9-b8013fce6d9b" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Administrador?WSDL" />
-    <MetadataFile FileName="PedidoItem.xsd" MetadataType="Schema" ID="7a07631d-8da2-4893-9486-d2af156a66df" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/PedidoItem?xsd=1" />
-    <MetadataFile FileName="Carrito.xsd" MetadataType="Schema" ID="21116dc8-118c-492c-80e5-7cd1b4ec66ca" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Carrito?xsd=1" />
-    <MetadataFile FileName="Direccion.xsd" MetadataType="Schema" ID="42309d94-44dc-4ef3-ade3-69b7a37773c1" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Direccion?xsd=1" />
-    <MetadataFile FileName="PrecioPresentacion.xsd" MetadataType="Schema" ID="a08d589e-5327-4e41-9e2b-bff93901dad7" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/PrecioPresentacion?xsd=1" />
-    <MetadataFile FileName="Usuario.xsd" MetadataType="Schema" ID="ff840c49-7e2d-49f1-872e-ce015858a0df" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Usuario?xsd=1" />
+    <MetadataFile FileName="Carrito.wsdl" MetadataType="Wsdl" ID="3b9a7167-4009-42fe-9e6e-686c1e18380b" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Carrito?WSDL" />
+    <MetadataFile FileName="Pedido.wsdl" MetadataType="Wsdl" ID="dd2c3783-7f34-48fc-985e-5b249a519acb" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Pedido?WSDL" />
+    <MetadataFile FileName="Persona.xsd" MetadataType="Schema" ID="55784445-e407-473d-b774-3b583148ff4d" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Persona?xsd=1" />
+    <MetadataFile FileName="Productos.xsd" MetadataType="Schema" ID="8bc16963-2be4-4019-9d30-74eaf3273974" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Productos?xsd=1" />
+    <MetadataFile FileName="Pedido.xsd" MetadataType="Schema" ID="f4a94418-8e01-4ad6-9476-a77c0c73cbcd" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Pedido?xsd=1" />
+    <MetadataFile FileName="Pago.wsdl" MetadataType="Wsdl" ID="48ba5c97-c375-41d9-9eec-4dc1e500894e" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Pago?WSDL" />
+    <MetadataFile FileName="ItemCarrito.xsd" MetadataType="Schema" ID="e3a01d19-9b78-4d16-9aab-49f0499c8744" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/ItemCarrito?xsd=1" />
+    <MetadataFile FileName="Rol.wsdl" MetadataType="Wsdl" ID="6bc88ded-71b8-412e-8f9f-4fe044363369" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Rol?WSDL" />
+    <MetadataFile FileName="ItemCarrito.wsdl" MetadataType="Wsdl" ID="11235698-b179-4f10-a2ae-0d4c9eccd576" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/ItemCarrito?WSDL" />
+    <MetadataFile FileName="Juridica.xsd" MetadataType="Schema" ID="8366c07d-bb16-4279-994a-365df9cefeec" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Juridica?xsd=1" />
+    <MetadataFile FileName="Persona.wsdl" MetadataType="Wsdl" ID="da87a15f-af14-4987-9c40-762b1f9be227" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Persona?WSDL" />
+    <MetadataFile FileName="Natural.wsdl" MetadataType="Wsdl" ID="17e288fc-dd72-4608-bf3e-e48180ce087d" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Natural?WSDL" />
+    <MetadataFile FileName="PrecioPresentacion.wsdl" MetadataType="Wsdl" ID="6a7b7901-fa4b-41fc-a2b8-7fdcf55e6b1c" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/PrecioPresentacion?WSDL" />
+    <MetadataFile FileName="Natural.xsd" MetadataType="Schema" ID="ae6be078-b53b-4635-a470-3330985b2e93" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Natural?xsd=1" />
+    <MetadataFile FileName="Rol.xsd" MetadataType="Schema" ID="22db4ed0-499e-4c80-a28b-a4063b41e11a" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Rol?xsd=1" />
+    <MetadataFile FileName="Productos.wsdl" MetadataType="Wsdl" ID="e35f4208-def8-47a7-a77a-959313416625" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Productos?WSDL" />
+    <MetadataFile FileName="Usuario.wsdl" MetadataType="Wsdl" ID="be3e88c4-c62d-4b95-84cf-9a415abab635" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Usuario?WSDL" />
+    <MetadataFile FileName="Direccion.wsdl" MetadataType="Wsdl" ID="a1043b14-d38b-4857-8673-e45d845a89d5" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Direccion?WSDL" />
+    <MetadataFile FileName="Comprobante.wsdl" MetadataType="Wsdl" ID="2d01dbf6-0666-47bc-acda-5c5e1638886e" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Comprobante?WSDL" />
+    <MetadataFile FileName="Envio.xsd" MetadataType="Schema" ID="312f7dd5-8a7c-4d56-bb78-8f22140e9c63" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Envio?xsd=1" />
+    <MetadataFile FileName="servicios.disco" MetadataType="Disco" ID="c7720e8d-30f8-4d54-b720-c9b9d89ef5d4" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/servicios.disco" />
+    <MetadataFile FileName="Pago.xsd" MetadataType="Schema" ID="e720f918-99ef-4c14-b022-b142f6dfc07a" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Pago?xsd=1" />
+    <MetadataFile FileName="Juridica.wsdl" MetadataType="Wsdl" ID="b8d708b9-7718-49a6-ae4b-d91107db6f35" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Juridica?WSDL" />
+    <MetadataFile FileName="Administrador.xsd" MetadataType="Schema" ID="e52faa90-364e-4a06-b850-abdd288fa993" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Administrador?xsd=1" />
+    <MetadataFile FileName="Envio.wsdl" MetadataType="Wsdl" ID="03f84368-dd63-49f1-b62e-18ed0405492a" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Envio?WSDL" />
+    <MetadataFile FileName="PedidoItem.wsdl" MetadataType="Wsdl" ID="239073cd-878c-4ac9-b2db-179224cc7046" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/PedidoItem?WSDL" />
+    <MetadataFile FileName="Comprobante.xsd" MetadataType="Schema" ID="c58f9bd6-df01-48ad-ac30-5895f8568796" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Comprobante?xsd=1" />
+    <MetadataFile FileName="Administrador.wsdl" MetadataType="Wsdl" ID="80f656ef-f14b-4210-83d6-9326cfd0a2c0" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Administrador?WSDL" />
+    <MetadataFile FileName="PedidoItem.xsd" MetadataType="Schema" ID="c57f7c35-eda3-452a-943f-5e2b4a17331e" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/PedidoItem?xsd=1" />
+    <MetadataFile FileName="Carrito.xsd" MetadataType="Schema" ID="c9465516-8b6e-4a05-9ce6-e821a83847e8" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Carrito?xsd=1" />
+    <MetadataFile FileName="Direccion.xsd" MetadataType="Schema" ID="6aac00d2-bc09-4a75-b045-792d7410e24c" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Direccion?xsd=1" />
+    <MetadataFile FileName="PrecioPresentacion.xsd" MetadataType="Schema" ID="313c003c-ab93-4c17-9cb1-e73217b40fe8" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/PrecioPresentacion?xsd=1" />
+    <MetadataFile FileName="Usuario.xsd" MetadataType="Schema" ID="98963449-fc8a-4096-b207-b1de56f045c4" SourceId="1" SourceUrl="http://localhost:8080/SoftProgWS/Usuario?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

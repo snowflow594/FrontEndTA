@@ -5,29 +5,11 @@
       <xsd:import schemaLocation="http://localhost:8080/SoftProgWS/PrecioPresentacion?xsd=1" namespace="http://producto.services.softprog.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="eliminarPrecioPresentacion">
-    <part name="parameters" element="tns:eliminarPrecioPresentacion" />
+  <message name="listarPrecioPresentacionPorProducto">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorProducto" />
   </message>
-  <message name="eliminarPrecioPresentacionResponse">
-    <part name="parameters" element="tns:eliminarPrecioPresentacionResponse" />
-  </message>
-  <message name="insertarPrecioPresentacion">
-    <part name="parameters" element="tns:insertarPrecioPresentacion" />
-  </message>
-  <message name="insertarPrecioPresentacionResponse">
-    <part name="parameters" element="tns:insertarPrecioPresentacionResponse" />
-  </message>
-  <message name="listarPrecioPresentacionPorProductoTodos">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorProductoTodos" />
-  </message>
-  <message name="listarPrecioPresentacionPorProductoTodosResponse">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorProductoTodosResponse" />
-  </message>
-  <message name="listarPrecioPresentacionPorRangoCantidad">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorRangoCantidad" />
-  </message>
-  <message name="listarPrecioPresentacionPorRangoCantidadResponse">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorRangoCantidadResponse" />
+  <message name="listarPrecioPresentacionPorProductoResponse">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorProductoResponse" />
   </message>
   <message name="listarPrecioPresentacionPorPrecioMaximo">
     <part name="parameters" element="tns:listarPrecioPresentacionPorPrecioMaximo" />
@@ -35,17 +17,17 @@
   <message name="listarPrecioPresentacionPorPrecioMaximoResponse">
     <part name="parameters" element="tns:listarPrecioPresentacionPorPrecioMaximoResponse" />
   </message>
-  <message name="buscarPrecioPresentacionPorTipoYCantidad">
-    <part name="parameters" element="tns:buscarPrecioPresentacionPorTipoYCantidad" />
+  <message name="listarPrecioPresentacionPorRangoPrecio">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorRangoPrecio" />
   </message>
-  <message name="buscarPrecioPresentacionPorTipoYCantidadResponse">
-    <part name="parameters" element="tns:buscarPrecioPresentacionPorTipoYCantidadResponse" />
+  <message name="listarPrecioPresentacionPorRangoPrecioResponse">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorRangoPrecioResponse" />
   </message>
-  <message name="listarPrecioPresentacionPorTipoMedida">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorTipoMedida" />
+  <message name="listarPrecioPresentacionPorProductoTodos">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorProductoTodos" />
   </message>
-  <message name="listarPrecioPresentacionPorTipoMedidaResponse">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorTipoMedidaResponse" />
+  <message name="listarPrecioPresentacionPorProductoTodosResponse">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorProductoTodosResponse" />
   </message>
   <message name="listarPrecioPresentacionPorUsuarioCreacion">
     <part name="parameters" element="tns:listarPrecioPresentacionPorUsuarioCreacion" />
@@ -53,17 +35,29 @@
   <message name="listarPrecioPresentacionPorUsuarioCreacionResponse">
     <part name="parameters" element="tns:listarPrecioPresentacionPorUsuarioCreacionResponse" />
   </message>
-  <message name="listarPrecioPresentacionPorRangoPrecio">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorRangoPrecio" />
+  <message name="listarPrecioPresentacionPorTipoMedida">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorTipoMedida" />
   </message>
-  <message name="listarPrecioPresentacionPorRangoPrecioResponse">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorRangoPrecioResponse" />
+  <message name="listarPrecioPresentacionPorTipoMedidaResponse">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorTipoMedidaResponse" />
   </message>
-  <message name="listarPrecioPresentacionPorProducto">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorProducto" />
+  <message name="listarPrecioPresentacionPorRangoCantidad">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorRangoCantidad" />
   </message>
-  <message name="listarPrecioPresentacionPorProductoResponse">
-    <part name="parameters" element="tns:listarPrecioPresentacionPorProductoResponse" />
+  <message name="listarPrecioPresentacionPorRangoCantidadResponse">
+    <part name="parameters" element="tns:listarPrecioPresentacionPorRangoCantidadResponse" />
+  </message>
+  <message name="buscarPrecioPresentacionPorTipoYCantidad">
+    <part name="parameters" element="tns:buscarPrecioPresentacionPorTipoYCantidad" />
+  </message>
+  <message name="buscarPrecioPresentacionPorTipoYCantidadResponse">
+    <part name="parameters" element="tns:buscarPrecioPresentacionPorTipoYCantidadResponse" />
+  </message>
+  <message name="listarPrecioPresentacionInactivos">
+    <part name="parameters" element="tns:listarPrecioPresentacionInactivos" />
+  </message>
+  <message name="listarPrecioPresentacionInactivosResponse">
+    <part name="parameters" element="tns:listarPrecioPresentacionInactivosResponse" />
   </message>
   <message name="listarTodosPrecioPresentacion">
     <part name="parameters" element="tns:listarTodosPrecioPresentacion" />
@@ -77,58 +71,60 @@
   <message name="obtenerPorIdPrecioPresentacionResponse">
     <part name="parameters" element="tns:obtenerPorIdPrecioPresentacionResponse" />
   </message>
-  <message name="listarPrecioPresentacionInactivos">
-    <part name="parameters" element="tns:listarPrecioPresentacionInactivos" />
-  </message>
-  <message name="listarPrecioPresentacionInactivosResponse">
-    <part name="parameters" element="tns:listarPrecioPresentacionInactivosResponse" />
-  </message>
   <message name="modificarPrecioPresentacion">
     <part name="parameters" element="tns:modificarPrecioPresentacion" />
   </message>
   <message name="modificarPrecioPresentacionResponse">
     <part name="parameters" element="tns:modificarPrecioPresentacionResponse" />
   </message>
+  <message name="eliminarPrecioPresentacion">
+    <part name="parameters" element="tns:eliminarPrecioPresentacion" />
+  </message>
+  <message name="eliminarPrecioPresentacionResponse">
+    <part name="parameters" element="tns:eliminarPrecioPresentacionResponse" />
+  </message>
+  <message name="insertarPrecioPresentacion">
+    <part name="parameters" element="tns:insertarPrecioPresentacion" />
+  </message>
+  <message name="insertarPrecioPresentacionResponse">
+    <part name="parameters" element="tns:insertarPrecioPresentacionResponse" />
+  </message>
   <portType name="PrecioPresentacion">
-    <operation name="eliminarPrecioPresentacion">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPresentacionRequest" message="tns:eliminarPrecioPresentacion" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPresentacionResponse" message="tns:eliminarPrecioPresentacionResponse" />
-    </operation>
-    <operation name="insertarPrecioPresentacion">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPresentacionRequest" message="tns:insertarPrecioPresentacion" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPresentacionResponse" message="tns:insertarPrecioPresentacionResponse" />
-    </operation>
-    <operation name="listarPrecioPresentacionPorProductoTodos">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorProductoTodosRequest" message="tns:listarPrecioPresentacionPorProductoTodos" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorProductoTodosResponse" message="tns:listarPrecioPresentacionPorProductoTodosResponse" />
-    </operation>
-    <operation name="listarPrecioPresentacionPorRangoCantidad">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorRangoCantidadRequest" message="tns:listarPrecioPresentacionPorRangoCantidad" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorRangoCantidadResponse" message="tns:listarPrecioPresentacionPorRangoCantidadResponse" />
+    <operation name="listarPrecioPresentacionPorProducto">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorProductoRequest" message="tns:listarPrecioPresentacionPorProducto" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorProductoResponse" message="tns:listarPrecioPresentacionPorProductoResponse" />
     </operation>
     <operation name="listarPrecioPresentacionPorPrecioMaximo">
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorPrecioMaximoRequest" message="tns:listarPrecioPresentacionPorPrecioMaximo" />
       <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorPrecioMaximoResponse" message="tns:listarPrecioPresentacionPorPrecioMaximoResponse" />
     </operation>
-    <operation name="buscarPrecioPresentacionPorTipoYCantidad">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/buscarPrecioPresentacionPorTipoYCantidadRequest" message="tns:buscarPrecioPresentacionPorTipoYCantidad" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/buscarPrecioPresentacionPorTipoYCantidadResponse" message="tns:buscarPrecioPresentacionPorTipoYCantidadResponse" />
+    <operation name="listarPrecioPresentacionPorRangoPrecio">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorRangoPrecioRequest" message="tns:listarPrecioPresentacionPorRangoPrecio" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorRangoPrecioResponse" message="tns:listarPrecioPresentacionPorRangoPrecioResponse" />
     </operation>
-    <operation name="listarPrecioPresentacionPorTipoMedida">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorTipoMedidaRequest" message="tns:listarPrecioPresentacionPorTipoMedida" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorTipoMedidaResponse" message="tns:listarPrecioPresentacionPorTipoMedidaResponse" />
+    <operation name="listarPrecioPresentacionPorProductoTodos">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorProductoTodosRequest" message="tns:listarPrecioPresentacionPorProductoTodos" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorProductoTodosResponse" message="tns:listarPrecioPresentacionPorProductoTodosResponse" />
     </operation>
     <operation name="listarPrecioPresentacionPorUsuarioCreacion">
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorUsuarioCreacionRequest" message="tns:listarPrecioPresentacionPorUsuarioCreacion" />
       <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorUsuarioCreacionResponse" message="tns:listarPrecioPresentacionPorUsuarioCreacionResponse" />
     </operation>
-    <operation name="listarPrecioPresentacionPorRangoPrecio">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorRangoPrecioRequest" message="tns:listarPrecioPresentacionPorRangoPrecio" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorRangoPrecioResponse" message="tns:listarPrecioPresentacionPorRangoPrecioResponse" />
+    <operation name="listarPrecioPresentacionPorTipoMedida">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorTipoMedidaRequest" message="tns:listarPrecioPresentacionPorTipoMedida" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorTipoMedidaResponse" message="tns:listarPrecioPresentacionPorTipoMedidaResponse" />
     </operation>
-    <operation name="listarPrecioPresentacionPorProducto">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorProductoRequest" message="tns:listarPrecioPresentacionPorProducto" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorProductoResponse" message="tns:listarPrecioPresentacionPorProductoResponse" />
+    <operation name="listarPrecioPresentacionPorRangoCantidad">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorRangoCantidadRequest" message="tns:listarPrecioPresentacionPorRangoCantidad" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionPorRangoCantidadResponse" message="tns:listarPrecioPresentacionPorRangoCantidadResponse" />
+    </operation>
+    <operation name="buscarPrecioPresentacionPorTipoYCantidad">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/buscarPrecioPresentacionPorTipoYCantidadRequest" message="tns:buscarPrecioPresentacionPorTipoYCantidad" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/buscarPrecioPresentacionPorTipoYCantidadResponse" message="tns:buscarPrecioPresentacionPorTipoYCantidadResponse" />
+    </operation>
+    <operation name="listarPrecioPresentacionInactivos">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionInactivosRequest" message="tns:listarPrecioPresentacionInactivos" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionInactivosResponse" message="tns:listarPrecioPresentacionInactivosResponse" />
     </operation>
     <operation name="listarTodosPrecioPresentacion">
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarTodosPrecioPresentacionRequest" message="tns:listarTodosPrecioPresentacion" />
@@ -138,45 +134,22 @@
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrecioPresentacionRequest" message="tns:obtenerPorIdPrecioPresentacion" />
       <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/obtenerPorIdPrecioPresentacionResponse" message="tns:obtenerPorIdPrecioPresentacionResponse" />
     </operation>
-    <operation name="listarPrecioPresentacionInactivos">
-      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionInactivosRequest" message="tns:listarPrecioPresentacionInactivos" />
-      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/listarPrecioPresentacionInactivosResponse" message="tns:listarPrecioPresentacionInactivosResponse" />
-    </operation>
     <operation name="modificarPrecioPresentacion">
       <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioPresentacionRequest" message="tns:modificarPrecioPresentacion" />
       <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/modificarPrecioPresentacionResponse" message="tns:modificarPrecioPresentacionResponse" />
     </operation>
+    <operation name="eliminarPrecioPresentacion">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPresentacionRequest" message="tns:eliminarPrecioPresentacion" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/eliminarPrecioPresentacionResponse" message="tns:eliminarPrecioPresentacionResponse" />
+    </operation>
+    <operation name="insertarPrecioPresentacion">
+      <input wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPresentacionRequest" message="tns:insertarPrecioPresentacion" />
+      <output wsam:Action="http://producto.services.softprog.pucp.edu.pe/PrecioPresentacion/insertarPrecioPresentacionResponse" message="tns:insertarPrecioPresentacionResponse" />
+    </operation>
   </portType>
   <binding name="PrecioPresentacionPortBinding" type="tns:PrecioPresentacion">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="eliminarPrecioPresentacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertarPrecioPresentacion">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPrecioPresentacionPorProductoTodos">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="listarPrecioPresentacionPorRangoCantidad">
+    <operation name="listarPrecioPresentacionPorProducto">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -194,7 +167,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="buscarPrecioPresentacionPorTipoYCantidad">
+    <operation name="listarPrecioPresentacionPorRangoPrecio">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -203,7 +176,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarPrecioPresentacionPorTipoMedida">
+    <operation name="listarPrecioPresentacionPorProductoTodos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -221,7 +194,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarPrecioPresentacionPorRangoPrecio">
+    <operation name="listarPrecioPresentacionPorTipoMedida">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -230,7 +203,25 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarPrecioPresentacionPorProducto">
+    <operation name="listarPrecioPresentacionPorRangoCantidad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarPrecioPresentacionPorTipoYCantidad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPrecioPresentacionInactivos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -257,7 +248,7 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="listarPrecioPresentacionInactivos">
+    <operation name="modificarPrecioPresentacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -266,7 +257,16 @@
         <soap:body use="literal" />
       </output>
     </operation>
-    <operation name="modificarPrecioPresentacion">
+    <operation name="eliminarPrecioPresentacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarPrecioPresentacion">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

@@ -200,6 +200,16 @@
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:comprobanteDTO" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="listarComprobanteNumeroSerie">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="serie" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarComprobanteNumeroSerieResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:comprobanteDTO" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="listarComprobanteRangoTotal">
     <xs:sequence>
       <xs:element name="totalMin" type="xs:double" />
@@ -207,16 +217,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="listarComprobanteRangoTotalResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:comprobanteDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarComprobanteNumeroSerie">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="serie" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarComprobanteNumeroSerieResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:comprobanteDTO" />
     </xs:sequence>
