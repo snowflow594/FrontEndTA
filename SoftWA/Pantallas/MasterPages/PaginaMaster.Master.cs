@@ -19,12 +19,24 @@ namespace SoftWA.Pantallas.MasterPages
         {
             if (!IsPostBack)
             {
-                if (Session["idCarrito"] == null)
+                if (Request.Cookies["idCarrito"] != null)
+                {
+                    int carritoId;
+                    if (int.TryParse(Request.Cookies["idCarrito"].Value, out carritoId))
+                    {
+                        Session["idCarrito"] = carritoId;
+                    }
+                    else
+                    {
+                        CrearCarritoTemporal();
+                        CrearSessionCarritoTemporal();
+                    }
+                }
+                else
                 {
                     CrearCarritoTemporal();
                     CrearSessionCarritoTemporal();
                 }
-                CargarCantidadCarrito();
             }
         }
         protected void CargarCantidadCarrito()
@@ -82,10 +94,10 @@ namespace SoftWA.Pantallas.MasterPages
             //    usuarioCreacion = new SoftWA.ServiciosWSClient.usuarioDTO1 { id = 1}
             //};
             //i = naturalWSClient.insertarNatural(naturalTemp);
-            if (Session["idCarrito"] == null)
-            {
-                return;
-            }
+            //if (Session["idCarrito"] == null) <------- ESTO LO HABÍA PUESTO NO SÉ POR QUÉ POR ESO NO SE CREABA UN CARRITO
+            //{
+            //    return;
+            //}
             var carritoTemp = new SoftWA.ServiciosWSClient.carritoDTO
             {
                 persona = new SoftWA.ServiciosWSClient.personaDTO { id = 1 },
@@ -114,7 +126,11 @@ namespace SoftWA.Pantallas.MasterPages
                 .FirstOrDefault();
 
             if (ultimo != null)
+            {
                 Session["idCarrito"] = ultimo.idCarrito;
+                Response.Cookies["idCarrito"].Value = ultimo.idCarrito.ToString();
+                Response.Cookies["idCarrito"].Expires = DateTime.Now.AddDays(7);
+            }
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
