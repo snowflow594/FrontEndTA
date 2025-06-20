@@ -35,9 +35,16 @@ namespace SoftWA.Pantallas
                         lblCodigo.Text = producto.idProducto.ToString();
                         lblNombre.Text = producto.nombre;
                         lblDescripcion.Text = producto.descripcion;
-                        lblStock.Text = producto.stock.ToString();
+                        if(producto.stock == 1)
+                        {
+                            lblStock.Text = producto.stock.ToString() + " unidad";
+                        }
+                        else
+                        {
+                            lblStock.Text = producto.stock.ToString() + " unidades";
+                        }
                         lblCategoria.Text = producto.categoria.ToString();
-                        lblPrecio.Text = producto.precio.ToString();
+                        lblPrecio.Text = "S/ " + producto.precio.ToString();
                         imgProducto = new Image();
                         //habilitar solo si tiene stock
                         btnAgregarCarrito.Enabled = producto.stock > 0;
@@ -58,6 +65,7 @@ namespace SoftWA.Pantallas
             try
             {
                 int idCarrito = Convert.ToInt32(Session["idCarrito"]);
+                var carrito = carritoWSClient.obtenerPorIdCarrito(idCarrito);
                 int idProducto = int.Parse(lblCodigo.Text);
 
                 var producto = productoWSClient.obtenerPorIdProducto(idProducto);
@@ -71,6 +79,14 @@ namespace SoftWA.Pantallas
                     usuarioCreacion = new usuarioDTO { id = 4 } // temporal
                 };
 
+                var carritoModificado = new carritoDTO
+                {
+                    idCarrito = carrito.idCarrito,
+                    total = carrito.total + producto.precio,
+                    usuarioActualizacion = new usuarioDTO { id = 4 }
+                };
+
+                carritoWSClient.modificarCarrito(carritoModificado); //esto faltaba porque no sea actualizaba el total en el carrito
                 itemCarritoWSClient.insertarItemCarrito(nuevoItem);
                 Response.Redirect("Carrito.aspx");
             }

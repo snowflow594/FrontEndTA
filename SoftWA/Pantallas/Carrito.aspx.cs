@@ -61,6 +61,17 @@ namespace SoftWA.Pantallas
                 double igv = subtotal * 0.18;
                 double total = subtotal + igv;
 
+                var carrito = carritoWS.obtenerPorIdCarrito(idCarrito);
+
+                var carritoModificado = new carritoDTO
+                {
+                    idCarrito = carrito.idCarrito,
+                    total = subtotal,
+                    usuarioActualizacion = new usuarioDTO { id = 4 }
+                };
+
+                carritoWS.modificarCarrito(carritoModificado);
+
                 lblSubtotal.Text = subtotal.ToString("F2");
                 lblIGV.Text = igv.ToString("F2");
                 lblTotal.Text = total.ToString("F2");

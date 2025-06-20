@@ -64,12 +64,12 @@ namespace SoftWA.Pantallas
                 {
                     var nuevaDireccion = new ServiciosWSClient.direccionDTO1
                     {
-                        personaId = new ServiciosWSClient.personaDTO1 { id = idPersona },
+                        personaId = new ServiciosWSClient.personaDTO1 { id = 4 },
                         alias = txtAlias.Text,
                         direccion = txtDireccion.Text,
                         ciudad = txtCiudad.Text,
                         referencia = txtReferencia.Text,
-                        usuarioCreacion = new ServiciosWSClient.usuarioDTO1 { id = idUsuario }
+                        usuarioCreacion = new ServiciosWSClient.usuarioDTO1 { id = 1 }
                     };
 
                     int i = direccionWSClient.insertarDireccion(nuevaDireccion);  // <-- AQUÍ puede estar fallando

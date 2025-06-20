@@ -12,6 +12,7 @@ namespace SoftWA.Pantallas
     {
         private UsuarioClient usuarioBO;
         private RolClient rolBO;
+        private PersonaClient personaClient;
 
         private const string VS_CODIGO = "vcodigoLogin";
         private string CodigoLogin
@@ -47,6 +48,7 @@ namespace SoftWA.Pantallas
 
             // guardamos DTO en Session provisional por si necesitamos después
             Session["UsuarioAutenticado"] = usuario2;
+            
 
             // generamos y mostramos el código
             CodigoLogin = new Random().Next(100000, 999999).ToString();
