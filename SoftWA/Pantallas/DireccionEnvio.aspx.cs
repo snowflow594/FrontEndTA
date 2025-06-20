@@ -12,7 +12,7 @@ namespace SoftWA.Pantallas
     public partial class DireccionEnvio : System.Web.UI.Page
     {
         private ItemCarritoClient itemCarritoWSClient = new ItemCarritoClient();
-        private DireccionClient direccionWSClient = new ServiciosWSClient.DireccionClient();
+        private DireccionClient direccionWSClient = new DireccionClient();
         private CarritoClient carritoWSClient = new CarritoClient();
         private PersonaClient personaWSClient = new PersonaClient();
 
@@ -60,41 +60,50 @@ namespace SoftWA.Pantallas
                 int idPersona = Convert.ToInt32(Session["idPersona"]);
                 int idUsuario = Convert.ToInt32(Session["idUsuario"]);
 
-                var nuevaDireccion = new ServiciosWSClient.direccionDTO1
+                try
                 {
-                    personaId = new ServiciosWSClient.personaDTO1 { id = idPersona },
-                    alias = txtAlias.Text,
-                    direccion = txtDireccion.Text,
-                    ciudad = txtCiudad.Text,
-                    referencia = txtReferencia.Text,
-                    usuarioCreacion = new ServiciosWSClient.usuarioDTO1 { id = idUsuario }
-                };
+                    var nuevaDireccion = new ServiciosWSClient.direccionDTO1
+                    {
+                        personaId = new ServiciosWSClient.personaDTO1 { id = idPersona },
+                        alias = txtAlias.Text,
+                        direccion = txtDireccion.Text,
+                        ciudad = txtCiudad.Text,
+                        referencia = txtReferencia.Text,
+                        usuarioCreacion = new ServiciosWSClient.usuarioDTO1 { id = idUsuario }
+                    };
 
-                int i = direccionWSClient.insertarDireccion(nuevaDireccion); //aquí hay un error, creo que se duplican las clases o algo así porque sale direccionDTO y direccionDTO1 con el servicio completo agrupado
+                    int i = direccionWSClient.insertarDireccion(nuevaDireccion);  // <-- AQUÍ puede estar fallando
 
-                // Obtener la última dirección registrada por esa persona y usuario
-                var listaDirecciones = direccionWSClient.listarTodosDireccion();
+                    // Continuar solo si el insert fue exitoso
+                    var listaDirecciones = direccionWSClient.listarTodosDireccion();
 
-                var ultimaDireccion = listaDirecciones?
-                    .Where(d => d != null &&
-                                d.personaId != null && d.personaId.id == idPersona &&
-                                d.usuarioCreacion != null && d.usuarioCreacion.id == idUsuario &&
-                                d.direccion == txtDireccion.Text && d.alias == txtAlias.Text)
-                    .OrderByDescending(d => d.id)
-                    .FirstOrDefault();
+                    var ultimaDireccion = listaDirecciones?
+                        .Where(d => d != null &&
+                                    d.personaId != null && d.personaId.id == idPersona &&
+                                    d.usuarioCreacion != null && d.usuarioCreacion.id == idUsuario &&
+                                    d.direccion == txtDireccion.Text && d.alias == txtAlias.Text)
+                        .OrderByDescending(d => d.id)
+                        .FirstOrDefault();
 
-                if (ultimaDireccion != null)
-                {
-                    Session["idDireccionSelececionada"] = ultimaDireccion.id;
-                    lblMensaje.CssClass = "text-success mt-2 d-block";
-                    lblMensaje.Text = "¡Dirección guardada con éxito!";
+                    if (ultimaDireccion != null)
+                    {
+                        Session["idDireccionSelececionada"] = ultimaDireccion.id;
+                        lblMensaje.CssClass = "text-success mt-2 d-block";
+                        lblMensaje.Text = "¡Dirección guardada con éxito!";
+                    }
+                    else
+                    {
+                        lblMensaje.CssClass = "text-danger mt-2 d-block";
+                        lblMensaje.Text = "No se pudo guardar la dirección. Intenta nuevamente.";
+                    }
+
+                    Response.Redirect("DireccionEnvio.aspx");
                 }
-                else
+                catch (Exception ex)
                 {
                     lblMensaje.CssClass = "text-danger mt-2 d-block";
-                    lblMensaje.Text = "No se pudo guardar la dirección. Intenta nuevamente.";
+                    lblMensaje.Text = "Error al guardar dirección: " + ex.Message;
                 }
-                Response.Redirect("DireccionEnvio.aspx");
             }
         }
 
@@ -113,13 +122,6 @@ namespace SoftWA.Pantallas
             }
 
             Response.Redirect("DatosDePago.aspx");
-        }
-
-        [System.Web.Services.WebMethod(EnableSession = true)]
-        public static bool SeleccionarDireccion(int idDireccion)
-        {
-            HttpContext.Current.Session["idDireccionSelececionada"] = idDireccion;
-            return true;
         }
     }
 }
